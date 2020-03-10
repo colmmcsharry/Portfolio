@@ -28,18 +28,28 @@ font-weight: bold;}
 z-index:10 !important;
 position:relative;
 display:block;
-top:50rem;}
+top:20rem;}
+
+#section {color:blue;
+z-index:10 !important;
+position:relative;
+display:block;
+top:24rem;}
 
 #hi, #welcome {transition: color 2s;
 z-index:5;}
 
 
 #changer {z-index:10;
-position:absolute;}
+position:absolute;
+background-size: stretch; 
+background-repeat: repeat; 
+outline:none;
+transition:background 2s;}
 
 .MyClass {
   width:400px;
-  color:red;
+  color: #628BC9;
 }
 
 button {border-radius:50%;
@@ -66,12 +76,12 @@ $raindrops:10;
 body{
   background:#222;
 }
-.container{
-  position:relative;
-  width:$width;
-  height:$height;
-  overflow:hidden;
-}
+
+#first {
+position:relative;
+display:block;
+top:900px;}
+
 #window{
   position:absolute;
   width:$width;
@@ -81,22 +91,75 @@ body{
   background-size:cover;
   background-position:50%;
   transition: background 2s;
-  color:pink;
-  font-size:10rem;
 }
 
+.preview {height:400px;
+width:400px;
+margin:5rem;}
+
+.preview:hover {
+  cursor:pointer;
+}
+
+#intro {position:absolute;
+top:20%;
+left:30%;}
+
+h3 {color:green;
+position:relative;
+display: block;
+top:40rem;}
 
 
 
+/*image transitions starts*/
 
+.image-container {
+  position: relative;
+  
+  img {
+    height:400px;
+    width:400px;
+    margin:5rem;
+    position: absolute;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    &:nth-of-type(1) {
+      animation-delay: 6s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 2s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 0;
+    }
+  }
+}
 
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
-
-
-
-
-
-
+/*image transitions ends*/
 
 
 

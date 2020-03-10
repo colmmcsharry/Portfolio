@@ -2,6 +2,11 @@ import React from 'react';
 import './App.scss';
 import ButtonClick from './ButtonClick.js'
 import ChangeBg from './ChangeBg.js'
+import networkerspic from './networkerspic.png'
+import networkerspic2 from './networkerspic2.png'
+import networkerspic3 from './networkerspic3.png'
+import networkershot from './networkersshot.png'
+
 
 function App() {
   return (
@@ -19,9 +24,16 @@ function App() {
 <h2>Welcome to my Portfolio</h2>
 </div>*/}
 
-    <div className='container'>
+    
 
-      <div id='window'></div>
+      <div id='window'> 
+          
+          </div>
+
+          <div id="intro">
+                <h1 id="hi">Hi, I'm Colm </h1>               
+                <h2 id="welcome">Welcome to my Portfolio </h2>
+      </div>
               
 
       <div id ='rain' className='raindrops'>
@@ -232,12 +244,20 @@ function App() {
         </div>
       </div>
       <ChangeBg />
-      <h1 id="hi">Hi, I'm Colm </h1>               
-<h2 id="welcome">Welcome to my Portfolio </h2>
-
-<p id="sectionone">Hello and welcome to section 1. Here is where I will talk about this project and have a preview image of it</p>
+      
+      <h3> My Projects </h3>
+<div className="project" id="first">
+    <div className="image-container">
+        <img src={networkerspic} />
+        <img src={networkerspic2} />
+        <img src={networkerspic3} />
+        <img src={networkershot} />        
     </div>
-     
+</div>
+
+
+
+
   </div>
   );
 }
