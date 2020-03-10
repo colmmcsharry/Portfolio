@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap');
+
+
+
+@media screen and (max-width: 450px) {
+html  {font-size:.8rem;}
+ }
+
+
+h1, h2 {color:#3EE7AD ;
+ /* color:white;*/
+position:relative;
+top:20rem;
+font-family: Cinzel Decorative;
+width:30rem;
+}
+
+p{font-size:3rem;
+color:red;
+
+}
+
+h1 {font-size:3rem;
+font-weight: bold;}
+
+#sectionone {color:red;
+z-index:10 !important;
+position:relative;
+display:block;
+top:50rem;}
+
+#hi, #welcome {transition: color 2s;
+z-index:5;}
+
+
+#changer {z-index:10;
+position:absolute;}
+
+.MyClass {
+  width:400px;
+  color:red;
+}
+
+button {border-radius:50%;
+font:bold;
+background:url('./sun.png');
+background-size: cover; 
+background-repeat: no-repeat; 
+width:5rem;
+height:5rem;
+border:none;
+}
+
+button:hover {cursor: pointer}  
+
+/*h2 {color: white;}*/
+
+/*these are basically reusable variables, SCSS*/
+$width:100vw;
+$height:100vh;
+
+//number of raindrops
+$raindrops:10;
+
+body{
+  background:#222;
+}
+.container{
+  position:relative;
+  width:$width;
+  height:$height;
+  overflow:hidden;
+}
+#window{
+  position:absolute;
+  width:$width;
+  height:$height;
+  background:url('./window2.jpg');
+  opacity:0.2;
+  background-size:cover;
+  background-position:50%;
+  transition: background 2s;
+  color:pink;
+  font-size:10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// set all the containers to
+// position:absolute, since 
+// they will overlap
+.raindrops,
+.borders,
+.drops{
+  position:absolute;
+}
+
+// little brightness filter so our raindrops look shiny
+.drops{
+  filter:brightness(1.2);
+}
+
+// general settings for all the 
+// raindrops and borders
+.raindrop{
+  opacity:0.5;
+  position:absolute;
+  border-radius:100%;
+  background-image:url('./window2.jpg');
+  background-size:$width*0.05 $height*0.05;
+  background-position:50%;
+  transform:rotate(180deg) rotateY(0);
+}
+.border{
+  opacity:0.5;
+  position:absolute;
+  margin-left:2px; 
+  margin-top:1px;
+  border-radius:100%;
+  box-shadow:0 0 0 1.5px rgba(0,0,0,0.5);
+  transform:rotateY(0);
+}
+
+// looping through each one of them
+@for $i from 1 through $raindrops{
+
+  // generates a random number from 0 to 1, for the positioning
+  $x:random();
+  $y:random();
+
+  // Random raindrop size and stretching.
+  // Since each raindrop has different sizes, we'll do our sizing calculations here instead of on the main .raindrop selector
+  $drop-width:5px+random(11);
+  $drop-stretch:0.7+(random()*0.5);
+  $drop-delay: (random()*2.5) + 1;
+  $drop-height:$drop-width*$drop-stretch;
+  .raindrop:nth-child(#{$i}){
+    // multiply the random position value by the container's size
+    left:$x * $width;
+    top:$y * $height;
+    
+    width:$drop-width;
+    height:$drop-height;
+    background-position:percentage($x) percentage($y);
+    animation: #{$drop-delay}s falling 1s ease-in infinite;
+  }
+
+  .border:nth-child(#{$i}){
+    // we'll do the same positioning for the drop's border
+    left:$x * $width;
+    top:$y * $height;
+
+    width:$drop-width - 4;
+    height:$drop-height;
+    animation: #{$drop-delay}s falling 1s ease-in infinite;
+  }
+}
+
+@keyframes falling {
+  from {
+    
+  }
+  to {
+    transform: translateY(500px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
