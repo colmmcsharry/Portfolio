@@ -28,14 +28,11 @@ function App() {
 
       <div id='window'> 
           
-          </div>
+          
 
-          <div id="intro">
-                <h1 id="hi">Hi, I'm Colm </h1>               
-                <h2 id="welcome">Welcome to my Portfolio </h2>
-      </div>
+          
               
-
+ 
       <div id ='rain' className='raindrops'>
         <div className='borders'>
 
@@ -242,9 +239,19 @@ function App() {
           <div className='raindrop'></div>
           <div className='raindrop'></div>
         </div>
-      </div>
-      <ChangeBg />
       
+      
+      
+      </div>
+      <div id="intro">
+                <h1 id="hi">Hi, I'm Colm </h1>               
+                <h2 id="welcome">Welcome to my Portfolio </h2>
+      </div>
+</div>
+<ChangeBg />
+
+
+
       <h3> My Projects </h3>
 <div className="project" id="first">
     <div className="image-container">

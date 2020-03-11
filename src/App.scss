@@ -7,11 +7,19 @@
 html  {font-size:.8rem;}
  }
 
+html,
+body {
+width: 100%;
+height: 100%;
+}
+
+body{
+  background:#222;
+}
 
 h1, h2 {color:#3EE7AD ;
  /* color:white;*/
 position:relative;
-top:20rem;
 font-family: Cinzel Decorative;
 width:30rem;
 }
@@ -41,15 +49,17 @@ z-index:5;}
 
 
 #changer {z-index:10;
-position:absolute;
 background-size: stretch; 
 background-repeat: repeat; 
 outline:none;
 transition:background 2s;}
 
 .MyClass {
-  width:400px;
+  width:900px;
   color: #628BC9;
+  position:relative;
+  top:10px;
+  left:10px;
 }
 
 button {border-radius:50%;
@@ -60,6 +70,7 @@ background-repeat: no-repeat;
 width:5rem;
 height:5rem;
 border:none;
+z-index:10;
 }
 
 button:hover {cursor: pointer}  
@@ -71,11 +82,9 @@ $width:100vw;
 $height:100vh;
 
 //number of raindrops
-$raindrops:10;
+$raindrops:20;
 
-body{
-  background:#222;
-}
+
 
 #first {
 position:relative;
@@ -83,27 +92,27 @@ display:block;
 top:900px;}
 
 #window{
-  position:absolute;
-  width:$width;
-  height:$height;
-  background:url('./window2.jpg');
-  opacity:0.2;
-  background-size:cover;
-  background-position:50%;
-  transition: background 2s;
+width: 100%;
+height: 100vh;
+min-width: 100%;
+min-height: 100%;
+position:relative;
+transition: background 2s;
+border:2px solid red;
+background-image: url('./window2.png');
+background-size: cover;
+z-index:-5;
 }
 
-.preview {height:400px;
-width:400px;
+
+
+.preview {height:20rem;
+width:20rem;
 margin:5rem;}
 
 .preview:hover {
   cursor:pointer;
 }
-
-#intro {position:absolute;
-top:20%;
-left:30%;}
 
 h3 {color:green;
 position:relative;
@@ -118,8 +127,8 @@ top:40rem;}
   position: relative;
   
   img {
-    height:400px;
-    width:400px;
+    height:20rem;
+    width:20rem;
     margin:5rem;
     position: absolute;
     animation-name: multiple-image-crossfade;
@@ -263,6 +272,17 @@ top:40rem;}
 
 
 
+
+
+
+
+
+/*
+@media screen and (max-width: 450px) {
+button  {height: 3rem;
+width:3rem;}
+ }
+*/
 
 
 
