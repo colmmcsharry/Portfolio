@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.scss';
 import ButtonClick from './ButtonClick.js'
-import ChangeBg from './ChangeBg.js'
 import networkerspic from './networkerspic.png'
 import networkerspic2 from './networkerspic2.png'
 import networkerspic3 from './networkerspic3.png'
@@ -10,6 +9,7 @@ import networkershot from './networkersshot.png'
 
 function App() {
   return (
+
     <div className="App">
       
        {/*<div classNameName="main">
@@ -23,8 +23,16 @@ function App() {
 <h1>Hi, I'm Colm</h1>
 <h2>Welcome to my Portfolio</h2>
 </div>*/}
-
-    
+  <input id="toggle1" type="checkbox"/>
+  <label for="toggle1"></label>
+    <div id="intro">
+                <h1 id="hi">Hi, I'm Colm </h1>               
+                <h2 id="welcome">Welcome to my Portfolio </h2>
+      </div>
+      <div id="intro2">
+                <h1 id="hi2">Hi, I'm Colm </h1>               
+                <h2 id="welcome2">Welcome to my Portfolio </h2>
+      </div>
 
       <div id='window'> 
           
@@ -243,14 +251,8 @@ function App() {
       
       
       </div>
-      <div id="intro">
-                <h1 id="hi">Hi, I'm Colm </h1>               
-                <h2 id="welcome">Welcome to my Portfolio </h2>
-      </div>
+      
 </div>
-<ChangeBg />
-
-
 
       <h3> My Projects </h3>
 <div className="project" id="first">
