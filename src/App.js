@@ -10,14 +10,14 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
 import dog from './dog.JPG'
 import { HashRouter, Route, Link } from "react-router-dom";
-
+import bright from './panb-min.jpg'
 
 function App() {
   return (
     <HashRouter basename='/'>
 
     <div className="App">
-      
+      <img src={bright} className="preload"/>
   <input id="toggle1" type="checkbox"/>
   <label for="toggle1"></label>
 
