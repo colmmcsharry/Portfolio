@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72f15ad63e7ca37852a42cedc9e4825d",
+    "revision": "13355ec70f101987d8703056f770c21a",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "6aa11d77cbb3fb7978c4",
-    "url": "/Portfolio/static/css/main.58586f1c.chunk.css"
+    "revision": "f090ee09eb50c1e51ab8",
+    "url": "/Portfolio/static/css/main.3d0450b5.chunk.css"
   },
   {
     "revision": "739f5fd69e377a356b7d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.2d6ccdd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6aa11d77cbb3fb7978c4",
-    "url": "/Portfolio/static/js/main.632c161a.chunk.js"
+    "revision": "f090ee09eb50c1e51ab8",
+    "url": "/Portfolio/static/js/main.68670bd2.chunk.js"
   },
   {
     "revision": "38e9353468597077cd3e",
@@ -32,28 +32,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/moon.eee7ea02.png"
   },
   {
-    "revision": "7a30437d95b3ac59b8597a9241e7f39d",
-    "url": "/Portfolio/static/media/networkerspic.7a30437d.png"
+    "revision": "577180ed89a82af91166858293f9d654",
+    "url": "/Portfolio/static/media/networkerspic.577180ed.jpg"
   },
   {
-    "revision": "56c38101b38f20ee2bf24f8134eb441e",
-    "url": "/Portfolio/static/media/networkerspic2.56c38101.png"
+    "revision": "f86f059558b7e34758318d7e0767b828",
+    "url": "/Portfolio/static/media/networkerspic2.f86f0595.jpg"
   },
   {
-    "revision": "af1220ebceacc61a10a8231ea1cc005c",
-    "url": "/Portfolio/static/media/networkerspic3.af1220eb.png"
+    "revision": "79f3f48f9f416806ea78322d72534ade",
+    "url": "/Portfolio/static/media/networkerspic3.79f3f48f.jpg"
   },
   {
-    "revision": "7b657b0f1777a8df12f03c8eeb93f553",
-    "url": "/Portfolio/static/media/networkersshot.7b657b0f.png"
+    "revision": "0815cb84321515170c24d1c14fd80ef6",
+    "url": "/Portfolio/static/media/networkersshot.0815cb84.jpg"
   },
   {
-    "revision": "5d51fa0acf6cf6d1b3cde71b95b4052f",
-    "url": "/Portfolio/static/media/panb-min.5d51fa0a.png"
+    "revision": "9f94562b780b35a409a08d7666392251",
+    "url": "/Portfolio/static/media/panb-min.9f94562b.jpg"
   },
   {
-    "revision": "0514705b4fe3e29cc1594fee12b55e30",
-    "url": "/Portfolio/static/media/pand-min.0514705b.png"
+    "revision": "2bfb43e498ddafb969af212a9fd19f20",
+    "url": "/Portfolio/static/media/pand-min.2bfb43e4.jpg"
   },
   {
     "revision": "aaa4b8a5d5dc1b3d58f7aec84896d715",
