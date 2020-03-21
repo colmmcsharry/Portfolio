@@ -1,144 +1,158 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
 
-
-@media screen and (max-width: 450px) {
-html  {font-size:.8rem;}
- }
-
-html,
-body {
-width: 100%;
-height: 100%;
+html {
+  font-size: 16px; // I would recommend always using 16px as base font-size
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 640px) {
+    font-size: 12px;
+  }
 }
 
-body{
+
+
+body {
+width: 100vw;
+overflow-x: hidden;
   background:#222;
 }
 
-h1, h2 {color:#3EE7AD ;
- /* color:white;*/
-position:relative;
-font-family: Cinzel Decorative;
-width:50rem;
-}
+.App {margin:0;
+padding:0;}
 
-p{font-size:3rem;
-color:red;
-
-}
-
-h1 {font-size:5rem;
-font-weight: bold;}
-
-h2{font-size:3rem;}
-
-
-#hi, #welcome {transition: color 2s;
-z-index:5;}
-
-#intro {
-  text-align: center;
-position:absolute;
-top:2%;
-left:40%;
-z-index:30;}
 
 #window{
-width: 100%;
+  margin:0;
+  padding:0;
+width: 100vw;
 height: 100vh;
-top:0;
-left:0;
-min-width: 100%;
-min-height: 100%;
-position:absolute;
+position:relative;
+left:-1rem;
 transition: background 2s;
-background-image: url('./dktrns.png');
+background-image: url('./pand.png');
 background-size: cover;
-z-index:-5;
+opacity:0.6;
+}
+
+
+#wrapper {
+background-color:#222;
+ color:cyan; }
+
+#hi1{
+color: cyan;
+position:absolute;
+top: -6rem;
+left:25rem;
+font-family: Gochi Hand;
+width:50rem;
+font-size:10rem;
+transition: opacity 5s;
+transition: color 5s;
+}
+
+#hi2{
+position:absolute;
+top: -6rem;
+left:25rem;
+font-family: Gochi Hand;
+width:50rem;
+font-size:10rem;
+opacity:0;
+transition: opacity 10s;
+transition: color 10s;
 }
 
 
 input {
-  position: relative;;
-  left: -9999px;
+  position: relative;
+  display: none;
 }
 
 label {
   display: block;
   height:50px;
   width:50px;
-  position: static;
+  top:3rem;
+  left:1rem;
+  position: fixed;
   cursor: pointer;
-  background: url('./sun.png');
+  background: url('smileysun.png');
   background-size:cover;
+  z-index:99;
 }
 
 input:checked + label {
-  background-image: url('https://www.pinclipart.com/picdir/big/5-52873_rain-clipart-file-folder-emojis-clip-art-png.png');
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/13/10/23/moon-157118_1280.png');
  background-size:cover; 
  transition: background 2s;
 }
 
 
 input:checked ~ #window {
-  background-image: url('./br.png');
+  background-image: url('./panb.png');
 }
 
-input:checked ~ #window > #rain {
-  display:none;
-}
 
-input:checked ~ #intro > * {
+
+input:checked ~ #window > #hi1  {
   
   opacity: 0;
-  transition: opacity 2s
+  transition: opacity 5s
 }
 
-input:checked ~ #intro2 > * {
-  text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
-  color: rgba(255,255,255,0.1);
-  opacity: .9 !important ;
-  font-family:'ChunkFiveRegular';
-  transition: opacity 2s;
+input:checked ~ #window > #hi2  {
+  
+  color: #333;
+  opacity: 1;
+  font-family: "Gochi Hand", "Comic Sans", cursive;
+  transition: opacity 5s;
   z-index:50;
 }
 
-#hi2, #welcome2 {transition: color 2s;
-z-index:30;
-opacity:0;
-color:red;}
+input:checked ~ .arrow > span {
+  border-bottom: 5px solid white;
+    border-right: 5px solid white;
+color: white;}
 
-#hi2{font-size:6em;
-font-weight:bold;}
-
-#intro2 {
-  text-align: center;
-position:absolute;
-top:2%;
-left:40%;
-z-index:32;
+input:checked ~ #wrapper {
+  color: #333;
+  background-color:#F7F9FE;
 }
-
-
-/*h2 {color: white;}*/
 
 /*these are basically reusable variables, SCSS*/
 $width:100vw;
 $height:100vh;
 
-//number of raindrops
-$raindrops:20;
 
+#bio {display: flex;
+  flex-wrap:wrap;
+  position:relative;
+  max-width:96vw;
+  padding:20rem 2rem;
+align-items:center;
+justify-content: center;}
 
+#blurb {display:flex;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+  font-size:2rem;
+}
+
+#profiler {
+  height: 40rem;
+  width:auto;
+  max-width:80vw;
+}
 
 #first {
 position:relative;
-display:block;
-top:900px;}
-
-
+display:block;}
 
 
 .preview {height:20rem;
@@ -155,9 +169,21 @@ display: block;
 top:40rem;}
 
 
+/*this is the fade in on page load*/
+.fade {
+-webkit-animation: fade 3s;
+animation: fade 3s;
+-moz-animation: fade 3s;
+-o-animation: fade 3s;
+}
 
-
-
+@keyframes fade {
+  0% {opacity: 0.0} 
+  25% {opacity: 0.3}
+  50% {opacity: 0.6}
+  75% {opacity: 0.8;}
+  100%{opacity: 1}
+    }
 
 
 
@@ -224,117 +250,159 @@ top:40rem;}
 
 
 
-// set all the containers to
-// position:absolute, since 
-// they will overlap
-.raindrops,
-.borders,
-.drops{
+
+label {
+      
+      animation-name: jump;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+
+@keyframes jump {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.jump {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow:hover{cursor:pointer;}
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:99;
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid cyan;
+    border-right: 5px solid cyan;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+
+
+
+#profiler {width:30vw;
+  height:50vh;}
+
+#blurb {max-width: 40vw;
+margin-left:3rem;}
+
+}
+
+@media screen and (max-width: 850px) {
+
+  #blurb {padding-top:15rem;}
+
+#profiler {width:20rem;
+  height:30rem;}
+
+#hi1, #hi2, h1 {
+  font-size: 8rem;
+  max-width:85vw;
   position:absolute;
+left:15%;
+top:-2%;
 }
 
-// little brightness filter so our raindrops look shiny
-.drops{
-  filter:brightness(1.2);
-}
-
-// general settings for all the 
-// raindrops and borders
-.raindrop{
-  opacity:0.5;
-  position:absolute;
-  border-radius:100%;
-  background-image:url('./window2.jpg');
-  background-size:$width*0.05 $height*0.05;
-  background-position:50%;
-  transform:rotate(180deg) rotateY(0);
-}
-.border{
-  opacity:0.5;
-  position:absolute;
-  margin-left:2px; 
-  margin-top:1px;
-  border-radius:100%;
-  box-shadow:0 0 0 1.5px rgba(0,0,0,0.5);
-  transform:rotateY(0);
-}
-
-// looping through each one of them
-@for $i from 1 through $raindrops{
-
-  // generates a random number from 0 to 1, for the positioning
-  $x:random();
-  $y:random();
-
-  // Random raindrop size and stretching.
-  // Since each raindrop has different sizes, we'll do our sizing calculations here instead of on the main .raindrop selector
-  $drop-width:5px+random(11);
-  $drop-stretch:0.7+(random()*0.5);
-  $drop-delay: (random()*2.5) + 1;
-  $drop-height:$drop-width*$drop-stretch;
-  .raindrop:nth-child(#{$i}){
-    // multiply the random position value by the container's size
-    left:$x * $width;
-    top:$y * $height;
-    
-    width:$drop-width;
-    height:$drop-height;
-    background-position:percentage($x) percentage($y);
-    animation: #{$drop-delay}s falling 1s ease-in infinite;
-  }
-
-  .border:nth-child(#{$i}){
-    // we'll do the same positioning for the drop's border
-    left:$x * $width;
-    top:$y * $height;
-
-    width:$drop-width - 4;
-    height:$drop-height;
-    animation: #{$drop-delay}s falling 1s ease-in infinite;
-  }
-}
-
-@keyframes falling {
-  from {
-    
-  }
-  to {
-    transform: translateY(500px);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-@media screen and (max-width: 450px) {
-button  {height: 3rem;
-width:3rem;}
  }
-*/
 
 
+@media screen and (max-width: 500px) {
 
+  #bio {border:1px solid blue;
+    width:100vw;
+    padding:10rem 0rem;
+    margin:10rem 0rem;}
 
+#blurb {padding:10rem 0rem;
+width:95vw;}
 
+#profiler{ width:95vw;
+}
+#hi1, #hi2, h1 {
+  font-size: 6rem;
+  max-width:85vw;
+  position:absolute;
+left:30%;
+top:-2%;
+}
 
-
-
+ }
 
 
 

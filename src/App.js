@@ -5,6 +5,11 @@ import networkerspic from './networkerspic.png'
 import networkerspic2 from './networkerspic2.png'
 import networkerspic3 from './networkerspic3.png'
 import networkershot from './networkersshot.png'
+import blah from './br.png'
+import Scroller from './Scroller.js'
+import { Link, animateScroll as scroll } from "react-scroll";
+import stick from './stick.JPG'
+import dog from './dog.JPG'
 
 
 function App() {
@@ -12,249 +17,29 @@ function App() {
 
     <div className="App">
       
-       {/*<div classNameName="main">
-
-<div classNameName="parallax">
-  <div id="stars1"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
-</div>
-
-<h1>Hi, I'm Colm</h1>
-<h2>Welcome to my Portfolio</h2>
-</div>*/}
   <input id="toggle1" type="checkbox"/>
   <label for="toggle1"></label>
-    <div id="intro">
-                <h1 id="hi">Hi, I'm Colm </h1>               
-                <h2 id="welcome">Welcome to my Portfolio </h2>
-      </div>
-      <div id="intro2">
-                <h1 id="hi2">Hi, I'm Colm </h1>               
-                <h2 id="welcome2">Welcome to my Portfolio </h2>
-      </div>
 
-      <div id='window'> 
-          
-          
+    
+      <div id='window'>    
+      
+                <h1 id="hi1">Hi, I'm Colm </h1>               
+                {<h1 id="hi2">Hi, I'm Colm </h1> }  
+                 
+      <Scroller />
 
-          
-              
- 
-      <div id ='rain' className='raindrops'>
-        <div className='borders'>
+  
+</div>
+<div id="wrapper">
 
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-          <div className='border'></div>
-        </div>
-        <div className='drops'>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-          <div className='raindrop'></div>
-        </div>
-      
-      
-      
-      </div>
-      
+<div id="bio">
+<img id="profiler" src={dog}/>
+<p id="blurb">Here is where I describe myself and everything I do blah blah <br/><br/>
+I'm awesome I use React and Github</p>
+
 </div>
 
-      <h3> My Projects </h3>
+      
 <div className="project" id="first">
     <div className="image-container">
         <img src={networkerspic} />
@@ -266,6 +51,8 @@ function App() {
 
 
 
+
+</div>
 
   </div>
   );
