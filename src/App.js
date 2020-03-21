@@ -5,7 +5,6 @@ import networkerspic from './networkerspic.png'
 import networkerspic2 from './networkerspic2.png'
 import networkerspic3 from './networkerspic3.png'
 import networkershot from './networkersshot.png'
-import blah from './br.png'
 import Scroller from './Scroller.js'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
@@ -21,7 +20,7 @@ function App() {
       
   <input id="toggle1" type="checkbox"/>
   <label for="toggle1"></label>
-  
+
     
       <div id='window'>    
       
