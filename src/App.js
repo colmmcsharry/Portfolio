@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
 import ButtonClick from './ButtonClick.js'
-import networkerspic from './networkerspic.png'
-import networkerspic2 from './networkerspic2.png'
-import networkerspic3 from './networkerspic3.png'
-import networkershot from './networkersshot.png'
+import networkerspic from './networkerspic.jpg'
+import networkerspic2 from './networkerspic2.jpg'
+import networkerspic3 from './networkerspic3.jpg'
+import networkershot from './networkersshot.jpg'
 import Scroller from './Scroller.js'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
