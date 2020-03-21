@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-react-app/static/css/main.7a16929d.chunk.css",
+    "main.js": "/my-react-app/static/js/main.c80f204c.chunk.js",
+    "main.js.map": "/my-react-app/static/js/main.c80f204c.chunk.js.map",
+    "runtime-main.js": "/my-react-app/static/js/runtime-main.8897f3f6.js",
+    "runtime-main.js.map": "/my-react-app/static/js/runtime-main.8897f3f6.js.map",
+    "static/js/2.8b451e7b.chunk.js": "/my-react-app/static/js/2.8b451e7b.chunk.js",
+    "static/js/2.8b451e7b.chunk.js.map": "/my-react-app/static/js/2.8b451e7b.chunk.js.map",
+    "index.html": "/my-react-app/index.html",
+    "precache-manifest.c8ca054db8443c2869d057402d56c608.js": "/my-react-app/precache-manifest.c8ca054db8443c2869d057402d56c608.js",
+    "service-worker.js": "/my-react-app/service-worker.js",
+    "static/css/main.7a16929d.chunk.css.map": "/my-react-app/static/css/main.7a16929d.chunk.css.map",
+    "static/js/2.8b451e7b.chunk.js.LICENSE.txt": "/my-react-app/static/js/2.8b451e7b.chunk.js.LICENSE.txt",
+    "static/media/br.png": "/my-react-app/static/media/br.8ecb9434.png",
+    "static/media/dog.JPG": "/my-react-app/static/media/dog.3b89dffd.JPG",
+    "static/media/networkerspic.png": "/my-react-app/static/media/networkerspic.7a30437d.png",
+    "static/media/networkerspic2.png": "/my-react-app/static/media/networkerspic2.56c38101.png",
+    "static/media/networkerspic3.png": "/my-react-app/static/media/networkerspic3.af1220eb.png",
+    "static/media/networkersshot.png": "/my-react-app/static/media/networkersshot.7b657b0f.png",
+    "static/media/App.scss": "/my-react-app/static/media/smileysun.aaa4b8a5.png",
+    "static/media/stick.JPG": "/my-react-app/static/media/stick.630105e5.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8897f3f6.js",
+    "static/js/2.8b451e7b.chunk.js",
+    "static/css/main.7a16929d.chunk.css",
+    "static/js/main.c80f204c.chunk.js"
+  ]
+}
