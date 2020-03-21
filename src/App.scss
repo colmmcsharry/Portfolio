@@ -14,9 +14,7 @@ html {
 }
 
 
-
-body {
-width: 100vw;
+body{
 overflow-x: hidden;
   background:#222;
 }
@@ -31,9 +29,8 @@ padding:0;}
 width: 100vw;
 height: 100vh;
 position:relative;
-left:-1rem;
 transition: background 2s;
-background-image: url('./pand.png');
+background-color:black;
 background-size: cover;
 opacity:0.6;
 }
@@ -81,20 +78,20 @@ label {
   left:1rem;
   position: fixed;
   cursor: pointer;
-  background: url('smileysun.png');
+  background: url('./moon.png');
   background-size:cover;
   z-index:99;
 }
 
 input:checked + label {
-  background-image: url('https://cdn.pixabay.com/photo/2013/07/13/10/23/moon-157118_1280.png');
+  background: url('./smileysun.png');
  background-size:cover; 
- transition: background 2s;
+ transition: background 1s;
 }
 
 
 input:checked ~ #window {
-  background-image: url('./panb.png');
+  background-color:orange;
 }
 
 
@@ -129,10 +126,12 @@ $width:100vw;
 $height:100vh;
 
 
-#bio {display: flex;
+#bio {
+  border:1px solid red;
+  display: flex;
   flex-wrap:wrap;
   position:relative;
-  max-width:96vw;
+  max-width:100vw;
   padding:20rem 2rem;
 align-items:center;
 justify-content: center;}
@@ -145,9 +144,9 @@ justify-content: center;}
 }
 
 #profiler {
-  height: 40rem;
+
+  height: 100%;
   width:auto;
-  max-width:80vw;
 }
 
 #first {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 /*this is just a functioncomponent that renders the button, which in turn triggers the function*/
 function Scroller() {
@@ -20,7 +20,7 @@ return (
 	
 
 	<div className="arrow" > 
-	<Link
+	<ScrollLink
 	onClick={disappear}
     activeClass="active"
     to="bio"
@@ -32,7 +32,7 @@ return (
                 <span></span>
                 <span></span>
                 <span></span>
-</Link>
+</ScrollLink>
 </div>
 </React.Fragment>
 )

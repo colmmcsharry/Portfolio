@@ -7,28 +7,28 @@ import networkerspic3 from './networkerspic3.png'
 import networkershot from './networkersshot.png'
 import blah from './br.png'
 import Scroller from './Scroller.js'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
 import dog from './dog.JPG'
+import { HashRouter, Route, Link } from "react-router-dom";
 
 
 function App() {
   return (
+    <HashRouter basename='/'>
 
     <div className="App">
       
   <input id="toggle1" type="checkbox"/>
   <label for="toggle1"></label>
-
+  
     
       <div id='window'>    
       
                 <h1 id="hi1">Hi, I'm Colm </h1>               
                 {<h1 id="hi2">Hi, I'm Colm </h1> }  
                  
-      <Scroller />
-
-  
+      <Scroller /> 
 </div>
 <div id="wrapper">
 
@@ -55,7 +55,11 @@ I'm awesome I use React and Github</p>
 </div>
 
   </div>
+
+  </HashRouter>
   );
+
+
 }
 
 export default App;
