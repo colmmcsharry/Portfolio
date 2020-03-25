@@ -10,48 +10,101 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
 import dog from './dog.JPG'
 import { HashRouter, Route, Link } from "react-router-dom";
-import bright from './panb-min.jpg'
+import finalb from './finalb.png'
+import finald from './finald.png';
+
+
+
 
 function App() {
   return (
     <HashRouter basename='/'>
 
     <div className="App">
-      <img src={bright} className="preload"/>
-  <input id="toggle1" type="checkbox"/>
-  <label for="toggle1"></label>
+            
+          <input id="toggle1" type="checkbox"/>
+          <label for="toggle1"></label>
 
-    
-      <div id='window'>    
-      
-                <h1 id="hi1">Hi, I'm Colm </h1>               
-                {<h1 id="hi2">Hi, I'm Colm </h1> }  
+        <div className="preload">
+        <img src={finalb}/>
+        </div>
+            
+              <div id='window'>    
+              
+                        <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
+                        <h1 id="hi2">Hi, I'm Colm </h1>   
+                         
+              <Scroller /> 
+        </div>
+
+
+        <div id="wrapper">
+
+              <div id="bio">
+                  <img id="profiler" src={dog}/>
+                  <p id="blurb">Here is where I describe myself and everything I do blah blah <br/><br/>
+                  I'm awesome I use React and Github</p>
+
+              </div>
+
+                    <h2>My Projects</h2>
+
+
+                  <h3> NetWorkers</h3>
+              <div className="project" id="first">
+                  
+                  <div className="description column"> 
+                  this is the project container/column
+                  <br/>this is the project container/column where I talk about stuff like
+                  <br/>this is the project container/column how the priject was made
+
+                  <br/><br/>this is the project container/column what it does etc
+                  <br/>this is the project container/column and other stuff
+
+                  </div>
+                  <div className="image-container column">
+                  this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                      <img src={networkerspic} />
+                      <img src={networkerspic2} />
+                      <img src={networkerspic3} />
+                      <img src={networkershot} />      
+                      
+                  </div>
+                  
+              </div>
+                <h3> Cabins</h3>
+              <div className="project" id="second">
                  
-      <Scroller /> 
-</div>
-<div id="wrapper">
+                  <div className="description column"> 
+                  this is the project container/column
+                  <br/>this is the project container/column where I talk about stuff like
+                  <br/>this is the project container/column how the priject was made
+                  
+                  <br/><br/>this is the project container/column what it does etc
+                  <br/>this is the project container/column and other stuff
 
-<div id="bio">
-<img id="profiler" src={dog}/>
-<p id="blurb">Here is where I describe myself and everything I do blah blah <br/><br/>
-I'm awesome I use React and Github</p>
-
-</div>
-
-      
-<div className="project" id="first">
-    <div className="image-container">
-        <img src={networkerspic} />
-        <img src={networkerspic2} />
-        <img src={networkerspic3} />
-        <img src={networkershot} />        
-    </div>
-</div>
-
+                  </div>
+                  <div className="image-container column">
+                  this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                      <img src={networkerspic} />
+                      <img src={networkerspic2} />
+                      <img src={networkerspic3} />
+                      <img src={networkershot} />      
+                      
+                  </div>
+                  
+              </div>
 
 
-
-</div>
+        </div>
 
   </div>
 

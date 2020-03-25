@@ -16,7 +16,7 @@ html {
 
 body{
 overflow-x: hidden;
-  background:#222;
+background:#333;
 }
 
 .preload {display:none;}
@@ -32,104 +32,39 @@ width: 100vw;
 height: 100vh;
 position:relative;
 transition: background 2s;
-background: url('./pand-min.jpg');
+background: url('./finald.png');
 background-size: cover;
-opacity:0.6;
+text-align: center;
 }
 
-
-#wrapper {
-background-color:#222;
- color:cyan; }
-
 #hi1{
+  text-align:center;
+  position:absolute;
 color: cyan;
-position:absolute;
-top: -6rem;
-left:25rem;
 font-family: Gochi Hand;
-width:50rem;
+margin:0 5rem;
 font-size:10rem;
+top:2rem;
 transition: opacity 5s;
 transition: color 5s;
+ left: 20%;
 }
 
 #hi2{
-position:absolute;
-top: -6rem;
-left:25rem;
+  text-align:center;
+  position:absolute;
+  margin:0 5rem;
 font-family: Gochi Hand;
-width:50rem;
 font-size:10rem;
 opacity:0;
-transition: opacity 10s;
-transition: color 10s;
+top:2rem;
+ left: 20%;
 }
 
 
-input {
-  position: relative;
-  display: none;
-}
-
-label {
-  display: block;
-  height:50px;
-  width:50px;
-  top:3rem;
-  left:1rem;
-  position: fixed;
-  cursor: pointer;
-  background: url('./moon.png');
-  background-size:cover;
-  z-index:99;
-}
-
-input:checked + label {
-  background: url('./smileysun.png');
- background-size:cover; 
- transition: background 1s;
-}
-
-
-input:checked ~ #window {
-  background-image: url('./panb-min.jpg');
-}
-
-
-
-input:checked ~ #window > #hi1  {
-  
-  opacity: 0;
-  transition: opacity 5s
-}
-
-input:checked ~ #window > #hi2  {
-  
-  color: #333;
-  opacity: 1;
-  font-family: "Gochi Hand", "Comic Sans", cursive;
-  transition: opacity 5s;
-  z-index:50;
-}
-
-input:checked ~ .arrow > span {
-  border-bottom: 5px solid white;
-    border-right: 5px solid white;
-color: white;}
-
-input:checked ~ #wrapper {
-  color: #333;
-  background-color:#F7F9FE;
-}
-
-/*these are basically reusable variables, SCSS*/
-$width:100vw;
-$height:100vh;
 
 
 #bio {
-  border:1px solid red;
   display: flex;
   flex-wrap:wrap;
   position:relative;
@@ -151,29 +86,96 @@ justify-content: center;}
   width:auto;
 }
 
-#first {
-position:relative;
-display:block;}
+
+#wrapper {
+background-color:#333;
+ color:cyan; }
 
 
-.preview {height:20rem;
-width:20rem;
-margin:5rem;}
 
-.preview:hover {
-  cursor:pointer;
+
+
+
+
+
+
+
+
+
+
+
+
+input {
+  position: relative;
+  display: none;
 }
 
-h3 {color:green;
-position:relative;
-display: block;
-top:40rem;}
+label {
+  display: block;
+  height:5rem;
+  width:5rem;
+  top:3rem;
+  left:2rem;
+  position: fixed;
+  cursor: pointer;
+  background: url('./moon.png');
+  background-size:cover;
+  z-index:99;
+}
+
+input:checked + label {
+  background: url('./smileysun.png');
+ background-size:cover; 
+ transition: background 1s;
+}
+
+
+input:checked ~ #window {
+  background-image: url('./finalb.png');
+}
+
+
+
+input:checked ~ #window > #hi1  {
+  
+  opacity: 0;
+  transition: opacity 5s
+}
+
+input:checked ~ #window > #hi2  {
+  
+  color: #333;
+  opacity: 1;
+  font-family: "Gochi Hand", "Comic Sans", cursive;
+  transition: opacity 5s;
+  z-index:50;
+}
+
+input:checked ~ #window > .arrow span{
+  border-bottom: 5px solid #333;
+    border-right: 5px solid #333;
+color: white;}
+
+input:checked ~ #wrapper {
+  color: #333;
+  background-color:#F7F9FE;
+}
+
+/*these are basically reusable variables, SCSS*/
+$width:100vw;
+$height:100vh;
+
+
+
+
+
+
 
 
 /*this is the fade in on page load*/
 .fade {
 -webkit-animation: fade 3s;
-animation: fade 3s;
+animation: fade 5s;
 -moz-animation: fade 3s;
 -o-animation: fade 3s;
 }
@@ -189,19 +191,51 @@ animation: fade 3s;
 
 
 
+h2,h3 {text-align: center;
+}
+
+h2 {font-size:4rem;}
+
+h3 {margin-top: 10rem;
+font-size:3rem;}
+
+.project {
+  padding:20rem 2rem;
+  text-align: center;
+  font-size:1.5rem;
+}
+
+.column {
+  display:inline-block;
+  max-width: 50%;
+  min-width:40%;
+  padding: 10px;
+  text-align: center;
+}
+
+.description {}
 
 
-
-/*image transitions starts*/
+/*image transitions for my website previews starts*/
 
 .image-container {
-  position: relative;
-  
-  img {
-    height:20rem;
-    width:20rem;
-    margin:5rem;
-    position: absolute;
+  background:green;
+  position:relative;
+  visibility:hidden;
+ /* height: 30rem;
+  width: 30rem;
+  padding:40px;*/
+}
+
+.image-container > img {
+  visibility: visible !important;
+  border: 1rem solid #474e5d;
+  border-radius: 10px;
+    height:25rem;
+    width:25rem;
+    left:20%;
+    bottom:-3rem;
+    position: absolute;  
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -219,7 +253,6 @@ animation: fade 3s;
       animation-delay: 0;
     }
   }
-}
 
 @keyframes multiple-image-crossfade {
   0% {
@@ -250,7 +283,7 @@ animation: fade 3s;
 
 
 
-
+/*for the jumpoing moon/sun*/
 
 label {
       
@@ -297,6 +330,7 @@ label {
 }
 
 
+/*jumping moon/sun ends */
 
 
 
@@ -310,8 +344,7 @@ label {
 
 
 
-
-
+/*this is for the thing that says to scroll down on main pic*/
 
 .arrow:hover{cursor:pointer;}
 
@@ -353,6 +386,42 @@ label {
 }
 
 
+/*this is for the thing that says to scroll down on main pic*/
+
+
+
+
+
+
+/*@media screen and (max-width: 1500px) {
+#window {
+  background-position:-20rem;
+}
+
+input:checked ~ #window {
+  background-position:-28rem;
+}
+
+}*/
+
+
+@media screen and (max-width: 1100px) {
+#window {
+  background-position:-23rem
+}
+
+input:checked ~ #window {
+  background-position:-29rem;
+}
+
+#hi1, #hi2 ,h1 { margin:0 1rem;
+}
+
+}
+
+
+
+
 @media screen and (min-width: 850px) {
 
 
@@ -372,38 +441,82 @@ margin-left:3rem;}
 #profiler {width:20rem;
   height:30rem;}
 
-#hi1, #hi2, h1 {
-  font-size: 8rem;
-  max-width:85vw;
-  position:absolute;
-left:15%;
-top:-2%;
+
+.image-container > img {
+    height:22rem;
+    width: 22rem;
+    left:10%;
+    top:-10rem;
 }
+
+ }
+
+ @media screen and (max-width: 750px) {
+.image-container > img {
+    left:7rem;
+    top:10rem;
+}
+
+.column {max-width: 98%;
+  min-width:80%;
+}
+
 
  }
 
 
 @media screen and (max-width: 500px) {
 
-  #bio {border:1px solid blue;
-    width:100vw;
+.column {
+  font-size:1.5rem;
+  max-width: 98%;
+  min-width:80%;
+  padding: 10px 5px;
+}
+
+.image-container > img {
+    height:20rem;
+    width: 20rem;
+    left:1rem;
+    top:3rem;
+}
+
+  label {height:3rem;
+  width:3rem;}
+
+  #bio {
+    width:95vw;
     padding:10rem 0rem;
     margin:10rem 0rem;}
 
-#blurb {padding:10rem 0rem;
+
+
+#blurb {padding:5rem 2rem;
 width:95vw;}
 
-#profiler{ width:95vw;
+#profiler{ width:90vw;
 }
 #hi1, #hi2, h1 {
   font-size: 6rem;
-  max-width:85vw;
-  position:absolute;
-left:30%;
-top:-2%;
+  left:2rem;
+  top:4rem;
 }
 
+#window {
+  background-position:-400px
+}
+
+input:checked ~ #window {
+  background-position:-480px;
+
  }
+
+
+}
+
+
+
+
 
 
 
