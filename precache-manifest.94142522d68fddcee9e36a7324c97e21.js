@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81eaff366b27b8c3f24e83a9b3b2be23",
+    "revision": "1fdb7161d5da66e8e9081223e4f54f8f",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "b0a6cacf00f4fbabde7a",
-    "url": "/Portfolio/static/css/main.7018a74f.chunk.css"
+    "revision": "52377a88238c9cf95f13",
+    "url": "/Portfolio/static/css/main.8246a50c.chunk.css"
   },
   {
-    "revision": "38aebc9b560b952c57ac",
-    "url": "/Portfolio/static/js/2.16347dfa.chunk.js"
+    "revision": "0b59543d9ae0693ddf15",
+    "url": "/Portfolio/static/js/2.1f001031.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/Portfolio/static/js/2.16347dfa.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.1f001031.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0a6cacf00f4fbabde7a",
-    "url": "/Portfolio/static/js/main.ce827efd.chunk.js"
+    "revision": "52377a88238c9cf95f13",
+    "url": "/Portfolio/static/js/main.b091f38a.chunk.js"
   },
   {
     "revision": "38e9353468597077cd3e",
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3b89dffd406f2bad641754fca9c19386",
     "url": "/Portfolio/static/media/dog.3b89dffd.JPG"
+  },
+  {
+    "revision": "69b6898da3a5a3b34343a134a905dd20",
+    "url": "/Portfolio/static/media/finalb.69b6898d.png"
+  },
+  {
+    "revision": "01a0c27af49b89da9a641a7b3bfc285a",
+    "url": "/Portfolio/static/media/finald.01a0c27a.png"
   },
   {
     "revision": "eee7ea0263e6ba72805ae0d814784286",
@@ -46,14 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0815cb84321515170c24d1c14fd80ef6",
     "url": "/Portfolio/static/media/networkersshot.0815cb84.jpg"
-  },
-  {
-    "revision": "9f94562b780b35a409a08d7666392251",
-    "url": "/Portfolio/static/media/panb-min.9f94562b.jpg"
-  },
-  {
-    "revision": "2bfb43e498ddafb969af212a9fd19f20",
-    "url": "/Portfolio/static/media/pand-min.2bfb43e4.jpg"
   },
   {
     "revision": "aaa4b8a5d5dc1b3d58f7aec84896d715",
