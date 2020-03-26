@@ -104,6 +104,12 @@ function App() {
               </div>
 
 
+                                <div className="item">
+                      <div className="polaroid"><img src={dog}/>
+                        <div className="caption">I Miss London</div>
+                      </div>
+                    </div>
+
         </div>
 
   </div>

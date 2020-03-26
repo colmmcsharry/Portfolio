@@ -9,11 +9,13 @@ function disappear() {
 
   document.getElementsByClassName('arrow')[0].style.opacity = '0.2';
 
+
  /* scrollToTop = () => {
     scroll.scrollToTop();
 }; i will use this function at the end, */
+};
 
-}
+
 
 return (
 	<React.Fragment>
