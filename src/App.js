@@ -10,8 +10,8 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import stick from './stick.JPG'
 import dog from './dog.JPG'
 import { HashRouter, Route, Link } from "react-router-dom";
-import finalb from './finalb.png'
-import finald from './finald.png';
+import day from './panb-min.jpg'
+
 
 
 
@@ -26,13 +26,15 @@ function App() {
           <label for="toggle1"></label>
 
         <div className="preload">
-        <img src={finalb}/>
+        <img src={day}/>
         </div>
+
+        <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
+                        <h1 id="hi2">Hi, I'm Colm </h1>   
             
               <div id='window'>    
               
-                        <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
-                        <h1 id="hi2">Hi, I'm Colm </h1>   
+                        
                          
               <Scroller /> 
         </div>
@@ -41,7 +43,13 @@ function App() {
         <div id="wrapper">
 
               <div id="bio">
-                  <img id="profiler" src={dog}/>
+
+                   <div className="item">
+                      <div className="polaroid"><img src={dog}/>
+                        <div className="caption">Myself and a friend</div>
+                      </div>
+                    </div>
+
                   <p id="blurb">Here is where I describe myself and everything I do blah blah <br/><br/>
                   I'm awesome I use React and Github</p>
 
@@ -104,11 +112,7 @@ function App() {
               </div>
 
 
-                                <div className="item">
-                      <div className="polaroid"><img src={dog}/>
-                        <div className="caption">I Miss London</div>
-                      </div>
-                    </div>
+                               
 
         </div>
 
