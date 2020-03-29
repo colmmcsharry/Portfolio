@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8eeb01547740791e213c05d446af463",
+    "revision": "6b2eba691f40916cdb81d0db2bc2b36f",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "c198f6ed9cb48080e669",
-    "url": "/Portfolio/static/css/main.2e5bafbd.chunk.css"
+    "revision": "f2aa70774f734fee3a2f",
+    "url": "/Portfolio/static/css/main.9275b8a8.chunk.css"
   },
   {
-    "revision": "2f59508afc249fafc1da",
-    "url": "/Portfolio/static/js/2.916ced03.chunk.js"
+    "revision": "9ffe05b7a47f200e138f",
+    "url": "/Portfolio/static/js/2.214edadb.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/Portfolio/static/js/2.916ced03.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.214edadb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c198f6ed9cb48080e669",
-    "url": "/Portfolio/static/js/main.06c973e8.chunk.js"
+    "revision": "f2aa70774f734fee3a2f",
+    "url": "/Portfolio/static/js/main.08bce00a.chunk.js"
   },
   {
     "revision": "38e9353468597077cd3e",
@@ -28,12 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/dog.3b89dffd.JPG"
   },
   {
-    "revision": "69b6898da3a5a3b34343a134a905dd20",
-    "url": "/Portfolio/static/media/finalb.69b6898d.png"
-  },
-  {
-    "revision": "01a0c27af49b89da9a641a7b3bfc285a",
-    "url": "/Portfolio/static/media/finald.01a0c27a.png"
+    "revision": "6ecfa0d8ba8e342d85a652aba6c94b68",
+    "url": "/Portfolio/static/media/laptop.6ecfa0d8.png"
   },
   {
     "revision": "eee7ea0263e6ba72805ae0d814784286",
@@ -54,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0815cb84321515170c24d1c14fd80ef6",
     "url": "/Portfolio/static/media/networkersshot.0815cb84.jpg"
+  },
+  {
+    "revision": "9f94562b780b35a409a08d7666392251",
+    "url": "/Portfolio/static/media/panb-min.9f94562b.jpg"
+  },
+  {
+    "revision": "2bfb43e498ddafb969af212a9fd19f20",
+    "url": "/Portfolio/static/media/pand-min.2bfb43e4.jpg"
   },
   {
     "revision": "aaa4b8a5d5dc1b3d58f7aec84896d715",
