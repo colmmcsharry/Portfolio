@@ -62,6 +62,62 @@ function App() {
                   <h3> NetWorkers</h3>
               
 
+              <div className="project" id="first">
+                  
+                  <div className="description column"> 
+                  this is the project container/column
+                  <br/>this is the project container/column where I talk about stuff like
+                  <br/>this is the project container/column how the priject was made
+
+                  <br/><br/>this is the project container/column what it does etc
+                  <br/>this is the project container/column and other stuff
+
+                  </div>
+                  <div className="image-container column">
+                  
+                  this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                      <div className="laptop">
+                      <img src={networkerspic} />
+                      <img src={networkerspic2} />
+                      <img src={networkerspic3} />
+                      <img src={networkershot} />      
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div className="project" id="second">
+                  
+                  <div className="description column"> 
+                  this is the project container/column
+                  <br/>this is the project container/column where I talk about stuff like
+                  <br/>this is the project container/column how the priject was made
+
+                  <br/><br/>this is the project container/column what it does etc
+                  <br/>this is the project container/column and other stuff
+
+                  </div>
+                  <div className="image-container column">
+                  
+                  this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                  <br/>this is the image container/column
+                      <div className="laptop">
+                      <img src={networkerspic} />
+                      <img src={networkerspic2} />
+                      <img src={networkerspic3} />
+                      <img src={networkershot} />      
+                      </div>
+                  </div>
+                  
+              </div>
+
               <div className="project" id="third">
                   
                   <div className="description column"> 
@@ -80,7 +136,7 @@ function App() {
                   <br/>this is the image container/column
                   <br/>this is the image container/column
                   <br/>this is the image container/column
-                      <div id="laptop">
+                      <div className="laptop">
                       <img src={networkerspic} />
                       <img src={networkerspic2} />
                       <img src={networkerspic3} />
