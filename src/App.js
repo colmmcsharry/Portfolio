@@ -42,7 +42,7 @@ function App() {
 
 
         <div id="wrapper">
-
+            <h3 id="about">About</h3>
               <div id="bio">
 
                    <div className="item">
@@ -51,15 +51,16 @@ function App() {
                       </div>
                     </div>
 
-                  <p id="blurb">Here is where I describe myself and everything I do blah blah <br/><br/>
-                  I'm awesome I use React and Github</p>
+                  <p id="blurb"> I have been studying web development and design for the past few years.
+                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.
+                  </p>
 
               </div>
 
                     <h2>My Projects</h2>
 
 
-                  <h3> NetWorkers</h3>
+                  <h3 id="projectname"> NetWorkers</h3>
               
 
               <div className="project" id="first">
