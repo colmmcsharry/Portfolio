@@ -51,11 +51,29 @@ function App() {
                       </div>
                     </div>
 
-                  <p id="blurb"> I have been studying web development and design for the past few years.
-                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.
-                  </p>
-
+                  <div id="blurb"> I have been studying web development and design for the past few years.
+                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/>
+                               <table>
+  <tr>
+    <th>Courses</th>
+    <th>Skills</th>
+  </tr>
+  <tr>
+    <td>The Odin Project</td>
+    <td>HTML/CSS</td>
+  </tr>
+  <tr>
+    <td>Polyglot</td>
+    <td>React.JS</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+                  </div>
               </div>
+
 
                     <h2>My Projects</h2>
 
