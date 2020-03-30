@@ -52,7 +52,7 @@ function App() {
                     </div>
 
                   <div id="blurb"> I have been studying web development and design for the past few years.
-                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
+                  <br/><br/> I strive to create beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
 
                                <table>
                                <tbody>
@@ -84,27 +84,32 @@ function App() {
     <td></td>
     <td>Bootstrap</td>
   </tr>
+    <tr>
+    <td></td>
+    <td>SASS/Grid/Flexbox</td>
+  </tr>
 </tbody>
 </table>
                   </div>
               </div>
 
 
-                    <h2>My Projects</h2>
+                    
 
 
-                  <h3 className="projectname"> NetWorkers</h3>
+                  <h3 className="projectname"><span id="myprojects">My Projects</span> <br/><br/> NetWorkers</h3>
               
 
               <div className="project" id="first">
                   
                   <div className="description column"> 
-                  Networkers is a site I created from scratch to help me learn React<br/>
+                  Networkers is a site I created from scratch to help me learn React.<br/>
                   <br/>It's almost like Tinder, except instead of swiping through dates
-                  you swipe through workers in your area.
+                  you swipe through workers in your area. <br/>
+                  <br/>
 
-                  <br/><br/>So, for example, if you need a a pipe fixed, or a website made
-                  <br/>you swipe through the local workers, read their bio, and choose one you like!
+                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
+                  <br/>
 
                   </div>
                   <div className="image-container column">

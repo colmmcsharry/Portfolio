@@ -29,7 +29,7 @@ return (
     spy={true}
     smooth={true}
     offset={180}
-    duration= {500}>
+    duration= {900}>
 
                 <span></span>
                 <span></span>
