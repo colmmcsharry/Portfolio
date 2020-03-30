@@ -123,7 +123,7 @@ function App() {
                   </div>
                   
               </div>
-                <h3 className="projectname cabins"> Cabins</h3>
+                <h3 className="projectname cabins"> Project 2</h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
@@ -151,7 +151,7 @@ function App() {
                   </div>
                   
               </div>
-
+               <h3 className="projectname cabins"> Project 3</h3>
               <div className="project" id="third">
                   
                   <div className="description column"> 

@@ -28,7 +28,7 @@ return (
     to="bio"
     spy={true}
     smooth={true}
-    offset={-120}
+    offset={180}
     duration= {500}>
 
                 <span></span>
