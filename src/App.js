@@ -54,6 +54,7 @@ function App() {
                   <div id="blurb"> I have been studying web development and design for the past few years.
                   <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
                                <table>
+                               <tbody>
   <tr>
     <th>Courses</th>
     <th>Skills</th>
@@ -82,7 +83,7 @@ function App() {
     <td></td>
     <td>Bootstrap</td>
   </tr>
-
+</tbody>
 </table>
                   </div>
               </div>
