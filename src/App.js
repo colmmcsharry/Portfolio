@@ -52,24 +52,37 @@ function App() {
                     </div>
 
                   <div id="blurb"> I have been studying web development and design for the past few years.
-                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/>
+                  <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
                                <table>
   <tr>
     <th>Courses</th>
     <th>Skills</th>
   </tr>
   <tr>
-    <td>The Odin Project</td>
-    <td>HTML/CSS</td>
+    <td><a href="">The Odin Project</a></td>
+    <td>HTML/CSS/Javascript</td>
   </tr>
   <tr>
-    <td>Polyglot</td>
-    <td>React.JS</td>
+    <td><a href="">Polyglot Bootcamp</a></td>
+    <td>React.js</td>
   </tr>
   <tr>
-    <td>February</td>
-    <td>$80</td>
+    <td><a href="">The Complete Web Dev in 2020</a></td>
+    <td>Node.js</td>
   </tr>
+  <tr>
+    <td></td>
+    <td>Photoshop, Sketch</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>SQL</td>
+  </tr>
+    <tr>
+    <td></td>
+    <td>Bootstrap</td>
+  </tr>
+
 </table>
                   </div>
               </div>

@@ -33,6 +33,7 @@ background:#333;
 .App {margin:0;
 padding:0;}
 
+a {color:white;}
 
 #window{
   margin:0;
@@ -99,8 +100,8 @@ border-spacing: 150px 0;
 table-layout:fixed;}
 
 th {color:cyan;
-  
-text-decoration:underline;}
+text-decoration:underline;
+padding-bottom: 2rem;}
 
 td {white-space: nowrap;
 }
@@ -558,7 +559,7 @@ margin-left:3rem;}
 
 @media screen and (max-width: 850px) {
 
-  table {border:1px solid blue;
+  table {
   display:inline-table;
 border-spacing: 50px 0;}
 
@@ -598,6 +599,11 @@ border-spacing: 50px 0;}
 
 @media screen and (max-width: 500px) {
 
+
+  #about {
+
+top:14rem;}
+
   .item {
   width: 70%;
 }
@@ -636,7 +642,6 @@ border-spacing: 50px 0;}
 
 
 #blurb {padding:5rem 2rem;
-width:95vw;
 font-size:1.3rem;}
 
 #profiler{ width:80vw;
