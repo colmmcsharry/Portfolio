@@ -53,6 +53,7 @@ function App() {
 
                   <div id="blurb"> I have been studying web development and design for the past few years.
                   <br/><br/> I enjoy creating beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
+
                                <table>
                                <tbody>
   <tr>
@@ -92,18 +93,18 @@ function App() {
                     <h2>My Projects</h2>
 
 
-                  <h3 id="projectname"> NetWorkers</h3>
+                  <h3 className="projectname"> NetWorkers</h3>
               
 
               <div className="project" id="first">
                   
                   <div className="description column"> 
-                  this is the project container/column
-                  <br/>this is the project container/column where I talk about stuff like
-                  <br/>this is the project container/column how the priject was made
+                  Networkers is a site I created from scratch to help me learn React<br/>
+                  <br/>It's almost like Tinder, except instead of swiping through dates
+                  you swipe through workers in your area.
 
-                  <br/><br/>this is the project container/column what it does etc
-                  <br/>this is the project container/column and other stuff
+                  <br/><br/>So, for example, if you need a a pipe fixed, or a website made
+                  <br/>you swipe through the local workers, read their bio, and choose one you like!
 
                   </div>
                   <div className="image-container column">
@@ -122,7 +123,7 @@ function App() {
                   </div>
                   
               </div>
-
+                <h3 className="projectname cabins"> Cabins</h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
