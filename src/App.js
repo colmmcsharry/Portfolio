@@ -80,7 +80,7 @@ function App() {
   </tr>
     <tr>
     <td></td>
-    <td>Bootstraplol</td>
+    <td>Bootstrap</td>
   </tr>
 
 </table>
