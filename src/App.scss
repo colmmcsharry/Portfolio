@@ -79,7 +79,6 @@ top:2rem;
 
 
 #bio {
-  border:1px solid blue;
   display: flex;
   flex-wrap:wrap;
   position:relative;
@@ -261,7 +260,6 @@ div, p {
   padding:20rem 2rem;
   text-align: center;
   font-size:1.5rem;
-  border:1px solid red;
 }
 
 .column {
@@ -513,8 +511,10 @@ label {
   left:50%;
     bottom: 20%;
     transform: translate(-50%,-50%);
-    z-index:99}       
+    z-index:99;
+    font-size:3rem;}  
 
+#scroller5:hover {cursor:pointer;}
 
 .arrow span{
     display: block;
@@ -772,10 +772,11 @@ font-size:30px;}
   margin-bottom:-16rem;}
 
 
-#scroller1, #scroller2, #scroller3, #scroller4, #scroller5 {
+#scroller1, #scroller2, #scroller3, #scroller4 {
   bottom:5%;
 }
-  
+#scroller5 {bottom:-2%;}
+
 }
 
 
