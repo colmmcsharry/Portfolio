@@ -37,7 +37,7 @@ function App() {
               <div id='window'>    
               
 
-              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div>         
+              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div>         
                          
               
         </div>
@@ -94,7 +94,7 @@ function App() {
 </table>
                   </div>
                 {/*if I change id to className, then I chan just change all the scoller's bottom positiomns om mob */}
-                 <div id="scroller2"> <ScrollLink activeClass="active" className="test1" to="Myprojects" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
+                 <div id="scroller2"> <ScrollLink activeClass="active" className="test1" to="Myprojects" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
 
 
@@ -113,7 +113,7 @@ function App() {
                   <br/>
 
                   So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
-                  <br/>
+                  
 
                   </div>
                   <div className="image-container column">
@@ -130,20 +130,20 @@ function App() {
                       <img src={networkershot} />      
                       </div>
                   </div>
-                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
+                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
 
                 <h3 className="projectname cabins"><Element name="Project2" ></Element> Project 2</h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
-                  this is the project container/column
-                  <br/>this is the project container/column where I talk about stuff like
-                  <br/>this is the project container/column how the priject was made
+                  Networkers is a site I created from scratch to help me learn React.<br/>
+                  <br/>It's almost like Tinder, except instead of swiping through dates
+                  you swipe through workers in your area. <br/>
+                  <br/>
 
-                  <br/><br/>this is the project container/column what it does etc
-                  <br/>this is the project container/column and other stuff
-
+                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
+                  
                   </div>
                   <div className="image-container column">
                   
@@ -159,19 +159,19 @@ function App() {
                       <img src={networkershot} />      
                       </div>
                   </div>
-                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
+                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
                <h3 className="projectname cabins"><Element name="Project3" ></Element> Project 3</h3> 
               <div className="project" id="third">
                   
                   <div className="description column"> 
-                  this is the project container/column
-                  <br/>this is the project container/column where I talk about stuff like
-                  <br/>this is the project container/column how the priject was made
+                  Networkers is a site I created from scratch to help me learn React.<br/>
+                  <br/>It's almost like Tinder, except instead of swiping through dates
+                  you swipe through workers in your area. <br/>
+                  <br/>
 
-                  <br/><br/>this is the project container/column what it does etc
-                  <br/>this is the project container/column and other stuff
-
+                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
+                 
                   </div>
                   <div className="image-container column">
                   
