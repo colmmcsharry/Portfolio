@@ -79,6 +79,7 @@ top:2rem;
 
 
 #bio {
+  border:1px solid blue;
   display: flex;
   flex-wrap:wrap;
   position:relative;
@@ -242,8 +243,11 @@ position:relative;
 top:20rem;
 color:#3DC0B0;}
 
+#myprojects {color:#3DC0B0;
+font-size: 2.5rem;}
+
 .projectname {margin-top: 15rem;
-font-size:3rem;}
+font-size:2rem;}
 
 .cabins {margin-top:8rem;
   margin-bottom:0rem;}
@@ -253,9 +257,11 @@ div, p {
 }
 
 .project {
+  position:relative;
   padding:20rem 2rem;
   text-align: center;
   font-size:1.5rem;
+  border:1px solid red;
 }
 
 .column {
@@ -473,16 +479,43 @@ label {
 
 
 /*this is for the thing that says to scroll down on main pic*/
-
 .arrow:hover{cursor:pointer;}
 
-.arrow{
+
+#scroller1{
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index:99;
 }
+
+#scroller2{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:99;}
+
+#scroller3{position:absolute;
+  left:50%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    z-index:99}   
+
+#scroller4{position:absolute;
+  left:50%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    z-index:99}   
+
+#scroller5{position:absolute;
+  left:50%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    z-index:99}       
+
+
 .arrow span{
     display: block;
     width: 30px;
@@ -739,7 +772,12 @@ font-size:30px;}
   margin-bottom:-16rem;}
 
 
+#scroller1, #scroller2, #scroller3, #scroller4, #scroller5 {
+  bottom:5%;
 }
+  
+}
+
 
 
 

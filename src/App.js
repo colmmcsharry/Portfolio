@@ -6,12 +6,13 @@ import networkerspic2 from './networkerspic2.jpg'
 import networkerspic3 from './networkerspic3.jpg'
 import networkershot from './networkersshot.jpg'
 import Scroller from './Scroller.js'
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import stick from './stick.JPG'
 import dog from './dog.JPG'
 import { HashRouter, Route, Link } from "react-router-dom";
 import day from './panb-min.jpg'
 import laptop from './laptop.png'
+
 
 
 
@@ -29,20 +30,21 @@ function App() {
         <div className="preload">
         <img src={day}/>
         </div>
-
+        
         <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
                         <h1 id="hi2">Hi, I'm Colm </h1>   
             
               <div id='window'>    
               
-                        
+
+              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div>         
                          
-              <Scroller /> 
+              
         </div>
 
 
         <div id="wrapper">
-            <h3 id="about">About</h3>
+            <h3 id="about"><Element name="About" ></Element>About</h3>
               <div id="bio">
 
                    <div className="item">
@@ -91,16 +93,18 @@ function App() {
 </tbody>
 </table>
                   </div>
+                {/*if I change id to className, then I chan just change all the scoller's bottom positiomns om mob */}
+                 <div id="scroller2"> <ScrollLink activeClass="active" className="test1" to="Myprojects" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
               </div>
 
 
                     
 
 
-                  <h3 className="projectname"><span id="myprojects">My Projects</span> <br/><br/> NetWorkers</h3>
+                  <h3 className="projectname"><Element name="Myprojects" ></Element><span id="myprojects">My Projects</span> <br/><br/> NetWorkers</h3>
               
 
-              <div className="project" id="first">
+              <div className="project" id="first"> 
                   
                   <div className="description column"> 
                   Networkers is a site I created from scratch to help me learn React.<br/>
@@ -126,9 +130,10 @@ function App() {
                       <img src={networkershot} />      
                       </div>
                   </div>
-                  
+                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
               </div>
-                <h3 className="projectname cabins"> Project 2</h3>
+
+                <h3 className="projectname cabins"><Element name="Project2" ></Element> Project 2</h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
@@ -154,9 +159,9 @@ function App() {
                       <img src={networkershot} />      
                       </div>
                   </div>
-                  
+                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
               </div>
-               <h3 className="projectname cabins"> Project 3</h3>
+               <h3 className="projectname cabins"><Element name="Project3" ></Element> Project 3</h3> 
               <div className="project" id="third">
                   
                   <div className="description column"> 
@@ -182,7 +187,7 @@ function App() {
                       <img src={networkershot} />      
                       </div>
                   </div>
-                  
+                  <div id="scroller5"> <ScrollLink activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} ><Scroller /></ScrollLink> </div> 
               </div>
 
                                
