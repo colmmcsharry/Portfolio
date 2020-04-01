@@ -1,23 +1,24 @@
-// import React from 'react';
-// import ReactDOM from 'react'
+import React from 'react';
+import ReactDOM from 'react'
+import daypic from './panb-min.jpg'
 
 
-// export default function ButtonClick () {
+export default function ButtonClick() {
 
-// myfunction = () => {
-// 	getElementsByClassName('App').style={{backgroundColor: 'red'}}
-// }
-
-
-// return (
-// 	<button onClick = {myfunction}> Click Here! </button>
+function myfunction(){
+	document.getElementById('window').style.backgroundImage = `url(${daypic})`
+}
 
 
-
-
-// 	)
+return (
+	<button onClick = {myfunction}> Click Here! </button>
 
 
 
 
-// }
+	)
+
+
+
+
+}

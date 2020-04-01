@@ -23,7 +23,7 @@ function App() {
     <HashRouter basename='/'>
 
     <div className="App">
-            
+            <ButtonClick />
           <input id="toggle1" type="checkbox"/>
           <label for="toggle1"></label>
 
@@ -167,7 +167,7 @@ function App() {
                   <div className="description column"> 
                   Networkers is a site I created from scratch to help me learn React.<br/>
                   <br/>It's almost like Tinder, except instead of swiping through dates
-                  you swipe through workers in your area. <br/>
+                  you swipe through workers in your area.  <br/>
                   <br/>
 
                   So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
