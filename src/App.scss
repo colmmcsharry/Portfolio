@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poor+Story');
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
-
-
 
 html {
   overflow-x: hidden;
@@ -31,9 +26,8 @@ background:#333;
 .preload {display:none;}
 
 .App {margin:0;
-padding:0;}
-
-a {color:white;}
+padding:0;
+overflow-x: hidden;}
 
 #window{
   margin:0;
@@ -42,17 +36,20 @@ a {color:white;}
 height: 100vh;
 position:relative;
 transition: background 2s;
--webkit-transform: translateZ(0);
--moz-transform: translateZ(0);
--ms-transform: translateZ(0);
--o-transform: translateZ(0);
-transform: translateZ(0);
-background-image: url('./pand-min.jpg');
+background-image: url('./night.jpg');
 background-size: cover;
 text-align: center;
 opacity:0.7;
 margin-bottom:-3rem;
 }
+
+input:checked ~ #window {
+  background-image: url('./day.jpg');
+}
+
+a {color:white;}
+
+
 
 #hi1{
   text-align:center;
@@ -129,17 +126,6 @@ background-color:#333;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 input {
   position: relative;
   display: none;
@@ -164,15 +150,6 @@ input:checked + label {
  transition: background 1s;
 }
 
-
-input:checked ~ #window {
-  background-image: url('./panb-min.jpg');
-  -webkit-transform: translateZ(0);
--moz-transform: translateZ(0);
--ms-transform: translateZ(0);
--o-transform: translateZ(0);
-transform: translateZ(0);
-}
 
 
 
@@ -500,26 +477,26 @@ label {
 
 #scroller2{
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index:99;}
 
 #scroller3{position:absolute;
   left:50%;
-    bottom: 30%;
+    bottom: 43%;
     transform: translate(-50%,-50%);
     z-index:99}   
 
 #scroller4{position:absolute;
   left:50%;
-    bottom: 20%;
+    bottom: 35%;
     transform: translate(-50%,-50%);
     z-index:99}   
 
 #scroller5{position:absolute;
   left:50%;
-    bottom: 20%;
+    bottom: 30%;
     transform: translate(-50%,-50%);
     z-index:99;
     font-size:3rem;}  
@@ -782,9 +759,14 @@ font-size:30px;}
   margin-bottom:-16rem;}
 
 
-#scroller1, #scroller2, #scroller3, #scroller4 {
+#scroller1, #scroller2,  {
   bottom:5%;
 }
+
+#scroller3, #scroller4 {
+  bottom:-2%;
+  }
+
 #scroller5 {bottom:-2%;}
 
 }
@@ -792,10 +774,13 @@ font-size:30px;}
 
 
 
+// -webkit-transform: translateZ(0);
+// -moz-transform: translateZ(0);
+// -ms-transform: translateZ(0);
+// -o-transform: translateZ(0);
+// transform: translateZ(0);
 
-
-
-
+/*this is supposed to emnable hardware acceleratino for faster background transitions, put on background/bg image element*/
 
 
 
