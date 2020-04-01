@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7a94fb50f48c62ef58e9308a9f62940",
+    "revision": "addf5fbc9f02398e3d8506d93ef42812",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "d344d95090318d06a108",
-    "url": "/Portfolio/static/css/main.c0ea9d51.chunk.css"
+    "revision": "4b35791c258a12092160",
+    "url": "/Portfolio/static/css/main.6e2564d9.chunk.css"
   },
   {
-    "revision": "49aa4301034cdedf0716",
-    "url": "/Portfolio/static/js/2.7dd305d0.chunk.js"
+    "revision": "45b9ca08da28251c14db",
+    "url": "/Portfolio/static/js/2.fc2f5669.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/Portfolio/static/js/2.7dd305d0.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.fc2f5669.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d344d95090318d06a108",
-    "url": "/Portfolio/static/js/main.95213ea2.chunk.js"
+    "revision": "4b35791c258a12092160",
+    "url": "/Portfolio/static/js/main.d638d553.chunk.js"
   },
   {
     "revision": "38e9353468597077cd3e",
     "url": "/Portfolio/static/js/runtime-main.ed271e06.js"
+  },
+  {
+    "revision": "9f94562b780b35a409a08d7666392251",
+    "url": "/Portfolio/static/media/day.9f94562b.jpg"
   },
   {
     "revision": "3b89dffd406f2bad641754fca9c19386",
@@ -52,19 +56,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/networkersshot.0815cb84.jpg"
   },
   {
-    "revision": "9f94562b780b35a409a08d7666392251",
-    "url": "/Portfolio/static/media/panb-min.9f94562b.jpg"
-  },
-  {
     "revision": "2bfb43e498ddafb969af212a9fd19f20",
-    "url": "/Portfolio/static/media/pand-min.2bfb43e4.jpg"
+    "url": "/Portfolio/static/media/night.2bfb43e4.jpg"
   },
   {
     "revision": "aaa4b8a5d5dc1b3d58f7aec84896d715",
     "url": "/Portfolio/static/media/smileysun.aaa4b8a5.png"
-  },
-  {
-    "revision": "630105e5b87a955585ad4a782f412741",
-    "url": "/Portfolio/static/media/stick.630105e5.JPG"
   }
 ]);
