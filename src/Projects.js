@@ -55,7 +55,7 @@ return (
                       </a>
                   </div>
 
-                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
+                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
 
               </div>
 
@@ -85,7 +85,7 @@ return (
                       <img src={networkershot} />      
                       </div>
                   </div>
-                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
+                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
                <h3 className="projectname cabins"><Element name="Project3" ></Element> Project 3</h3> 
               <div className="project" id="third">

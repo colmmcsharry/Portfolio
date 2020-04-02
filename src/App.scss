@@ -32,7 +32,7 @@ overflow-x: hidden;}
 #window{
   margin:0;
   padding:0;
-  width: 101.5vw;
+  width: 100vw;
 height: 100vh;
 position:relative;
 transition: background 2s;
@@ -93,7 +93,7 @@ justify-content: center;}
   align-items: center;
   text-align:center;
   justify-content: center;
-  font-size:1.3vw;
+  font-size:1.2rem;
   padding-top:3rem;
 }
 
@@ -153,13 +153,13 @@ input:checked + label {
 
 
 
-input:checked ~ #hi1  {
+input:checked ~ #window > #hi1  {
   
   opacity: 0;
   transition: opacity 4s
 }
 
-input:checked ~ #hi2  {
+input:checked ~ #window > #hi2  {
   
   color: #333;
   opacity: 1;
@@ -168,10 +168,6 @@ input:checked ~ #hi2  {
   z-index:50;
 }
 
-input:checked ~ #window > .arrow span{
-  border-bottom: 5px solid #333;
-    border-right: 5px solid #333;
-color: white;}
 
 input:checked ~ #wrapper {
   color: #333;
@@ -225,7 +221,7 @@ color:#3DC0B0;}
 
 #about {
 position:relative;
-  font-size:3rem;
+  font-size:2.5rem;
 top:20rem;
 color:#3DC0B0;}
 
@@ -246,7 +242,7 @@ div, p {
   position:relative;
   padding:20rem 2rem;
   text-align: center;
-  font-size:1.5rem;
+  font-size:1.2rem;
 }
 
 .column {
@@ -274,10 +270,10 @@ bottom:7rem;}
 }
 
 .laptop {visibility: visible !important;
-    height:50rem;
-    width:40rem;
+    height:45rem;
+    width:36rem;
     
-    bottom:-25rem;
+    bottom:-18rem;
     position: absolute;
     background-image: url('./laptop.png') ;
     background-size:contain;
@@ -505,10 +501,10 @@ label {
 
 .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #3DC0B0;
-    border-right: 5px solid #3DC0B0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 4px solid #3DC0B0;
+    border-right: 4px solid #3DC0B0;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;

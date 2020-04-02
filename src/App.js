@@ -10,9 +10,6 @@ import Projects from './Projects.js'
 
 
 
-
-
-
 function App() {
   return (
     <HashRouter basename='/'>
@@ -26,13 +23,13 @@ function App() {
         <img src={day}/>
         </div>
         
-        <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
-                        <h1 id="hi2">Hi, I'm Colm </h1>   
+           
             
               <div id='window'>    
-              
+              <h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
+                        <h1 id="hi2">Hi, I'm Colm </h1>
 
-              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div>         
+              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div>         
                          
               
         </div>
