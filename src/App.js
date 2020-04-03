@@ -7,6 +7,11 @@ import { HashRouter, Route, Link } from "react-router-dom";
 import day from './day.jpg'
 import Bio from './Bio.js'
 import Projects from './Projects.js'
+import networkerspic from './networkerspic.jpg'
+import networkerspic2 from './networkerspic2.jpg'
+import networkerspic3 from './networkerspic3.jpg'
+import networkershot from './networkersshot.jpg'
+import laptop from './laptop.png'
 
 
 
@@ -39,12 +44,7 @@ function App() {
           <Bio />
           <Projects />
 
-                    
-
-
-                  
-
-                               
+                       
 
         </div>
 

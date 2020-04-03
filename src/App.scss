@@ -126,6 +126,13 @@ background-color:#333;
 
 
 
+
+
+
+
+
+
+
 input {
   position: relative;
   display: none;
@@ -667,18 +674,19 @@ margin-bottom:9rem;}
 }
 
 .laptop {
-  z-index:40;
-    height:50rem;
+
+    height:20rem;
     width: 94vw;
     left:-40px;
     top:3rem;
+
 }
 
 .laptop > img {
-  z-index:2;
-  height:28%;
+  height:68%;
     width:80%;
     top:8px;
+  
     }
 
   label {height:3rem;
