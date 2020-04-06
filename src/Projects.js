@@ -6,7 +6,10 @@ import networkerspic from './networkerspic.jpg'
 import networkerspic2 from './networkerspic2.jpg'
 import networkerspic3 from './networkerspic3.jpg'
 import networkershot from './networkersshot.jpg'
-
+import cb1 from './cb1.jpg'
+import cb2 from './cb2.jpg'
+import cb3 from './cb3.jpg'
+import cb4 from './cb4.jpg'
 
 
 
@@ -63,12 +66,13 @@ return (
               <div className="project" id="second">
                   
                   <div className="description column"> 
-                  Networkers is a site I created from scratch to help me learn React.<br/>
-                  <br/>It's almost like Tinder, except instead of swiping through dates
-                  you swipe through workers in your area. <br/>
-                  <br/>
-
-                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
+                   Lorem ipsum dolor sit amet, sea id dicunt voluptua gloriatur. Vis ne liber inermis appetere, <br/><br/>
+                   graece omnium fabulas ea pri,
+                    at equidem complectitur mediocritatem per. Cu quem quodsi <br/><br/>laboramus eum, duo et libris iuvaret. 
+                    Impetus recusabo ad mei, 
+              
+                    <br/>
+                    tacimates ei, id fabulas recusabo voluptatibus nec, quas possim tractatos nec eu. No alii wisi aliquid vix.
                   
                   </div>
                   <div className="image-container column">
@@ -79,10 +83,10 @@ return (
                   <br/>this is the image container/column
                   <br/>this is the image container/column
                       <div className="laptop">
-                      <img src={networkerspic} />
-                      <img src={networkerspic2} />
-                      <img src={networkerspic3} />
-                      <img src={networkershot} />      
+                      <img src={cb1} />
+                      <img src={cb2} />
+                      <img src={cb3} />
+                      <img src={cb4} />      
                       </div>
                   </div>
                   <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
@@ -91,13 +95,14 @@ return (
               <div className="project" id="third">
                   
                   <div className="description column"> 
-                  Networkers is a site I created from scratch to help me learn React.<br/>
-                  <br/>It's almost like Tinder, except instead of swiping through dates
-                  you swipe through workers in your area.  <br/>
-                  <br/>
+                   Lorem ipsum dolor sit amet, sea id dicunt voluptua gloriatur. Vis ne liber inermis appetere, <br/><br/>
+                   graece omnium fabulas ea pri,
+                    at equidem complectitur mediocritatem per. Cu quem quodsi <br/><br/>laboramus eum, duo et libris iuvaret. 
+                    Impetus recusabo ad mei, 
+              
+                    <br/>
+                    tacimates ei, id fabulas recusabo voluptatibus nec, quas possim tractatos nec eu. No alii wisi aliquid vix.
 
-                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
-                 
                   </div>
                   <div className="image-container column">
                   
