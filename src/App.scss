@@ -13,39 +13,86 @@ html {
   }
 }
 
-html {margin:0;
-  padding:0;
-  }
-
-body{
-  margin:0;
-  padding:0;
-background:#333;
+* {
+  box-sizing: border-box;
 }
 
-.preload {display:none;}
-
-.App {margin:0;
-padding:0;
-overflow-x: hidden;}
-
-#window{
-  margin:0;
-  padding:0;
-  width: 100vw;
-height: 100vh;
-position:relative;
-transition: background 2s;
-background-image: url('./night.jpg');
-background-size: cover;
-text-align: center;
-opacity:0.7;
-margin-bottom:-3rem;
+body {
+  font-family: 'Poor Story', cursive;
+  background: #333;
 }
 
-input:checked ~ #window {
-  background-image: url('./day.jpg');
+.window {
+  display:inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  opacity:0.6;
 }
+
+/*bright  */
+.window::before {
+  content:'';
+  position:absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-image:url('https://i.imgur.com/w569T1I.jpg');
+  background-size:cover;
+  transition:opacity 2s;
+  opacity:0;
+}
+
+/*dark  */
+.window::after {
+  content:'';
+  position:absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-image:url('https://i.imgur.com/QqIQZuc.jpg');
+  background-size:cover;
+  transition:opacity 2s;
+
+}
+
+
+
+input:checked ~ .window::before{ opacity: 1 }
+
+input:checked ~ .window::after{ opacity: 0 }
+
+h1 {color:white;
+font-size:80px;
+visibility:visible !important;
+z-index:999;
+position:absolute;
+
+}
+
+// #window{
+//   margin:0;
+//   padding:0;
+//   width: 100vw;
+// height: 100vh;
+// position:relative;
+// transition: background 2s;
+// background-image: url('./night.jpg');
+// background-size: cover;
+// text-align: center;
+// opacity:0.7;
+// margin-bottom:-3rem;
+// }
+
+
+
+// input:checked ~ #window {
+//   background-image: url('./day.jpg');
+// }
 
 a {color:white;}
 
@@ -75,6 +122,8 @@ font-size:10rem;
 opacity:0;
 top:2rem;
  left: 20%;
+ transition: opacity 5s;
+transition: color 5s;
 }
 
 
@@ -119,6 +168,8 @@ td {white-space: nowrap;
 
 
 #wrapper {
+  position:relative;
+  top:50rem;
 background-color:#333;
  color:white;
  transition: background-color 2s; }
@@ -182,19 +233,29 @@ input[type=checkbox]:not(:checked) + label {
 
 
 
-input:checked ~ #window > #hi1  {
+input:checked ~  #hi1  {
   
   opacity: 0;
   transition: opacity 4s
 }
 
-input:checked ~ #window > #hi2  {
+input:checked ~ #hi2  {
   
   color: #333;
   opacity: 1;
   font-family: "Gochi Hand", "Comic Sans", cursive;
-  transition: opacity 2s;
+  transition: opacity 4s;
   z-index:50;
+}
+
+input[type=checkbox]:not(:checked) ~ #hi2 {
+  transition: opacity 4s;
+  transition: color 4s;
+}
+
+input[type=checkbox]:not(:checked) ~ #hi1 {
+  transition: opacity 4s;
+  transition: color 4s;
 }
 
 
