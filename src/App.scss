@@ -66,13 +66,8 @@ input:checked ~ .window::before{ opacity: 1 }
 
 input:checked ~ .window::after{ opacity: 0 }
 
-h1 {color:white;
-font-size:80px;
-visibility:visible !important;
-z-index:999;
-position:absolute;
 
-}
+
 
 // #window{
 //   margin:0;
@@ -98,33 +93,33 @@ a {color:white;}
 
 
 
-#hi1{
-  text-align:center;
-  position:absolute;
-color: #3DC0B0;
-font-family: Gochi Hand, Comic Sans MS;
-margin:0 5rem;
-font-size:10rem;
-top:2rem;
-transition: opacity 5s;
-transition: color 5s;
- left: 20%;
- opacity:1! important;
- z-index:20;
-}
+// #hi1{
+//   text-align:center;
+//   position:absolute;
+// color: #3DC0B0;
+// font-family: Gochi Hand, Comic Sans MS;
+// margin:0 5rem;
+// font-size:10rem;
+// top:2rem;
+// transition: opacity 5s;
+// transition: color 5s;
+//  left: 20%;
+//  opacity:1! important;
+//  z-index:20;
+// }
 
-#hi2{
-  text-align:center;
-  position:absolute;
-  margin:0 5rem;
-font-family: Gochi Hand, Comic Sans MS;;
-font-size:10rem;
-opacity:0;
-top:2rem;
- left: 20%;
- transition: opacity 5s;
-transition: color 5s;
-}
+// #hi2{
+//   text-align:center;
+//   position:absolute;
+//   margin:0 5rem;
+// font-family: Gochi Hand, Comic Sans MS;
+// font-size:10rem;
+// opacity:0;
+// top:2rem;
+//  left: 20%;
+//  transition: opacity 5s;
+// transition: color 5s;
+// }
 
 
 
@@ -202,14 +197,38 @@ label {
   transition: background 3s, transform 1s top 5s;;
 }
 
+.peekaboo,.hi{transition: opacity 2.2s ease;}
+
+.peekaboo{opacity: 0;
+color:#333;}
+
+
+.hi{opacity: 1;
+color: #3DC0B0;}
+
+#toggle1:checked ~ .peekaboo{opacity: 1;}
+#toggle1:checked ~ .hi{opacity: 0;}
+
+h1{font-size:80px;
+position:absolute;
+text-align:center;
+   position:absolute;
+ font-family: Gochi Hand, Comic Sans MS;
+ margin:0 5rem;
+ font-size:10rem;
+ top:2rem;
+ left: 20%;
+ z-index:9999;
+}
+
 
 
 // this is for turning moon to sun
 input:checked + label {
   background: url('./smileysun.png');
  background-size:cover; 
- transition: background 3s, transform 2s ;
- animation: offback 2s ease;
+ transition: background 3s, transform 1.5s ;
+ animation: offback 1.5s ease;
 }
 
 @keyframes offback {
@@ -220,7 +239,7 @@ input:checked + label {
 
 // this is what happens when unchecking,(sun to moon)
 input[type=checkbox]:not(:checked) + label {
-  animation: offback2 2s ease;
+  animation: offback2 1.5s ease;
   transition: background 2s;
 }
 
@@ -233,30 +252,32 @@ input[type=checkbox]:not(:checked) + label {
 
 
 
-input:checked ~  #hi1  {
+// input:checked ~  #hi1  {
   
-  opacity: 0;
-  transition: opacity 4s
-}
+//   opacity: 0;
+//   transition: opacity 4s
+// }
 
-input:checked ~ #hi2  {
+// input:checked ~ #hi2  {
   
-  color: #333;
-  opacity: 1;
-  font-family: "Gochi Hand", "Comic Sans", cursive;
-  transition: opacity 4s;
-  z-index:50;
-}
+//   color: #333;
+//   opacity: 1;
+//   font-family: "Gochi Hand", "Comic Sans", cursive;
+//   transition: opacity 4s;
+//   z-index:50;
+// }
 
-input[type=checkbox]:not(:checked) ~ #hi2 {
-  transition: opacity 4s;
-  transition: color 4s;
-}
+// input[type=checkbox]:not(:checked) ~ #hi2 {
+//   opacity:0;
+//   transition: opacity 4s;
+//   transition: color 4s;
+// }
 
-input[type=checkbox]:not(:checked) ~ #hi1 {
-  transition: opacity 4s;
-  transition: color 4s;
-}
+// input[type=checkbox]:not(:checked) ~ #hi1 {
+//   transition: opacity 4s;
+//   transition: color 4s;
+//   opacity:1;
+// }
 
 
 input:checked ~ #wrapper {

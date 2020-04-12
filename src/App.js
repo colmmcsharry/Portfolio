@@ -21,8 +21,18 @@ function App() {
         
            <input id="toggle1" type="checkbox" />
 <label for="toggle1"></label>
-<h1 id="hi1" className="fade">Hi, I'm Colm </h1>               
-                        <h1 id="hi2">Hi, I'm Colm </h1>
+<h1 className="hi">
+    Hi, I'm Colm
+</h1> 
+
+<h1 className="peekaboo">
+    Hi, I'm Colm
+</h1> 
+
+
+
+
+
 
 <div className="window dark bright">
 
