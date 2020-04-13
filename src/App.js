@@ -34,12 +34,9 @@ function App() {
 
 
 
-<div className="window dark bright">
-
-  
-
-              <div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div>
+<div className="window dark bright">              
 </div>  
+<ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div></ScrollLink>
             
               
 

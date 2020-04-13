@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 
+/*these are basically reusable variables, SCSS*/
+$cyan:#3DC0B0;;
+$darkbg:#333;
+
+
+
+
 html {
   overflow-x: hidden;
   font-size: 16px; // I would recommend always using 16px as base font-size
@@ -13,6 +20,8 @@ html {
   }
 }
 
+html, body { margin: 0; padding: 0; } 
+
 * {
   box-sizing: border-box;
 }
@@ -23,12 +32,12 @@ body {
 }
 
 .window {
-  display:inline-block;
-  position:absolute;
+  display:block;
+  position:relative;
   top:0;
   left:0;
-  width: 100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   opacity:0.6;
 }
 
@@ -36,8 +45,8 @@ body {
 .window::before {
   content:'';
   position:absolute;
-  width: 100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   top:0;
   left:0;
   background-image:url('https://i.imgur.com/w569T1I.jpg');
@@ -50,8 +59,8 @@ body {
 .window::after {
   content:'';
   position:absolute;
-  width: 100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   top:0;
   left:0;
   background-image:url('https://i.imgur.com/QqIQZuc.jpg');
@@ -96,7 +105,7 @@ a {color:white;}
 // #hi1{
 //   text-align:center;
 //   position:absolute;
-// color: #3DC0B0;
+// color: $cyan;
 // font-family: Gochi Hand, Comic Sans MS;
 // margin:0 5rem;
 // font-size:10rem;
@@ -145,7 +154,7 @@ table {
   display:inline-table;
 border-spacing: 150px 0;}
 
-th {color:#3DC0B0;
+th {color:$cyan;
 text-decoration:underline;
 padding-bottom: 2rem;
 font-weight:bold;}
@@ -163,8 +172,11 @@ td {white-space: nowrap;
 
 
 #wrapper {
+  padding:0;
+  margin:0;
+  border:1px solid blue;
   position:relative;
-  top:50rem;
+  display: block;
 background-color:#333;
  color:white;
  transition: background-color 2s; }
@@ -204,7 +216,7 @@ color:#333;}
 
 
 .hi{opacity: 1;
-color: #3DC0B0;}
+color: $cyan;}
 
 #toggle1:checked ~ .peekaboo{opacity: 1;}
 #toggle1:checked ~ .hi{opacity: 0;}
@@ -290,15 +302,16 @@ input:checked ~ #wrapper a {
 }
 
 input:checked ~ #wrapper th {
-  color: #3DC0B0
+  color: $cyan
 }
 
-/*these are basically reusable variables, SCSS*/
-$width:100vw;
-$height:100vh;
+input:checked ~ a > #scroller1::before {color:
+  $darkbg;}
 
-
-
+input:checked ~ a > #scroller1 > a > .arrow > span {
+  border-bottom: 4px solid $darkbg;
+  border-right: 4px solid $darkbg;
+}
 
 
 
@@ -328,15 +341,15 @@ h2,h3 {text-align: center;
 }
 
 h2 {font-size:5rem;
-color:#3DC0B0;}
+color:$cyan;}
 
 #about {
 position:relative;
   font-size:2.5rem;
 top:20rem;
-color:#3DC0B0;}
+color:$cyan;}
 
-#myprojects {color:#3DC0B0;
+#myprojects {color:$cyan;
 font-size: 2.5rem;}
 
 .projectname {margin-top: 15rem;
@@ -583,6 +596,19 @@ label {
     z-index:99;
 }
 
+#scroller1::before {content:"Click Me!";
+text-align:center;
+color:$cyan;
+bottom:3.8rem;
+position:absolute;
+cursor: pointer;
+font-family: Quando;
+right:2.3rem;
+font-size:1.2rem;
+width:130%;
+white-space: nowrap;
+}
+
 #scroller2{
     position: absolute;
     bottom: 20%;
@@ -615,8 +641,8 @@ label {
     display: block;
     width: 25px;
     height: 25px;
-    border-bottom: 4px solid #3DC0B0;
-    border-right: 4px solid #3DC0B0;
+    border-bottom: 4px solid $cyan;
+    border-right: 4px solid $cyan;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
@@ -858,12 +884,12 @@ input:checked ~ #window {
     display: block;
     width: 15px;
     height: 15px;
-    border-bottom: 3px solid #3DC0B0;
-    border-right: 3px solid #3DC0B0;
+    border-bottom: 3px solid $cyan;
+    border-right: 3px solid $cyan;
 }
 
 
-#myprojects {color:#3DC0B0;
+#myprojects {color:$cyan;
 font-size:30px;}
 .projectname {margin-bottom:0rem;
               font-size:23px;}
