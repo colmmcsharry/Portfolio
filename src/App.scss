@@ -6,7 +6,9 @@
 $cyan:#3DC0B0;;
 $darkbg:#333;
 
-
+* {
+  box-sizing: border-box;
+}
 
 
 html {
@@ -20,11 +22,9 @@ html {
   }
 }
 
-html, body { margin: 0; padding: 0; } 
+html, body, .App { margin: 0; padding: 0; } 
 
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Poor Story', cursive;
@@ -174,7 +174,7 @@ td {white-space: nowrap;
 #wrapper {
   padding:0;
   margin:0;
-  border:1px solid blue;
+  margin-top: -2.5rem;
   position:relative;
   display: block;
 background-color:#333;
@@ -305,8 +305,7 @@ input:checked ~ #wrapper th {
   color: $cyan
 }
 
-input:checked ~ a > #scroller1::before {color:
-  $darkbg;}
+input:checked ~ a > #scroller1::before {display:none;}
 
 input:checked ~ a > #scroller1 > a > .arrow > span {
   border-bottom: 4px solid $darkbg;
@@ -783,13 +782,6 @@ overflow-x:hidden;}
 
 @media screen and (max-width: 500px) {
 
-  body {
-    overflow:hidden;}
-
-#window {
-  position:relative;
-overflow-x:hidden;
-}
 
 #first {padding-top: 5rem;}
 
@@ -843,11 +835,11 @@ overflow-x:hidden;}
 
 #blurb {
   display: block;
-  padding:5rem 2rem;
+  padding:5rem 1rem;
 font-size:1.3rem;
 width:90%;
 position:relative;
-left:-1rem;
+left:1rem;
 overflow-x:hidden;
 }
 
@@ -856,11 +848,11 @@ padding:0;
 margin:0;
 border-spacing: 15px 0px;
 position:relative;
-left:-1rem;
+left:-2rem;
 overflow-x:hidden;
 }
 
-  td {font-size:14px;}
+  td {font-size:3.6vw;}
 
 h2 {font-size:3rem;}
 
