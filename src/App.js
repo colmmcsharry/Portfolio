@@ -11,6 +11,7 @@ import Projects from './Projects.js'
 
 
 
+
 function App() {
   return (
     <HashRouter basename='/'>
@@ -34,7 +35,9 @@ function App() {
 
 
 
-<div className="window dark bright">              
+<div className="window dark bright">  
+
+           
 </div>  
 <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div></ScrollLink>
             
