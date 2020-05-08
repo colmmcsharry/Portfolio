@@ -22,6 +22,7 @@ function App() {
         
            <input id="toggle1" type="checkbox" />
 <label for="toggle1"></label>
+
 <h1 className="hi">
     Hi, I'm Colm
 </h1> 
@@ -29,6 +30,7 @@ function App() {
 <h1 className="peekaboo">
     Hi, I'm Colm
 </h1> 
+
 
 
 

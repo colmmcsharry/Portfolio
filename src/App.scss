@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=fallback');
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 
@@ -58,7 +58,7 @@ body {
 .window::before {
  
   background-image:url('./daysmall.jpg');
- 
+  background-position: 05px 0px;
 
 }
 
@@ -160,6 +160,7 @@ label {
   height:5rem;
   width:5rem;
   left:20px;
+  top:1rem;
   position: fixed;
   cursor: pointer;
   background: url('./moon.png');
@@ -189,7 +190,10 @@ text-align:center;
  top:2rem;
  left: 25%;
  z-index:98;
+
 }
+
+
 
 
 
@@ -202,9 +206,9 @@ input:checked + label {
 }
 
 @keyframes offback {
-  0% {left:20px;top:00px;}
+  0% {left:20px;top:01rem;}
   50% {left:-70px; top:150px;}
-  100% {left:20px; top:00px;}
+  100% {left:20px; top:01rem;}
 }
 
 // this is what happens when unchecking,(sun to moon)
@@ -214,9 +218,9 @@ input[type=checkbox]:not(:checked) + label {
 }
 
 @keyframes offback2 {
-  0% {left:20px;top:00px;}
+  0% {left:20px;top:01rem;}
   50% {left:-70px; top:150px;}
-  100% {left:20px; top:00px;}
+  100% {left:20px; top:01rem;}
 }
 
 
