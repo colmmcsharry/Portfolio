@@ -31,6 +31,65 @@ body {
   background: #333;
 }
 
+/*this is the black background whilst loading*/
+#spinner {
+  height:100vh;
+  width:100vw;
+  margin:0;
+  padding:0;
+  position:absolute;
+  display:block;
+  z-index:999;
+  background-color: #333;
+  animation: cssAnimation 6s ;
+    animation-fill-mode: forwards;
+    color: pink;
+    font-size:20px;
+    text-align:center;
+
+}
+
+@keyframes cssAnimation {
+    to {
+        
+        overflow:hidden;
+        opacity:0;
+          z-index:-999;
+        
+    }
+}
+
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  position:absolute;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
 .window {
   display:block;
   position:relative;
@@ -76,7 +135,7 @@ body {
     background-position: 0px 0px
   }
   100% {
-    background-position: -90px 0px
+    background-position: -75px 0px
   }
 }
 
@@ -184,9 +243,9 @@ color: $cyan;}
 h1{
 text-align:center;
    position:absolute;
- font-family: Gochi Hand, Comic Sans MS;
+ font-family: quando, Comic Sans MS;
  margin:0 5rem;
- font-size:7rem;
+ font-size:5rem;
  top:2rem;
  left: 25%;
  z-index:98;
@@ -563,7 +622,7 @@ color:$cyan;
 bottom:3.8rem;
 position:absolute;
 cursor: pointer;
-font-family: Quando;
+font-family: quando;
 right:2.3rem;
 font-size:1.2rem;
 width:130%;

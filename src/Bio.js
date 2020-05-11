@@ -6,6 +6,14 @@ import Scroller from './Scroller.js'
 
 export default function Bio(){
 
+
+  function spinner(){
+
+    
+
+
+  }
+
 return (
 
 	<React.Fragment>
