@@ -62,17 +62,16 @@ return (
 
               </div>
 
-                <h3 className="projectname cabins"><Element name="Project2" ></Element> Project 2</h3>
+                <h3 className="projectname cabins"><Element name="Project2" ></Element><a href="https://mcshazz.github.io/NetWorkers/" target="_blank"> Cosy Cabins</a></h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
-                   Lorem ipsum dolor sit amet, sea id dicunt voluptua gloriatur. Vis ne liber inermis appetere, <br/><br/>
-                   graece omnium fabulas ea pri,
-                    at equidem complectitur mediocritatem per. Cu quem quodsi <br/><br/>laboramus eum, duo et libris iuvaret. 
-                    Impetus recusabo ad mei, 
-              
-                    <br/>
-                    tacimates ei, id fabulas recusabo voluptatibus nec, quas possim tractatos nec eu. No alii wisi aliquid vix.
+                   This is a mock-up website for my brother's company.
+                     <br/><br/> Built using React, I tried to convey 
+                    the overall ethos of the company with the website design.
+
+                    <br/><br/>
+                    Eventually, I will add a booking / payment system to the site.
                   
                   </div>
                   <div className="image-container column">
@@ -95,13 +94,8 @@ return (
               <div className="project" id="third">
                   
                   <div className="description column"> 
-                   Lorem ipsum dolor sit amet, sea id dicunt voluptua gloriatur. Vis ne liber inermis appetere, <br/><br/>
-                   graece omnium fabulas ea pri,
-                    at equidem complectitur mediocritatem per. Cu quem quodsi <br/><br/>laboramus eum, duo et libris iuvaret. 
-                    Impetus recusabo ad mei, 
-              
-                    <br/>
-                    tacimates ei, id fabulas recusabo voluptatibus nec, quas possim tractatos nec eu. No alii wisi aliquid vix.
+                   
+                    Under Construction
 
                   </div>
                   <div className="image-container column">

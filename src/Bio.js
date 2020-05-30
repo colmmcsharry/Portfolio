@@ -23,7 +23,7 @@ return (
 
                    <div className="item">
                       <div className="polaroid"><img src={dog}/>
-                        <div className="caption">Myself and a friend</div>
+                        <div className="caption">Me with a friend</div>
                       </div>
                     </div>
 
@@ -37,15 +37,15 @@ return (
     <th>Skills</th>
   </tr>
   <tr>
-    <td><a href="">The Odin Project</a></td>
+    <td><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></td>
     <td>HTML/CSS/Javascript</td>
   </tr>
   <tr>
-    <td><a href="">Polyglot Bootcamp</a></td>
+    <td><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></td>
     <td>React.js</td>
   </tr>
   <tr>
-    <td><a href="">The Complete Web Dev in 2020</a></td>
+    <td><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev in 2020</a></td>
     <td>Node.js</td>
   </tr>
   <tr>

@@ -41,7 +41,7 @@ body {
   display:block;
   z-index:999;
   background-color: #333;
-  animation: cssAnimation 6s ;
+  animation: cssAnimation 2s ;
     animation-fill-mode: forwards;
     color: pink;
     font-size:20px;
@@ -399,7 +399,7 @@ div, p {
 
 .description {padding-bottom:15rem;
 position:relative;
-bottom:7rem;}
+bottom:10rem;}
 
 
 /*image transitions for my website previews starts*/
@@ -631,7 +631,7 @@ white-space: nowrap;
 
 #scroller2{
     position: absolute;
-    bottom: 20%;
+    bottom: 22%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index:99;}
@@ -879,8 +879,8 @@ h2 {font-size:3rem;}
 
 
 #hi1, #hi2, h1 {
-  font-size: 6rem;
-  left:2rem;
+  font-size: 3rem;
+  left:5rem;
   top:4rem;
 }
 
