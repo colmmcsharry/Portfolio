@@ -222,7 +222,7 @@ label {
   top:1rem;
   position: fixed;
   cursor: pointer;
-  background: url('./moon.png');
+  background: url('./moon-min.png');
   background-size:cover;
   z-index:99;
   transition: background 3s, transform 1s top 5s;;
@@ -258,7 +258,7 @@ text-align:center;
 
 // this is for turning moon to sun
 input:checked + label {
-  background: url('./smileysun.png');
+  background: url('./smileysun-min.png');
  background-size:cover; 
  transition: background 3s, transform 1.5s ;
  animation: offback 1.5s ease;
@@ -375,6 +375,12 @@ font-size: 2.5rem;}
 .projectname {margin-top: 15rem;
 font-size:2rem;}
 
+#second {margin-top:3rem;}
+
+#third {margin-top:03rem;
+  padding-bottom:010rem;
+}
+
 .cabins {margin-top:8rem;
   margin-bottom:0rem;}
 
@@ -420,7 +426,7 @@ bottom:10rem;}
     
     bottom:-18rem;
     position: absolute;
-    background-image: url('./laptop.png') ;
+    background-image: url('./laptop-min.png') ;
     background-size:contain;
     background-repeat:no-repeat;}
 
@@ -650,7 +656,7 @@ white-space: nowrap;
 
 #scroller5{position:absolute;
   left:50%;
-    bottom: 30%;
+    bottom: 10%;
     transform: translate(-50%,-50%);
     z-index:99;
     font-size:3rem;}  
@@ -922,7 +928,10 @@ font-size:30px;}
   bottom:-2%;
   }
 
-#scroller5 {bottom:-2%;}
+#scroller5 {bottom: -25%;
+}
+
+html{padding-bottom:10rem;}
 
 }
 
@@ -989,7 +998,7 @@ in the bigger images if a screen is larger*/
 
 .window::before {
  
-  background-image:url('https://i.imgur.com/w569T1I.jpg');
+  background-image:url('./daypic.jpg');
  
 
 }
@@ -997,7 +1006,7 @@ in the bigger images if a screen is larger*/
 /*dark  */
 .window::after {
     /*need to change all these on mobile. smaller bg image, and animation only happens on big screens */
-  background-image:url('https://i.imgur.com/QqIQZuc.jpg');
+  background-image:url('./nightpic.jpg');
 }
 
 

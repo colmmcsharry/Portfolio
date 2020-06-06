@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import dog from './dog.JPG'
+import mefire from './mefire2.JPG'
 import Scroller from './Scroller.js'
 
 export default function Bio(){
@@ -22,8 +23,8 @@ return (
               <div id="bio">
 
                    <div className="item">
-                      <div className="polaroid"><img src={dog}/>
-                        <div className="caption">Me with a friend</div>
+                      <div className="polaroid"><img src={mefire}/>
+                        <div className="caption">Me social distancing</div>
                       </div>
                     </div>
 
@@ -37,11 +38,11 @@ return (
     <th>Skills</th>
   </tr>
   <tr>
-    <td><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></td>
+    <td><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></td>
     <td>HTML/CSS/Javascript</td>
   </tr>
   <tr>
-    <td><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></td>
+    <td><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></td>
     <td>React.js</td>
   </tr>
   <tr>
