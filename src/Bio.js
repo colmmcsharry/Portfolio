@@ -8,12 +8,16 @@ import Scroller from './Scroller.js'
 export default function Bio(){
 
 
-  function spinner(){
+  window.onload = setTimeout(function() {
+    document.getElementsByTagName('label')[0].style.display = 'block';
+      
+} , 5000   )
 
-    
 
-
-  }
+  window.onload = setTimeout(function() {
+      document.getElementsByTagName('label')[0].style.visibility = 'visible';
+      
+},  5800   )
 
 return (
 
@@ -21,7 +25,7 @@ return (
 
             <h3 id="about"><Element name="About" ></Element>About</h3>
               <div id="bio">
-
+                
                    <div className="item">
                       <div className="polaroid"><img src={mefire}/>
                         <div className="caption">Me social distancing</div>
