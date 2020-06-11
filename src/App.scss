@@ -691,6 +691,7 @@ label {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index:99;
+    visibility:hidden;
 }
 
 #scroller1::before {content:"Click Me!";

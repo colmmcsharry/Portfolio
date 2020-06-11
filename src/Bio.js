@@ -16,8 +16,14 @@ export default function Bio(){
 
   window.onload = setTimeout(function() {
       document.getElementsByTagName('label')[0].style.visibility = 'visible';
-      
 },  5800   )
+
+window.onload = setTimeout(function() {  
+  document.getElementById("scroller1").style.visibility = "visible";
+  // document.getElementById("scroller1").className += " revealdown";
+},  6800   )
+
+
 
 return (
 
