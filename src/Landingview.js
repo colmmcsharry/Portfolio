@@ -17,7 +17,7 @@ return (
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 <h1 className="hi">
-    Hi, I'm Colm
+    Hi, I'm Colm 
 </h1> 
 
 <h1 className="peekaboo">

@@ -62,7 +62,7 @@ return (
 
               </div>
 
-                <h3 className="projectname cabins"><Element name="Project2" ></Element><a href="https://mcshazz.github.io/NetWorkers/" target="_blank"> Cosy Cabins</a></h3>
+                <h3 className="projectname cabins"><Element name="Project2" ></Element><a href="https://mcshazz.github.io/Testproj/" target="_blank"> Cosy Cabins</a></h3>
               <div className="project" id="second">
                   
                   <div className="description column"> 
@@ -75,7 +75,7 @@ return (
                   
                   </div>
                   <div className="image-container column">
-                  
+                  <a href="https://mcshazz.github.io/Testproj/" target="_blank">
                   this is the image container/column
                   <br/>this is the image container/column
                   <br/>this is the image container/column
@@ -87,6 +87,7 @@ return (
                       <img src={cb3} />
                       <img src={cb4} />      
                       </div>
+                      </a>
                   </div>
                   <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
