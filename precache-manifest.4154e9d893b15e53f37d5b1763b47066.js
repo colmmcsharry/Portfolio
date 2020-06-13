@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd0914b49035a8a4ce946436dc67be3b",
+    "revision": "7cc8bae91e46f4183cb5efe347322d1d",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "74bd1a5682146d7bf424",
-    "url": "/Portfolio/static/css/main.ab2c31a4.chunk.css"
+    "revision": "7c994bb8fcc5f5845cf6",
+    "url": "/Portfolio/static/css/main.b9f1ddc3.chunk.css"
   },
   {
     "revision": "43b63520c10b9892b3c4",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.a08ae1b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74bd1a5682146d7bf424",
-    "url": "/Portfolio/static/js/main.77e3ae1e.chunk.js"
+    "revision": "7c994bb8fcc5f5845cf6",
+    "url": "/Portfolio/static/js/main.70c1493f.chunk.js"
   },
   {
     "revision": "38e9353468597077cd3e",
@@ -82,9 +82,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ee3f018a21abedd77b1e31b3971579b",
     "url": "/Portfolio/static/media/nightsmall.3ee3f018.jpg"
-  },
-  {
-    "revision": "ade07ef8e9111efb5f43ee30170cc76a",
-    "url": "/Portfolio/static/media/smileysun-min.ade07ef8.png"
   }
 ]);
