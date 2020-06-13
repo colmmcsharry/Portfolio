@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react'
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-/*this is just a functioncomponent that renders the button, which in turn triggers the function*/
+/* this is just a component that renders the arrows */
 function Scroller() {
 
 

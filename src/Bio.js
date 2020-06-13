@@ -78,7 +78,7 @@ return (
 </tbody>
 </table>
                   </div>
-                {/*if I change id to className, then I chan just change all the scoller's bottom positiomns om mob */}
+                {/*if I change id to className, then I can just change all the scoller's bottom positions om mob */}
                  <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
 
 

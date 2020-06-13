@@ -7,6 +7,7 @@ import { HashRouter, Route, Link } from "react-router-dom";
 import day from './day.jpg'
 import Bio from './Bio.js'
 import Projects from './Projects.js'
+import Landingview from './Landingview.js'
 
 
 
@@ -18,31 +19,8 @@ function App() {
 
     <div className="App">
             
-          
-        
-           <input id="toggle1" type="checkbox" />
-<label for="toggle1"></label>
-
-<h1 className="hi">
-    Hi, I'm Colm
-</h1> 
-
-<h1 className="peekaboo">
-    Hi, I'm Colm
-</h1> 
-
-
-
-
-
-
-
-<div className="window dark bright">  
-
-           
-</div>  
-<ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><div id="scroller1"> <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div></ScrollLink>
-            
+ 
+<Landingview />            
               
 
 
