@@ -202,14 +202,6 @@ background-color:#333;
 
 
 
-
-
-
-
-
-
-
-
 input {
   position: relative;
   display: none;
@@ -236,24 +228,27 @@ label {
 color:#333;}
 
 
-.hi{opacity: 1;
+.hi{ opacity: 1;
 color: $cyan;
 overflow: hidden;
-white-space:nowrap;
+width:7em;
+white-space: nowrap;
 border-right:2px solid $cyan;
 animation: typewriter 4s steps(44) 1s 1 normal both,
   blinkTextCursor 400ms steps(44) infinite normal,
   cssAnimation 0s ease-in 4.2s forwards;}
 
+/* typewriter starts */
   @keyframes typewriter {
   from {
     width: 0;
   }
 
   to {
-    width: 6.9em;
+    width: 7em;
   }
 }
+/*width of this needs to be same as width of text*/
 
 @keyframes blinkTextCursor {
 
@@ -273,6 +268,8 @@ animation: typewriter 4s steps(44) 1s 1 normal both,
     border-right-color: transparent;
   }
 }
+
+/* typewriter ends */
 
 #toggle1:checked ~ .peekaboo{opacity: 1;}
 #toggle1:checked ~ .hi{opacity: 0;}
@@ -321,29 +318,29 @@ text-align:center;
 
 
 
-
+/*so this is what happens when I click the moon*/
 input:checked + label {
   background: url('./smileysun-min.png');
  background-size:cover; 
- transition: background 3s, transform 1.5s ;
+ transition: background 1.5s, transform 1.5s ;
  animation: offback 1.5s ease;
 }
 
 @keyframes offback {
   0% {left:20px;top:01rem;}
-  50% {left:-70px; top:150px;}
+  50% {left:-80px; top:155px;}
   100% {left:20px; top:01rem;}
 }
 
 // this is what happens when unchecking,(sun to moon)
 input[type=checkbox]:not(:checked) + label {
   animation: offback2 1.5s ease;
-  transition: background 2s;
+  transition: background 1s;
 }
 
 @keyframes offback2 {
   0% {left:20px; top:01rem;}
-  50% {left:-70px; top:150px;}
+  50% {left:-80px; top:155px;}
   100% {left:20px; top:01rem;}
 }
 
@@ -554,49 +551,49 @@ bottom:10rem;}
 
 /*for the jumpoing moon/sun*/
 
-label {
+// label {
       
-      animation-name: jump;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
+//       animation-name: jump;
+//       animation-duration: 5s;
+//       animation-iteration-count: infinite;
+//       animation-timing-function: linear;
+//     }
 
 
-@keyframes jump {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
+// @keyframes jump {
+//   from, 20%, 53%, 80%, to {
+//     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+//     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+//     -webkit-transform: translate3d(0,0,0);
+//     transform: translate3d(0,0,0);
+//   }
 
-  40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
+//   40%, 43% {
+//     -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     -webkit-transform: translate3d(0, -30px, 0);
+//     transform: translate3d(0, -30px, 0);
+//   }
 
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
+//   70% {
+//     -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     -webkit-transform: translate3d(0, -15px, 0);
+//     transform: translate3d(0, -15px, 0);
+//   }
 
-  90% {
-    -webkit-transform: translate3d(0,-4px,0);
-    transform: translate3d(0,-4px,0);
-  }
-}
+//   90% {
+//     -webkit-transform: translate3d(0,-4px,0);
+//     transform: translate3d(0,-4px,0);
+//   }
+// }
 
-.jump {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-}
+// .jump {
+//   -webkit-animation-name: bounce;
+//   animation-name: bounce;
+//   -webkit-transform-origin: center bottom;
+//   transform-origin: center bottom;
+// }
 
 
 /*jumping moon/sun ends */
@@ -676,7 +673,23 @@ label {
 
 
 
-/*CSS For L*/
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
 
 
 
@@ -692,6 +705,7 @@ label {
     transform: translate(-50%,-50%);
     z-index:99;
     visibility:hidden;
+
 }
 
 #scroller1::before {content:"Click Me!";
@@ -728,10 +742,10 @@ white-space: nowrap;
 
 #scroller5{position:absolute;
   left:50%;
-    bottom: 10%;
+    bottom: 15%;
     transform: translate(-50%,-50%);
     z-index:99;
-    font-size:3rem;}  
+    font-size:5rem;}  
 
 #scroller5:hover {cursor:pointer;}
 
@@ -766,7 +780,7 @@ white-space: nowrap;
 }
 
 
-/*this is for the thing that says to scroll down on main pic*/
+/*animate is for the arrow thing that says to scroll down */
 
 
 

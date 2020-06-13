@@ -8,6 +8,7 @@ import Scroller from './Scroller.js'
 export default function Bio(){
 
 
+
   window.onload = setTimeout(function() {
     document.getElementsByTagName('label')[0].style.display = 'block';
       
@@ -16,10 +17,15 @@ export default function Bio(){
 
   window.onload = setTimeout(function() {
       document.getElementsByTagName('label')[0].style.visibility = 'visible';
+
 },  5800   )
+
 
 window.onload = setTimeout(function() {  
   document.getElementById("scroller1").style.visibility = "visible";
+  
+  document.getElementById("scroller1").style.animation = "scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+
   // document.getElementById("scroller1").className += " revealdown";
 },  6800   )
 
