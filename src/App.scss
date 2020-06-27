@@ -31,63 +31,6 @@ body {
   background: #333;
 }
 
-/*this is the black background whilst loading*/
-// #spinner {
-//   height:100vh;
-//   width:100vw;
-//   margin:0;
-//   padding:0;
-//   position:absolute;
-//   display:block;
-//   z-index:999;
-//   background-color: #333;
-//   animation: spinAnimation 2s ;
-//     animation-fill-mode: forwards;
-//     color: pink;
-//     font-size:20px;
-//     text-align:center;
-
-// }
-
-// @keyframes spinAnimation {
-//     to {
-        
-//         overflow:hidden;
-//         opacity:0;
-//           z-index:-999;
-        
-//     }
-// }
-
-
-// #loader {
-//   border: 16px solid #f3f3f3;
-//   border-radius: 50%;
-//   border-top: 16px solid #3498db;
-//   width: 120px;
-//   height: 120px;
-//   position:absolute;
-//   -webkit-animation: spin 2s linear infinite; 
-//   animation: spin 2s linear infinite;
-//   text-align: center;
-//   position: absolute;
-//   top: 45%;
-//   left: 45%;
-//   transform: translate(-40%, -40%);
-// }
-
-// /* Safari */
-// @-webkit-keyframes spin {
-//   0% { -webkit-transform: rotate(0deg); }
-//   100% { -webkit-transform: rotate(360deg); }
-// }
-
-// @keyframes spin {
-//   0% { transform: rotate(0deg); }
-//   100% { transform: rotate(360deg); }
-// }
-
-
 
 
 .window {
@@ -116,15 +59,14 @@ body {
 /*bright  */
 .window::before {
  
-  background-image:url('./daysmall.jpg');
+  background-image:url('./pics/daysmall.jpg');
   background-position: 05px 0px;
 
 }
 
 /*dark  */
 .window::after {
-    /*need to change all these on mobile. smaller bg image, and animation only happens on big screens */
-  background-image:url('./nightsmall.jpg');
+  background-image:url('./pics/nightsmall.jpg');
 }
 
 
@@ -216,7 +158,7 @@ label {
   top:1rem;
   position: fixed;
   cursor: pointer;
-  background: url('./moon-min.png');
+  background: url('./pics/moon-min.png');
   background-size:cover;
   z-index:99;
   transition: background 3s, transform 1s top 5s;
@@ -288,37 +230,10 @@ animation: typewriter 2s steps(44) 1s 1 normal both,
 #toggle1:checked ~ .hi{opacity: 0;}
 
 
-// this is for turning moon to sun
-// input:checked + label {
-//   background: url('./smileysun-min.png');
-//  background-size:cover; 
-//  transition: background 3s, transform 1.5s ;
-//  animation: offback 1.5s ease;
-// }
-
-// @keyframes offback {
-//   0% {left:20px;top:01rem;}
-//   50% {left:-70px; top:150px;}
-//   100% {left:20px; top:01rem;}
-// }
-
-// // this is what happens when unchecking,(sun to moon)
-// input[type=checkbox]:not(:checked) + label {
-//   animation: offback2 1.5s ease;
-//   transition: background 2s;
-// }
-
-// @keyframes offback2 {
-//   0% {left:20px;top:01rem;}
-//   50% {left:-70px; top:150px;}
-//   100% {left:20px; top:01rem;}
-// }
-
-
 
 /*so this is what happens when I click the moon*/
 input:checked + label {
-  background: url('./smileysun-min.png');
+  background: url('./pics/smileysun-min.png');
  background-size:cover; 
  transition: background 1.5s, transform 1.5s ;
  animation: newoffback 1.5s ease;
@@ -360,35 +275,6 @@ input[type=checkbox]:not(:checked) + label {
 
 }
 
-
-
-
-// input:checked ~  #hi1  {
-  
-//   opacity: 0;
-//   transition: opacity 4s
-// }
-
-// input:checked ~ #hi2  {
-  
-//   color: #333;
-//   opacity: 1;
-//   font-family: "Gochi Hand", "Comic Sans", cursive;
-//   transition: opacity 4s;
-//   z-index:50;
-// }
-
-// input[type=checkbox]:not(:checked) ~ #hi2 {
-//   opacity:0;
-//   transition: opacity 4s;
-//   transition: color 4s;
-// }
-
-// input[type=checkbox]:not(:checked) ~ #hi1 {
-//   transition: opacity 4s;
-//   transition: color 4s;
-//   opacity:1;
-// }
 
 
 input:checked ~ #wrapper {
@@ -504,7 +390,7 @@ bottom:10rem;}
     
     bottom:-18rem;
     position: absolute;
-    background-image: url('./laptop-min.png') ;
+    background-image: url('./pics/laptop-min.png') ;
     background-size:contain;
     background-repeat:no-repeat;}
 
@@ -554,59 +440,6 @@ bottom:10rem;}
 
 /*image transitions ends*/
 
-
-
-
-
-
-/*for the jumpoing moon/sun*/
-
-// label {
-      
-//       animation-name: jump;
-//       animation-duration: 5s;
-//       animation-iteration-count: infinite;
-//       animation-timing-function: linear;
-//     }
-
-
-// @keyframes jump {
-//   from, 20%, 53%, 80%, to {
-//     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-//     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-//     -webkit-transform: translate3d(0,0,0);
-//     transform: translate3d(0,0,0);
-//   }
-
-//   40%, 43% {
-//     -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-//     -webkit-transform: translate3d(0, -30px, 0);
-//     transform: translate3d(0, -30px, 0);
-//   }
-
-//   70% {
-//     -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-//     -webkit-transform: translate3d(0, -15px, 0);
-//     transform: translate3d(0, -15px, 0);
-//   }
-
-//   90% {
-//     -webkit-transform: translate3d(0,-4px,0);
-//     transform: translate3d(0,-4px,0);
-//   }
-// }
-
-// .jump {
-//   -webkit-animation-name: bounce;
-//   animation-name: bounce;
-//   -webkit-transform-origin: center bottom;
-//   transform-origin: center bottom;
-// }
-
-
-/*jumping moon/sun ends */
 
 
 
@@ -800,19 +633,6 @@ white-space: nowrap;
 
 
 
-
-/*@media screen and (max-width: 1500px) {
-#window {
-  background-position:-20rem;
-}
-
-input:checked ~ #window {
-  background-position:-28rem;
-}
-
-}*/
-
-
 @media screen and (max-width: 1300px) {
 
   #blurb {display: block;
@@ -842,18 +662,6 @@ input:checked ~ #window {
 }
 
 }
-
-
-/*below is for ipads*/
-// @media screen and (max-width: 1100px) {
-// #window {
-//   background-position:-23rem
-// }
-
-// input:checked ~ #window {
-//   background-position:-29rem;
-// }
-// }
 
 
 
@@ -990,15 +798,6 @@ h2 {font-size:3rem;}
   top:4rem;
 }
 
-// #window {
-//   background-position:-400px;
-// }
-
-// input:checked ~ #window {
-//   background-position:-480px;
-//  }
-
-// shouldn't need these anymore if I'm just using the smaller narrower image
 
 
 .arrow span{
@@ -1072,13 +871,6 @@ font-size:30px;}
 }
 
 
-// -webkit-transform: translateZ(0);
-// -moz-transform: translateZ(0);
-// -ms-transform: translateZ(0);
-// -o-transform: translateZ(0);
-// transform: translateZ(0);
-
-/*this is supposed to emnable hardware acceleratino for faster background transitions, put on background/bg image element*/
 
 
 
@@ -1093,12 +885,7 @@ font-size:30px;}
 
 
 
-
-
-
-
-
-
+/* background panning animation only happens on screens wider than 1300px */
 @media screen and (min-width: 1300px) {
 
   .window::before, .window::after {
@@ -1110,21 +897,18 @@ font-size:30px;}
 
 
 
-/*with these, we should assume that the user is using a phone, so above in the main part, put in the smaller image, then in the media queries, put in
-in the bigger images if a screen is larger*/
 @media screen and (min-width: 500px) {
 
 .window::before {
  
-  background-image:url('./daypic.jpg');
+  background-image:url('./pics/daypic.jpg');
  
 
 }
 
 /*dark  */
 .window::after {
-    /*need to change all these on mobile. smaller bg image, and animation only happens on big screens */
-  background-image:url('./nightpic.jpg');
+  background-image:url('./pics/nightpic.jpg');
 }
 
 

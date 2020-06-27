@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import dog from './dog.JPG'
-import mefire from './mefire2.JPG'
+import mefire from '../pics/mefire2.JPG'
 import Scroller from './Scroller.js'
 
 export default function Bio(){

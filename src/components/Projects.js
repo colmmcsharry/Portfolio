@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import Scroller from './Scroller.js'
-import networkerspic from './networkerspic.jpg'
-import networkerspic2 from './networkerspic2.jpg'
-import networkerspic3 from './networkerspic3.jpg'
-import networkershot from './networkersshot.jpg'
-import cb1 from './cb1.jpg'
-import cb2 from './cb2.jpg'
-import cb3 from './cb3.jpg'
-import cb4 from './cb4.jpg'
+import networkerspic from '../pics/networkerspic.jpg'
+import networkerspic2 from '../pics/networkerspic2.jpg'
+import networkerspic3 from '../pics/networkerspic3.jpg'
+import networkershot from '../pics/networkersshot.jpg'
+import cb1 from '../pics/cb1.jpg'
+import cb2 from '../pics/cb2.jpg'
+import cb3 from '../pics/cb3.jpg'
+import cb4 from '../pics/cb4.jpg'
 
 
 
