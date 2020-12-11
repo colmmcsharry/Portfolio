@@ -90,7 +90,7 @@ input:checked ~ .window::after{ opacity: 0 }
 
 
 a {color:white;}
-
+.cubbylink {height:55%;width:90%;left:20px;top: 0px;position:absolute;cursor:pointer;z-index:99999; }
 
 
 #bio {
@@ -152,17 +152,20 @@ input {
 label {
   display: none;
   visibility: hidden;
-  height:5rem;
-  width:5rem;
+  height:6rem;
+  width:6rem;
   left:20px;
   top:1rem;
   position: fixed;
   cursor: pointer;
-  background: url('./pics/moon-min.png');
-  background-size:cover;
+  background-repeat:no-repeat;
+  background-image: url('./pics/mon.png');
+  background-size:cover; 
   z-index:99;
   transition: background 3s, transform 1s top 5s;
 }
+
+label:hover {transform: translateY(-3px)}
 
 .peekaboo,.hi{transition: opacity 2.2s ease;}
 
@@ -178,7 +181,6 @@ position:absolute;
  top:2rem;
  left: 25%;
  z-index:98;
- border:1px splid red;
 
 }
 
@@ -233,8 +235,13 @@ animation: typewriter 2s steps(44) 1s 1 normal both,
 
 /*so this is what happens when I click the moon*/
 input:checked + label {
-  background: url('./pics/smileysun-min.png');
- background-size:cover; 
+  background: url('./pics/sun.png');
+  // background-color: rgba(rgb(255, 195, 42),0.9);
+  // box-shadow: 0px 8px 15px rgba(rgb(255, 195, 42),0.9);
+  // border-radius:50%;
+
+ background-size:cover;
+ background-repeat:no-repeat; 
  transition: background 1.5s, transform 1.5s ;
  animation: newoffback 1.5s ease;
 }
@@ -333,6 +340,7 @@ position:relative;
 top:20rem;
 color:$cyan;}
 
+
 #myprojects {color:$cyan;
 font-size: 2.5rem;}
 
@@ -379,6 +387,7 @@ bottom:10rem;}
   position:relative;
   visibility:hidden;
   opacity:0.99;
+
  /* height: 30rem;
   width: 30rem;
   padding:40px;*/
@@ -393,6 +402,8 @@ bottom:10rem;}
     background-image: url('./pics/laptop-min.png') ;
     background-size:contain;
     background-repeat:no-repeat;}
+
+
 
 .laptop > img {
   visibility: visible !important;
@@ -484,11 +495,9 @@ bottom:10rem;}
   transition: all 0.35s;
 }
 .item .polaroid:before {
-  transform: rotate(4deg);
   height: 20%;
   width: 47%;
-  bottom: 30px;
-  right: 12px;
+  bottom: 0px;
   box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
 }
 
@@ -503,9 +512,8 @@ bottom:10rem;}
   z-index: -1;
   transform: rotate(0deg);
   height: 90%;
-  width: 90%;
+  width: 75%;
   bottom: 0%;
-  right: 5%;
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
   transition: all 0.35s;
 }
@@ -549,8 +557,9 @@ bottom:10rem;}
     z-index:99;
     visibility:hidden;
     cursor:pointer;
-
 }
+
+
 
 #scroller1::before {content:"Click Me!";
 text-align:center;
@@ -592,9 +601,11 @@ white-space: nowrap;
     bottom: 13%;
     transform: translate(-50%,-50%);
     z-index:99;
-    font-size:5rem;}  
+    font-size:5rem;
+    padding:5px 15px;}  
 
-#scroller5:hover {cursor:pointer;}
+#scroller5:hover {cursor:pointer;transform:translate(-50%, -55% );}
+#scroller5:after{content:'To Top'; top:70%; width:130%; position:absolute; left:50%; font-size:1rem;transform: translate(-50%,-50%);}
 
 .arrow span{
     display: block;
@@ -631,6 +642,14 @@ white-space: nowrap;
 
 
 
+/* MEDIA QUERIES START*/
+
+@media screen and (min-width: 1900px) {
+#bio {padding-left:10rem; padding-right:10rem ;}
+html {font-size:20px;}
+}
+
+
 
 
 @media screen and (max-width: 1300px) {
@@ -646,6 +665,8 @@ white-space: nowrap;
     height:45rem;
     width:32rem;
     bottom:-25rem;}
+
+
 
 
 .description {top:1rem;
@@ -692,7 +713,7 @@ overflow-x:hidden;}
   height:50%;
 }
 
-
+.cubbylink {height:80%;width:90%;left:0px;top:0px;position:absolute;cursor:pointer;z-index:99999;}
  }
 
 
@@ -832,11 +853,10 @@ font-size:30px;}
   display: block;
   padding:5px;
   margin:5%;
-  position:relative;
-
-  
-  
+  position:relative; 
 }
+
+#scroller5:after{content:'To Top'; top:70%; width:20%; position:absolute; font-size:1rem;}
 
 
 }
@@ -869,14 +889,6 @@ font-size:30px;}
   }
 }
 }
-
-
-
-
-
-
-
-
 
 
 

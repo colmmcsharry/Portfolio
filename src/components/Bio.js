@@ -44,7 +44,7 @@ return (
                     </div>
 
                   <div id="blurb"> I have been studying web development and design for the past few years.
-                  <br/><br/> I strive to create beautiful, minimalist websites with an emphasis on a quality user experience.<br/> <br/> <br/>
+                  <br/><br/> I strive to create beautiful websites with an emphasis on a quality user experience.<br/> <br/> <br/>
 
                                <table>
                                <tbody>
@@ -58,7 +58,7 @@ return (
   </tr>
   <tr>
     <td><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></td>
-    <td>React.js</td>
+    <td>React.js/Gatsby.js</td>
   </tr>
   <tr>
     <td><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev in 2020</a></td>
