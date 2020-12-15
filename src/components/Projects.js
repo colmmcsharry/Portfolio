@@ -103,7 +103,7 @@ target="_blank"> Crezo Construction</a></h3>
                   </div>
                   <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
               </div>
-               <h3 className="projectname cabins"><Element name="Project3" ></Element> NetWorkers </h3> 
+               <h3 className="projectname cabins"><Element name="Project3" ></Element><a href="https://mcshazz.github.io/Networkers/" target="_blank"> NetWorkers </a></h3> 
               <div className="project" id="third">
                   
                   <div className="description column"> 
@@ -117,7 +117,7 @@ target="_blank"> Crezo Construction</a></h3>
 
                   </div>
                   <div className="image-container column">
-                  
+                  <a href="https://crezo.netlify.app/" target="_blank">
                   this is the image container/column
                   <br/>this is the image container/column
                   <br/>this is the image container/column
@@ -129,6 +129,7 @@ target="_blank"> Crezo Construction</a></h3>
                       <img src={networkerspic3} />
                       <img src={networkershot} />      
                       </div>
+                       </a>
                   </div>
                   <div id="scroller5"> <ScrollLink activeClass="active" className="test1" to="top" spy={true} smooth={true} duration={500} >^</ScrollLink> </div> 
               </div>
