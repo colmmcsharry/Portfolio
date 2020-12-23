@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react'
 
 /* this is just a component that renders the arrows */
-function Scroller() {
+function Scroller(props) {
 
 
 return (
@@ -11,10 +11,6 @@ return (
 
 	<div className="arrow"> 
 	
-                <span></span>
-                <span></span>
-                <span></span>
-
 </div>
 
 </React.Fragment>

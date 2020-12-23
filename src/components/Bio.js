@@ -36,6 +36,7 @@ return (
 
             <h3 id="about"><Element name="About" ></Element>About</h3>
               <div id="bio">
+              <div className="tight">
                 
                    <div className="item">
                       <div className="polaroid"><img src={mefire}/>
@@ -84,9 +85,9 @@ return (
 </table>
                   </div>
                 {/*if I change id to className, then I can just change all the scoller's bottom positions om mob */}
-                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
+                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2">Projects</div></ScrollLink> </div> 
 
-
+                 </div>
               </div>
 
 

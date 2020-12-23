@@ -34,7 +34,9 @@ target="_blank"> Crezo Construction</a></h3>
               
 
               <div className="project" id="first"> 
-                  
+
+                  <div className="projtight">
+
                   <div className="description column"> 
 
 
@@ -68,12 +70,14 @@ target="_blank"> Crezo Construction</a></h3>
                       </a>
                   </div>
 
-                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
-
+                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow" id="arrow3">invis</div></ScrollLink> </div> 
+                   </div>
               </div>
 
                 <h3 className="projectname cabins"><Element name="Project2" ></Element><a href="https://mcshazz.github.io/Testproj/" target="_blank"> Cosy Cabins</a></h3>
               <div className="project" id="second">
+
+              <div className="projtight">
                   
                   <div className="description column"> 
                    This is a mock-up website for my brother's company.
@@ -101,7 +105,8 @@ target="_blank"> Crezo Construction</a></h3>
                       </div>
                       
                   </div>
-                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><Scroller /></ScrollLink> </div> 
+                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow4">invis</div></ScrollLink> </div> 
+                </div>
               </div>
                <h3 className="projectname cabins"><Element name="Project3" ></Element><a href="https://mcshazz.github.io/Networkers/" target="_blank"> NetWorkers </a></h3> 
               <div className="project" id="third">

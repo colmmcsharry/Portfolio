@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import Scroller from './Scroller.js';
 
 
 export default function Landingview() {
@@ -16,6 +15,7 @@ return (
 <label for="toggle1"></label>
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
+
 <h1 className="hi">
     Hi, I'm Colm 
 </h1> 
@@ -23,7 +23,6 @@ return (
 <h1 className="peekaboo">
     Hi, I'm Colm
 </h1> 
-
 
 
 
@@ -36,7 +35,7 @@ return (
 <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
 <div id="scroller1">
  <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
- <Scroller /></ScrollLink>
+ <div className="arrow">Click Me</div></ScrollLink>
   </div></ScrollLink>
 </React.Fragment>
 
