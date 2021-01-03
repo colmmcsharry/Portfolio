@@ -20,6 +20,7 @@ export default function Bio(){
 },  3800   )
 
 
+
 window.onload = setTimeout(function() {  
   document.getElementById("scroller1").style.visibility = "visible";
   

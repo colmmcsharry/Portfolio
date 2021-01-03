@@ -40,7 +40,7 @@ body {
   left:0;
   width:100vw;
   height:100vh;
-  opacity:0.6;
+  opacity:0.9;
 }
 
 
@@ -59,8 +59,8 @@ body {
 /*bright  */
 .window::before {
  
-  background-image:url('./pics/daysmall.jpg');
-  background-position: 05px 0px;
+  background-image:url('./pics/copy.jpeg');
+  // background-position: 05px 0px;
 
 }
 
@@ -72,14 +72,14 @@ body {
 
 
 
-@keyframes bgmove{
-  0% {
-    background-position: 0px 0px
-  }
-  100% {
-    background-position: -75px 0px
-  }
-}
+// @keyframes bgmove{
+//   0% {
+//     background-position: 0px 0px
+//   }
+//   100% {
+//     background-position: -75px 0px
+//   }
+// }
 
 
 
@@ -161,20 +161,38 @@ input {
 label {
   display: none;
   visibility: hidden;
-  height:6rem;
-  width:6rem;
+  height:5rem;
+  width:5rem;
   left:20px;
   top:1rem;
   position: fixed;
   cursor: pointer;
   background-repeat:no-repeat;
-  background-image: url('./pics/mon.png');
+  background-image: url('./pics/mon3.png');
   background-size:cover; 
   z-index:99;
-  transition: background 3s, transform 1s top 5s;
+  transition: background 3s, transform 1s top 5s, 
+
 }
 
 label:hover {transform: translateY(-3px)}
+
+label::before {
+  content:"";
+  background-image: url('./pics/Product.png');
+  position:absolute;
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center center;
+  height:150%;
+  width:150%;
+  bottom:-80%;
+  left:-14%;
+  z-index:99999 !important;
+  display:block;
+
+}
+
 
 .peekaboo,.hi{transition: opacity 2.2s ease;}
 
@@ -209,9 +227,7 @@ position:absolute;
 
 .hi{ opacity: 1;
 color: $cyan;
-overflow: hidden;
-width:7em;
-/*this doesn't make any diff to typewriter thing*/
+ overflow:hidden;
 white-space: nowrap;
 border-right:2px solid $cyan;
 animation: typewriter 2s steps(44) 1s 1 normal both,
@@ -258,21 +274,40 @@ animation: typewriter 2s steps(44) 1s 1 normal both,
 
 /*so this is what happens when I click the moon*/
 input:checked + label {
-  background: url('./pics/sun.png');
+  background: url('./pics/flaresun.png');
   // background-color: rgba(rgb(255, 195, 42),0.9);
   // box-shadow: 0px 8px 15px rgba(rgb(255, 195, 42),0.9);
   // border-radius:50%;
-
  background-size:cover;
  background-repeat:no-repeat; 
- transition: background 1.5s, transform 1.5s ;
- animation: newoffback 1.5s ease;
+ transition: background 1.5s;
+ animation: newoffback 1.5s ease forwards;
 }
 
 // this is what happens when unchecking,(sun to moon)
 input[type=checkbox]:not(:checked) + label {
   animation: newoffback2 1.5s ease;
   transition: background 1s;
+}
+
+input[type=checkbox]:not(:checked) + label::before {
+  animation: fadeIn 3.5s ease-in-out infinite;
+  animation-delay: 1s;
+  opacity:0;
+}
+
+/*this is the "dark mode" png*/
+input:checked + label::before {
+   visibility: hidden;
+
+}
+
+
+@keyframes fadeIn {
+0% {opacity:0;}
+50% {opacity:1;
+      filter: brightness(1.75);}
+100% {opacity:0;}
 }
 
 
@@ -286,16 +321,16 @@ input[type=checkbox]:not(:checked) + label {
     transform: translate(0, 0);    
   }
   50% {
-    transform: translate(-130px, 150px);
+    transform: translate(-130px, 150px) ;
   }
 
- 100% {transform: translate(0, 0);} 
+ 100% {transform: translate(0, 0) scale(1.5);} 
 
 }
 
 @keyframes newoffback2 {
  0% {
-    transform: translate(0, 0);    
+    transform: translate(0, 0) scale(1.5);    
   }
   50% {
     transform: translate(-130px, 150px);
@@ -483,6 +518,12 @@ bottom:10rem;}
 
 
 
+#item2 {z-index:9999;
+position:absolute;
+top: 2%;
+left:70%;
+width: 20%;}
+
 
 /*css for polaroids begins*/
 
@@ -660,7 +701,6 @@ transition: color 2s ease;
 .arrow:hover::after {cursor:pointer;}
 
 
-.test1 {}
 
 #scroller5{position:absolute;
   left:50%;
@@ -912,7 +952,6 @@ font-size:30px;}
 
 @media screen and (max-width:400px){
   .laptop {
-
     height:20rem;
     width: 24rem;
     left:-1%;
@@ -946,6 +985,8 @@ font-size:30px;}
   bottom:0;
   border-right: 1px solid $cyan;
   border-bottom: 1px solid $cyan;}
+
+
 }
 
 
@@ -968,16 +1009,16 @@ font-size:30px;}
 
 
 /* background panning animation only happens on screens wider than 1300px */
-@media screen and (min-width: 1300px) {
+// @media screen and (min-width: 1300px) {
 
-  .window::before, .window::after {
-      animation: bgmove 7s infinite ease-in-out alternate-reverse; 
-       background-size:105%;
-       background-repeat:no-repeat;
-     }
+//   .window::before, .window::after {
+//       animation: bgmove 7s infinite ease-in-out alternate-reverse; 
+//        background-size:105%;
+//        background-repeat:no-repeat;
+//      }
 
     
-}
+// }
 
 
 
@@ -985,14 +1026,15 @@ font-size:30px;}
 
 .window::before {
  
-  background-image:url('./pics/daypic.jpg');
- 
+  background-image:url('./pics/copy.jpeg');
+  background-size: 100% 100%;
 
 }
 
 /*dark  */
 .window::after {
-  background-image:url('./pics/nightpic.jpg');
+  background-image:url('./pics/nightversion2.jpg');
+  background-size: 100% 100%;
 }
 
 

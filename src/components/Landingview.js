@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import meface from '../pics/meface.jpg'
 
 
 export default function Landingview() {
@@ -25,10 +26,9 @@ return (
 </h1> 
 
 
-
-
 {/*this is the main view of Vancouver, both in day and night*/}
-<div className="window dark bright">          
+<div className="window dark bright"> 
+     
 </div>  
 
 {/*there are two scroll link*/}
