@@ -22,6 +22,7 @@ function App() {
 
 
         <div id="wrapper">
+        <div id="scroll-magic-point"></div>
           <Bio />
           <Projects />
 

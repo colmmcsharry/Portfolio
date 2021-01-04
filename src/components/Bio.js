@@ -2,9 +2,36 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mefire from '../pics/mefire2.JPG'
+import mework from '../pics/me-at-work.jpg'
 import Scroller from './Scroller.js'
 
 export default function Bio(){
+
+
+
+window.onload = setTimeout(function() {
+      if (
+  "IntersectionObserver" in window &&
+  "IntersectionObserverEntry" in window &&
+  "intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+let observer = new IntersectionObserver(entries => {
+  if (entries[0].boundingClientRect.y > 0) {
+    
+    document.querySelector('.mything').style.display = "none"
+     }
+     else {
+  document.querySelector('.mything').style.display = "block"; 
+  }
+});
+  
+observer.observe(document.querySelector("#scroll-magic-point"));
+}
+
+}  )
+
+
+
 
 
 
@@ -31,16 +58,18 @@ window.onload = setTimeout(function() {
 
 
 
+
 return (
 
 	<React.Fragment>
 
             <h3 id="about"><Element name="About" ></Element>About</h3>
               <div id="bio">
-              <div className="tight">
+
+              <div className="tight" >
                 
                    <div className="item">
-                      <div className="polaroid"><img src={mefire}/>
+                      <div className="polaroid"><img src={mework}/>
                         <div className="caption">Me social distancing</div>
                       </div>
                     </div>

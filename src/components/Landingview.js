@@ -11,13 +11,15 @@ export default function Landingview() {
 return (
 
 <React.Fragment>  
-<Element name="top" />      
-           <input id="toggle1" type="checkbox" />
+<Element name="top" />  
+
+
+<input id="toggle1" type="checkbox" className="mything"/>
 <label for="toggle1"></label>
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 
-<h1 className="hi">
+<h1 className="hi" id="lol">
     Hi, I'm Colm 
 </h1> 
 
