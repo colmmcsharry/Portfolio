@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import mefire from '../pics/mefire2.JPG'
 import mework from '../pics/me-at-work.jpg'
 import Scroller from './Scroller.js'
 
@@ -70,7 +69,7 @@ return (
                 
                    <div className="item">
                       <div className="polaroid"><img src={mework}/>
-                        <div className="caption">Me social distancing</div>
+                        <div className="caption">Me at work</div>
                       </div>
                     </div>
 

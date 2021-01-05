@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import meface from '../pics/meface.jpg'
+
 
 
 export default function Landingview() {
@@ -19,7 +19,7 @@ return (
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 
-<h1 className="hi" id="lol">
+<h1 className="hi">
     Hi, I'm Colm 
 </h1> 
 
