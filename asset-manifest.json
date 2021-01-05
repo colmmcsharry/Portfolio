@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7943e4b4.chunk.css",
-    "main.js": "/Portfolio/static/js/main.a204eb9a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a204eb9a.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.3eac53d9.chunk.css",
+    "main.js": "/Portfolio/static/js/main.91b56a5c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.91b56a5c.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
     "static/js/2.d9702dc4.chunk.js": "/Portfolio/static/js/2.d9702dc4.chunk.js",
     "static/js/2.d9702dc4.chunk.js.map": "/Portfolio/static/js/2.d9702dc4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.7943e4b4.chunk.css.map": "/Portfolio/static/css/main.7943e4b4.chunk.css.map",
+    "static/css/main.3eac53d9.chunk.css.map": "/Portfolio/static/css/main.3eac53d9.chunk.css.map",
     "static/js/2.d9702dc4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.d9702dc4.chunk.js.LICENSE.txt",
     "static/media/cb1.385fce0c.jpg": "/Portfolio/static/media/cb1.385fce0c.jpg",
     "static/media/cb2.60ab078a.jpg": "/Portfolio/static/media/cb2.60ab078a.jpg",
     "static/media/cb3.51fc8dd3.jpg": "/Portfolio/static/media/cb3.51fc8dd3.jpg",
     "static/media/cb4.6cfabe3a.jpg": "/Portfolio/static/media/cb4.6cfabe3a.jpg",
+    "static/media/App.scss": "/Portfolio/static/media/sunpic.3442f720.png",
     "static/media/crezopic1.12964d46.jpg": "/Portfolio/static/media/crezopic1.12964d46.jpg",
-    "static/media/crezopic2.eade21ab.jpg": "/Portfolio/static/media/crezopic2.eade21ab.jpg",
-    "static/media/crezopic3.f8e13cba.jpg": "/Portfolio/static/media/crezopic3.f8e13cba.jpg",
-    "static/media/crezopic4.83caea73.jpg": "/Portfolio/static/media/crezopic4.83caea73.jpg",
-    "static/media/App.scss": "/Portfolio/static/media/sun.f1603d02.png",
-    "static/media/mefire2.07b58bd3.JPG": "/Portfolio/static/media/mefire2.07b58bd3.JPG",
+    "static/media/crezopic2.fc384681.jpg": "/Portfolio/static/media/crezopic2.fc384681.jpg",
+    "static/media/crezopic3.e9a91b28.jpg": "/Portfolio/static/media/crezopic3.e9a91b28.jpg",
+    "static/media/crezopic4.a20634d2.jpg": "/Portfolio/static/media/crezopic4.a20634d2.jpg",
+    "static/media/me-at-work.dd9cbc54.jpg": "/Portfolio/static/media/me-at-work.dd9cbc54.jpg",
     "static/media/networkerspic.98fc8798.jpg": "/Portfolio/static/media/networkerspic.98fc8798.jpg",
     "static/media/networkerspic3.13223c0c.jpg": "/Portfolio/static/media/networkerspic3.13223c0c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.896df889.js",
     "static/js/2.d9702dc4.chunk.js",
-    "static/css/main.7943e4b4.chunk.css",
-    "static/js/main.a204eb9a.chunk.js"
+    "static/css/main.3eac53d9.chunk.css",
+    "static/js/main.91b56a5c.chunk.js"
   ]
 }
