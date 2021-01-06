@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 
 /*these are basically reusable variables, SCSS*/
-$cyan:#3DC0B0;;
+$cyan:#3DC0B0;
 $darkbg:#333;
 
 * {
@@ -190,15 +190,16 @@ label:hover {transform: translateY(-3px)}
 /*Product is the png that says "dark mode"*/
 label::before {
   content:"";
-  background-image: url('./pics/Product.png');
+  background-image: url('./pics/darkarch.png');
   position:absolute;
 background-size:contain;
 background-repeat:no-repeat;
-background-position:center center;
-  height:150%;
-  width:150%;
-  bottom:-80%;
-  left:-14%;
+// background-position:center center;
+  width:100%;
+  height:100%;
+top:-10%;
+  // bottom:-70%;
+  left:-5%;
   z-index:99999 !important;
   display:block;
 
@@ -266,7 +267,7 @@ animation: typewriter 2s steps(44) 1s 1 normal both}
 h1{
 text-align:center;
  position: absolute;
- font-family: quando, Comic Sans MS;
+ font-family: Courier New, Comic Sans MS;
  z-index:98;
  top: 4%;
  width:7em;
@@ -898,7 +899,7 @@ overflow-x:hidden;}
 h1{
 text-align:center;
 position:absolute;
- font-family: quando, Comic Sans MS;
+ font-family: Courier New, Comic Sans MS;
  font-size:2.5rem;
  z-index:98;
  top: 15%;
