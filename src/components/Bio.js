@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
-import Scroller from './Scroller.js'
 
 export default function Bio(){
 
@@ -53,7 +52,7 @@ window.onload = setTimeout(function() {
   document.getElementById("scroller1").style.animation = "scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
 
   // document.getElementById("scroller1").className += " revealdown";
-},  4800   )
+},  6000   )
 
 
 

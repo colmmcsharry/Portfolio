@@ -22,7 +22,9 @@ html {
   }
 }
 
-html, body, .App { margin: 0; padding: 0; } 
+html, body, .App { margin: 0; padding: 0; 
+overflow-x:hidden;} 
+
 
 
 
@@ -115,14 +117,13 @@ justify-content: center;
 position: relative;
 }
 
-.projtight {position:relative;
-}
+
 
 #blurb {display:inline-table;
   align-items: center;
   text-align:center;
   justify-content: center;
-  font-size:1.2rem;
+  font-size:1.1rem;
   float:right;
   position:relative;
   bottom:30rem;
@@ -140,7 +141,6 @@ font-weight:bold;}
 td {white-space: nowrap;
 }
 
-#quals {}
 
 #profiler {
 
@@ -157,13 +157,17 @@ td {white-space: nowrap;
   display: block;
 background-color:#333;
  color:white;
- transition: background-color 2s; }
+ transition: background-color 2s;
+ padding-bottom:3rem; }
 
 
 
 input {
   position: relative;
   display: none;
+  cursor: pointer;
+  animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 label {
@@ -174,7 +178,6 @@ label {
   left:20px;
   top:1rem;
   position: absolute;
-  cursor: pointer;
   background-repeat:no-repeat;
   background-image: url('./pics/mon3.png');
   background-size:cover; 
@@ -185,7 +188,8 @@ outline: none !important;
 }
 
 
-label:hover {transform: translateY(-3px)}
+label:hover {transform: translateY(-3px);
+cursor: pointer;}
 
 /*Product is the png that says "dark mode"*/
 label::before {
@@ -214,13 +218,13 @@ top:-10%;
   display:none;
   -webkit-appearance: none;
   position: fixed;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   display:block;
-  top:10px;
-  left:10px;
+  top:8px;
+  left:8px;
   background-image: url('./pics/newnight.jpg');
-  border-radius: 25px;
+  border-radius: 20px;
   z-index:9;
   outline: none;
   transition: background-image .90s;
@@ -235,18 +239,18 @@ top:-10%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: navy;
-  border-radius: 25px;
+  border-radius: 20px;
   transition: all .9s;
   background-color:#ECF0F3;
+  
 }
 
 .mything:checked {
-  background-image: url('./pics/sunpic.png');
+  background-image: url('./pics/sunpic2.jpg');
   transition: background-image .90s;
- box-shadow:none;
 }
 
 .mything:checked:before {
@@ -436,6 +440,169 @@ color: white;
 
 
 
+/*CSS FOR NEW PROJECTS BEGINS*/
+
+.projlink {text-decoration:none;}
+
+
+#projwrap {display:block;
+
+ text-align:center; 
+}
+
+
+.projtitle {
+padding: 30px;
+font-family:courier new;
+font-size:1.4rem;}
+
+#gridwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  text-align:center;
+  align-items:center;
+  padding:2rem;
+}
+
+#left {
+
+  padding:20px;
+
+}
+#right {
+
+  position:relative;
+  align-items:center;
+}
+
+.devices {height:100%;
+width:100%;
+top:0px;
+left:2px;
+position:relative;
+}
+
+.inner {position:absolute;
+  left:13%;
+  top:9%;
+height:59%;
+width:70%;
+}
+
+
+
+.ipad {
+  position:absolute;
+  right:3%;
+  bottom:10%;
+height:53%;
+width:27%;
+object-fit:cover; 
+object-position:center center;
+}
+
+.phone {
+  position:absolute;
+    left:5%;
+  bottom:11%;
+  object-fit:cover; 
+object-position: 40% 0%;  
+  width: 13%;
+  height:36%;
+}
+
+.ipadwrapper{}
+.innerwrapper {}
+.phonewrapper {}
+
+
+.inner, .phone, .ipad { animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    &:nth-of-type(1) {
+      animation-delay: 6s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 2s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 0;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR NEW PROJECTS ENDS*/
+
+
+
+
+
+
+
+
+
+
 /*this is the fade in on page load*/
 .fade {
 -webkit-animation: fade 3s;
@@ -466,19 +633,39 @@ color:$cyan;}
 position:relative;
   font-size:2.5rem;
 top:20rem;
-color:$cyan;}
+color:$cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*PROJECTS BEGIN*/
+
+
+
 
 
 #myprojects {color:$cyan;
 font-size: 2.5rem;}
 
 .projectname {margin-top: 15rem;
-font-size:2rem;}
+font-size:2rem;
+}
 
 #second {margin-top:3rem;}
 
 #third {margin-top:03rem;
   padding-bottom:010rem;
+}
+
+.projtight {position:relative;
 }
 
 .cabins {margin-top:8rem;
@@ -488,9 +675,11 @@ div, p {
   font-family: judson;
 }
 
+p {font-size:1.1rem;}
+
 .project {
   position:relative;
-  padding:20rem 2rem;
+  padding:15rem;
   text-align: center;
   font-size:1.2rem;
 }
@@ -501,6 +690,7 @@ div, p {
   min-width:40%;
   padding: 10px;
   text-align: center;
+  border:1px solid pink;
 }
 
 .description {padding-bottom:15rem;
@@ -508,13 +698,22 @@ position:relative;
 bottom:10rem;}
 
 
+
+
+
+
+
+
+
+
 /*image transitions for my website previews starts*/
 
 .image-container {
   background:green;
   position:relative;
-  visibility:hidden;
+  // visibility:visible;
   opacity:0.99;
+  border:1px solid yellow;
 
  /* height: 30rem;
   width: 30rem;
@@ -524,10 +723,10 @@ bottom:10rem;}
 .laptop {visibility: visible !important;
     height:45rem;
     width:36rem;
-    
+    border:1px solid yellow;
     bottom:-18rem;
     position: absolute;
-    background-image: url('./pics/laptop-min.png') ;
+    background-image: url('./pics/responsive.png') ;
     background-size:contain;
     background-repeat:no-repeat;}
 
@@ -537,10 +736,43 @@ bottom:10rem;}
   visibility: visible !important;
     height:36%;
     z-index:-2;
-    width:80%;
+    width:70%;
     top:2%;
     left:10%;
     position: absolute;  
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    &:nth-of-type(1) {
+      animation-delay: 6s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 2s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 0;
+    }
+  }
+
+
+.tab {position:absolute;
+border:1px solid green;
+right:1.8vw;
+bottom:51%;
+height:210px;
+width:150px;
+}
+
+  .tablet {
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -578,6 +810,12 @@ bottom:10rem;}
 }
 
 /*image transitions ends*/
+
+
+
+
+
+
 
 
 
@@ -716,22 +954,20 @@ z-index:10;
 
 #scroller2:hover {cursor:pointer;}
 
-#scroller3, #scroller4 {
-  position:absolute;
-    display:flex;
-    width:100%;
-    z-index:99;
-    bottom:40%;
-    text-align:center;
-    justify-content:center;
-    white-space: nowrap;
+// #scroller3, #scroller4 {
+//   position:absolute;
+//     display:flex;
+//     width:100%;
+//     z-index:99;
+//     bottom:40%;
+//     text-align:center;
+//     justify-content:center;
+//     white-space: nowrap;
    
-}
+// }
 
-#scroller4 {bottom:20%;}
 
-#arrow3::after {right:5px}
-#arrow3, #arrow4 {color:transparent;}
+
 
 .arrow {
 color: $cyan;
@@ -739,22 +975,13 @@ animation: arrowbounce 3s infinite ease;
 transition: color 2s ease;
 }
 
-.arrow::after {
-  transition:border 2s ease;
-}
-
 /*this is for the thing that says to scroll down on main pic*/
 .arrow:hover{cursor:pointer;}
 
-// .arrow::before {
-//   content:"Click Me";
-//   transform:translateX(-50%);
-//   margin:0 auto;
-//   position:fixed;
-// }
 
 
 .arrow::after {
+    transition:border 2s ease;
   content:"";
   width:20px;
   height:20px;
@@ -773,18 +1000,52 @@ transition: color 2s ease;
 .arrow:hover::after {cursor:pointer;}
 
 
+.projarrow{
+position:relative;
+top:-5vh;
+height:50px;
+margin:3% auto;
+margin-bottom:12%;
+width:50px;
+}
 
-#scroller5{position:absolute;
-  left:50%;
-    bottom: 13%;
-    transform: translate(-50%,-50%);
-    z-index:99;
+
+
+.lastarrow {top:6vh;}
+
+#scroller5{position:relative;
+    width:100%;
+    display:block;
+    text-align:center;
     font-size:5rem;
-    padding:5px 15px;
+    margin:5rem 0;
     }  
 
-#scroller5:hover {cursor:pointer;transform:translate(-50%, -55% );}
-#scroller5:after{content:'To Top'; top:70%; width:130%; position:absolute; left:50%; font-size:1rem;transform: translate(-50%,-50%);}
+.lilcontainer {display:inline-block;
+cursor:pointer;
+}
+
+.lilcontainer:hover {
+  transform:translateY(-3px);
+}
+
+.test1 {
+width:50px;
+height:10px;
+color:$cyan !important;
+
+
+}
+
+.test1:before{
+  content:"To Top";
+  position:absolute;
+  font-size:.7rem;
+  transform:translateX(-5%);
+  white-space:nowrap;
+  font-family:quando;
+}
+
 
 @keyframes arrowbounce {
 0%, 100% {
@@ -803,11 +1064,17 @@ transition: color 2s ease;
 /* MEDIA QUERIES START*/
 
 @media screen and (min-width: 1900px) {
+
 #bio {padding-left:10rem; padding-right:10rem ;}
+
 html {font-size:20px;}
 }
 
+@media screen and (min-width: 1200px) {
 
+.polaroid {bottom:6vh;
+position:relative;}
+}
 
 
 @media screen and (max-width: 1300px) {
@@ -896,6 +1163,12 @@ overflow-x:hidden;}
 
 @media screen and (max-width: 500px) {
 
+.projarrow {margin-bottom:15vh;
+top:3vh;}
+
+#gridwrapper{padding:0 3vw;
+}
+
 h1{
 text-align:center;
 position:absolute;
@@ -981,33 +1254,33 @@ overflow-x:hidden;
 h2 {font-size:3rem;}
 
 
+  
+   #gridwrapper  {
+    display:block;}
+
 
 
 .mything {
 
   width: 50px;
   height: 25px;
-
   top:10px;
   left:10px;
   border-radius: 12.5px;
-
   box-shadow: 0px 1px 2.5px .5px gray;
 }
 
 .mything:before {
   height: 25px;
   width: 25px;
-  background-color: navy;
   border-radius: 12.5px;
-  transition: all .9s;
-  background-color:#ECF0F3;
 }
 
 
-
 .mything:checked {
- box-shadow:none;
+  transition: background-image .90s;
+background-size:109% 109%;
+   background-position: -2px -1px;
 }
 
 
@@ -1026,20 +1299,7 @@ font-size:30px;}
 
 
 
-#scroller3{
-  bottom:-78%;
-  }
 
-#scroller4{
-  bottom:-99%;
-  }
-
-#scroller5 {top:160px;
-  display: block;
-  position:relative; 
-}
-
-#scroller5:after{content:'To Top'; top:70%; width:20%; position:absolute; font-size:1rem;}
 
 
 }
@@ -1106,10 +1366,6 @@ font-size:30px;}
     width: 20rem; 
 }
 
-
-#scroller3, #scroller4 {
-  bottom:-60%;
-  }
 
 }
 
