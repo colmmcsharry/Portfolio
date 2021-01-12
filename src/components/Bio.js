@@ -3,6 +3,7 @@ import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 
+
 export default function Bio(){
 
 

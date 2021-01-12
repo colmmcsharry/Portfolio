@@ -14,8 +14,11 @@ return (
 <Element name="top" />  
 
 
+
 <input id="toggle1" type="checkbox" className="mything"/>
 <label for="toggle1"></label>
+
+
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 
