@@ -3,14 +3,15 @@ export {alldescriptions}
 const alldescriptions = {
 	crezotext:<p>I made this site for a small construction company in Vancouver. 
                    <br/><br/> I replaced their old Wordpress site with a more modern
-                   version, using Gatsby.js. Lighthouse audit scores improved dramatically
+                   version using Gatsby.js.<br/> 
+                   Loading times were vastly decreased and Lighthouse audit scores improved dramatically
                    in all areas.
 
                     <br/><br/>
-                    The site is linked to Contentful so they can manage the content themselves, without knowing any code.
-                    <br/><br/> I replaced their old Wordpress site with a more modern
-                   version, using Gatsby.js. Lighthouse audit scores improved dramatically
-                   in all areas.</p>,
+                    The site is linked to Contentful CMS so they can manage the content themselves, without knowing any code.
+                    <br/><br/> 
+                    The colours, fonts and animations used were chosen to give a professional and modern look.
+                    </p>,
 
 
 
@@ -18,15 +19,15 @@ const alldescriptions = {
 
 	cabintext:<p>This is a mock-up website for my brother's company.
                      <br/><br/> Built using React, I tried to convey 
-                    the overall ethos of the company with the website design.
+                    the overall ethos of the company with the minimalist website design.
 
                     <br/><br/>
-                    Eventually, I will add a booking / payment system to the site.
-
-                    The site is linked to Contentful so they can manage the content themselves, without knowing any code.
-                    <br/><br/> I replaced their old Wordpress site with a more modern
-                   version, using Gatsby.js. Lighthouse audit scores improved dramatically
-                   in all areas.
+                    As this website is image-heavy, I learned a lot about optimising images and making them responsive.
+                    <br/><br/>
+                    The aesthetic is supposed to be "fun" and light-hearted, so I learned about using colours, fonts
+                    and various CSS effects and animations to create the right look.
+                    <br/><br/> 
+                     When the company launches, I will add a booking / payment system to the site.
 </p>,
 	networktext:<p>
 
@@ -38,10 +39,11 @@ const alldescriptions = {
                   So, if you need a pipe fixed or as website designed, <br/> you can swipe through the 
                   local plumbers or designers, and hire one you like!
 
-                  The site is linked to Contentful so they can manage the content themselves, without knowing any code.
-                    <br/><br/> I replaced their old Wordpress site with a more modern
-                   version, using Gatsby.js. Lighthouse audit scores improved dramatically
-                   in all areas.
+                  
+                    <br/><br/> 
+                    This was my first project built using React, and I really came to enjoy the component-based approach<br/>
+                    
+
 		
 
 

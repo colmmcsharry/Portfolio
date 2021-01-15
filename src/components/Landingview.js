@@ -31,7 +31,7 @@ return (
 </h1> 
 
 
-{/*this is the main view of Vancouver, both in day and night*/}
+{/*this is the main image, both in day and night*/}
 <div className="window dark bright"> 
      
 </div>  

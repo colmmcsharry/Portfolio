@@ -37,121 +37,10 @@ return (
 
 
 
-              
-{/*              
-              <div className="project" id="first"> 
-
-                  <div className="projtight">
-
-                  <div className="description column"> 
-
-
-                  I made this site for a small construction company in Vancouver. 
-                   <br/><br/> I replaced their old Wordpress site with a more modern
-                   version, using Gatsby.js. Lighthouse audit scores improved dramatically
-                   in all areas.
-
-                    <br/><br/>
-                    The site is linked to Contentful so they can manage the content themselves, without knowing any code.
-                  
-                  
-                  
-
-                  </div>
-
-                  <div className="image-container column">
-                  <a href="https://crezo.netlify.app/" target="_blank">     
-                      <div className="laptop">
-                      <img src={crezopic1new} />
-                      <img src={crezopic2} />
-                      <img src={crezopic3} />
-                      <img src={crezopic4} />  
-                        <div className = "tab"> 
-                          <img className="tablet" src={crezopic1} />
-                          <img className="tablet" src={crezopic2} />
-                          <img className="tablet" src={crezopic3} />
-                          <img className="tablet" src={crezopic4} /> 
-                        </div>
-                      </div>
-                      </a>
-                  </div>
-
-                   <div id="scroller3"> <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow" id="arrow3">invis</div></ScrollLink> </div> 
-                   </div>
-              </div>
-
-                <h3 className="projectname cabins"><Element name="Project2" ></Element><a href="https://mcshazz.github.io/Testproj/" target="_blank"> Cosy Cabins</a></h3>
-              <div className="project" id="second">
-
-              <div className="projtight">
-                  
-                  <div className="description column"> 
-                   This is a mock-up website for my brother's company.
-                     <br/><br/> Built using React, I tried to convey 
-                    the overall ethos of the company with the website design.
-
-                    <br/><br/>
-                    Eventually, I will add a booking / payment system to the site.
-                  
-                  </div>
-
-                  <div className="image-container column">
-                  
-                  this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                      <div className="laptop">
-                      <img src={cb1} />
-                      <img src={cb2} />
-                      <img src={cb3} />
-                      <img src={cb4} />   
-                      <a className="cubbylink" href="https://mcshazz.github.io/Testproj/" target="_blank"></a>   
-                      </div>
-                      
-                  </div>
-                  <div id="scroller4"> <ScrollLink activeClass="active" to="Project3" offset={-20} spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow4">invis</div></ScrollLink> </div> 
-                </div>
-              </div>
-               <h3 className="projectname cabins"><Element name="Project3" ></Element><a href="https://mcshazz.github.io/Networkers/" target="_blank"> NetWorkers </a></h3> 
-              <div className="project" id="third">
-                  
-                  <div className="description column"> 
-                   
-                    Networkers is a site I created from scratch to help me learn React.<br/>
-                  <br/>It's almost like Tinder, except instead of swiping through dates
-                  you swipe through workers in your area. <br/>
-                  <br/>
-
-                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the local plumbers or designers, and hire one you like!
-
-                  </div>
-                  <div className="image-container column">
-                  <a href="https://crezo.netlify.app/" target="_blank">
-                  this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                  <br/>this is the image container/column
-                      <div className="laptop">
-                      <img src={networkerspic} />
-                      <img src={networkerspic2} />
-                      <img src={networkerspic3} />
-                      <img src={networkershot} />      
-                      </div>
-                       </a>
-                  </div>
-                  <div id="scroller5"> <ScrollLink activeClass="active" className="test1" to="top" spy={true} smooth={true} duration={500} >^</ScrollLink> </div> 
-              </div>
-*/}
-
-
-
  <h3 className="projectname"><Element name="Myprojects" ></Element>My Projects
 </h3>
 
-<Proj title="Crezo Construction" description={alldescriptions.crezotext} image1={crezopic1new} image2={crezopic2} image3={crezopic3} image4={crezopic4} />
+<Proj title="Crezo Construction" description={alldescriptions.crezotext} image1={crezopic1new} image2={crezopic2} image3={crezopic3} image4={crezopic4} link="https://crezo.netlify.app/" />
 <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow"></div></ScrollLink>
 
 
@@ -160,7 +49,7 @@ return (
 <ScrollLink activeClass="active" to="Project3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow"></div></ScrollLink>
 
 <Element name="Project3" ></Element>
-<Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/Networkers/" />
+<Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/NetWorkers/" />
 <div id="scroller5"><div className="lilcontainer"><ScrollLink activeClass="active" className="test1" to="top" spy={true} smooth={true} duration={500} >^</ScrollLink> </div></div>
 
 

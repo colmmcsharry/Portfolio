@@ -20,13 +20,13 @@ return (
   <div id="gridwrapper">
 
     <div id="left">
-{/*this is gonne be like {props.description} */}
+
 {props.description}
 
     </div>
 
     <div id="right">
-    <a href="https://crezo.netlify.app/" target="_blank"> 
+    <a href={props.link} target="_blank"> 
   
 
      

@@ -7,7 +7,7 @@ import mework from '../pics/me-at-work.jpg'
 export default function Bio(){
 
 
-
+/*intersection obeserver is the little point whcich, when scrolled past, makes something happen*/
 window.onload = setTimeout(function() {
       if (
   "IntersectionObserver" in window &&
@@ -29,8 +29,7 @@ observer.observe(document.querySelector("#scroll-magic-point"));
 
 }  )
 
-
-
+;
 
 
 
