@@ -37,7 +37,7 @@ return (
 
 
 
- <h3 className="projectname"><Element name="Myprojects" ></Element>My Projects
+ <h3 className="My-Projects"><Element name="Myprojects" ></Element>My Projects
 </h3>
 
 <Proj title="Crezo Construction" description={alldescriptions.crezotext} image1={crezopic1new} image2={crezopic2} image3={crezopic3} image4={crezopic4} link="https://crezo.netlify.app/" />

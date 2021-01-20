@@ -26,11 +26,25 @@ let observer = new IntersectionObserver(entries => {
   
 observer.observe(document.querySelector("#scroll-magic-point"));
 }
-
 }  )
+
+
+window.onload = setTimeout(function() {
+    document.querySelector('label').onclick = function myfun()
+    {document.getElementById('firstarrow').classList.toggle('bgclass')}
+} , 3000   )
+
+
 
 ;
 
+
+
+
+
+  window.onload = setTimeout(function() {
+    document.querySelector('.window').style.setProperty('--dynamic', 'block') 
+} , 3000   )
 
 
   window.onload = setTimeout(function() {
@@ -67,7 +81,7 @@ return (
               <div className="tight" >
                 
                    <div className="item">
-                      <div className="polaroid"><img src={mework}/>
+                      <div className="polaroid"><img src={mework} height="100%" width="100%" loading="lazy"/>
                         <div className="caption">Me at work</div>
                       </div>
                     </div>
@@ -113,7 +127,7 @@ return (
 </table>
                   </div>
                 {/*if I change id to className, then I can just change all the scoller's bottom positions om mob */}
-                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2">Projects</div></ScrollLink> </div> 
+                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2"></div></ScrollLink> </div> 
 
                  </div>
               </div>

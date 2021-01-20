@@ -40,7 +40,7 @@ return (
 <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
 <div id="scroller1">
  <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
- <div className="arrow">Click Me</div></ScrollLink>
+ <div className="arrow" id="firstarrow"></div></ScrollLink>
   </div></ScrollLink>
 </React.Fragment>
 

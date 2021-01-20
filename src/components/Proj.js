@@ -32,10 +32,10 @@ return (
      
 {/*inner is the screen inside the laptop. */}
       <div className="innerwrapper">
-  <img className="inner" src={props.image1}/>
-  <img className="inner" src={props.image2}/>
-  <img className="inner" src={props.image3}/>
-  <img className="inner" src={props.image4}/>       
+  <img className="inner" src={props.image1} loading="lazy" />
+  <img className="inner" src={props.image2} loading="lazy"/> 
+  <img className="inner" src={props.image3} loading="lazy"/>
+  <img className="inner" src={props.image4} loading="lazy"/>       
       </div>   
 
  <div className="ipadwrapper">      

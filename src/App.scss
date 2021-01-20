@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 
@@ -61,6 +62,7 @@ left:50vw;
   width:100vw;
   height:100vh;
   opacity:0.9;
+  --dynamic: none;
 }
 
 
@@ -74,19 +76,21 @@ left:50vw;
   left:0;
     transition:opacity 2s;
     background-size:cover;
+
+
 }
 
 /*bright  */
 .window::before {
- 
-  background-image:url('./pics/copymob.jpg');
-  // background-position: 05px 0px;
-
+  background-image:url('./pics/daymob.jpg');
+  display:var(--dynamic);
 }
+/*this means there is nothing on window:before for 3s, so it doesn't flash up on page load*/
+
 
 /*dark  */
 .window::after {
-  background-image:url('./pics/nightversion2mob.jpg');
+  background-image:url('./pics/nightmob.jpg');
 }
 
 /*when you scroll past this invisible point, the other light switch appears*/
@@ -100,21 +104,16 @@ left:50vw;
 }
 
 
-// @keyframes bgmove{
-//   0% {
-//     background-position: 0px 0px
-//   }
-//   100% {
-//     background-position: -75px 0px
-//   }
-// }
+@keyframes turnon {
+  100% {
+    background-image:url('./pics/copymob.jpg');
+  }
+}
 
 
-
-input:checked ~ .window::before{ opacity: 1 }
+input:checked ~ .window::before{ opacity: 1}
 
 input:checked ~ .window::after{ opacity: 0 }
-
 
 
 a {color:white;}
@@ -229,8 +228,7 @@ top:-25%;
 
 
 
-
-/*newer test*/
+// mything is the other light switch, after your scroll down
 
 .mything {
   display:none;
@@ -284,18 +282,20 @@ top:-25%;
 
 .peekaboo{opacity: 0;
 color:#333;
-animation: typewriter 2s steps(44) 1s 1 normal both}
+animation: typewriter 2s steps(60) 1s 1 normal both;}
+// animation: typewriter 2s linear 1s 1 normal both}
 
 h1{
-text-align:center;
+text-align:left;
  position: absolute;
- font-family: Courier New, Comic Sans MS;
+ font-family: Dancing Script, cursive, Comic Sans MS;
  z-index:98;
  top: 4%;
- width:7em;
- left: 49vw;
- font-size:2.5rem;
-transform:translateX(-50%);
+ overflow:hidden;
+ left: 40vw;
+ // border:1px solid red;
+ font-size:3rem;
+// transform:translateX(-20%);
 
 }
 
@@ -308,47 +308,25 @@ transform:translateX(-50%);
 
 
 .hi{ opacity: 1;
-
 color: $cyan;
- overflow:hidden;
+overflow:hidden;
 white-space: nowrap;
-border-right:2px solid $cyan;
-animation: typewriter 2s steps(44) 1s 1 normal both,
-  blinkTextCursor 400ms steps(24) infinite normal,
-  cssAnimation 0s ease-in 2.7s forwards;}
+// border-right:2px solid $cyan;
+animation: typewriter 2s steps(60) 1s 1 normal both; 
+}
+  // blinkTextCursor 400ms steps(24) infinite normal,
+  // cssAnimation 0s ease-in 2.7s forwards;}
 
-/* typewriter starts */
   @keyframes typewriter {
   from {
     width: 0;
   }
 
   to {
-    width: 7em;
-  }
-}
-/*width of this needs to be same as width of text*/
-
-@keyframes blinkTextCursor {
-
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
-
-}
-
-
-@keyframes cssAnimation {
-  to {
-    border-right-color: transparent;
+    width: 15rem;
   }
 }
 
-/* typewriter ends */
 
 #toggle1:checked ~ .peekaboo{opacity: 1;}
 #toggle1:checked ~ .hi{opacity: 0;}
@@ -438,23 +416,39 @@ input:checked ~ #wrapper th {
   color: $cyan
 }
 
-input:checked ~ a > #scroller1::before {display:none;}
+
+
+// input:checked ~ a > #scroller1::before {display:none;}
 
 input:checked ~ a > #scroller1 > a > .arrow::after {
 border-color:white;
+transition: 2s ease all;
 }
 
-input:checked ~ a > #scroller1 > a > .arrow::before {
-color:white;
-}
+// input:checked ~ a > #scroller1 > a > .arrow::before {
+// color:white;
+// }
 
 
 input:checked ~ a > #scroller1 > a > .arrow {
 color: white;
+transition: 2s ease all;
+// filter: grayscale(100%);
 }
 
 
+// input[type=checkbox]:not(:checked) ~ a > #scroller1 > a > .arrow {
+//   filter: invert(100%);
+//   transition:1s all;
+// }
 
+
+// animation: fadeIn 2.5s ease-in-out 1;
+// }
+
+// #scroller1, .arrow {
+//   transition: all 3s;
+// }
 
 
 
@@ -649,9 +643,10 @@ color:$cyan;}
 
 #about {
 position:relative;
-  font-size:2.5rem;
+  font-size:3rem;
 top:20rem;
 color:$cyan;
+font-family: Dancing Script, Snell Roundhand, cursive;
 }
 
 
@@ -668,14 +663,10 @@ color:$cyan;
 
 
 
-
-
-#myprojects {color:$cyan;
-font-size: 2.5rem;}
-
-.projectname {margin-top: 15rem;
-font-size:2rem;
+.My-Projects {margin-top: 15rem;
+font-size:3rem;
 color:$cyan;
+font-family:  Dancing Script, cursive, Snell Roundhand, 
 }
 
 #second {margin-top:3rem;}
@@ -780,11 +771,12 @@ bottom:10rem;}
   height: auto;
 }
 .caption {
-  color:black;
-  font-family: cursive, Snell Roundhand, judson;
+  color: #5C5959;
+  font-family:cursive, Snell Roundhand, judson;
   font-size: 1.8rem;
   text-align: center;
   line-height: 2em;
+
 }
 .item {
   width: 30%;
@@ -908,13 +900,26 @@ z-index:10;
    
 // }
 
+#firstarrow, #arrow2{
+background-repeat:no-repeat;
+background-size:contain;
+width:4rem;
+height:2rem;
+}
 
+#firstarrow {background-image: url('./pics/click.png');
+transition:2s ease all;}
 
+#arrow2 {background-image: url('./pics/Projects.png');}
+
+.bgclass{
+  background-image:url('./pics/clickwhite.png') !important;
+}
 
 .arrow {
 color: $cyan;
 animation: arrowbounce 3s infinite ease;
-transition: color 2s ease;
+transition: color 3s ease;
 }
 
 /*this is for the thing that says to scroll down on main pic*/
@@ -935,6 +940,7 @@ transition: color 2s ease;
   bottom:0;
   border-right: 2px solid $cyan;
   border-bottom: 2px solid $cyan;
+  border-radius:20%;
   transform:rotate(45deg);
   -webkit-transform:rotate(45deg);
 }
@@ -1119,15 +1125,19 @@ top:3vh;}
 #gridwrapper{padding:0 3vw;
 }
 
+
 h1{
-text-align:center;
-position:absolute;
- font-family: Courier New, Comic Sans MS;
- font-size:2.5rem;
- z-index:98;
- top: 15%;
- left: 49vw;
+  left:31vw;
 }
+// h1{
+// text-align:center;
+// position:absolute;
+//  font-family: Courier New, Comic Sans MS;
+//  font-size:2.5rem;
+//  z-index:98;
+//  top: 15%;
+//  left: 49vw;
+// }
 
 #scroller1::before, #scroller2::before {left:45%;
 }
@@ -1217,7 +1227,7 @@ background-size:109% 109%;
 }
 
 
-.projectname {margin-bottom:0rem;
+.My-Projects {margin-bottom:0rem;
               color:$cyan;}
 
 .projtitle {padding-bottom:0.3rem;}
@@ -1225,15 +1235,15 @@ background-size:109% 109%;
 }
 
 
-  @keyframes typewriter {
-  from {
-    width: 0;
-  }
+//   @keyframes typewriter {
+//   from {
+//     width: 0;
+//   }
 
-  to {
-    width: 8.5em;
-  }
-}
+//   to {
+//     width: 8.5em;
+//   }
+// }
 
 
 
@@ -1243,15 +1253,15 @@ background-size:109% 109%;
   #blurb {
     margin-top:0vw;}
 
-  @keyframes typewriter {
-  from {
-    width: 0;
-  }
+//   @keyframes typewriter {
+//   from {
+//     width: 0;
+//   }
 
-  to {
-    width: 7.5em;
-  }
-}
+//   to {
+//     width: 7.5em;
+//   }
+// }
 
 
 
@@ -1275,15 +1285,19 @@ background-size:109% 109%;
 @media screen and (min-width: 500px) {
 
 .window::before {
- 
-  background-image:url('./pics/copysml.jpeg');
   background-size: 100% 100%;
-
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-image:url('./pics/oilday.jpg');
 }
+
+
+    
+
 
 /*dark  */
 .window::after {
-  background-image:url('./pics/nightversion2.jpg');
+  background-image:url('./pics/nightoil.jpg');
   background-size: 100% 100%;
 }
 
