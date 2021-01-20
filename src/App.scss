@@ -292,19 +292,9 @@ text-align:left;
  z-index:98;
  top: 4%;
  overflow:hidden;
- left: 40vw;
- // border:1px solid red;
+ left: 41.5vw;
  font-size:3rem;
-// transform:translateX(-20%);
-
 }
-
- // margin:0 5rem;
- // font-size:4.5rem;
- // top:2rem;
- // left: 25%;
- // z-index:98;
-
 
 
 .hi{ opacity: 1;
@@ -772,7 +762,7 @@ bottom:10rem;}
 }
 .caption {
   color: #5C5959;
-  font-family:cursive, Snell Roundhand, judson;
+  font-family: Snell Roundhand, Bradley Hand, Brush Script MT;
   font-size: 1.8rem;
   text-align: center;
   line-height: 2em;
@@ -867,7 +857,7 @@ z-index:10;
   position:absolute;
     display:flex;
     width:100%;
-    bottom:10%;
+    bottom:7%;
     z-index:99;
     text-align:center;
     justify-content:center;
@@ -908,7 +898,8 @@ height:2rem;
 }
 
 #firstarrow {background-image: url('./pics/click.png');
-transition:2s ease all;}
+transition:2s ease all;
+}
 
 #arrow2 {background-image: url('./pics/Projects.png');}
 
@@ -928,7 +919,6 @@ transition: color 3s ease;
 
 
 .arrow::after {
-    transition:border 2s ease;
   content:"";
   width:20px;
   height:20px;
@@ -938,6 +928,8 @@ transition: color 3s ease;
   left:0;
   right:0;
   bottom:0;
+  border-top:none;
+  border-left:none;
   border-right: 2px solid $cyan;
   border-bottom: 2px solid $cyan;
   border-radius:20%;
@@ -950,7 +942,7 @@ transition: color 3s ease;
 
 .projarrow{
 position:relative;
-top:-5vh;
+top:-8vh;
 height:50px;
 margin:3% auto;
 margin-bottom:12%;
@@ -1009,6 +1001,36 @@ color:$cyan !important;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES START*/
 
 @media screen and (min-width: 1900px) {
@@ -1026,6 +1048,8 @@ position:relative;}
 
 
 @media screen and (max-width: 1300px) {
+
+
 
   #blurb {display: block;
     float:none;
@@ -1059,7 +1083,7 @@ position:relative;}
 
 @media screen and (max-width: 850px) {
  
-
+ h1 {left:38vw;}
 
   table {
   display:inline-table;
@@ -1282,7 +1306,7 @@ background-size:109% 109%;
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
 
 .window::before {
   background-size: 100% 100%;
@@ -1301,10 +1325,26 @@ background-size:109% 109%;
   background-size: 100% 100%;
 }
 
+}
 
+/*below is for all ipads in portrait*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+.window::before {
+  background-image:url('./pics/daymob.jpg');
 }
 
 
+/*dark  */
+.window::after {
+  background-image:url('./pics/nightmob.jpg');
+}
+
+ }
 
 
 
