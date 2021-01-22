@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
+import Modal from './Modal.js'
 
 
 export default function Bio(){
@@ -29,28 +30,23 @@ observer.observe(document.querySelector("#scroll-magic-point"));
 }  )
 
 
+
 window.onload = setTimeout(function() {
-    document.querySelector('label').onclick = function myfun()
-    {document.getElementById('firstarrow').classList.toggle('bgclass')}
-} , 3000   )
 
+    document.querySelector('label').onclick = function myfun(){
+      document.getElementById('firstarrow').classList.toggle('bgclass');
+    }
+/*changes the clickme arrow from cyan to white*/
 
-
-;
-
-
-
-
-
-  window.onload = setTimeout(function() {
-    document.querySelector('.window').style.setProperty('--dynamic', 'block') 
-} , 3000   )
-
-
-  window.onload = setTimeout(function() {
-    document.getElementsByTagName('label')[0].style.display = 'block';
+/*this is allowing me to target a psuedo element, it's a workaround*/
+   document.querySelector('.window').style.setProperty('--dynamic', 'block') ;
       
+   /*moon doesn't load until 3 secs, cos the animation plays as soon as it loads*/   
+   document.getElementsByTagName('label')[0].style.display = 'block';
+
+
 } , 3000   )
+
 
 
   window.onload = setTimeout(function() {
@@ -65,7 +61,6 @@ window.onload = setTimeout(function() {
   
   document.getElementById("scroller1").style.animation = "scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
 
-  // document.getElementById("scroller1").className += " revealdown";
 },  6000   )
 
 
@@ -86,8 +81,15 @@ return (
                       </div>
                     </div>
 
-                  <div id="blurb"> I have been studying web development and design for the past few years.
-                  <br/><br/> I strive to create beautiful websites with an emphasis on a quality user experience.<br/> <br/> <br/>
+                  <div id="blurb"> 
+                  Welcome to my portfolio.<br/><br/>
+                   I have been studying web development and design since 2017.
+                  <br/><br/> I strive to create beautiful websites with an emphasis on a quality user experience.<br/> <br/> 
+                  If you'd like to read more about me and my work, just 
+
+                  <Modal title="lol" />
+                  <br/><br/><br/>
+                                 
 
                                <table>
                                <tbody>

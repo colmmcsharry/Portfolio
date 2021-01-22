@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
 
 /*these are basically reusable variables, SCSS*/
@@ -32,27 +31,27 @@ body {
   background: #333;
 }
 
-.stars {width:20vw;
-height:20vh;
-position:absolute;
-display:block;
-top:10px;
-left:15%;
-z-index:999;
-animation: fadeIn 2.5s ease-in-out infinite;
+
+h2,h3 {text-align: center;
 }
 
-.stars2 {
-  top:20px;
-  left:80vw;
-  animation-delay: 1s;
-}  
+h2 {font-size:5rem;
+color:$cyan;}
 
-.stars3 {
-  top:10%;
-left:50vw;
- animation-delay: 2s;
+
+div, p {
+  font-family: judson;
 }
+
+p {font-size:1.1rem;}
+
+
+/*GENERAL CSS ENDS*/
+
+
+
+/*CSS FOR BG IMAGE PAGE BEGINS*/
+
 
 .window {
   display:block;
@@ -104,12 +103,6 @@ left:50vw;
 }
 
 
-@keyframes turnon {
-  100% {
-    background-image:url('./pics/copymob.jpg');
-  }
-}
-
 
 input:checked ~ .window::before{ opacity: 1}
 
@@ -117,7 +110,86 @@ input:checked ~ .window::after{ opacity: 0 }
 
 
 a {color:white;}
-.cubbylink {height:55%;width:90%;left:20px;top: 0px;position:absolute;cursor:pointer;z-index:99999; }
+
+
+/*CSS FOR BG IMAGE ENDS*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR H1 BEGINS*/
+
+.peekaboo,.hi{transition: opacity 2.2s ease;}
+
+.peekaboo{opacity: 0;
+color:#333;
+animation: typewriter 2s steps(60) 1s 1 normal both;}
+// animation: typewriter 2s linear 1s 1 normal both}
+
+h1{
+text-align:left;
+ position: absolute;
+ font-family: Dancing Script, cursive, Comic Sans MS;
+ z-index:98;
+ top: 4%;
+ overflow:hidden;
+ left: 41.5vw;
+ font-size:3rem;
+ white-space:nowrap;
+}
+
+
+.hi{ opacity: 1;
+color: $cyan;
+overflow:hidden;
+white-space: nowrap;
+// border-right:2px solid $cyan;
+animation: typewriter 2s steps(60) 1s 1 normal both; 
+}
+  // blinkTextCursor 400ms steps(24) infinite normal,
+  // cssAnimation 0s ease-in 2.7s forwards;}
+
+  @keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 15rem;
+  }
+}
+
+
+#toggle1:checked ~ .peekaboo{opacity: 1;}
+#toggle1:checked ~ .hi{opacity: 0;}
+
+
+/*CSS FOR H1 ENDS*/
+
+
+
+
+
+
+
+/*css for about / bio section begins*/
+
+
+#about {
+position:relative;
+font-size:3rem;
+top:20rem;
+color:$cyan;
+font-family: Dancing Script, Snell Roundhand, cursive;
+}
 
 
 #bio {
@@ -159,13 +231,6 @@ td {white-space: nowrap;
 }
 
 
-#profiler {
-
-  height: 100%;
-  width:auto;
-}
-
-
 #wrapper {
   padding:0;
   margin:0;
@@ -177,6 +242,175 @@ background-color:#333;
  transition: background-color 2s;
  padding-bottom:3rem; }
 
+
+
+
+
+/*css for about / bio section ends*/
+
+
+
+
+/*css for polaroids begins*/
+
+
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.5);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  color: #5C5959;
+  font-family: Snell Roundhand, Bradley Hand, Brush Script MT;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+
+}
+.item {
+  width: 30%;
+  display: flex;
+   display: -webkit-box;
+  position:relative;
+  left:5rem;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+z-index:10;
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.item {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item .polaroid:before {
+  height: 20%;
+  width: 57%;
+  bottom: 0px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.5);
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 75%;
+  bottom: 0%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
+  transition: all 0.35s;
+}
+
+
+/*css for polaroids ends*/
+
+
+
+
+@keyframes modalfadein {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+#myBtn{
+  background-color:transparent;
+  font-family:judson;
+  outline:none;
+  font-style: italic;
+  border-width:thin;
+  cursor:context-menu;
+  font-size:1.1rem;
+  font-weight: bold;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modaltitle {
+  margin:0;
+  padding:0;
+  font-size:3rem;
+  font-family:Dancing Script;
+  position:relative;
+ 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  text-align:center;
+  align-items:center;
+  position:relative;
+  padding:2rem;
+  margin:auto;
+  border: 1px solid #888;
+  width: 90%;
+  animation: modalfadein .5s ease-in;
+  z-index:99 !important;
+  color:black;
+}
+
+.modal-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position:absolute;
+  top:5px;
+  right:5px;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 999 !important;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/*Styling for the input/label/checked thing*/
 
 
 input {
@@ -226,101 +460,7 @@ top:-25%;
 
 }
 
-
-
-// mything is the other light switch, after your scroll down
-
-.mything {
-  display:none;
-  -webkit-appearance: none;
-  position: fixed;
-  width: 80px;
-  height: 40px;
-  display:block;
-  top:8px;
-  left:8px;
-  background-image: url('./pics/newnight.jpg');
-  border-radius: 20px;
-  z-index:9;
-  outline: none;
-  transition: background-image .90s;
-  background-size: cover;
-  background-repeat:no-repeat;
-  // background-position: left center;
-  box-shadow: 0px 1px 2.5px .5px gray;
-}
-
-.mything:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  background-color: navy;
-  border-radius: 20px;
-  transition: all .9s;
-  background-color:#ECF0F3;
-  
-}
-
-.mything:checked {
-  background-image: url('./pics/sunpic2.jpg');
-  transition: background-image .90s;
-}
-
-.mything:checked:before {
-  transform: translate(100%);
-  transition: all .9s;
-  background-color:#F7CA33 ;
-}
-
-
-/*newr ends*/
-
-.peekaboo,.hi{transition: opacity 2.2s ease;}
-
-.peekaboo{opacity: 0;
-color:#333;
-animation: typewriter 2s steps(60) 1s 1 normal both;}
-// animation: typewriter 2s linear 1s 1 normal both}
-
-h1{
-text-align:left;
- position: absolute;
- font-family: Dancing Script, cursive, Comic Sans MS;
- z-index:98;
- top: 4%;
- overflow:hidden;
- left: 41.5vw;
- font-size:3rem;
-}
-
-
-.hi{ opacity: 1;
-color: $cyan;
-overflow:hidden;
-white-space: nowrap;
-// border-right:2px solid $cyan;
-animation: typewriter 2s steps(60) 1s 1 normal both; 
-}
-  // blinkTextCursor 400ms steps(24) infinite normal,
-  // cssAnimation 0s ease-in 2.7s forwards;}
-
-  @keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 15rem;
-  }
-}
-
-
-#toggle1:checked ~ .peekaboo{opacity: 1;}
-#toggle1:checked ~ .hi{opacity: 0;}
-
+/*Styling for the input/label/checked thing*/
 
 
 /*so this is what happens when I click the moon*/
@@ -433,22 +573,95 @@ transition: 2s ease all;
 // }
 
 
-// animation: fadeIn 2.5s ease-in-out 1;
-// }
-
-// #scroller1, .arrow {
-//   transition: all 3s;
-// }
 
 
 
-/*CSS FOR NEW PROJECTS BEGINS*/
+
+
+
+
+
+
+
+
+
+
+// mything is the other light switch, after you scroll down
+
+.mything {
+  display:none;
+  -webkit-appearance: none;
+  position: fixed;
+  width: 80px;
+  height: 40px;
+  display:block;
+  top:8px;
+  left:8px;
+  background-image: url('./pics/newnight.jpg');
+  border-radius: 20px;
+  z-index:9;
+  outline: none;
+  transition: background-image .90s;
+  background-size: cover;
+  background-repeat:no-repeat;
+  // background-position: left center;
+  box-shadow: 0px 1px 2.5px .5px gray;
+}
+
+.mything:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: navy;
+  border-radius: 20px;
+  transition: all .9s;
+  background-color:#ECF0F3;
+  
+}
+
+.mything:checked {
+  background-image: url('./pics/sunpic2.jpg');
+  transition: background-image .90s;
+}
+
+.mything:checked:before {
+  transform: translate(100%);
+  transition: all .9s;
+  background-color:#F7CA33 ;
+}
+
+/*mything ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS FOR PROJECTS BEGINS*/
+
+
+
+.My-Projects {margin-top: 15rem;
+font-size:3rem;
+color:$cyan;
+font-family:  Dancing Script, cursive, Snell Roundhand, 
+}
 
 .projlink {text-decoration:none;}
 
 
 #projwrap {display:block;
-
  text-align:center; 
 }
 
@@ -468,9 +681,7 @@ font-size:1.4rem;}
 }
 
 #left {
-
   padding:20px;
-
 }
 #right {
 
@@ -486,10 +697,10 @@ position:relative;
 }
 
 .inner {position:absolute;
-  left:13%;
-  top:9%;
-height:59%;
-width:70%;
+  left:12%;
+  top:8%;
+height:60%;
+width:72%;
 }
 
 
@@ -506,11 +717,11 @@ object-position:center center;
 
 .phone {
   position:absolute;
-    left:5%;
+    left:4%;
   bottom:11%;
   object-fit:cover; 
 object-position: center center;  
-  width: 13%;
+  width: 14%;
   height:36%;
 }
 
@@ -540,171 +751,7 @@ object-position: center center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*CSS FOR NEW PROJECTS ENDS*/
-
-
-
-
-
-
-
-
-
-
-/*this is the fade in on page load*/
-.fade {
--webkit-animation: fade 3s;
-animation: fade 5s;
--moz-animation: fade 3s;
--o-animation: fade 3s;
-}
-
-@keyframes fade {
-  0% {opacity: 0.0} 
-  25% {opacity: 0.3}
-  50% {opacity: 0.6}
-  75% {opacity: 0.8;}
-  100%{opacity: 1}
-    }
-
-
-
-
-h2,h3 {text-align: center;
-  font-family: Quando;
-}
-
-h2 {font-size:5rem;
-color:$cyan;}
-
-#about {
-position:relative;
-  font-size:3rem;
-top:20rem;
-color:$cyan;
-font-family: Dancing Script, Snell Roundhand, cursive;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*PROJECTS BEGIN*/
-
-
-
-.My-Projects {margin-top: 15rem;
-font-size:3rem;
-color:$cyan;
-font-family:  Dancing Script, cursive, Snell Roundhand, 
-}
-
-#second {margin-top:3rem;}
-
-#third {margin-top:03rem;
-  padding-bottom:010rem;
-}
-
-.projtight {position:relative;
-}
-
-.cabins {margin-top:8rem;
-  margin-bottom:0rem;}
-
-div, p {
-  font-family: judson;
-}
-
-p {font-size:1.1rem;}
-
-.project {
-  position:relative;
-  padding:15rem;
-  text-align: center;
-  font-size:1.2rem;
-}
-
-.column {
-  display:inline-block;
-  max-width: 50%;
-  min-width:40%;
-  padding: 10px;
-  text-align: center;
-  border:1px solid pink;
-}
-
-.description {padding-bottom:15rem;
-position:relative;
-bottom:10rem;}
-
-
-
-
-
-
-
-
-
 
 /*image transitions for my website previews starts*/
 
@@ -747,78 +794,10 @@ bottom:10rem;}
 
 
 
-/*css for polaroids begins*/
-
-
-.polaroid {
-  background: #fff;
-  padding: 1rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-  
-}
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
-}
-.caption {
-  color: #5C5959;
-  font-family: Snell Roundhand, Bradley Hand, Brush Script MT;
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2em;
-
-}
-.item {
-  width: 30%;
-  display: flex;
-   display: -webkit-box;
-  position:relative;
-  left:5rem;
-  margin-top: 2rem;
-  filter: grayscale(100%);
-z-index:10;
-}
-.item .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transition: all 0.35s;
-}
-
-.item {
-  transform: scale(0.8, 0.8) rotate(3deg);
-  transition: all 0.35s;
-}
-.item .polaroid:before {
-  height: 20%;
-  width: 47%;
-  bottom: 0px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-}
-
-.item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
-}
-
-.item:hover .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transform: rotate(0deg);
-  height: 90%;
-  width: 75%;
-  bottom: 0%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
-  transition: all 0.35s;
-}
-
-
-/*css for polaroids ends*/
 
 
 
+/*the click me on the main page does this */
 
 @keyframes scale-in-top {
   0% {
@@ -838,7 +817,7 @@ z-index:10;
 }
 
 
-
+/*this is invisible*/
 #top-of-site-pixel-anchor{
   position: absolute;
   width: 12px;
@@ -850,6 +829,11 @@ z-index:10;
   background-color:red;
 }
 
+
+
+
+
+/*ARROWS END*/
 
 
 /*this is the container div, arrow and before are the content*/
@@ -878,17 +862,7 @@ z-index:10;
 
 #scroller2:hover {cursor:pointer;}
 
-// #scroller3, #scroller4 {
-//   position:absolute;
-//     display:flex;
-//     width:100%;
-//     z-index:99;
-//     bottom:40%;
-//     text-align:center;
-//     justify-content:center;
-//     white-space: nowrap;
-   
-// }
+
 
 #firstarrow, #arrow2{
 background-repeat:no-repeat;
@@ -969,6 +943,8 @@ cursor:pointer;
   transform:translateY(-3px);
 }
 
+
+/*test1 is the last one, that goes back to top*/
 .test1 {
 width:50px;
 height:10px;
@@ -997,7 +973,7 @@ color:$cyan !important;
 
 }
 
-/*animate is for the arrow thing that says to scroll down */
+/*ARROWS END*/
 
 
 
@@ -1059,22 +1035,8 @@ position:relative;}
     .item {left:25vw;
         width: 50%;}
 
-  .laptop {visibility: visible !important;
-    height:45rem;
-    width:32rem;
-    bottom:-25rem;}
 
 
-
-
-.description {top:1rem;
-  .description {font-size:14px;}
-}
-
-
-
-
-#scroller3, #scroller4 {bottom:20%;}
 
 }
 
@@ -1095,42 +1057,7 @@ border-spacing: 50px 0;}
 overflow-x:hidden;}
 
 
-.laptop {
-    height:22rem;
-    width: 22rem;
-    left:10%;
-    top:-6rem;
-}
-
-.description {font-size:14px;}
-
-.laptop > img {
-  height:50%;
-}
-
-.cubbylink {height:80%;width:90%;left:0px;top:0px;position:absolute;cursor:pointer;z-index:99999;}
  }
-
-
-
-
-@media screen and (min-width:500px) and (max-width:750px){
-   .laptop  {
-    left:7rem;
-    top:-20rem;
-}
-
-
-// .item {
-//   left:3rem;
-// }
-
-.description {top:-14rem;}
-
-.column {max-width: 98%;
-  min-width:80%;
-}
-}
 
 
 
@@ -1153,15 +1080,6 @@ top:3vh;}
 h1{
   left:31vw;
 }
-// h1{
-// text-align:center;
-// position:absolute;
-//  font-family: Courier New, Comic Sans MS;
-//  font-size:2.5rem;
-//  z-index:98;
-//  top: 15%;
-//  left: 49vw;
-// }
 
 #scroller1::before, #scroller2::before {left:45%;
 }
@@ -1252,22 +1170,10 @@ background-size:109% 109%;
 
 
 .My-Projects {margin-bottom:0rem;
-              color:$cyan;}
+              }
 
 .projtitle {padding-bottom:0.3rem;}
-
 }
-
-
-//   @keyframes typewriter {
-//   from {
-//     width: 0;
-//   }
-
-//   to {
-//     width: 8.5em;
-//   }
-// }
 
 
 
@@ -1277,15 +1183,6 @@ background-size:109% 109%;
   #blurb {
     margin-top:0vw;}
 
-//   @keyframes typewriter {
-//   from {
-//     width: 0;
-//   }
-
-//   to {
-//     width: 7.5em;
-//   }
-// }
 
 
 
@@ -1305,13 +1202,11 @@ background-size:109% 109%;
 
 
 
-
+/*this is so the bigger bg image only gets shown on bigger screens*/
 @media screen and (min-width: 768px) {
 
 .window::before {
   background-size: 100% 100%;
-  background-position: center center;
-  background-repeat:no-repeat;
   background-image:url('./pics/oilday.jpg');
 }
 
@@ -1326,6 +1221,10 @@ background-size:109% 109%;
 }
 
 }
+
+
+
+
 
 /*below is for all ipads in portrait*/
 

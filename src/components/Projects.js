@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import crezopic1 from '../pics/crezopic1.jpg'
+import crezopic1new from '../pics/crezopic1new.jpg'
 import crezopic2 from  '../pics/crezopic2.jpg'
 import crezopic3 from '../pics/crezopic3.jpg'
 import crezopic4 from '../pics/crezopic4.jpg'
@@ -14,7 +14,6 @@ import cb2 from '../pics/cb2.jpg'
 import cb3 from '../pics/cb3.jpg'
 import cb4 from '../pics/cb4.jpg'
 import Proj from './Proj.js'
-import crezopic1new from '../pics/crezopic1new.jpg'
 import {bigtext} from './text.jsx'
 import {alldescriptions} from './text.jsx'
 
