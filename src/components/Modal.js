@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react'
-
+import {alldescriptions} from './text.jsx'
 export default function Modal (props){
 
 /*there has to be a slight delay on loading, otherwise it interferes with the intersectiom observer*/
@@ -109,6 +109,7 @@ closespan.onclick = function() {
 
     <div className="modal-grid-container">
     <p className="column">
+    {props.text}
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam provident voluptatum nesciunt, eius maxi
     me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
      cumque?
@@ -120,34 +121,6 @@ closespan.onclick = function() {
     boris ullamco officia velit ut nulla fugiat qui cillum incididunt ut ad consequat duis
      dolor exercitation adipisicing anim sed.
      me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
      cumque?
     Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
     lorem20

@@ -3,6 +3,7 @@ import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
+import {alldescriptions} from './text.jsx'
 
 
 export default function Bio(){
@@ -83,11 +84,11 @@ return (
 
                   <div id="blurb"> 
                   Welcome to my portfolio.<br/><br/>
-                   I have been studying web development and design since 2017.
+                   I have been studying web development and design since 2018.
                   <br/><br/> I strive to create beautiful websites with an emphasis on a quality user experience.<br/> <br/> 
                   If you'd like to read more about me and my work, just 
 
-                  <Modal title="lol" />
+                  <Modal title="lol" text={alldescriptions.mystory} />
                   <br/><br/><br/>
                                  
 
