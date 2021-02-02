@@ -84,51 +84,57 @@ return (
 
                   <div id="blurb"> 
                   Welcome to my portfolio.<br/><br/>
-                   I have been studying web development and design since 2018.
-                  <br/><br/> I strive to create beautiful websites with an emphasis on a quality user experience.<br/> <br/> 
-                  If you'd like to read more about me and my work, just 
 
-                  <Modal title="lol" text={alldescriptions.mystory} />
-                  <br/><br/><br/>
-                                 
+                  I am a developer from Dublin and have been learning my craft since 2018. I strive to create beautiful web apps with an emphasis on a quality user experience.<br/> <br/> 
+                  I am currently looking for developer roles with a company where I can continue to grow and learn. I am equally comfortable working alone or with a team. 
+                   <br/> <br/>
+                  When I'm not coding or in the midst of a pandemic, I enjoy playing sports,
+                  going to music festivals and nights in or out with friends. 
 
-                               <table>
-                               <tbody>
-  <tr>
-    <th>Courses</th>
-    <th>Skills</th>
-  </tr>
-  <tr>
-    <td><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></td>
-    <td>HTML/CSS/Javascript</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></td>
-    <td>React.js/Gatsby.js</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev in 2020</a></td>
-    <td>Node.js</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Photoshop, Sketch</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>SQL</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>Bootstrap</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>SASS/Grid/Flexbox</td>
-  </tr>
-</tbody>
-</table>
-                  </div>
+                  <br/> <br/>
+                  If you'd like to read more about my background and journey into coding, just 
+
+                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} />
+                  <br/><br/>
+
+                    <div id="leftlistcontainer">
+                      <ul><span className="top"> Courses </span>
+                      <hr/>
+                        <li><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></li>
+                        <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                        <li><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev in 2020</a></li>
+                       {/* <br className="break"/>
+                        <br className="break"/>
+                        <br className="break"/>
+                        <br className="break"/>
+                        <br className="break"/>*/}
+                      </ul>
+                       </div>
+
+                       <div id="rightlistcontainer">
+                      <ul> <span className="top">Skills</span>
+                        <hr/>
+                        <li>HTML/CSS/JS</li>
+                        <li>Git/Github</li>
+                        <li>React.js/Gatsby.js</li>
+                        <li>Node.js</li>
+                       <li>Photoshop/Sketch</li>
+                       <li>Bootstrap</li>
+                        <li>SASS/Grid/Flexbox</li>
+                       <li>SQL/MongoDB</li>
+                       <li>API requests</li>
+
+
+                      </ul>
+                       </div>
+
+                  </div> 
+
+                                
+
+
+
+                  
                 {/*if I change id to className, then I can just change all the scoller's bottom positions om mob */}
                  <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2"></div></ScrollLink> </div> 
 

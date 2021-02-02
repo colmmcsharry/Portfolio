@@ -9,7 +9,8 @@ $darkbg:#333;
   box-sizing: border-box;
 }
 
-
+button {border:none;
+outline:none;}
 
 html {
   overflow-x: hidden;
@@ -48,6 +49,13 @@ p {font-size:1.1rem;}
 
 a {-webkit-tap-highlight-color: transparent;
 user-select: none;}
+
+.column h3 {text-align:center;
+  color: $cyan;
+filter: brightness(90%);}
+
+
+.column {text-align:left;}
 
 
 
@@ -122,8 +130,9 @@ a {color:white;}
 
 
 
-
-
+.myclass {
+   --dynamclr: red;
+}
 
 
 
@@ -179,7 +188,13 @@ animation: typewriter 2s steps(60) 1s 1 normal both;
 
 /*CSS FOR H1 ENDS*/
 
-
+.learning-list {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-family: Lucida Console ;
+  font-style:italic;
+  font-weight: light;
+}
 
 
 
@@ -191,7 +206,10 @@ animation: typewriter 2s steps(60) 1s 1 normal both;
 #about {
 position:relative;
 font-size:3rem;
-top:20rem;
+margin-top:2.5rem;
+margin-bottom:0rem;
+padding-top:5rem;
+top:3rem;
 color:$cyan;
 font-family: Dancing Script, Snell Roundhand, cursive;
 }
@@ -200,7 +218,7 @@ font-family: Dancing Script, Snell Roundhand, cursive;
 #bio {
   position:relative;
   max-width:100vw;
-  padding:20rem 2rem;
+  padding:3rem 2rem;
 align-items:center;
 justify-content: center;
 }
@@ -208,33 +226,44 @@ justify-content: center;
 
 
 .tight {
-position: relative;
+display:grid;
+grid-template-columns: 3fr 4fr;
+grid-gap: 1rem;
 }
 
 
 
-#blurb {display:inline-table;
-  align-items: center;
-  text-align:center;
-  justify-content: center;
+
+#blurb {
   font-size:1.1rem;
-  float:right;
-  position:relative;
-  bottom:30rem;
+ padding-left:7%;
+ padding-right:7%;
+  padding-top:15%;
+  padding-bottom:5%;
+
 }
 
-table {
-  display:inline-table;
-border-spacing: 150px 0;}
 
-th {color:$cyan;
-text-decoration:underline;
-padding-bottom: 2rem;
-font-weight:bold;}
-
-td {white-space: nowrap;
+ul {list-style-type:none;
+  list-style: none;
+    padding-left: 0;
 }
 
+/*top of list*/
+.top {color:$cyan;}
+
+#leftlistcontainer {
+  display:inline-block;
+  padding-right:5%;
+  vertical-align:top;
+}
+
+
+
+#rightlistcontainer {
+  display:inline-block;
+  vertical-align:top;
+}
 
 #wrapper {
   padding:0;
@@ -278,12 +307,12 @@ background-color:#333;
 
 }
 .item {
-  width: 30%;
+  width: 75%;
+  margin:auto;
+  height:fit-content;
   display: flex;
-   display: -webkit-box;
+  display: -webkit-box;
   position:relative;
-  left:5rem;
-  margin-top: 2rem;
   filter: grayscale(100%);
 z-index:10;
 }
@@ -543,9 +572,11 @@ input:checked ~ #wrapper {
   background-color:#F7F9FE;
 }
 
+
 input:checked ~ #wrapper a {
   color: #333;
 }
+
 
 input:checked ~ #wrapper th {
   color: $cyan
@@ -862,6 +893,9 @@ object-position: center center;
     text-align:center;
     justify-content:center;
     white-space: nowrap;
+    bottom:6%;
+    left:50%;
+    transform: translateX(-50%);
     
 }
 
@@ -1024,29 +1058,6 @@ color:$cyan !important;
 html {font-size:20px;}
 }
 
-@media screen and (min-width: 1200px) {
-
-.polaroid {bottom:6vh;
-position:relative;}
-}
-
-
-@media screen and (max-width: 1300px) {
-
-
-
-  #blurb {display: block;
-    float:none;
-    bottom:0rem;
-    margin-top:5vw;}
-
-    .item {left:25vw;
-        width: 50%;}
-
-
-
-
-}
 
 
 
@@ -1056,15 +1067,13 @@ position:relative;}
  h1 {left:38vw;}
 
   table {
-  display:inline-table;
 border-spacing: 50px 0;}
 
-.item {left:12rem;}
 
-#bio {display: block;
-overflow-x:hidden;}
+#bio {display: block;}
+// overflow-x:hidden;}
 
-
+.break {display:none;}
  }
 
 
@@ -1097,17 +1106,15 @@ h1{
 #first {padding-top: 5rem;}
 
   #about {
-top:14rem;
-margin-bottom:9rem;}
+}
 
   .item {
   width: 60%;
   position:relative;
-  left:6rem;
   bottom:1rem;
 }
 
-
+.tight { display:block; }
  
   #bio {
     width:100vw;
@@ -1115,34 +1122,22 @@ margin-bottom:9rem;}
     margin:0rem 0rem;
     max-width:100vw;
     display: block;
-overflow-x:hidden;
+// overflow-x:hidden;
 }
 
 
 
 #blurb {
   display: block;
-  padding:1rem 1rem;
-font-size:1.25rem;
 width:90%;
 position:relative;
-left:1.3rem;
+left:2.3rem;
 overflow-x:hidden;
-
+padding-top:1.5rem;
 }
 
 p {font-size:1.25rem;}
 
-table {
-padding:0;
-margin:0;
-border-spacing: 15px 0px;
-position:relative;
-left:-1rem;
-overflow-x:hidden;
-}
-
-  td {font-size:1.25rem;}
 
 h2 {font-size:3rem;}
 

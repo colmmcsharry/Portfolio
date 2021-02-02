@@ -4,6 +4,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Bio from './components/Bio.js'
 import Projects from './components/Projects.js'
 import Landingview from './components/Landingview.js'
+import Newdiv from './components/Newdiv.js'
 
 
 
@@ -32,7 +33,9 @@ function App() {
                   
 
                                
+       
 
+          
         </div>
 
   </div>

@@ -106,35 +106,17 @@ closespan.onclick = function() {
 
     <span className="close">&times;</span>
  <h2 className="modaltitle"> {props.title} </h2>
-
+ 
+  {props.intro}
     <div className="modal-grid-container">
-    <p className="column">
-    {props.text}
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam provident voluptatum nesciunt, eius maxi
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    </p>
-    <p className="column">
-    lorem20Ullamco nisi dolore veniam consectetur non quis magna proident nulla id. Officia dolor fugiat la
-    boris ullamco officia velit ut nulla fugiat qui cillum incididunt ut ad consequat duis
-     dolor exercitation adipisicing anim sed.
-     me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
-    me unde harum necessitatibus molestias dolore cum quisquam asperiores, quis at eaque quas est, vel 
-     cumque?
-    Some text in the Modal.. this will be a link/prop to a text file, the sentence might get really huge, who knows
-    lorem20
 
-   ujnouhiubkj
-   </p>
+
+      <div className="column">
+      {props.column1}
+      </div>
+      <div className="column">
+     {props.column2}
+     </div>
    </div>
 
   </div>

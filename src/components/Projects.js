@@ -40,11 +40,11 @@ return (
 </h3>
 
 <Proj title="Crezo Construction" description={alldescriptions.crezotext} image1={crezopic1new} image2={crezopic2} image3={crezopic3} image4={crezopic4} link="https://crezo.netlify.app/" />
-<ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow"></div></ScrollLink>
+<ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow"></div></ScrollLink> 
 
 
 <Element name="Project2" ></Element>
-<Proj title="Cosy Cabins" description={alldescriptions.cabintext} image1={cb1} image2={cb2} image3={cb3} image4={cb4} link="https://mcshazz.github.io/Testproj/" />
+<Proj title="Cosy Cabins" description={alldescriptions.cabintext} image1={cb1} image2={cb2} image3={cb3} image4={cb4} link="https://mcshazz.github.io/CosyCabins/" />
 <ScrollLink activeClass="active" to="Project3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow"></div></ScrollLink>
 
 <Element name="Project3" ></Element>
