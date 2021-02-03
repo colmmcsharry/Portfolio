@@ -130,13 +130,6 @@ a {color:white;}
 
 
 
-.myclass {
-   --dynamclr: red;
-}
-
-
-
-
 
 
 /*CSS FOR H1 BEGINS*/
@@ -196,8 +189,20 @@ animation: typewriter 2s steps(60) 1s 1 normal both;
   font-weight: light;
 }
 
+.textimg {
+  width:50%;
+  display:block;
+  position:relative;
+  margin:0 auto;
+transition: all .2s ease-in-out .2s;
+}
 
 
+
+.textimg:hover {
+  transform: scale(1.9);
+  margin:6rem auto;
+}
 
 
 /*css for about / bio section begins*/
@@ -426,9 +431,9 @@ z-index:10;
 .close {
   color: #aaaaaa;
   position:absolute;
-  top:5px;
-  right:5px;
-  font-size: 28px;
+  top:.5rem;
+  right:1rem;
+  font-size: 3rem;
   font-weight: bold;
   z-index: 999 !important;
 }
@@ -440,6 +445,12 @@ z-index:10;
   cursor: pointer;
 }
 
+
+/*the bottom close button*/
+#bottom {
+  top:auto;
+  bottom:.2rem;
+}
 
 
 
@@ -711,13 +722,14 @@ font-size:1.4rem;}
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
-  text-align:center;
+  text-align:left;
   align-items:center;
   padding:2rem;
+  padding-left:6vw;
+  padding-right:6vw;
 }
 
 #left {
-  padding:20px;
 }
 #right {
 
@@ -1080,12 +1092,34 @@ border-spacing: 50px 0;}
 
 
 
-
 @media screen and (max-width: 500px) {
 
 .window, .window::before, .window::after {
   height:90vh;
 } 
+
+  /* Modal Content */
+.modal-content {
+  text-align:left;
+  align-items:center;
+  padding:1rem;
+  width: 85%;
+
+}
+
+.modal-grid-container {
+  display: block;
+  
+}
+
+.column > p {font-size:1.1rem;}
+
+.textimg {width:98%;
+}
+
+
+.textimg:hover{ transform: scale(1);
+margin:0 auto; }
 
 .projarrow {margin-bottom:15vh;
 top:3vh;}
@@ -1101,7 +1135,7 @@ h1{
 #scroller1::before, #scroller2::before {left:45%;
 }
 
-#scroller2{bottom:-4rem;}
+#scroller2{bottom:3rem;}
 
 #first {padding-top: 5rem;}
 
@@ -1125,18 +1159,24 @@ h1{
 // overflow-x:hidden;
 }
 
+#left{
+  // padding:2rem;
 
+  margin:0 auto;
+  text-align:left
+}
 
 #blurb {
   display: block;
-width:90%;
+width:93%;
 position:relative;
-left:2.3rem;
+margin:0 auto;
 overflow-x:hidden;
 padding-top:1.5rem;
+font-size:1.2rem;
 }
 
-p {font-size:1.25rem;}
+p {font-size:1.2rem;}
 
 
 h2 {font-size:3rem;}
@@ -1144,6 +1184,8 @@ h2 {font-size:3rem;}
 
   
    #gridwrapper  {
+    padding-left:8vw;
+    padding-right:8vw;
     display:block;}
 
 
@@ -1183,6 +1225,9 @@ background-size:109% 109%;
 
 @media screen and (max-width:400px){
 
+
+
+
   #blurb {
     margin-top:0vw;}
 
@@ -1201,6 +1246,8 @@ background-size:109% 109%;
   bottom:0;
   border-right: 1px solid $cyan;
   border-bottom: 1px solid $cyan;}
+
+
 }
 
 
@@ -1245,6 +1292,10 @@ and (orientation : portrait) {
 .window::after {
   background-image:url('./pics/nightmob.jpg');
 }
+
+.item {width:100%;}
+
+#scroller2{bottom:0rem;}
 
  }
 

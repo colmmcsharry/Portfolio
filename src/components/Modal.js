@@ -9,6 +9,7 @@ window.onload = setTimeout(function() {
 const btn = document.getElementById("myBtn");
 const modal = document.getElementById("myModal");
 const closespan = document.getElementsByClassName("close")[0];
+const closespan2 = document.getElementsByClassName("close")[1];
 
 
 
@@ -18,7 +19,7 @@ function openup(){
 
 
 
-
+/*JS Media query starts*/
 function myFunction(x) {
   if (x.matches) { // If media query matches
     btn.innerHTML = " hover";
@@ -47,23 +48,9 @@ let timeOut;
 btn.addEventListener('mouseout', (e) => {
   clearTimeout(timeOut);
 });
+
+
 /*hover timer ends when you mouseout*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -74,6 +61,9 @@ btn.onmousedown = openup;
 /*click the x to close*/
 closespan.onclick = function() {
   modal.style.display = "none"};
+
+closespan2.onclick = function() {
+  modal.style.display = "none"};  
 
 /*if you click anywhere on the dimmed part, it closes*/
  window.onclick = function(event) {
@@ -116,9 +106,11 @@ closespan.onclick = function() {
       </div>
       <div className="column">
      {props.column2}
-     </div>
-   </div>
 
+     </div>
+
+   </div>
+  <span id="bottom" className="close" >&times;</span>
   </div>
 
 </div>

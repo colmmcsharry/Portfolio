@@ -95,7 +95,7 @@ return (
                   If you'd like to read more about my background and journey into coding, just 
 
                   <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} />
-                  <br/><br/>
+                  <br/><br/><br/>
 
                     <div id="leftlistcontainer">
                       <ul><span className="top"> Courses </span>

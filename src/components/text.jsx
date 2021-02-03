@@ -87,7 +87,7 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 
 <p>I remember my first website was a game of Rock-Paper-Scissors. I had a vision for how I wanted it to look, a bit like Street Fighter, with energy bars, animations, and sound effects. I remember gathering all the cartoon images I wanted and figuring out how to put them into position. I remember thinking Absolute positioning made it easy, but then when I opened my site on a mobile or tablet, it just looked awful, so I learned about modern methods like flexbox and grid, which helped with responsiveness.</p>
 
- <img src={rps} style={{width:'80%', display:"block", position:"relative", margin:'0 auto'}}  />
+ <img className="textimg left" src={rps}  />
 
 <p>Once I got everything looking how I wanted, I realised, it still didn’t DO anything. This was when I began to realise the power of JavaScript. I created a function which would let you “play” against the computer, and after each round, the energy bars would deplete, and the scores would update and an alert would flash up with “you win!” or “you lose”.</p>
 
@@ -108,7 +108,7 @@ mystory2: <React.Fragment>
 <p>One day that Autumn, I was browsing Reddit, when I saw that an individual was looking for students to take part in the first cohort of a new coding bootcamp. As it was the first cohort, it was only a fraction of the usual bootcamp cost. I checked out the planned syllabus and it looked very promising. Even though it was aimed at young high-school graduates, I got in touch, explained a bit about my situation and luckily was accepted onto the course.</p>
 
 <p>Knowing that I’d soon be starting a course, I quickly began making up for lost time. I completed all the requisite pre-course materials and did as much as I could to prepare. The course would be 4 months long, two evenings a week, plus weekends, with additional study time and homework.</p>
- <img src={polyinsta} style={{width:'80%', display:"block", position:"relative", margin:'0 auto'}}  />
+ <img className="textimg" src={polyinsta}  />
 <p>I had a packed schedule for those 4 months, working in a hectic sales and marketing job during the day, then straight to bootcamp or homework at night. It was overwhelming at times, but it was well worth it.</p>
 
 <p>Working with a group and having an instructor to guide you and answer questions really accelerated my learning. We were introduced to Python, databases, SQL, and some of the other “back-end” technologies, and learned how to use APIs to get information from sites like Twitter and Reddit onto our websites. We progressed from vanilla JS/jQuery to modern frameworks like React and had a peek at “machine learning”.</p>
