@@ -119,7 +119,6 @@ return (
                         <li>React/Gatsby</li>
                         <li>Node.js</li>
                        <li>Photoshop/Sketch</li>
-                       <li>Bootstrap</li>
                         <li>SASS/Grid/Flexbox</li>
                        <li>SQL/GraphQL</li>
                        <li>API requests</li>

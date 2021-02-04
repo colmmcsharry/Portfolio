@@ -22,6 +22,50 @@ const closespan2 = document.getElementsByClassName("close");
 
 
 
+
+// txtimgs.addEventListener('click', function(event){
+//   txtimgs.classList.toggle('testclass')
+// })
+
+
+
+// var selroy = document.getElementById('roy');
+// selroy.onclick = function goblue(){
+//   selroy.classList.toggle('testclass')
+// }
+
+
+var txtimgs = document.querySelectorAll('.textimg') ;
+
+
+for ( let i=0; i < txtimgs.length ; i++){
+
+txtimgs[i].onclick = function goblu(){
+txtimgs[i].classList.toggle('testclass');
+
+txtimgs[i].onmouseout = function(){txtimgs[i].classList.remove('testclass')}
+}
+
+
+
+
+
+}
+
+
+
+// txtimgs[i].onmouseout = 
+
+
+
+
+
+
+
+
+
+
+
 /*JS Media query starts*/
 function myFunction(x) {
   if (x.matches) {
