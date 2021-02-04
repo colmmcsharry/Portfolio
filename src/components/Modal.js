@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import ReactDOM from 'react'
 import {alldescriptions} from './text.jsx'
+
+
 export default function Modal (props){
+
+
+var [mystring, setString] = useState('temp');
 
 /*there has to be a slight delay on loading, otherwise it interferes with the intersectiom observer*/
 window.onload = setTimeout(function() {
 
-const btn = document.getElementById("myBtn");
-const modal = document.getElementById("myModal");
-const closespan = document.getElementsByClassName("close")[0];
-const closespan2 = document.getElementsByClassName("close")[1];
+// const btn = document.getElementById("myBtn");
+const modal = document.getElementsByClassName("modal");
 
+const closespan = document.getElementsByClassName("close");
+const closespan2 = document.getElementsByClassName("close");
 
-
-function openup(){
-	modal.style.display = "block"}
+// var vari = document.querySelectorAll('.vari');
 
 
 
 
 /*JS Media query starts*/
 function myFunction(x) {
-  if (x.matches) { // If media query matches
-    btn.innerHTML = " hover";
-    // btn.onmouseover = openup
-  } else {
-    btn.innerHTML = " click";
+  if (x.matches) {
+    setString(' hover');
+   // If media query matches
+  } else {   
+    setString(' click')
   }
 }
 var x = window.matchMedia("(min-width: 800px)")
@@ -38,39 +41,82 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 /*have to hover for half a second til it opens*/
 let timeOut;
- btn.addEventListener('mouseover', (e) => {
+
+
+
+// document.querySelectorAll('.some-class').forEach(item => {
+//   item.addEventListener('click', event => {
+//     //handle click
+//   })
+// })
+
+
+
+ document.getElementById('My Story').addEventListener('mouseover', (e) => {
   timeOut = setTimeout(() => {
-    openup()
+    openup(0)
+  }, 500);
+});
+
+ document.getElementById('Crezo Construction').addEventListener('mouseover', (e) => {
+  timeOut = setTimeout(() => {
+    openup(1)
   }, 500);
 });
 
 
-btn.addEventListener('mouseout', (e) => {
+ document.getElementById('Cosy Cabins').addEventListener('mouseover', (e) => {
+  timeOut = setTimeout(() => {
+    openup(2)
+  }, 500);
+});
+
+ document.getElementById('NetWorkers').addEventListener('mouseover', (e) => {
+  timeOut = setTimeout(() => {
+    openup(3)
+  }, 500);
+});
+
+
+
+
+// vari.addEventListener('mouseout', (e) => {
+//   clearTimeout(timeOut);
+// });
+/*hover timer ends when you mouseout*/
+
+
+// /*the default behavior*/
+// vari.onmousedown = openup;  
+  function openup(mynum){
+  modal[mynum].style.display = "block";
+
+  function close(xnum){
+    modal[mynum].style.display ="none"
+  }
+
+
+document.getElementsByClassName('close')[mynum].onclick = function(){
+  modal[mynum].style.display = "none"
+}
+
+document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout', (e) => {
   clearTimeout(timeOut);
 });
 
 
-/*hover timer ends when you mouseout*/
 
 
-
-/*the default behavior*/
-btn.onmousedown = openup;  
-  
-
-/*click the x to close*/
-closespan.onclick = function() {
-  modal.style.display = "none"};
-
-closespan2.onclick = function() {
-  modal.style.display = "none"};  
+/*closespan2.onclick = function(mynum) {
+  modal[mynum].style.display = "none"};  */
 
 /*if you click anywhere on the dimmed part, it closes*/
  window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";}
+  if (event.target == modal[mynum]) {
+    modal[mynum].style.display = "none";}
 }
 
+}
 
 }
 
@@ -86,18 +132,17 @@ closespan2.onclick = function() {
 
 		<React.Fragment >
 
-<span id="myBtn"> Click Here</span>
+<span className="hoverclick" id={props.title}> {mystring}</span>
 
-{/*this is the background dimmed*/}
 <div id="myModal" className="modal">
 
  
   <div className="modal-content">
 
-    <span className="close">&times;</span>
+    <span id={props.xnumber} className="close">&times; </span>
+
  <h2 className="modaltitle"> {props.title} </h2>
  
-  {props.intro}
     <div className="modal-grid-container">
 
 
@@ -110,7 +155,7 @@ closespan2.onclick = function() {
      </div>
 
    </div>
-  <span id="bottom" className="close" >&times;</span>
+{/*  <span id={props.xbot} id="bottom" className="close" >&times;</span>*/}
   </div>
 
 </div>

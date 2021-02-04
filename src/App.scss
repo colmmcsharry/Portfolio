@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 /*these are basically reusable variables, SCSS*/
 $cyan:#3DC0B0;
@@ -14,7 +14,8 @@ outline:none;}
 
 html {
   overflow-x: hidden;
-  font-size: 16px; // I would recommend always using 16px as base font-size
+  font-family: Exo, tahoma, arial;
+  font-size: 16px; // I would recommend always using 16px as base font-size. use 15.2 for exo
   @media (max-width: 1024px) {
     font-size: 14px;
   }
@@ -25,8 +26,6 @@ html {
 
 html, body, .App { margin: 0; padding: 0; 
 overflow-x:hidden;} 
-
-
 
 
 body {
@@ -41,18 +40,14 @@ h2 {font-size:5rem;
 color:$cyan;}
 
 
-div, p {
-  font-family: judson;
-}
-
-p {font-size:1.1rem;}
-
 a {-webkit-tap-highlight-color: transparent;
 user-select: none;}
 
 .column h3 {text-align:center;
   color: $cyan;
-filter: brightness(90%);}
+filter: brightness(90%);
+font-size:1.66rem;
+font-family:  cursive,  Bradley Hand, Snell Roundhand,  ;}
 
 
 .column {text-align:left;}
@@ -240,7 +235,7 @@ grid-gap: 1rem;
 
 
 #blurb {
-  font-size:1.1rem;
+  font-size:1rem;
  padding-left:7%;
  padding-right:7%;
   padding-top:15%;
@@ -254,8 +249,14 @@ ul {list-style-type:none;
     padding-left: 0;
 }
 
+#blurb ul {
+  font-size:1rem;
+}
+
 /*top of list*/
-.top {color:$cyan;}
+.top {color:$cyan;
+font-size:1.1rem;
+font-weight:bold;}
 
 #leftlistcontainer {
   display:inline-block;
@@ -369,9 +370,9 @@ z-index:10;
 }
 
 
-#myBtn{
+.hoverclick{
   background-color:transparent;
-  font-family:judson;
+  font-family:PT Sans,Arial, Tahoma;
   outline:none;
   font-style: italic;
   border-width:thin;
@@ -716,7 +717,7 @@ font-family:  Dancing Script, cursive, Snell Roundhand,
 .projtitle {
 padding: 30px;
 font-family:courier new;
-font-size:1.4rem;}
+font-size:1.5rem;}
 
 #gridwrapper {
   display: grid;
@@ -1108,15 +1109,18 @@ border-spacing: 50px 0;}
 }
 
 .modal-grid-container {
-  display: block;
-  
+  display: block; 
 }
 
-.column > p {font-size:1.1rem;}
+.column > p {font-size:1.2rem;}
 
 .textimg {width:98%;
 }
 
+.hoverclick {
+  font-family: Arial, Montserrat, Tahoma;
+  font-size:1.2rem;
+}
 
 .textimg:hover{ transform: scale(1);
 margin:0 auto; }
@@ -1161,19 +1165,19 @@ h1{
 
 #left{
   // padding:2rem;
-
   margin:0 auto;
   text-align:left
 }
 
 #blurb {
   display: block;
-width:93%;
+padding-left:10%;
+padding-right:10%;
 position:relative;
 margin:0 auto;
 overflow-x:hidden;
 padding-top:1.5rem;
-font-size:1.2rem;
+font-size:1.1rem;
 }
 
 p {font-size:1.2rem;}
@@ -1217,7 +1221,6 @@ background-size:109% 109%;
 .My-Projects {margin-bottom:0rem;
               }
 
-.projtitle {padding-bottom:0.3rem;}
 }
 
 
@@ -1296,6 +1299,8 @@ and (orientation : portrait) {
 .item {width:100%;}
 
 #scroller2{bottom:0rem;}
+
+.lastarrow {top:0vh;}
 
  }
 

@@ -83,9 +83,9 @@ return (
                     </div>
 
                   <div id="blurb"> 
-                  Welcome to my portfolio.<br/><br/>
+                  Welcome and thanks for checking out my portfolio.<br/><br/>
 
-                  I am a developer from Dublin and have been learning my craft since 2018. I strive to create beautiful web apps with an emphasis on a quality user experience.<br/> <br/> 
+                  I am a developer from Dublin and I've been learning my craft since 2018. I strive to create beautiful web apps with an emphasis on a quality user experience.<br/> <br/> 
                   I am currently looking for developer roles with a company where I can continue to grow and learn. I am equally comfortable working alone or with a team. 
                    <br/> <br/>
                   When I'm not coding or in the midst of a pandemic, I enjoy playing sports,
@@ -94,15 +94,15 @@ return (
                   <br/> <br/>
                   If you'd like to read more about my background and journey into coding, just 
 
-                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} />
-                  <br/><br/><br/>
+                 <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />
+                  <br/><br/>
 
                     <div id="leftlistcontainer">
                       <ul><span className="top"> Courses </span>
                       <hr/>
                         <li><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></li>
                         <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
-                        <li><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev in 2020</a></li>
+                        <li><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev</a></li>
                        {/* <br className="break"/>
                         <br className="break"/>
                         <br className="break"/>
@@ -116,13 +116,14 @@ return (
                         <hr/>
                         <li>HTML/CSS/JS</li>
                         <li>Git/Github</li>
-                        <li>React.js/Gatsby.js</li>
+                        <li>React/Gatsby</li>
                         <li>Node.js</li>
                        <li>Photoshop/Sketch</li>
                        <li>Bootstrap</li>
                         <li>SASS/Grid/Flexbox</li>
-                       <li>SQL/MongoDB</li>
+                       <li>SQL/GraphQL</li>
                        <li>API requests</li>
+
 
 
                       </ul>

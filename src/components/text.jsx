@@ -1,11 +1,10 @@
 import React from 'react'
 import polyinsta from '../pics/polyinsta.jpg'
 import rps from '../pics/rock-paper-scissors.jpg'
-export {alldescriptions}
+import Modal from './Modal.js'
+import  longertexts  from './longtexts.js'
 
-
-const alldescriptions = {
-	crezotext:<React.Fragment> <p>I made this site for a small construction company in Vancouver. 
+var crezoleft = <React.Fragment> <p>I made this site for a small construction company in Vancouver. 
                    I replaced their old Wordpress site with a more modern
                    version using Gatsby.js.</p>
 
@@ -17,7 +16,44 @@ const alldescriptions = {
                     <br/><br/> 
                     The colours, fonts and animations used were chosen to give a professional and modern look.
                     <br/><br/> 
+                    
+                    </p>
+                    </React.Fragment>
 
+  var crezoright =  <React.Fragment> <p>
+                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+
+                    </p>
+                    <p>
+                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+
+                    </p>
+                    <p>
+                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+
+                    </p>
+                    <p>
+                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+
+                    </p>
+                    </React.Fragment>             
+
+
+
+const alldescriptions = {
+	crezotext:<React.Fragment> <p>I made this site for a small construction company in Vancouver. 
+                   I replaced their old Wordpress site with a more modern
+                   version using Gatsby.js.</p>
+
+                   <p>Loading times were vastly decreased and Lighthouse audit scores improved dramatically
+                   in all areas.
+
+                    <br/><br/>
+                    I linked the site to Contentful CMS so they can manage the content themselves, without knowing any code.
+                    <br/><br/> 
+                    For detailed info about how I made this site and what I learned along the way, just  
+                    <Modal title="Crezo Construction" column1={crezoleft} column2={crezoright} xnumber="secondx" />
+                      <br/> <br/>
                     </p>
                     </React.Fragment>
                     ,
@@ -37,6 +73,9 @@ const alldescriptions = {
                     and various CSS effects and animations to create the right look.
                     <br/><br/> 
                      When the company launches, I will add a booking / payment system to the site.
+                     For more details, just
+                     <Modal title="Cosy Cabins" column1="heres some chat" column2="more chat" xnumber="secondx" />
+                      <br/> <br/>
 </p>,
 	networktext:<p>
 
@@ -50,7 +89,10 @@ const alldescriptions = {
 
                   
                     <br/><br/> 
-                    This was my first project built using React, and I really came to enjoy the component-based approach<br/>
+                    This was my first project built using React, and I really came to enjoy the component-based approach
+                    <Modal title="NetWorkers" column1="kjn kjn kj" column2="khjbkjhbnkj" />
+                     <br/> <br/>
+                    
 	</p>,
 
   mystory1: <React.Fragment> 
@@ -91,7 +133,7 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 
 <p>Once I got everything looking how I wanted, I realised, it still didn’t DO anything. This was when I began to realise the power of JavaScript. I created a function which would let you “play” against the computer, and after each round, the energy bars would deplete, and the scores would update and an alert would flash up with “you win!” or “you lose”.</p>
 
-<p><strong>In making this one personal project from start to finish, I'd learned more than in the previous 3 months combined.</strong></p>
+<p><strong>In making this one personal project from start to finish, I'd learned more than in the previous 3 months combined. </strong></p>
 
 <p>Unfortunately, after finishing this project, I managed to fall back into “tutorial hell” and spent many more months learning lots in theory, but not really creating anything to show for it. When I got to Vancouver in June 2018, I still didn’t feel ready to apply for developer jobs. </p> <p>I spent some time exploring my new surroundings and getting settled in. Feeling a bit disillusioned with my lack of progress in programming, I took an unrelated office job and drifted away from my studies for a while.</p>
 
@@ -146,11 +188,13 @@ Here are some examples of random tidbits I've learned over the last few weeks.
 
 <p>In the short-term, I’m planning to start learning more about Typescript, working with databases and APIs, and handling booking/payment systems on websites.</p>
 
-<p>If you have kept reading to this point, I salute you and please get in touch!</p>
+<p>If you have kept reading to this point, I salute you and please get in touch!
+</p>
 
   </React.Fragment>
 
 
+
 }
 
-
+export {alldescriptions}

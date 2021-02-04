@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import responsive from '../pics/responsive.png'
+import {alldescriptions} from './text.jsx'
+import Modal from './Modal.js'
+
 
 
 

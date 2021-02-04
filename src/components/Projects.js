@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react'
+import Modal from './Modal.js'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import crezopic1new from '../pics/crezopic1new.jpg'
 import crezopic2 from  '../pics/crezopic2.jpg'
@@ -15,7 +16,10 @@ import cb3 from '../pics/cb3.jpg'
 import cb4 from '../pics/cb4.jpg'
 import Proj from './Proj.js'
 import {bigtext} from './text.jsx'
+
 import {alldescriptions} from './text.jsx'
+
+
 
 
 
@@ -27,8 +31,6 @@ import {alldescriptions} from './text.jsx'
 
 export default function Projects(){
 
-
-var crezodescription = <p>hehehe this is the text</p>
 
 
 return (
