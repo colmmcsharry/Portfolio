@@ -3,39 +3,60 @@ import polyinsta from '../pics/polyinsta.jpg'
 import rps from '../pics/rock-paper-scissors.jpg'
 import Modal from './Modal.js'
 import  longertexts  from './longtexts.js'
+import newclighthouse from '../pics/NewCrezoLighthouse.jpg'
 
-var crezoleft = <React.Fragment> <p>I made this site for a small construction company in Vancouver. 
-                   I replaced their old Wordpress site with a more modern
-                   version using Gatsby.js.</p>
+var crezoleft = <React.Fragment> 
 
-                   <p>Loading times were vastly decreased and Lighthouse audit scores improved dramatically
-                   in all areas.
+<h3>  The Backstory</h3>
 
-                    <br/><br/>
-                    The site is linked to Contentful CMS so they can manage the content themselves, without knowing any code.
-                    <br/><br/> 
-                    The colours, fonts and animations used were chosen to give a professional and modern look.
-                    <br/><br/> 
-                    
-                    </p>
+<p>A staff member of this construction company reached out to me after I made an ad offering to help local businesses with their websites. Their old site was made themselves using Wordpress but, in their own words, “wasn’t great”.</p>
+
+<p>I checked it out and identified many areas areas that needed improvement, such as;   <ul> <li>Initial load time was very slow </li> <li> Fonts were bland and often clashed with the background colour</li> <li>Overall design was generic and uninspired</li> <li>Animations were janky and often distracting</li> <li>Positioning of some images and divs was obtrusive</li> <li>Responsiveness was poor, eg. horizontal scroll on mobile!</li></ul></p>
+
+<p> In all, and the positioning of some of the divs and images was distracting and obtrusive. I saw lots of areas where the performance and user experience could be improved.</p>
+
+<h3> The Tech Stack</h3>
+
+<p>I had been reading about Gatsby.js a lot, and decided this project would be an ideal chance to start using it.</p>
+
+<p>I also wanted the Crezo staff to be able to update the site content themselves, so I needed to link the site to a Content Management System.</p>
+
+<p>Since this was my first time using Gatsby, and also my first time using a CMS, I decided to look for starter templates just to see how it all works. Eventually I found one that combined Gatsby with Contentful, a modern “headless” CMS.</p>
+
+<p>Because this template was built as a web developer’s portfolio, the fonts, layout, and overall structure of the site needed to be changed, but I was able to dig into the code and see how the data was sent back and forth between client and Contenful. Gatsby uses GraphQL queries to “fetch” the data it needs, either from a local directory or from Contentful.</p>
+
+<h3> GraphQL for images</h3>
+
+<p>GraphQL was quite confusing at first but after a few days I could understand it. It actually turned out to be a huge time saver for me, as with just a few lines of code, it can query for images and return them in multiple different sizes, and automatically choose the correct one based on the user’s viewport, connection speed, internet browser, etc.</p>
+
+<p>This meant no more tediously cropping and compressing images into several sizes, and using media-queries or picture/srcSet to choose the appropriate one. Going forward, I will continue to utilise Gatsby for image-heavy websites.</p>
+
+<p>Now, the image galleries on the website were loading much faster, even for viewers on poor internet connections. I also gave them a shiny new background-image with the company slogan overlaid on it.</p>
+
                     </React.Fragment>
 
-  var crezoright =  <React.Fragment> <p>
-                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+  var crezoright =  <React.Fragment> <h3>Lighthouse Audits</h3><p>Knowing that Google is starting to rank pages based on their loading speed, accessibility, and best-practices, I set about achieving perfect scores in all Lighthouse audits.</p>
 
-                    </p>
-                    <p>
-                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+<p>Some of optimisations involved</p>
 
-                    </p>
-                    <p>
-                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+<ul><li>Lazy-Loading components until the user scrolls near them</li> <li>Using Chrome’s Coverage Dev Tool to remove unnecessary JS/CSS code</li>  <li>Researching and implementing different techniques to increase SEO scores</li>  <li>Ensuring all images had correct alt-texts and inputs had labels</li></ul>
 
-                    </p>
-                    <p>
-                      Lorem20  Lorem20 Lorem Lorem20  Lorem20 Lorem
+<p>After much work, all Lighthouse scores were near-perfect on both desktop and mobile. There is a clear improvement when compared to their previous website’s performance.</p>
 
-                    </p>
+<img className="textimg right" src={newclighthouse}></img>
+
+<p> Other features I added include;</p>
+
+<ul> <li>a Testimonials section with some of their top Google reviews</li> <li>Drop-down menus showing the company’s full-range of services</li> <li>Contact forms using Formspree, linked to the owner’s e-mail inbox</li> <li>Added a Google maps iframe to their contact section</li> <li>Provided staff with log-ins for Contenful and demonstrated how to edit content</li></ul>
+
+
+<p> Like with my portfolio, I tried to minimise clutter. Rather than take up the home-page with big walls of text, I hid them inside drop-down sections, so if a visitor wants to read in more detail, they can click the “read-more” button.</p>
+
+<p>In summary, this was my first experience making a site for an active, real-life company, and I made extra effort to ensure they were happy with it. I learned a lot about topics I had never needed to pay much attention to before, such as SEO, accessibility, and Content Management Systems.</p>
+
+<p>I look forward to using Gatsby again and I now have a template I can use and edit if businesses want similar websites made.</p>
+
+<p></p>
                     </React.Fragment>             
 
 
