@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react'
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link as ScrollLink, Element} from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
 import {alldescriptions} from './text.jsx'
@@ -77,7 +76,7 @@ return (
               <div className="tight" >
                 
                    <div className="item">
-                      <div className="polaroid"><img src={mework} height="100%" width="100%" loading="lazy"/>
+                      <div className="polaroid"><img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
                         <div className="caption">Me at work</div>
                       </div>
                     </div>

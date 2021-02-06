@@ -117,7 +117,7 @@ const alldescriptions = {
 	</p>,
 
   mystory1: <React.Fragment> 
-  <h3>The Beginning</h3>
+  <h3 className="mystoryh3">The Beginning</h3>
 <p>Hello again! So, how did I get here? </p> 
 
 <p>Well, from a very young age I enjoyed using computers and seeing what I could do with them.
@@ -133,7 +133,7 @@ As a teacher, I used lots of technology in the classroom and had an idea for a w
 <p>I attempted to make the sites for my students on Wordpress and other site-builders, but I couldn’t get things exactly as I wanted them. As I googled more and more, it became apparent that people were teaching themselves how to code so they could make their own apps and websites. Since I thought of myself as a techy sort of guy, I figured “if they can do it, why can’t I?”</p>
 
  
- <h3>A Slow Start</h3> 
+ <h3 className="mystoryh3">A Slow Start</h3> 
 <p>As I started reading more about the world of programming, I began to think it was a viable career path for me. Out of curiosity, I checked out a local bootcamp, but was put off by the hefty tuition fees.
 I was still working full-time as a teacher, and spent many more hours preparing classes and correcting homework, but I thought with a few months of dedicated self-study, that I'd be a near-expert.</p>
 
@@ -145,7 +145,7 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 
 <p>I must have followed 5 or 6 different “to-do list” tutorials, but I found them quite...well... boring. I didn’t really know WHY this stuff mattered.</p>  <p><strong>It wasn’t until I just ditched the tutorials and started working on creating my own websites that things started to fall into place.</strong></p>
 
-<h3>My First Site</h3>
+<h3 className="mystoryh3">My First Site</h3>
 
 
 <p>I remember my first website was a game of Rock-Paper-Scissors. I had a vision for how I wanted it to look, a bit like Street Fighter, with energy bars, animations, and sound effects. I remember gathering all the cartoon images I wanted and figuring out how to put them into position. I remember thinking Absolute positioning made it easy, but then when I opened my site on a mobile or tablet, it just looked awful, so I learned about modern methods like flexbox and grid, which helped with responsiveness.</p>
@@ -166,7 +166,7 @@ mystory2: <React.Fragment>
 
 
 
-<h3>The Bootcamp</h3> 
+<h3 className="mystoryh3">The Bootcamp</h3> 
 
 <p>One day that Autumn, I was browsing Reddit, when I saw that an individual was looking for students to take part in the first cohort of a new coding bootcamp. As it was the first cohort, it was only a fraction of the usual bootcamp cost. I checked out the planned syllabus and it looked very promising. Even though it was aimed at young high-school graduates, I got in touch, explained a bit about my situation and luckily was accepted onto the course.</p>
 
@@ -182,7 +182,7 @@ mystory2: <React.Fragment>
 
 <p>At the time, it felt like information overload, and a lot of our group projects were rushed to completion as we had to adhere to strict deadlines. This did give me a great insight into developer life though.</p> <p> <strong>Importantly, the course also laid out the blueprint for what I needed to learn to become a “real” web developer and make proper apps.</strong></p>
 
-<h3> From Then 'til Now </h3>
+<h3 className="mystoryh3"> From Then 'til Now </h3>
 
 <p>During the few months after the bootcamp, I set out on sprucing up my portfolio with more sites and apps, and I benefited from being able to look back at the course material and ask questions in our Slack group.</p>
 
@@ -201,7 +201,7 @@ Here are some examples of random tidbits I've learned over the last few weeks.
 <li>AnimXYZ makes creating animations much easier and more performant</li>
 <li>Gatsby takes the hassle out of resizing/compressing images</li></ul>
 
-<h3> Current Priorities </h3>
+<h3 className="mystoryh3"> Current Priorities </h3>
 
 <p>Besides looking for a job, I want to start getting more involved in the community. Until recently I had always been intimidated to go to coding meet ups as I felt I’d be out of my depth (imposter syndrome is real), but now it’s something I’d love to do. Unfortunately, the pandemic has made this impossible, but I am still active on web dev subreddits and on StackOverflow, as well as Slack/Discord groups.</p>
 

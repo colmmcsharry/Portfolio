@@ -35,28 +35,28 @@ return (
      
 {/*inner is the screen inside the laptop. */}
       <div className="innerwrapper">
-  <img className="inner" src={props.image1} loading="lazy" />
-  <img className="inner" src={props.image2} loading="lazy"/> 
-  <img className="inner" src={props.image3} loading="lazy"/>
-  <img className="inner" src={props.image4} loading="lazy"/>       
+  <img className="inner" src={props.image1} loading="lazy" alt="laptoppic" />
+  <img className="inner" src={props.image2} loading="lazy" alt="laptoppic" />
+  <img className="inner" src={props.image3} loading="lazy" alt="laptoppic" />
+  <img className="inner" src={props.image4} loading="lazy" alt="laptoppic" />     
       </div>   
 
  <div className="ipadwrapper">      
-      <img className="ipad"  src={props.image1}/>
-      <img className="ipad" src={props.image2}/>
-      <img className="ipad" src={props.image3}/>   
-     <img className="ipad" 	src={props.image4}/>    
+      <img className="ipad"  src={props.image1} alt="tabletpic" loading="lazy"  />
+      <img className="ipad" src={props.image2} alt="tabletpic" loading="lazy" />
+      <img className="ipad" src={props.image3} alt="tabletpic" loading="lazy" />   
+     <img className="ipad" 	src={props.image4} alt="tabletpic" loading="lazy" />    
       </div>          
    
  <div className="phonewrapper">     
- <img className="phone" src={props.image1}/>
-          <img className="phone" src={props.image2}/>
-      <img className="phone" src={props.image3}/>   
-     <img className="phone" src={props.image4}/>   
+ <img className="phone" src={props.image1} alt="phonepic"           loading="lazy"     />
+          <img className="phone" src={props.image2} alt="phonepic" loading="lazy"      />
+      <img className="phone" src={props.image3} alt="phonepic"     loading="lazy"      />   
+     <img className="phone" src={props.image4} alt="phonepic"      loading="lazy"      />   
       </div>
       
       {/*this is the png of all the devices*/}
-  <img className="devices" src={responsive} />   
+  <img className="devices" src={responsive} alt="devicespic" loading='lazy' />   
  
 </a>
    

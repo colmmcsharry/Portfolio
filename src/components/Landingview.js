@@ -16,7 +16,7 @@ return (
 
 
 <input id="toggle1" type="checkbox" className="mything"/>
-<label for="toggle1"></label>
+<label htmlFor="toggle1"></label>
 
 
 

@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.scss';
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Bio from './components/Bio.js'
 import Projects from './components/Projects.js'
 import Landingview from './components/Landingview.js'
-import Newdiv from './components/Newdiv.js'
 
 
 

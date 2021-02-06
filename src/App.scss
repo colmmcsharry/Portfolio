@@ -37,21 +37,28 @@ h2,h3 {text-align: center;
 }
 
 h2 {font-size:5rem;
-color:$cyan;}
+color:$cyan;
+font-family:papyrus;}
 
 
 a {-webkit-tap-highlight-color: transparent;
 user-select: none;}
 
+
+
 .column h3 {text-align:center;
   color: $cyan;
 filter: brightness(90%);
 font-size:1.66rem;
-font-family:  cursive,  Bradley Hand, Snell Roundhand, ;}
+font-family:  courier new,  Bradley Hand, Snell Roundhand, ;}
+
 
 
 .column {text-align:left;}
 
+h3.mystoryh3{
+  font-family:  cursive,  Bradley Hand, Snell Roundhand, ;
+}
 
 
 /*GENERAL CSS ENDS*/
@@ -923,7 +930,7 @@ object-position: center center;
     text-align:center;
     justify-content:center;
     white-space: nowrap;
-    bottom:6%;
+    bottom:4%;
     left:50%;
     transform: translateX(-50%);
     

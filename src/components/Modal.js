@@ -19,7 +19,9 @@ const closespan2 = document.getElementsByClassName("close");
 
 // var vari = document.querySelectorAll('.vari');
 
+const storyh2 = document.querySelectorAll('h2')[0];
 
+storyh2.style.fontFamily="Dancing Script";
 
 
 
