@@ -37,7 +37,7 @@ storyh2.style.fontFamily="Dancing Script";
 // }
 
 
-var txtimgs = document.querySelectorAll('.textimg') ;
+var txtimgs = document.querySelectorAll('figure') ;
 
 
 for ( let i=0; i < txtimgs.length ; i++){

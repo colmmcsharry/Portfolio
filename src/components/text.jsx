@@ -2,8 +2,9 @@ import React from 'react'
 import polyinsta from '../pics/polyinsta.jpg'
 import rps from '../pics/rock-paper-scissors.jpg'
 import Modal from './Modal.js'
-import  longertexts  from './longtexts.js'
+import longertexts  from './longtexts.js'
 import newclighthouse from '../pics/NewCrezoLighthouse.jpg'
+import currentCL from '../pics/CurrentCrezoLighthouse.jpg'
 
 var crezoleft = <React.Fragment> 
 
@@ -11,9 +12,14 @@ var crezoleft = <React.Fragment>
 
 <p>A staff member of this construction company reached out to me after I made an ad offering to help local businesses with their websites. Their old site was made themselves using Wordpress but, in their own words, “wasn’t great”.</p>
 
-<p>I checked it out and identified many areas areas that needed improvement, such as;   <ul> <li>Initial load time was very slow </li> <li> Fonts were bland and often clashed with the background colour</li> <li>Overall design was generic and uninspired</li> <li>Animations were janky and often distracting</li> <li>Positioning of some images and divs was obtrusive</li> <li>Responsiveness was poor, eg. horizontal scroll on mobile!</li></ul></p>
+<p>I checked it out and identified many areas areas that needed improvement, such as;   <ul className="learning-list"> <li>Initial load time was very slow </li> <li> Fonts were bland and often clashed with the background colour</li>  <li>Animations were janky and often distracting</li> <li>Positioning of some images and divs was obtrusive</li> <li>Responsiveness was poor, eg. horizontal scroll on mobile!</li> <li>Overall design was generic and uninspired</li>  </ul></p>
 
-<p> In all, and the positioning of some of the divs and images was distracting and obtrusive. I saw lots of areas where the performance and user experience could be improved.</p>
+<p> So, I saw lots of areas where the performance and user experience could be improved.</p>
+
+<figure className="left">
+<img className="textimg" src={currentCL} alt="Lightousescore" loading='lazy'/> 
+<figcaption>Their old Lighthouse scores</figcaption>
+</figure>
 
 <h3> The Tech Stack</h3>
 
@@ -39,15 +45,18 @@ var crezoleft = <React.Fragment>
 
 <p>Some of optimisations involved</p>
 
-<ul><li>Lazy-Loading components until the user scrolls near them</li> <li>Using Chrome’s Coverage Dev Tool to remove unnecessary JS/CSS code</li>  <li>Researching and implementing different techniques to increase SEO scores</li>  <li>Ensuring all images had correct alt-texts and inputs had labels</li></ul>
+<ul className="learning-list"><li>Lazy-Loading components until the user scrolls near them</li> <li>Using Chrome’s Coverage Dev Tool to remove unnecessary JS/CSS code</li>  <li>Researching and implementing different techniques to increase SEO scores</li>  <li>Ensuring all images had correct alt-texts and inputs had labels</li></ul>
 
-<p>After much work, all Lighthouse scores were near-perfect on both desktop and mobile. There is a clear improvement when compared to their previous website’s performance.</p>
+<p>After much work, all Lighthouse scores were near-perfect on both desktop and mobile. There is a clear improvement when compared to their previous website’s performance. This should lead to a much-improved user experience on the site.</p>
 
-<img className="textimg right" src={newclighthouse}></img>
+<figure className="right">
+<img className="textimg" src={newclighthouse} alt="Lightousescore" loading='lazy'/> 
+<figcaption>Their new, improved Lighthouse scores</figcaption>
+</figure>
 
 <p> Other features I added include;</p>
 
-<ul> <li>a Testimonials section with some of their top Google reviews</li> <li>Drop-down menus showing the company’s full-range of services</li> <li>Contact forms using Formspree, linked to the owner’s e-mail inbox</li> <li>Added a Google maps iframe to their contact section</li> <li>Provided staff with log-ins for Contenful and demonstrated how to edit content</li></ul>
+<ul className="learning-list"> <li>a Testimonials section with some of their top Google reviews</li> <li>Drop-down menus showing the company’s full-range of services</li> <li>Contact forms using Formspree, linked to the owner’s e-mail inbox</li> <li>Added a Google maps iframe to their contact section</li> <li>Provided staff with log-ins for Contenful and demonstrated how to edit content</li></ul>
 
 
 <p> Like with my portfolio, I tried to minimise clutter. Rather than take up the home-page with big walls of text, I hid them inside drop-down sections, so if a visitor wants to read in more detail, they can click the “read-more” button.</p>
@@ -56,8 +65,68 @@ var crezoleft = <React.Fragment>
 
 <p>I look forward to using Gatsby again and I now have a template I can use and edit if businesses want similar websites made.</p>
 
-<p></p>
-                    </React.Fragment>             
+                    </React.Fragment>      
+
+
+var cabinsleft = <React.Fragment>
+  
+  <h3>The Backstory</h3>
+
+<p>I made this site for my brother’s company, which is due to launch later this year. The company allows people to book overnight stays in small cabins in the wilderness. It is about the escaping the hustle and bustle of city life and the constant hum of technology and getting back into nature. I tried to reflect the overall ethos of the company with the minimalist, uncluttered website design.</p>
+
+<h3> Design</h3>
+
+<p>I designed this site totally from scratch, with no particular inspiration to draw from.  I really enjoyed exploring lots of little CSS tricks and animations, such as the fog on the background image.</p>
+
+<p>I learned a lot about typography and design and the difference fonts and colours can make to a user’s perception of your brand. I tried to get away from a corporate-style website.</p>
+
+<p>The aesthetic is supposed to be fun and light-hearted and this is reflected in my choice of fonts, colours, borders styles, buttons, and images.</p>
+
+<p>I used 8 values in the CSS border-radius on the images, buttons and videos on the site, so each one has unique, organic-looking borders.</p>
+
+<h3>  Features</h3>
+
+<p>I added a blog to the site, and each blog-entry is easily viewable in drop-down format so the user never has to navigate away from the page.</p>
+
+<p>I also linked the site to OpenWeatherMap’s API, so a customer can check out the 5-day forecast at each cabin’s location prior to making their booking.</p>
+
+
+<p>When the company launches, I will add a booking/payment system to the site.</p>
+
+<p>I considered using Google-Maps widgets to show customers the location of each cabin, but since the actual addresses are secret, I just used Photoshop to put small symbols onto the map of Ireland, to give a rough idea of the locations.</p>
+
+</React.Fragment>
+
+var cabinsright = <React.Fragment>
+
+
+<p>The Youtube video in the embedded player currently is just a placeholder, to be replaced once we shoot our own promo video.</p>
+
+<p>Since I wanted the site to be minimally cluttered, the navbar slides away when the user scrolls down, and reappears when the user scrolls up. I used some Javascript logic for this.</p>
+
+<p>The icons in the footer have a small animation/box-shadow on hover, just to let the user know which one is being selected. I find these subtle little effects really add to the user experience.</p>
+
+<p>The social media icons are from Font-Awesome, although I had to custom-make the Instagram one using a PNG, as the Font-Awesome version wasn’t available in color.</p>
+
+<p>Each image on the site has multiple versions. The larger, high-quality versions only load on-click, to save bandwidth and aid load speed.</p>
+
+<p>The only part of the site that uses Bootstrap is the contact form.</p>
+
+<p>On the About page, I wanted one GIF or video that zooms in/out on a cabin from a bird’s-eye view, to fully convey how isolated the cabins are. I couldn’t find any animations like this online, so I had to learn about keyframes and how to manually code the animation myself. I was happy with the end result.</p>
+
+<h3> Summary</h3>
+
+<p>Like all of my sites, it is fully responsive and looks just as good on any device. I made sure that the Lighthouse audits all passed with flying colors, and that my code is tidy, semantic and is not repetitive. I used React and each component loads very quickly.</p>
+
+<p>I had lots of fun making this site and being in control of the creative process. I spent a lot of time learning about design theory and how to add make a site look artistic and unique. I showed the site to my brother, who had struggled with making a site himself using WIX, and he was delighted with my work. I may add more features and visual effects, in addition to the booking system, before the site goes live.</p>
+
+
+</React.Fragment>
+
+
+
+
+
 
 
 
@@ -83,21 +152,20 @@ const alldescriptions = {
 
 
 
-	cabintext:<p>This is a mock-up website for my brother's company.
+	cabintext:<p>This is a mock-up website for my brother's company. The company is a bit like Air BnB, but specialises in off-the-grid cabins.
                      <br/><br/> Built using React, I tried to convey 
                     the overall ethos of the company with the minimalist website design.
 
                     <br/><br/>
-                    As this website is image-heavy, I learned a lot about optimising images and making them responsive.
-                    <br/><br/>
-                    The aesthetic is supposed to be "fun" and light-hearted, so I learned about using colours, fonts
-                    and various CSS effects and animations to create the right look.
+                    The site contains image galleries, a blog, 5 day weather forecast using API, and some 
+                    quirky animations.
                     <br/><br/> 
-                     When the company launches, I will add a booking / payment system to the site.
+                     When the company launches, I will add a booking / payment system to the site. <br/> <br/>
                      For more details, just
-                     <Modal title="Cosy Cabins" column1="heres some chat" column2="more chat" xnumber="secondx" />
-                      <br/> <br/>
+                     <Modal title="Cosy Cabins" column1={cabinsleft} column2={cabinsright} xnumber="secondx" />
+                      
 </p>,
+
 	networktext:<p>
 
 	Networkers is a site I created from scratch to help me learn React.<br/>
@@ -150,7 +218,7 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 
 <p>I remember my first website was a game of Rock-Paper-Scissors. I had a vision for how I wanted it to look, a bit like Street Fighter, with energy bars, animations, and sound effects. I remember gathering all the cartoon images I wanted and figuring out how to put them into position. I remember thinking Absolute positioning made it easy, but then when I opened my site on a mobile or tablet, it just looked awful, so I learned about modern methods like flexbox and grid, which helped with responsiveness.</p>
 
-<img className="textimg left" src={rps}  />
+<img className="textimg left" src={rps}  alt="rockpaperscissors" loading='lazy'/>
 
 <p>Once I got everything looking how I wanted, I realised, it still didn’t DO anything. This was when I began to realise the power of JavaScript. I created a function which would let you “play” against the computer, and after each round, the energy bars would deplete, and the scores would update and an alert would flash up with “you win!” or “you lose”.</p>
 
@@ -171,7 +239,7 @@ mystory2: <React.Fragment>
 <p>One day that Autumn, I was browsing Reddit, when I saw that an individual was looking for students to take part in the first cohort of a new coding bootcamp. As it was the first cohort, it was only a fraction of the usual bootcamp cost. I checked out the planned syllabus and it looked very promising. Even though it was aimed at young high-school graduates, I got in touch, explained a bit about my situation and luckily was accepted onto the course.</p>
 
 <p>Knowing that I’d soon be starting a course, I quickly began making up for lost time. I completed all the requisite pre-course materials and did as much as I could to prepare. The course would be 4 months long, two evenings a week, plus weekends, with additional study time and homework.</p>
- <img className="textimg right" src={polyinsta}  />
+ <img className="textimg right" src={polyinsta} alt="codingbootcamp" loading='lazy'  />
 <p>I had a packed schedule for those 4 months, working in a hectic sales and marketing job during the day, then straight to bootcamp or homework at night. It was overwhelming at times, but it was well worth it.</p>
 
 <p>Working with a group and having an instructor to guide you and answer questions really accelerated my learning. We were introduced to Python, databases, SQL, and some of the other “back-end” technologies, and learned how to use APIs to get information from sites like Twitter and Reddit onto our websites. We progressed from vanilla JS/jQuery to modern frameworks like React and had a peek at “machine learning”.</p>
