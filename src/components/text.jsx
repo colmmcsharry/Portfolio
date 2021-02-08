@@ -7,6 +7,9 @@ import newclighthouse from '../pics/NewCrezoLighthouse.jpg'
 import currentCL from '../pics/CurrentCrezoLighthouse.jpg'
 import schema from '../pics/schema-diagrams.jpg'
 import sketchnet from '../pics/Sketchnet2.jpg'
+import snippet from '../pics/snippet.jpg'
+import weather from '../pics/weather.jpg'
+import youtube from '../pics/Youtube.jpg'
 
 
 var crezoleft = <React.Fragment> 
@@ -93,6 +96,11 @@ var cabinsleft = <React.Fragment>
 
 <p>I also linked the site to OpenWeatherMap’s API, so a customer can check out the 5-day forecast at each cabin’s location prior to making their booking.</p>
 
+<figure className="left">
+<img className="textimg" src={weather} alt="weathermap" loading='lazy'/> 
+<figcaption>image gallery & 5 day weather forecast</figcaption>
+</figure>
+<br/>
 
 <p>When the company launches, I will add a booking/payment system to the site.</p>
 
@@ -103,7 +111,14 @@ var cabinsleft = <React.Fragment>
 var cabinsright = <React.Fragment>
 
 
+<br/><br/><br/>
+
 <p>The Youtube video in the embedded player currently is just a placeholder, to be replaced once we shoot our own promo video.</p>
+
+<figure className="right">
+<img className="textimg" src={youtube} alt="youtubeiframe" loading='lazy'/> 
+<figcaption>Embedded Youtube player with funky borders</figcaption>
+</figure>
 
 <p>Since I wanted the site to be minimally cluttered, the navbar slides away when the user scrolls down, and reappears when the user scrolls up. I used some Javascript logic for this.</p>
 
@@ -121,7 +136,9 @@ var cabinsright = <React.Fragment>
 
 <p>Like all of my sites, it is fully responsive and looks just as good on any device. I made sure that the Lighthouse audits all passed with flying colors, and that my code is tidy, semantic and is not repetitive. I used React and each component loads very quickly.</p>
 
-<p>I had lots of fun making this site and being in control of the creative process. I spent a lot of time learning about design theory and how to add make a site look artistic and unique. I showed the site to my brother, who had struggled with making a site himself using WIX, and he was delighted with my work. I may add more features and visual effects, in addition to the booking system, before the site goes live.</p>
+<p>I had lots of fun making this site and being in control of the creative process. I spent a lot of time learning about design theory and how to add make a site look artistic and unique. I showed the site to my brother, who had struggled with making a site himself using WIX, and he was delighted with my work. 
+<br/><br/>
+I may add more features and visual effects, in addition to the booking system, before the site goes live.</p>
 
 
 </React.Fragment>
@@ -139,33 +156,41 @@ var networkersleft= <React.Fragment>
 <img className="textimg" src={sketchnet} alt="Sketchversion" loading='lazy'/> 
 <figcaption>An early Sketch of the website</figcaption>
 </figure>
-<br/><br/>
-<figure className="left">
-<img className="textimg" src={schema} alt="Schema-diagram" loading='lazy'/> 
-<figcaption> Schema-diagrams </figcaption>
-</figure>
-
-
 
 
 
 <p>My partner created some Schema diagrams, showing how the database objects would relate to each other, and the how different logins for users/customers would work.</p>
 
+<figure className="left">
+<img className="textimg" src={schema} alt="Schema-diagram" loading='lazy'/> 
+<figcaption> Schema-diagrams </figcaption>
+</figure>
+
 <p>Unfortunately, due to time constraints and my partner becoming ill during this part of the course, the project went unfinished. Months later, after the course, I decided to return to it.</p>
 
 <p>This was by far the most complex site I had built at the time, and my first full site using React. As the site grew and grew, I begun to realise that I could save lots of time and write less code by being clever with Javascript.</p>
 
-<p>I learned to use reusable components and change the props or state to slightly vary them each time.</p>
 
 </React.Fragment>
 
 var networkersright = 
+
+
 <React.Fragment>
+ <h3>Utilising Javascript</h3>
+
+
+<p>I learned to use reusable components and change the props or state to slightly vary them each time.</p>
+
 <p>Just to give an example, there are 5 different categories of workers on the site (builders, accountants, designers, clowns, and chefs), and each has 3 individual workers to choose from. So, rather than create 15 distinct bios, I instead wrote just 6 and used props to sub in the names, job titles, costs, pronouns, contact info, images, etc, so they are always appropriate.</p>
+
+<figure className="right">
+<img className="textimg" src={snippet} alt="JS Snippet" loading='lazy'/> 
+<figcaption> Javscript logic using props </figcaption>
+</figure>
 
 <p>There are also 3 testimonials written on each worker’s page. So, rather than write 45 unique testimonials, I just wrote a handful but used Javascript to make them appropriate for each worker. I also created an array of headshots and names which are chosen at random, so that the testimonials are never the same on each page visit.</p>
 
-SHOW SOME JS LOGIC SNIPPETS HERE!
 
 
 <p>The contact form uses Bootstrap but has different fields depending on whether you sign in as a Worker or Customer.</p>
@@ -175,6 +200,10 @@ SHOW SOME JS LOGIC SNIPPETS HERE!
 <p>With the menus, fonts and colors, I tried to go for a more professional, corporate look. I used Font-Awesome to include each worker’s social-media links.</p>
 
 <p>I learned to use favicons so that the site’s logo shows up on all types of tabs on all types of devices.</p>
+
+<p>Looking back on the code now, I can see many areas in which I've improved. Back when I made this site, I tended to use px too much, instead of more responsive units like em/rem, %, or vw/vh. I also wasn't as descriptive as I should have been with my class names. 
+
+ </p>
 
 <p>In future, I plan to finish the back-end, and use Passport to create a functioning log-in system and MySQL to create a database of workers, ratings, testimonials, etc.</p>
 <h3 > Summary </h3>
@@ -274,7 +303,11 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 
 <p>I remember my first website was a game of Rock-Paper-Scissors. I had a vision for how I wanted it to look, a bit like Street Fighter, with energy bars, animations, and sound effects. I remember gathering all the cartoon images I wanted and figuring out how to put them into position. I remember thinking Absolute positioning made it easy, but then when I opened my site on a mobile or tablet, it just looked awful, so I learned about modern methods like flexbox and grid, which helped with responsiveness.</p>
 
-<img className="textimg left" src={rps}  alt="rockpaperscissors" loading='lazy'/>
+<figure className="left">
+<img className="textimg" src={rps} alt="rockpaperscissors" loading='lazy'/> 
+<figcaption> my first site! </figcaption>
+</figure>
+
 
 <p>Once I got everything looking how I wanted, I realised, it still didn’t DO anything. This was when I began to realise the power of JavaScript. I created a function which would let you “play” against the computer, and after each round, the energy bars would deplete, and the scores would update and an alert would flash up with “you win!” or “you lose”.</p>
 
@@ -295,7 +328,12 @@ mystory2: <React.Fragment>
 <p>One day that Autumn, I was browsing Reddit, when I saw that an individual was looking for students to take part in the first cohort of a new coding bootcamp. As it was the first cohort, it was only a fraction of the usual bootcamp cost. I checked out the planned syllabus and it looked very promising. Even though it was aimed at young high-school graduates, I got in touch, explained a bit about my situation and luckily was accepted onto the course.</p>
 
 <p>Knowing that I’d soon be starting a course, I quickly began making up for lost time. I completed all the requisite pre-course materials and did as much as I could to prepare. The course would be 4 months long, two evenings a week, plus weekends, with additional study time and homework.</p>
- <img className="textimg right" src={polyinsta} alt="codingbootcamp" loading='lazy'  />
+
+<figure className="right">
+<img className="textimg" src={polyinsta} alt="codingbootcamp" loading='lazy'/> 
+<figcaption> At bootcamp, me on the left </figcaption>
+</figure>
+
 <p>I had a packed schedule for those 4 months, working in a hectic sales and marketing job during the day, then straight to bootcamp or homework at night. It was overwhelming at times, but it was well worth it.</p>
 
 <p>Working with a group and having an instructor to guide you and answer questions really accelerated my learning. We were introduced to Python, databases, SQL, and some of the other “back-end” technologies, and learned how to use APIs to get information from sites like Twitter and Reddit onto our websites. We progressed from vanilla JS/jQuery to modern frameworks like React and had a peek at “machine learning”.</p>
