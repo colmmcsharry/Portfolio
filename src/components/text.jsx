@@ -5,6 +5,9 @@ import Modal from './Modal.js'
 import longertexts  from './longtexts.js'
 import newclighthouse from '../pics/NewCrezoLighthouse.jpg'
 import currentCL from '../pics/CurrentCrezoLighthouse.jpg'
+import schema from '../pics/schema-diagrams.jpg'
+import sketchnet from '../pics/Sketchnet2.jpg'
+
 
 var crezoleft = <React.Fragment> 
 
@@ -123,9 +126,62 @@ var cabinsright = <React.Fragment>
 
 </React.Fragment>
 
+var networkersleft= <React.Fragment>
+  
+<h3>The Background</h3>
+
+<p>The idea for this site was originally conceived during my coding Bootcamp. Everybody was paired up with a partner and asked to create a website from scratch. I came up with an idea for a Tinder-like site where you could swipe through local workers in your area, see ratings, testimonials, prices, etc. and hire one you like.</p>
+
+<p>My partner agreed on this, and we decided that she would take care of the Back-End, and I would take care of the Front-End. After sketching up the idea for the main page on pen and paper, I then downloaded the app Sketch, and created a mock-up there.</p>
+
+
+<figure className="left">
+<img className="textimg" src={sketchnet} alt="Sketchversion" loading='lazy'/> 
+<figcaption>An early Sketch of the website</figcaption>
+</figure>
+<br/><br/>
+<figure className="left">
+<img className="textimg" src={schema} alt="Schema-diagram" loading='lazy'/> 
+<figcaption> Schema-diagrams </figcaption>
+</figure>
 
 
 
+
+
+<p>My partner created some Schema diagrams, showing how the database objects would relate to each other, and the how different logins for users/customers would work.</p>
+
+<p>Unfortunately, due to time constraints and my partner becoming ill during this part of the course, the project went unfinished. Months later, after the course, I decided to return to it.</p>
+
+<p>This was by far the most complex site I had built at the time, and my first full site using React. As the site grew and grew, I begun to realise that I could save lots of time and write less code by being clever with Javascript.</p>
+
+<p>I learned to use reusable components and change the props or state to slightly vary them each time.</p>
+
+</React.Fragment>
+
+var networkersright = 
+<React.Fragment>
+<p>Just to give an example, there are 5 different categories of workers on the site (builders, accountants, designers, clowns, and chefs), and each has 3 individual workers to choose from. So, rather than create 15 distinct bios, I instead wrote just 6 and used props to sub in the names, job titles, costs, pronouns, contact info, images, etc, so they are always appropriate.</p>
+
+<p>There are also 3 testimonials written on each worker’s page. So, rather than write 45 unique testimonials, I just wrote a handful but used Javascript to make them appropriate for each worker. I also created an array of headshots and names which are chosen at random, so that the testimonials are never the same on each page visit.</p>
+
+SHOW SOME JS LOGIC SNIPPETS HERE!
+
+
+<p>The contact form uses Bootstrap but has different fields depending on whether you sign in as a Worker or Customer.</p>
+
+<p>The carousel on the main page has 3 images on Desktop, but reduces to 3 on tablets, and one on phones. This can be swiped back and forth on mobiles too.</p>
+
+<p>With the menus, fonts and colors, I tried to go for a more professional, corporate look. I used Font-Awesome to include each worker’s social-media links.</p>
+
+<p>I learned to use favicons so that the site’s logo shows up on all types of tabs on all types of devices.</p>
+
+<p>In future, I plan to finish the back-end, and use Passport to create a functioning log-in system and MySQL to create a database of workers, ratings, testimonials, etc.</p>
+<h3 > Summary </h3>
+<p>In summary, this project thought me a lot about using Javascript arrays, objects and functions to show the correct data to the user, and to save myself a lot of repetitive typing. I also learned lots about using Node.js to install packages, and how to navigate around package.json files. It also showed me how the back-end and front-end integrate and how to co-ordinate with a partner regarding version control.</p>
+
+
+</React.Fragment>
 
 
 
@@ -179,7 +235,7 @@ const alldescriptions = {
                   
                     <br/><br/> 
                     This was my first project built using React, and I really came to enjoy the component-based approach
-                    <Modal title="NetWorkers" column1="kjn kjn kj" column2="khjbkjhbnkj" />
+                    <Modal title="NetWorkers" column1={networkersleft} column2={networkersright} />
                      <br/> <br/>
                     
 	</p>,

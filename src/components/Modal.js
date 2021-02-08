@@ -22,6 +22,7 @@ const closespan2 = document.getElementsByClassName("close");
 const storyh2 = document.querySelectorAll('h2')[0];
 
 storyh2.style.fontFamily="Dancing Script";
+storyh2.style.fontSize="3.5rem";
 
 
 
