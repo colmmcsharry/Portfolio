@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.db2bd0d7.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b6bc6934.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b6bc6934.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.c07a79f5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.1dd454e7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.1dd454e7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
     "static/js/2.8c15364f.chunk.js": "/Portfolio/static/js/2.8c15364f.chunk.js",
     "static/js/2.8c15364f.chunk.js.map": "/Portfolio/static/js/2.8c15364f.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.db2bd0d7.chunk.css.map": "/Portfolio/static/css/main.db2bd0d7.chunk.css.map",
+    "static/css/main.c07a79f5.chunk.css.map": "/Portfolio/static/css/main.c07a79f5.chunk.css.map",
     "static/js/2.8c15364f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8c15364f.chunk.js.LICENSE.txt",
+    "static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg": "/Portfolio/static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg",
     "static/media/NewCrezoLighthouse.1e21ba6e.jpg": "/Portfolio/static/media/NewCrezoLighthouse.1e21ba6e.jpg",
     "static/media/cb1.385fce0c.jpg": "/Portfolio/static/media/cb1.385fce0c.jpg",
     "static/media/cb2.60ab078a.jpg": "/Portfolio/static/media/cb2.60ab078a.jpg",
@@ -29,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.896df889.js",
     "static/js/2.8c15364f.chunk.js",
-    "static/css/main.db2bd0d7.chunk.css",
-    "static/js/main.b6bc6934.chunk.js"
+    "static/css/main.c07a79f5.chunk.css",
+    "static/js/main.1dd454e7.chunk.js"
   ]
 }
