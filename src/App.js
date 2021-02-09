@@ -4,7 +4,7 @@ import { HashRouter } from "react-router-dom";
 import Bio from './components/Bio.js'
 import Projects from './components/Projects.js'
 import Landingview from './components/Landingview.js'
-
+import Contact from './components/Contact.js'
 
 
 
@@ -34,7 +34,7 @@ function App() {
                                
        
 
-          
+          <Contact />
         </div>
 
   </div>
