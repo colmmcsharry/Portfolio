@@ -1,6 +1,8 @@
 import React, { useState }  from 'react';
 import ReactDOM from 'react'
-import {alldescriptions} from './text.jsx'
+import {alldescriptions} from './text.js'
+import LazyLoad from 'react-lazyload';
+
 
 
 export default function Modal (props){
@@ -176,7 +178,7 @@ document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout'
 
 <div id="myModal" className="modal">
 
- 
+
   <div className="modal-content">
 
     <span id={props.xnumber} className="close">&times; </span>
@@ -185,15 +187,17 @@ document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout'
  
     <div className="modal-grid-container">
 
-
+    
       <div className="column">
+    
       {props.column1}
+
       </div>
       <div className="column">
      {props.column2}
 
      </div>
-
+   
    </div>
 {/*  <span id={props.xbot} id="bottom" className="close" >&times;</span>*/}
   </div>

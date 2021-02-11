@@ -15,9 +15,9 @@ import cb2 from '../pics/cb2.jpg'
 import cb3 from '../pics/cb3.jpg'
 import cb4 from '../pics/cb4.jpg'
 import Proj from './Proj.js'
-import {bigtext} from './text.jsx'
+import {bigtext} from './text.js'
 
-import {alldescriptions} from './text.jsx'
+import {alldescriptions} from './text.js'
 
 
 

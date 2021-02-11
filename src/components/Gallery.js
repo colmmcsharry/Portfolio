@@ -10,6 +10,7 @@ import myvan from '../pics/myvan.jpg'
 import memount  from '../pics/memount.JPG'
 import snow from '../pics/snow.jpg'
 import mefam from '../pics/mefam.JPG'
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -94,7 +95,10 @@ return (
 <div className ="funwrap">
 
 		<div className="gallerywrap">
-		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} loading="lazy" />   </div>  )}
+		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} />  </div> 
+
+		 )}
+
 		</div>
 
 		<div className="rightstuff">
