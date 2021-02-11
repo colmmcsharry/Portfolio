@@ -64,56 +64,6 @@ h3.mystoryh3{
 /*GENERAL CSS ENDS*/
 
 
-/*CONTACT FORM BEGINS*/
-
-.sendbut {display:block;
-position:relative;
-top:6.5rem;}
-
-.contactwrap {
-  padding:8%;
-  font-size:1rem;
-}
-
-.contacth2 {
-  color:$cyan;
-  font-size:3rem;
-  font-family:Dancing Script, Bradley Hand, Exo, cursive;
-}
-
-form label{width:100%}
-
-form input,
-form textarea{display:block;width:100%;opacity:0.9;padding:8px 15px;box-sizing:border-box;outline:none;resize:none;background:#fafafe;z-index:2;position:relative;line-height:16px;font-size:1rem;-webkit-transition:none 0s ease 0s;transition:none 0s ease 0s;border:1px solid hsla(0,0%,80%,.37);margin:10px 0 0}
-
-form textarea{height:6rem} /*the big message area*/
-
-form button{text-indent:-10px;color:#333;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
-form>div{margin-bottom:15px}
-
-.contactlabel {
-display: block;
-    width: 100%;
-    visibility: visible;
-    /* height: 1rem; */
-    left: auto;
-    position: relative;}
-
-.contactlabel:before {
-  display:none;
-}
-
-.contactlabel:hover {
-  transform:translate(0px);
-}
-
-.details{padding:0;list-style:none;padding-top:30px;margin-bottom:30px;}
-.details li{display:flex;align-items:center;margin-bottom:10px}
-.details li p{margin:0}
-.details li strong{width:7rem}
-
-
-/*CONTACT FORM ENDS*/
 
 
 
@@ -474,7 +424,7 @@ z-index:10;
   outline:none;
   font-style: italic;
   border-width:thin;
-  cursor:context-menu;
+  cursor: context-menu, progress;
   font-size:1.1rem;
   font-weight: bold;
 }
@@ -1137,7 +1087,134 @@ color:$cyan !important;
 
 
 
+/*Gallery begins*/
 
+.gallerywrap::before {
+  content: "I made this gallery to play around with CSS Grid and different JS and CSS selectors. The zoom-in should vary depending on the orientation of the picture, and it's position in the grid.";
+  position:absolute;
+  top:-10vh;
+  font-size:.85rem;
+  height:1px;
+  width:100%;
+}
+
+.gallerywrap {
+  display: inline-grid;
+  width: 50vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 20vh;
+  margin-bottom:20rem;
+  grid-gap:10px;
+  margin-left:6%;
+  position:relative;
+}
+
+.igaldiv {
+  max-height:100%;
+max-width:100%;
+transition: all .3s ease;
+transform-origin: left center;
+
+}
+
+.igaldiv:nth-child(-n+3) {
+    transform-origin: left top;
+}
+
+.igaldiv:nth-child(n+7){
+    transform-origin: left bottom;
+}
+
+.igaldiv > img {
+object-fit:fill;
+ height:100%;
+width:100%;
+overflow:hidden;
+border-radius:5%;
+}
+
+.gowide 
+{transform:scale(3.5,3);}
+
+.gotall
+{transform:scale(3,4.4);
+}
+
+.igaldiv:hover {cursor:zoom-in;}
+
+/*Gallery ends*/
+
+
+.funwrap {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  width:98vw;
+  margin-top:25rem;
+}
+
+
+
+/*RIGHT STUFF BEGINS*/
+
+.rightstuff {
+
+}
+
+
+
+/*RIGHT STUFF ENDS*/
+
+
+/*CONTACT FORM BEGINS*/
+
+.sendbut {display:block;
+position:relative;
+top:6.5rem;}
+
+.contactwrap {
+  padding: 2% 10% 15% 8%;
+  font-size:1rem;
+}
+
+.contacth2 {
+  color:$cyan;
+  font-size:3rem;
+  font-family:Dancing Script, Bradley Hand, Exo, cursive;
+}
+
+form label{width:100%}
+
+form input,
+form textarea{display:block;width:100%;padding:8px 15px;box-sizing:border-box;outline:none;resize:none;background:#fafafe;z-index:2;position:relative;line-height:16px;font-size:1rem;-webkit-transition:none 0s ease 0s;transition:none 0s ease 0s;border:1px solid hsla(0,0%,80%,.37);margin:10px 0 0}
+
+form textarea{height:6rem} /*the big message area*/
+
+form button{text-indent:-10px;color:#333;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
+form>div{margin-bottom:15px}
+
+.contactlabel {
+display: block;
+    width: 100%;
+    visibility: visible;
+    /* height: 1rem; */
+    left: auto;
+    position: relative;}
+
+.contactlabel:before {
+  display:none;
+}
+
+.contactlabel:hover {
+  transform:translate(0px);
+}
+
+.details{padding:0;list-style:none;padding-top:30px;margin-bottom:30px;}
+.details li{display:flex;align-items:center;margin-bottom:10px}
+.details li p{margin:0}
+.details li strong{width:7rem}
+
+
+/*CONTACT FORM ENDS*/
 
 
 
@@ -1191,13 +1268,79 @@ border-spacing: 50px 0;}
 // overflow-x:hidden;}
 
 .break {display:none;}
+
+.funwrap {
+  display:block
+
+}
+
+.gallerywrap::before {
+  content:"I made this responsive image gallery myself. On wider screens, these images are zoomable";
+  top:-5vh;
+}
+
+.gallerywrap {
+ display: flex;
+flex-wrap: wrap;
+height: 600px; 
+max-width: 1000px;
+width: 100%;
+grid-gap:1px;
+padding-left:2%;
+padding-right:2%;
+margin-left:0;
+}
+
+.igaldiv {
+ height: 50%; 
+}
+
+
+.igaldiv:nth-child(odd) {
+width: 65%;
+}
+
+.igaldiv:nth-child(even) {
+width: 34%;}
+
+
+ .gowide {transform: scale(1)}
+
+.gotall {transform:scale(1);}
+
  }
 
 
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
+
+.gallerywrap {
+ display: block;
+height: auto; 
+max-width: 1000px;
+width: 100%;
+padding-left:2%;
+padding-right:2%;
+margin-left:0;
+}
+
+.igaldiv {
+ display:block;
+
+}
+
+
+.igaldiv:nth-child(odd) {
+ width: 100%;
+}
+
+.igaldiv:nth-child(even) {
+   width: 100%;
+}
+
+
 
 .window, .window::before, .window::after {
   height:90vh;

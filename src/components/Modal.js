@@ -43,7 +43,7 @@ var txtimgs = document.querySelectorAll('figure') ;
 
 for ( let i=0; i < txtimgs.length ; i++){
 
-txtimgs[i].onclick = function goblu(){
+txtimgs[i].onclick = function(){
 txtimgs[i].classList.toggle('testclass');
 
 txtimgs[i].onmouseout = function(){txtimgs[i].classList.remove('testclass')}
@@ -54,12 +54,6 @@ txtimgs[i].onmouseout = function(){txtimgs[i].classList.remove('testclass')}
 
 
 }
-
-
-
-// txtimgs[i].onmouseout = 
-
-
 
 
 
@@ -102,7 +96,7 @@ let timeOut;
  document.getElementById('My Story').addEventListener('mouseover', (e) => {
   timeOut = setTimeout(() => {
     openup(0)
-  }, 500);
+  }, 800);
 });
 
  document.getElementById('Crezo Construction').addEventListener('mouseover', (e) => {
@@ -165,10 +159,9 @@ document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout'
 
 }
 
-}
 
 
- , .1000   ) 
+} , .1000   ) 
 
 
 
