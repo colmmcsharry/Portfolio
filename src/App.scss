@@ -1114,7 +1114,11 @@ color:$cyan !important;
 max-width:100%;
 transition: all .3s ease;
 transform-origin: left center;
+}
 
+.igaldiv:nth-child(even){
+  width:70%;
+  margin: 0 auto;
 }
 
 .igaldiv:nth-child(-n+3) {
@@ -1134,10 +1138,10 @@ border-radius:5%;
 }
 
 .gowide 
-{transform:scale(3.5,3);}
+{transform:scale(3.7);}
 
 .gotall
-{transform:scale(3,4.4);
+{transform:scale(3.8);
 }
 
 .igaldiv:hover {cursor:zoom-in;}

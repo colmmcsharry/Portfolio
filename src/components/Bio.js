@@ -3,7 +3,6 @@ import { Link as ScrollLink, Element} from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
 import {alldescriptions} from './text.js'
-import LazyLoad from 'react-lazyload';
 
 
 export default function Bio(){
@@ -74,18 +73,19 @@ return (
             <h3 id="about"><Element name="About" ></Element>About</h3>
               <div id="bio">
 
-              <div className="tight" >
-                 <LazyLoad height={400} offset={100}>
+              <div className="tight">
+               
                    <div className="item">
                       <div className="polaroid">
-                      
+                     
                       <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
 
                         <div className="caption">Me at work</div>
-                      </div>
 
+                      </div>
+                     
                     </div>
-                  </LazyLoad>
+                   
                   <div id="blurb"> 
                   Welcome and thanks for checking out my portfolio.<br/><br/>
 
@@ -97,9 +97,9 @@ return (
 
                   <br/> <br/>
                   If you'd like to read more about my background and journey into coding, just 
-                   
+                
                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />
-                   
+                 
                   <br/><br/>
 
                     <div id="leftlistcontainer">

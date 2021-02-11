@@ -23,7 +23,7 @@ var crezoleft = <React.Fragment>
 <p> So, I saw lots of areas where the performance and user experience could be improved.</p>
 
 <figure className="left">
-<img className="textimg" src={currentCL} alt="Lightousescore"/> 
+<img className="textimg" src={currentCL} alt="Lightousescore" loading="lazy"/> 
 <figcaption>Their old Lighthouse scores</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ var crezoleft = <React.Fragment>
 
 <figure className="right">
 <LazyLoad>
-<img className="textimg" src={newclighthouse} alt="Lightousescore" /> 
+<img loading="lazy" className="textimg" src={newclighthouse} alt="Lightousescore" /> 
 </LazyLoad>
 <figcaption>Their new, improved Lighthouse scores</figcaption>
 </figure>
@@ -98,7 +98,7 @@ var cabinsleft = <React.Fragment>
 <p>I also linked the site to OpenWeatherMap’s API, so a customer can check out the 5-day forecast at each cabin’s location prior to making their booking.</p>
 
 <figure className="left">
-<img className="textimg" src={weather} alt="weathermap" /> 
+<img loading="lazy" className="textimg" src={weather} alt="weathermap" /> 
 <figcaption>image gallery & 5 day weather forecast</figcaption>
 </figure>
 <br/>
@@ -117,7 +117,7 @@ var cabinsright = <React.Fragment>
 <p>The Youtube video in the embedded player currently is just a placeholder, to be replaced once we shoot our own promo video.</p>
 
 <figure className="right">
-<img className="textimg" src={youtube} alt="youtubeiframe" /> 
+<img loading="lazy" className="textimg" src={youtube} alt="youtubeiframe" /> 
 <figcaption>Embedded Youtube player with funky borders</figcaption>
 </figure>
 
@@ -154,7 +154,7 @@ var networkersleft= <React.Fragment>
 
 
 <figure className="left">
-<img className="textimg" src={sketchnet} alt="Sketchversion" /> 
+<img loading="lazy" className="textimg" src={sketchnet} alt="Sketchversion" /> 
 <figcaption>An early Sketch of the website</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ var networkersleft= <React.Fragment>
 <p>My partner created some Schema diagrams, showing how the database objects would relate to each other, and the how different logins for users/customers would work.</p>
 
 <figure className="left">
-<img className="textimg" src={schema} alt="Schema-diagram" /> 
+<img  loading="lazy" className="textimg" src={schema} alt="Schema-diagram" /> 
 <figcaption> Schema-diagrams </figcaption>
 </figure>
 
@@ -186,7 +186,7 @@ var networkersright =
 <p>Just to give an example, there are 5 different categories of workers on the site (builders, accountants, designers, clowns, and chefs), and each has 3 individual workers to choose from. So, rather than create 15 distinct bios, I instead wrote just 6 and used props to sub in the names, job titles, costs, pronouns, contact info, images, etc, so they are always appropriate.</p>
 
 <figure className="right">
-<img className="textimg" src={snippet} alt="JS Snippet" /> 
+<img loading="lazy" className="textimg" src={snippet} alt="JS Snippet" /> 
 <figcaption> Javscript logic using props </figcaption>
 </figure>
 
@@ -305,7 +305,7 @@ I was still working full-time as a teacher, and spent many more hours preparing 
 <p>I remember my first website was a game of Rock-Paper-Scissors. I had a vision for how I wanted it to look, a bit like Street Fighter, with energy bars, animations, and sound effects. I remember gathering all the cartoon images I wanted and figuring out how to put them into position. I remember thinking Absolute positioning made it easy, but then when I opened my site on a mobile or tablet, it just looked awful, so I learned about modern methods like flexbox and grid, which helped with responsiveness.</p>
 
 <figure className="left">
-<img className="textimg" src={rps} alt="rockpaperscissors" /> 
+<img loading="lazy" className="textimg" src={rps} alt="rockpaperscissors" /> 
 <figcaption> my first site! </figcaption>
 </figure>
 
@@ -331,7 +331,7 @@ mystory2: <React.Fragment>
 <p>Knowing that I’d soon be starting a course, I quickly began making up for lost time. I completed all the requisite pre-course materials and did as much as I could to prepare. The course would be 4 months long, two evenings a week, plus weekends, with additional study time and homework.</p>
 
 <figure className="right">
-<img className="textimg" src={polyinsta} alt="codingbootcamp" /> 
+<img loading="lazy" className="textimg" src={polyinsta} alt="codingbootcamp" /> 
 <figcaption> At bootcamp, me on the left </figcaption>
 </figure>
 

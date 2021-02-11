@@ -35,12 +35,15 @@ return (
 
      
 {/*inner is the screen inside the laptop. */}
-<LazyLoad height="200">
+
+<LazyLoad height={400} width={400} offset={200}>    
       <div className="innerwrapper">
+      
   <img className="inner" src={props.image1}  alt="laptoppic" />
   <img className="inner" src={props.image2} alt="laptoppic" />
   <img className="inner" src={props.image3} alt="laptoppic" />
-  <img className="inner" src={props.image4} alt="laptoppic" />     
+  <img className="inner" src={props.image4} alt="laptoppic" />  
+
       </div>   
 
  <div className="ipadwrapper">      
@@ -49,7 +52,7 @@ return (
       <img className="ipad" src={props.image3} alt="tabletpic" />   
      <img className="ipad" 	src={props.image4} alt="tabletpic" />    
       </div>          
-   
+ 
  <div className="phonewrapper">     
  <img className="phone" src={props.image1} alt="phonepic"               />
           <img className="phone" src={props.image2} alt="phonepic"      />
@@ -59,7 +62,7 @@ return (
       
       {/*this is the png of all the devices*/}
   <img className="devices" src={responsive} alt="devicespic" />   
-</LazyLoad>
+</LazyLoad> 
 </a>
    
       
