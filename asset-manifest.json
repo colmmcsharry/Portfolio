@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1ecca9e9.chunk.css",
-    "main.js": "/Portfolio/static/js/main.80c082eb.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.80c082eb.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.854988c7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.7f122ce3.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.7f122ce3.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
     "static/js/2.8c15364f.chunk.js": "/Portfolio/static/js/2.8c15364f.chunk.js",
     "static/js/2.8c15364f.chunk.js.map": "/Portfolio/static/js/2.8c15364f.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.1ecca9e9.chunk.css.map": "/Portfolio/static/css/main.1ecca9e9.chunk.css.map",
+    "static/css/main.854988c7.chunk.css.map": "/Portfolio/static/css/main.854988c7.chunk.css.map",
     "static/js/2.8c15364f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8c15364f.chunk.js.LICENSE.txt",
     "static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg": "/Portfolio/static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg",
     "static/media/NewCrezoLighthouse.1e21ba6e.jpg": "/Portfolio/static/media/NewCrezoLighthouse.1e21ba6e.jpg",
@@ -23,19 +23,29 @@
     "static/media/crezopic3.03474a93.jpg": "/Portfolio/static/media/crezopic3.03474a93.jpg",
     "static/media/crezopic4.4dcc02d1.jpg": "/Portfolio/static/media/crezopic4.4dcc02d1.jpg",
     "static/media/App.scss": "/Portfolio/static/media/sunpic2.b6307bac.jpg",
+    "static/media/footy.bfac973c.JPG": "/Portfolio/static/media/footy.bfac973c.JPG",
+    "static/media/lklouise.5b703a35.JPG": "/Portfolio/static/media/lklouise.5b703a35.JPG",
     "static/media/me-at-work.dd9cbc54.jpg": "/Portfolio/static/media/me-at-work.dd9cbc54.jpg",
+    "static/media/medog.1ba63b36.JPG": "/Portfolio/static/media/medog.1ba63b36.JPG",
+    "static/media/mefam.8ac69257.JPG": "/Portfolio/static/media/mefam.8ac69257.JPG",
+    "static/media/mefire.05fcbc56.jpg": "/Portfolio/static/media/mefire.05fcbc56.jpg",
+    "static/media/memount.b5f3b623.JPG": "/Portfolio/static/media/memount.b5f3b623.JPG",
+    "static/media/merocky.485558fb.JPG": "/Portfolio/static/media/merocky.485558fb.JPG",
+    "static/media/myvan.39727072.jpg": "/Portfolio/static/media/myvan.39727072.jpg",
     "static/media/networkerspic.98fc8798.jpg": "/Portfolio/static/media/networkerspic.98fc8798.jpg",
     "static/media/networkerspic3.13223c0c.jpg": "/Portfolio/static/media/networkerspic3.13223c0c.jpg",
+    "static/media/newday.3f061aed.JPG": "/Portfolio/static/media/newday.3f061aed.JPG",
     "static/media/polyinsta.618a1ba4.jpg": "/Portfolio/static/media/polyinsta.618a1ba4.jpg",
     "static/media/rock-paper-scissors.02ecb3bf.jpg": "/Portfolio/static/media/rock-paper-scissors.02ecb3bf.jpg",
     "static/media/schema-diagrams.185114f4.jpg": "/Portfolio/static/media/schema-diagrams.185114f4.jpg",
     "static/media/snippet.14ee559f.jpg": "/Portfolio/static/media/snippet.14ee559f.jpg",
+    "static/media/snow.57dfdc13.jpg": "/Portfolio/static/media/snow.57dfdc13.jpg",
     "static/media/weather.8a3063d3.jpg": "/Portfolio/static/media/weather.8a3063d3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.896df889.js",
     "static/js/2.8c15364f.chunk.js",
-    "static/css/main.1ecca9e9.chunk.css",
-    "static/js/main.80c082eb.chunk.js"
+    "static/css/main.854988c7.chunk.css",
+    "static/js/main.7f122ce3.chunk.js"
   ]
 }
