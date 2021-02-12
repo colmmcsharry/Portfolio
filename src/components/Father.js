@@ -17,7 +17,6 @@ const [imgSrc,setImgSrc] = useState();*/
 
 .then(res=> res.json())
 .then(data=>{
-console.log(data);
 setQuote(data.quote);
 /*setImgSrc(data.contents.quotes[0].background)
 setAuthor(data.contents.quotes[0].author);
