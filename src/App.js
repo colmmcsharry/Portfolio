@@ -7,7 +7,8 @@ import Landingview from './components/Landingview.js'
 import Contact from './components/Contact.js'
 import Gallery from './components/Gallery.js'
 import LazyLoad from 'react-lazyload';
-
+import FetchQuote from "./components/quotesFetcher.js"
+import Father from './components/Father.js'
 
 
 
@@ -46,8 +47,12 @@ function App() {
 
           <Contact />
 <LazyLoad>
-        <Gallery />
+        <Gallery />      
 </LazyLoad>
+
+{/*<FetchQuote />*/}
+
+<Father />
         </div>
 
   </div>

@@ -1151,9 +1151,10 @@ border-radius:5%;
 
 .funwrap {
   display:grid;
-  grid-template-columns:2fr 1fr;
+  grid-template-columns:3fr 2fr;
   width:98vw;
   margin-top:25rem;
+  border:2px solid red;
 }
 
 
@@ -1161,13 +1162,38 @@ border-radius:5%;
 /*RIGHT STUFF BEGINS*/
 
 .rightstuff {
-
+border-left:1px solid pink;
+padding-left:10%;
 }
 
 
 
 /*RIGHT STUFF ENDS*/
 
+
+.mydiv {
+  position:relative;
+  display:block;
+  width:80%;
+  top:500px;
+  margin-top:50px;
+  border:2px solid green;
+  padding:10%;
+}
+
+.quoteh1 {
+  all:unset;
+  font-style: italic;
+}
+
+.author {
+}
+
+.quoteimg {
+  height:100%;
+  width:100%;
+  position:relative;
+}
 
 /*CONTACT FORM BEGINS*/
 
