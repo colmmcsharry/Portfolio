@@ -1174,25 +1174,95 @@ padding-left:10%;
 .mydiv {
   position:relative;
   display:block;
-  width:80%;
-  top:500px;
-  margin-top:50px;
   border:2px solid green;
-  padding:10%;
+  text-align: left;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: left 90%;
 }
 
-.quoteh1 {
-  all:unset;
+.quotewrap {
+  position:absolute;
+  top:15%;
+  right:5%;
+  width:50%;
+  color:black;
+}
+.quote {
   font-style: italic;
+  font-size:1.1rem;
+  margin: 0 auto;
+  position:relative;
+  display:block;
+  margin-bottom:.3rem;
 }
 
 .author {
+  font-size:1rem;
+  display:block;
 }
 
-.quoteimg {
-  height:100%;
-  width:100%;
+.tea {
+}
+
+.teabut {
+  position:absolute;
+  bottom:-20%;
+  color:unset;
+  font:unset;
+  right:5%;
+  background-color:transparent;
+  transition:transform .3s ease;
+  border-bottom:1px dashed rgba(0,0,0,.3);
+  border-radius:40%;
+}
+
+.teabut::before {
+  content:"";
+  background-image:url('./pics/tea.png');
+  height:100px;
+  width:100px;
+  display:block;
+  
   position:relative;
+  background-repeat:no-repeat;
+  background-size:contain
+}
+
+.teabut:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+
+}
+
+.teabut:active::before{
+    transform:rotate(-15deg);
+}
+
+.teabut:hover + .teabut::before {
+  transform:scale(2);
+}
+// .quote2 {
+//   position:absolute;
+//   bottom:30%;
+//   z-index:999;
+//   color:black;
+//   width:50%;
+//   left:40%;
+//   font-style:italic
+// }
+
+
+
+
+
+.quoteimg {
+  max-height:100%;
+  max-width:100%;
+  margin:0 auto;
+  border:1px solid red;
+  display:block;
+  
 }
 
 /*CONTACT FORM BEGINS*/

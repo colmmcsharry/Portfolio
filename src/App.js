@@ -47,12 +47,11 @@ function App() {
 
           <Contact />
 <LazyLoad>
-        <Gallery />      
+        <Gallery /> 
+
 </LazyLoad>
 
-{/*<FetchQuote />*/}
 
-<Father />
         </div>
 
   </div>

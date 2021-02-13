@@ -11,6 +11,7 @@ import memount  from '../pics/memount.JPG'
 import snow from '../pics/snow.jpg'
 import mefam from '../pics/mefam.JPG'
 import LazyLoad from 'react-lazyload';
+import Father from './Father.js'
 
 
 
@@ -117,13 +118,12 @@ return (
 
 			<li style={{color: 'cyan'}}> What I'm listening to... </li>
 			<li> Listening to one of two Audiobooks, depending on mood. Usually whilst I'm driving, I'll listen to Ryan Holiday's <em>Stillness is The Key</em>,
-			then at night, I listen to David Gemmell's novel <em>"The First Chronicles of Druss the Legend"</em> </li>
+			then at night, I listen to David Gemmell's novel <em>"The First Chronicles of Druss the Legend"</em>. </li>
 			<li>stuff i like </li>
-			<li>stuff i like </li>
-
-
 
 		</ul>
+
+		<Father />
 
 		</div> 
 
