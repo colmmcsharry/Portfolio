@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import funstuff from '../pics/funstuff.png'
+
 
 export default function Contact()  {
 
@@ -53,6 +56,10 @@ export default function Contact()  {
 
 
         </div>
+
+        <ScrollLink activeClass="active" to="funwrapper" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
+        <img src={funstuff} className="pngs"/>
+        </div></ScrollLink>
       </div>
       
       

@@ -836,15 +836,15 @@ object-position: center center;
 .inner, .phone, .ipad { animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 8s;
+    animation-duration: 9.6s;
     &:nth-of-type(1) {
-      animation-delay: 6s;
+      animation-delay: 7.2s;
     }
     &:nth-of-type(2) {
-      animation-delay: 4s;
+      animation-delay: 4.8s;
     }
     &:nth-of-type(3) {
-      animation-delay: 2s;
+      animation-delay: 2.4s;
     }
     &:nth-of-type(4) {
       animation-delay: 0;
@@ -858,17 +858,6 @@ object-position: center center;
 
 /*image transitions for my website previews starts*/
 
-.image-container {
-  background:green;
-  position:relative;
-  // visibility:visible;
-  opacity:0.99;
-  border:1px solid yellow;
-
- /* height: 30rem;
-  width: 30rem;
-  padding:40px;*/
-}
 
 
 
@@ -1019,6 +1008,44 @@ transition: color 3s ease;
   -webkit-transform:rotate(45deg);
 }
 
+#totop::after {
+  content:"";
+  border-top:2px solid $cyan;
+  border-left:2px solid $cyan;;
+  border-right: none;
+  border-bottom: none;
+}
+
+
+#totopimg {
+  position:absolute;
+  top:50%;
+  height:6rem;
+  width:8rem;
+  left:60%;
+  transform:translateX(-50%);
+}
+
+.pngs {
+  position:absolute;
+  bottom:00%;
+  height:3.5rem;
+  width:5.8rem;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+
+
+.funarrow {margin-top:6rem !important;
+left:1rem;
+}
+
+.funarrow > img {
+  bottom:-50%;
+height:5rem;
+width:7rem !important}
+
 .arrow:hover::after {cursor:pointer;}
 
 
@@ -1032,7 +1059,9 @@ width:50px;
 -webkit-tap-highlight-color: transparent;
 }
 
-
+#firstprojarrow:after{
+  top:-4rem;
+}
 
 .lastarrow {top:6vh;}
 
@@ -1054,22 +1083,13 @@ cursor:pointer;
 
 
 /*test1 is the last one, that goes back to top*/
-.test1 {
-width:50px;
-height:10px;
-color:$cyan !important;
 
+.test1 {color:$cyan;
 
 }
 
-.test1:before{
-  content:"To Top";
-  position:absolute;
-  font-size:.7rem;
-  transform:translateX(-5%);
-  white-space:nowrap;
-  font-family:quando;
-}
+
+
 
 
 @keyframes arrowbounce {
@@ -1132,16 +1152,14 @@ border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .igaldiv:nth-child(odd) > img {
- border-radius: 5% 95% 7% 93% / 93% 6% 94% 7% ;
+ border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .igaldiv:nth-child(even) > img {
  border-radius: 8% 85% 2% 83% / 83% 9% 99% 3% ;
 }
 
-.igaldiv:nth-child(5n) > img {
- border-radius: 1% 85% 2% 83% / 83% 9% 99% 3% ;
-}
+
 
 .igaldiv > img {
 object-fit:fill;
@@ -1193,6 +1211,10 @@ padding-left:10%;
 margin-top:-3rem;
 }
 
+.rightstuff {
+ font-size:.85rem
+}
+
 .cool-list > li:nth-child(odd){
   color:$cyan;
 }
@@ -1201,6 +1223,7 @@ margin-top:-3rem;
   margin-bottom:1rem;
 }
 
+.randomchat {font-size:.85rem;}
 
 
 /*RIGHT STUFF ENDS*/
@@ -1404,11 +1427,60 @@ display: block;
 html {font-size:20px;}
 }
 
-
+.arrow {
+  top:2rem;
+}
 
 
 
 @media screen and (max-width: 850px) {
+
+#gridwrapper {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+grid-gap:0px;
+  text-align:left;
+  align-items:center;
+  padding:3rem;
+  padding-left:6vw;
+  padding-right:2vw;
+}
+
+
+
+.projarrow  {
+  top:5px;
+}
+
+
+// .inner {position:absolute;
+//   left:12%;
+//   top:8%;
+// height:60%;
+// width:72%;
+// }
+
+
+
+// .ipad {
+//   position:absolute;
+//   right:3%;
+//   bottom:10%;
+// height:53%;
+// width:27%;
+// object-fit:cover; 
+// object-position:center center;
+// }
+
+// .phone {
+//   position:absolute;
+//     left:4%;
+//   bottom:11%;
+//   object-fit:cover; 
+// object-position: center center;  
+//   width: 14%;
+//   height:36%;
+// }
 
   .rightstuff {border:none;}
 
@@ -1571,7 +1643,9 @@ figure {width:100%;
 top:3vh;}
 
 #gridwrapper{padding:0 3vw;
+  font-size:1.1rem;
 }
+
 
 
 h1{
@@ -1608,7 +1682,8 @@ h1{
 #left{
   // padding:2rem;
   margin:0 auto;
-  text-align:left
+  text-align: left;
+  font-size:1.1rem;
 }
 
 #blurb {
@@ -1622,7 +1697,7 @@ padding-top:1.5rem;
 font-size:1.1rem;
 }
 
-p {font-size:1.2rem;}
+p {font-size:1.1rem;}
 
 
 h2 {font-size:3rem;}
@@ -1630,10 +1705,19 @@ h2 {font-size:3rem;}
 
   
    #gridwrapper  {
-    padding-left:8vw;
-    padding-right:8vw;
+    padding-left:0vw;
+  padding-right:0vw;
     display:block;}
 
+#left {
+      padding-left:8vw;
+  padding-right:8vw;
+}
+
+
+#right {
+  left:-5px;
+}
 
 
 .mything {
@@ -1703,7 +1787,6 @@ h3.mystoryh3{
   border-right: 1px solid $cyan;
   border-bottom: 1px solid $cyan;}
 
-
 }
 
 
@@ -1716,7 +1799,17 @@ h3.mystoryh3{
   background-image:url('./pics/oilday.jpg');
 }
 
-
+#totop::before {
+  
+  bottom:-95%;
+  position:absolute;
+  transform:translateX(-50%);
+  left:40%;
+  width:100%;
+  font-size:1.8rem;
+  white-space:nowrap;
+  font-family:Dancing Script;
+}
     
 
 

@@ -1,7 +1,7 @@
-
 import React from 'react'
 import medog from '../pics/medog.JPG'
 import newday from '../pics/newday.JPG'
+import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import mefire from '../pics/mefire.jpg'
 import merocky from '../pics/merocky.JPG'
 import lklouise  from '../pics/lklouise.JPG'
@@ -12,6 +12,7 @@ import snow from '../pics/snow.jpg'
 import mefam from '../pics/mefam.JPG'
 import LazyLoad from 'react-lazyload';
 import Father from './Father.js'
+import totop from '../pics/totop.png'
 
 
 
@@ -128,7 +129,7 @@ return (
 		</div> 
 
 </div>
-
+<ScrollLink activeClass="active" to="top" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow" id="totop"><img id="totopimg" src={totop}/></div></ScrollLink>
 </React.Fragment>
 
 
