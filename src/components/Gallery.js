@@ -93,7 +93,7 @@ return (
 
 	<React.Fragment>
 
-<div className ="funwrap">
+<div className ="funwrap" id="funwrapper">
 
 		<div className="gallerywrap">
 		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} />  </div> 
@@ -105,21 +105,21 @@ return (
 		<div className="rightstuff">
 		<p>If you want to see how far I've come on coding journey, here's links to two of my first "projects", complete with awful sound effects!</p>
 		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Rock, Paper, Scissors</a> <br/>
-		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Lyrics Game</a>
+		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Lyrics Game</a> <br/>
 
 		make a custom logo and put it here?
 
 
 
-		<ul>
-			<li style={{color: 'cyan'}}>What I'm watching? </li>
-			<li style={{marginBottom:'20px'}}> Right now, nothing! I'v barred myself from Netflix until I find a job. But eventually, I plan to watch The Mandalorian, then The Sopranos.</li>
+		<ul className="cool-list">
+			<li>What I'm watching? </li>
+			<li> Right now, nothing! I'v barred myself from Netflix until I find a job. But eventually, I plan to watch The Mandalorian, then The Sopranos.</li>
 			
 
-			<li style={{color: 'cyan'}}> What I'm listening to... </li>
+			<li> What I'm listening to... </li>
 			<li> Listening to one of two Audiobooks, depending on mood. Usually whilst I'm driving, I'll listen to Ryan Holiday's <em>Stillness is The Key</em>,
 			then at night, I listen to David Gemmell's novel <em>"The First Chronicles of Druss the Legend"</em>. </li>
-			<li>stuff i like </li>
+			
 
 		</ul>
 

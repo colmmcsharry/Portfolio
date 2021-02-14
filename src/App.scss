@@ -929,7 +929,7 @@ object-position: center center;
   left: 30px;
   border:1px solid blue;
   z-index:9999;
-  background-color:red;
+
 }
 
 
@@ -1090,10 +1090,10 @@ color:$cyan !important;
 /*Gallery begins*/
 
 .gallerywrap::before {
-  content: "I made this gallery to play around with CSS Grid and different JS and CSS selectors. The zoom-in should vary depending on the orientation of the picture, and it's position in the grid.";
+  content: "I made this responsive gallery to play around with CSS Grid and different JS and CSS selectors. The zoom-in should vary depending on the orientation of the picture, and it's position in the grid.";
   position:absolute;
-  top:-10vh;
-  font-size:.85rem;
+  top:-5vh;
+  font-size:.80rem;
   height:1px;
   width:100%;
 }
@@ -1114,6 +1114,8 @@ color:$cyan !important;
 max-width:100%;
 transition: all .3s ease;
 transform-origin: left center;
+z-index: 90;
+border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 .igaldiv:nth-child(even){
@@ -1129,6 +1131,18 @@ transform-origin: left center;
     transform-origin: left bottom;
 }
 
+.igaldiv:nth-child(odd) > img {
+ border-radius: 5% 95% 7% 93% / 93% 6% 94% 7% ;
+}
+
+.igaldiv:nth-child(even) > img {
+ border-radius: 8% 85% 2% 83% / 83% 9% 99% 3% ;
+}
+
+.igaldiv:nth-child(5n) > img {
+ border-radius: 1% 85% 2% 83% / 83% 9% 99% 3% ;
+}
+
 .igaldiv > img {
 object-fit:fill;
  height:100%;
@@ -1137,14 +1151,26 @@ overflow:hidden;
 border-radius:5%;
 }
 
+.igaldiv:hover > img {
+  filter:grayscale(0%)
+}
+
+.lol {
+ filter:grayscale(30%);
+}
+
+
 .gowide 
-{transform:scale(3.7);}
+{transform:scale(3.7);
+z-index: 9999;}
 
 .gotall
 {transform:scale(3.8);
+  z-index: 9999;;
 }
 
-.igaldiv:hover {cursor:zoom-in;}
+.igaldiv:hover {cursor:zoom-in;
+}
 
 /*Gallery ends*/
 
@@ -1154,7 +1180,7 @@ border-radius:5%;
   grid-template-columns:3fr 2fr;
   width:98vw;
   margin-top:25rem;
-  border:2px solid red;
+  font-size:.85rem
 }
 
 
@@ -1162,8 +1188,17 @@ border-radius:5%;
 /*RIGHT STUFF BEGINS*/
 
 .rightstuff {
-border-left:1px solid pink;
+border-left:1px solid $cyan;
 padding-left:10%;
+margin-top:-3rem;
+}
+
+.cool-list > li:nth-child(odd){
+  color:$cyan;
+}
+
+.cool-list > li:nth-child(even){
+  margin-bottom:1rem;
 }
 
 
@@ -1171,10 +1206,30 @@ padding-left:10%;
 /*RIGHT STUFF ENDS*/
 
 
+
+
+
+/*Father TED BEGINS*/
+.mydiv::before {
+  content:"";
+  position:absolute;
+
+  top:-4vh;
+  width:50%;
+  transform:translateX(65%);
+  height:3rem;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-image:url('./pics/tedhead.png')
+
+}
+
 .mydiv {
   position:relative;
   display:block;
-  border:2px solid green;
+  margin-top:5rem;
+  height:25vh;
+  width:100%;
   text-align: left;
   background-size:cover;
   background-repeat:no-repeat;
@@ -1212,9 +1267,12 @@ padding-left:10%;
   font:unset;
   right:5%;
   background-color:transparent;
-  transition:transform .3s ease;
+  transition:transform .2s ease;
   border-bottom:1px dashed rgba(0,0,0,.3);
   border-radius:40%;
+  outline:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
 }
 
 .teabut::before {
@@ -1223,47 +1281,41 @@ padding-left:10%;
   height:100px;
   width:100px;
   display:block;
-  
   position:relative;
   background-repeat:no-repeat;
-  background-size:contain
+  background-size:contain;
+  outline:none;
+   animation: arrowbounce 2s infinite ease;
 }
 
 .teabut:hover{
   cursor:pointer;
-  transform:scale(1.1);
-
 }
 
-.teabut:active::before{
-    transform:rotate(-15deg);
+
+.tip {
+  transform:rotate(-15deg);
 }
 
 .teabut:hover + .teabut::before {
-  transform:scale(2);
 }
-// .quote2 {
-//   position:absolute;
-//   bottom:30%;
-//   z-index:999;
-//   color:black;
-//   width:50%;
-//   left:40%;
-//   font-style:italic
-// }
-
-
-
 
 
 .quoteimg {
   max-height:100%;
   max-width:100%;
   margin:0 auto;
-  border:1px solid red;
   display:block;
   
 }
+
+
+
+/*Father TED ENDS*/
+
+
+
+
 
 /*CONTACT FORM BEGINS*/
 
@@ -1357,6 +1409,10 @@ html {font-size:20px;}
 
 
 @media screen and (max-width: 850px) {
+
+  .rightstuff {border:none;}
+
+  #wrapper {padding-bottom:10rem;}
  
  h1 {left:38vw;}
 
@@ -1376,19 +1432,18 @@ border-spacing: 50px 0;}
 
 .gallerywrap::before {
   content:"I made this responsive image gallery myself. On wider screens, these images are zoomable";
-  top:-5vh;
 }
 
 .gallerywrap {
  display: flex;
 flex-wrap: wrap;
-height: 600px; 
 max-width: 1000px;
 width: 100%;
 grid-gap:1px;
 padding-left:2%;
 padding-right:2%;
 margin-left:0;
+margin-bottom:5rem;
 }
 
 .igaldiv {
@@ -1407,14 +1462,28 @@ width: 34%;}
  .gowide {transform: scale(1)}
 
 .gotall {transform:scale(1);}
-
  }
 
+.rightstuff {
+  padding:5%;
+}
 
 
+.teabut {
+  right:-2vw;
+ bottom: -15%;
+}
+// .mydiv {
+//   background-position: left 80%;
+
+// }
 
 
 @media screen and (max-width: 520px) {
+
+  .gallerywrap::before {
+  content:"I made this responsive image gallery myself. On wider screens, these images are zoomable";
+}
 
 .gallerywrap {
  display: block;
@@ -1428,7 +1497,6 @@ margin-left:0;
 
 .igaldiv {
  display:block;
-
 }
 
 
@@ -1440,6 +1508,10 @@ margin-left:0;
    width: 100%;
 }
 
+.rightstuff {
+padding-left:auto;
+padding:5%;
+}
 
 
 .window, .window::before, .window::after {
