@@ -56,10 +56,10 @@ export default function Contact()  {
 
 
         </div>
-
-        <ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
+<ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
         <img src={funstuff} className="pngs"/>
         </div></ScrollLink>
+        
       </div>
       
       

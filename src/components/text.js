@@ -255,17 +255,16 @@ const alldescriptions = {
 
 	networktext:<p>
 
-	Networkers is a site I created from scratch to help me learn React.<br/>
+	Networkers is a site for finding skilled workers, fast<br/>
                   <br/>It's almost like Tinder, except instead of swiping through dates
                   you swipe through workers in your area. <br/>
                   <br/>
 
-                  So, if you need a pipe fixed or as website designed, <br/> you can swipe through the 
-                  local plumbers or designers, and hire one you like!
+                  So, if you need a hair cut, a pipe fixed or a website designed, <br/> you can swipe through the 
+                  local barbers, plumbers or designers, and hire one you like!
 
-                  
                     <br/><br/> 
-                    This was my first project built using React, and I really came to enjoy the component-based approach
+                    This was my first project built using React, to read more about it, just
                     <Modal title="NetWorkers" column1={networkersleft} column2={networkersright} />
                      <br/> <br/>
                     

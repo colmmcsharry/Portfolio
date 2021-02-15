@@ -1258,13 +1258,17 @@ margin-top:-3rem;
 
 /*Father TED BEGINS*/
 
+.testc{
+  border:1px solid red;
+}
 
-
+.test2 {
+  border:12px solid green;
+}
 
 .mydiv {
   position:relative;
   display:block;
-  margin-top:5rem;
   height:28vh;
   width:100%;
   text-align: left;
@@ -1273,16 +1277,25 @@ margin-top:-3rem;
   background-position: left 90%;
 }
 
-.mydiv::before {
-  content:"";
-  position:absolute;
-  top:-5.5vh;
-  width:50%;
-  transform:translateX(65%);
-  height:3rem;
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-image:url('./pics/tedhead.png')}
+.tedbanner {
+  position:relative;
+  display:block;
+  width:40%;
+  margin:0 auto;
+  height:100%;
+}
+
+
+// .mydiv::before {
+//   content:"";
+//   position:absolute;
+//   top:-5.5vh;
+//   width:50%;
+//   transform:translateX(65%);
+//   height:3rem;
+//   background-size:contain;
+//   background-repeat:no-repeat;
+//   background-image:url('./pics/tedhead.png')}
 
 .mydiv::after {
   content:"Quote Box";
@@ -1308,10 +1321,12 @@ margin-top:-3rem;
   right:5%;
   width:50%;
   color:black;
+  font-family:Helvetica, Arial, Tahoma;
 }
 .quote {
   font-style: italic;
   font-size:1.1rem;
+  font-weight:normal;
   margin: 0 auto;
   position:relative;
   display:block;
@@ -1321,10 +1336,11 @@ margin-top:-3rem;
 .author {
   font-size:1rem;
   display:block;
+  font-weight:lighter;
 }
 
-.tea {
-}
+.authorspan {font-style:normal;
+font-weight:bold;}
 
 .teabut {
   position:absolute;
@@ -1435,7 +1451,9 @@ display: block;
 /*CONTACT FORM ENDS*/
 
 
-
+.arrow {
+  top:2rem;
+}
 
 
 
@@ -1469,21 +1487,6 @@ display: block;
 
 html {font-size:20px;}
 
-.mydiv::before {
-  top:-0.5rem;
-  left:2vw;
-  }
-
-
-.arrow {
-  top:2rem;
-}
-}
-
-@media screen and (min-width: 1200px) {
-.mydiv::before {
-  top:-7.5vh;
-  }
 
 }
 
@@ -1638,10 +1641,7 @@ width: 34%;}
   right:-2vw;
  bottom: -15%;
 }
-// .mydiv {
-//   background-position: left 80%;
 
-// }
 
 
 @media screen and (max-width: 520px) {
@@ -1675,7 +1675,7 @@ padding-left:auto;
 padding:5%;
 }
 
-.rightstuff > p {font-size:.85rem;}
+.rightstuff > p {font-size:1rem;}
 
 .rightstuff > a {font-style:italic;}
 
@@ -1960,9 +1960,6 @@ and (orientation : portrait) {
 .lastarrow {top:0vh;}
 
 
-.mydiv::before {
-  left:3rem;
-}
 
  }
 
