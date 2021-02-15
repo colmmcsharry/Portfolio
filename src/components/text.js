@@ -9,6 +9,7 @@ import sketchnet from '../pics/Sketchnet2.jpg'
 import snippet from '../pics/snippet.jpg'
 import weather from '../pics/weather.jpg'
 import youtube from '../pics/Youtube.jpg'
+import college from '../pics/college.jpeg'
 import LazyLoad from 'react-lazyload';
 
 
@@ -277,7 +278,12 @@ const alldescriptions = {
 <p>Well, from a very young age I enjoyed using computers and seeing what I could do with them.
 Unfortunately, in my secondary school days there was no IT subject on the curriculum. So, since English was my strongest subject in school, I ended up going to college and studying English.</p>
 
-<p>Whilst I enjoyed my college days and got my degree, I wasn’t sure what to do with myself after graduating. Over the next few years, I studied and worked in a variety of different areas. I studied Sports Performance and Personal Training, then worked in this area for two years in Australia. On returning to Dublin, I worked for two years as an English language teacher.</p>
+<p>Whilst I enjoyed my college days and got my degree, I wasn’t sure what to do with myself after graduating.</p>
+<figure className="left">
+<img loading="lazy" className="textimg" src={college} alt="collegegrad" /> 
+<figcaption> Graduation Day </figcaption>
+</figure>
+<p>Over the next few years, I studied and worked in a variety of different areas that interested me. I studied Sports Performance and Personal Training, then worked in this area for two years in Australia. On returning to Dublin, I worked for two years as an English language teacher.</p>
 
 <p><strong>Though these experiences weren’t really tech-related, they did gradually lead me towards studying computers in more depth.</strong><br/><br/> As a PT, I would use software to create training programs, spreadsheets for tracking progress, marketing materials, E-Books, etc.
 As a teacher, I used lots of technology in the classroom and had an idea for a website/app that would help my students with the local Dublin lingo. I also wanted to make an online quiz game which students could play from their phones.</p>

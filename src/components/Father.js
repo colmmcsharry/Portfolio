@@ -67,6 +67,7 @@ author: "Father Ted"	,
 
     <React.Fragment>     
 
+<div id="tedwrap">
     <div className="mydiv" style={{
     	backgroundImage: "url(" + Tedarray[activeObj].img + ")"
     	
@@ -80,7 +81,7 @@ Go on!
         <span className="author">- {Tedarray[activeObj].author}</span>
         </div>
     	</div>
-
+</div>
 
 
     </React.Fragment>

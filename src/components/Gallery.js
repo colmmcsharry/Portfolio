@@ -93,9 +93,9 @@ txtimgs[i].onmouseout = function(){txtimgs[i].classList.remove('testclass')}
 return (
 
 	<React.Fragment>
-
+<Element name="funwrapper"> </Element>
 <div className ="funwrap" id="funwrapper">
-		<h3 id="galleryh3">My Gallery </h3>
+		<h3 id="galleryh3">My Gallery</h3>
 		<div className="gallerywrap">
 
 		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} />  </div> 
@@ -107,7 +107,7 @@ return (
 		<div className="rightstuff">
 		<h3 id="misch3">Misc</h3>
 		<p>If you want to see how far I've come on coding journey, here's links to two of my first "projects", complete with awful sound effects!</p>
-		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Rock, Paper, Scissors</a> {'\u00A0 \u00A0 \u00A0 \u00A0   '} 
+		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Rock, Paper, Scissors</a> {'\u00A0 \u00A0 \u00A0 \u00A0 '} 
 		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Lyrics Game</a> <br/>
 
 		<ul className="cool-list">
