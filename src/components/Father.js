@@ -85,7 +85,7 @@ author:"- Father Jack",
 ]
 
 /*this one just chooses the one to show on startup*/
-var randomstart = Math.floor(Math.random() * 6);
+var randomstart = Math.floor(Math.random() * 10);
 
 
   // 0 - 3 are the options here for useState
@@ -97,6 +97,7 @@ var randomstart = Math.floor(Math.random() * 6);
     const len = Tedarray.length;
     var random = Math.floor(Math.random() * len);
     setActiveObj(random);
+    
   };
 
 
@@ -119,6 +120,7 @@ Go on!
         <div className="quotewrap">
         <p className="quote">{Tedarray[activeObj].quote}</p>
         <span className="author"> {Tedarray[activeObj].author}</span>
+        <p id="ext"></p>
         </div>
     	</div>
 </div>
