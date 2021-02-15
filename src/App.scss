@@ -686,8 +686,6 @@ transition: 2s ease all;
 
 
 
-
-
 // mything is the other light switch, after you scroll down
 
 .mything {
@@ -1020,8 +1018,8 @@ transition: color 3s ease;
 #totopimg {
   position:absolute;
   top:50%;
-  height:6rem;
-  width:8rem;
+  height:5rem;
+  width:7rem;
   left:60%;
   transform:translateX(-50%);
 }
@@ -1029,22 +1027,23 @@ transition: color 3s ease;
 .pngs {
   position:absolute;
   bottom:00%;
-  height:3.5rem;
-  width:5.8rem;
+  height:2.9rem;
+  width:4.9rem;
   left:50%;
   transform:translateX(-50%);
 }
 
 
 
-.funarrow {margin-top:6rem !important;
+.funarrow  {margin-top:6rem !important;
 left:1rem;
 }
 
 .funarrow > img {
-  bottom:-50%;
-height:5rem;
-width:7rem !important}
+  bottom:-35%;
+  height:4rem;
+  width:6rem;
+}
 
 .arrow:hover::after {cursor:pointer;}
 
@@ -1110,13 +1109,15 @@ cursor:pointer;
 /*Gallery begins*/
 
 .gallerywrap::before {
-  content: "I made this responsive gallery to play around with CSS Grid and different JS and CSS selectors. The zoom-in should vary depending on the orientation of the picture, and it's position in the grid.";
+  content: "I made this responsive gallery using CSS Grid and Flexbox. I then used Javascript and CSS nth-child selectors to give different border, hover, and zoom effects, depending on the image's orientation and grid position.";
   position:absolute;
-  top:-5vh;
-  font-size:.80rem;
+  top:-11vh;
+  font-size:.60rem;
   height:1px;
-  width:100%;
+  width:80%;
+  left:10%;
 }
+
 
 .gallerywrap {
   display: inline-grid;
@@ -1174,7 +1175,7 @@ border-radius:5%;
 }
 
 .lol {
- filter:grayscale(30%);
+ filter:grayscale(70%);
 }
 
 
@@ -1197,10 +1198,23 @@ z-index: 9999;}
   display:grid;
   grid-template-columns:3fr 2fr;
   width:98vw;
-  margin-top:25rem;
-  font-size:.85rem
+  margin-top:5rem;
+  font-size:.85rem;
+  position:relative;
 }
 
+#galleryh3 {
+  position:absolute;
+  font-size:2.2rem;
+  font-family:Dancing Script;
+  color:$cyan;
+  width:50%;
+  z-index:999999;
+margin:0 auto;
+  top:-20vh;
+  left:4rem;
+ height:3rem;
+}
 
 
 /*RIGHT STUFF BEGINS*/
@@ -1446,12 +1460,26 @@ grid-gap:0px;
   padding-right:2vw;
 }
 
-
+.lol {
+ filter:grayscale(00%);
+}
 
 .projarrow  {
   top:5px;
 }
 
+#galleryh3 {
+  position:absolute;
+  font-size:2.2rem;
+  font-family:Dancing Script;
+  color:$cyan;
+  width:100%;
+  z-index:999999;
+  top:-17vh;
+  left:0rem;
+
+ height:3rem;
+}
 
 // .inner {position:absolute;
 //   left:12%;
@@ -1503,7 +1531,10 @@ border-spacing: 50px 0;}
 }
 
 .gallerywrap::before {
-  content:"I made this responsive image gallery myself. On wider screens, these images are zoomable";
+  content:"I made this responsive image gallery myself . On wider screens, these images are zoomable";
+  left:2rem;
+  font-size:.75rem;
+  text-align:center;
 }
 
 .gallerywrap {
@@ -1586,9 +1617,31 @@ padding:5%;
 }
 
 
+.funarrow > img {
+  bottom:-15%;
+}
+
 .window, .window::before, .window::after {
   height:90vh;
 } 
+
+.pngs {
+  position:absolute;
+  bottom:10%;
+}
+
+
+
+.funarrow > img {
+  bottom:-15%;
+}
+
+
+
+
+
+
+
 
   /* Modal Content */
 .modal-content {

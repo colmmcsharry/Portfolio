@@ -95,8 +95,9 @@ return (
 	<React.Fragment>
 
 <div className ="funwrap" id="funwrapper">
-
+		<h3 id ="galleryh3">My Gallery </h3>
 		<div className="gallerywrap">
+
 		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} />  </div> 
 
 		 )}
