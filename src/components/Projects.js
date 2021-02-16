@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react'
 import Modal from './Modal.js'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import Contact from '../pics/Contact.png'
+import Contact2 from '../pics/contact2.png'
 import crezopic1new from '../pics/crezopic1new.jpg'
 import crezopic2 from  '../pics/crezopic2.jpg'
 import crezopic3 from '../pics/crezopic3.jpg'
@@ -53,7 +53,7 @@ return (
 <Element name="Project3" ></Element>
 <Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/NetWorkers/" />
 <ScrollLink activeClass="active" to="Contact" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow">
-<img className="pngs" src={Contact} />
+<img className="pngs" src={Contact2} />
 </div>
 </ScrollLink>
 

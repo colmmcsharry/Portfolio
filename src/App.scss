@@ -960,19 +960,19 @@ object-position: center center;
 #firstarrow, #arrow2{
 background-repeat:no-repeat;
 background-size:contain;
-width:4rem;
-height:2rem;
+width:4.5rem;
+height:2.5rem;
 -webkit-tap-highlight-color: transparent;
 }
 
-#firstarrow {background-image: url('./pics/click.png');
+#firstarrow {background-image: url('./pics/clickme.png');
 transition:2s ease all;
 }
 
-#arrow2 {background-image: url('./pics/Projects.png');}
+#arrow2 {background-image: url('./pics/projects2.png');}
 
 .bgclass{
-  background-image:url('./pics/clickwhite.png') !important;
+  background-image:url('./pics/clickmewhite.png') !important;
 }
 
 .arrow {
@@ -993,7 +993,7 @@ transition: color 3s ease;
   height:20px;
   position:absolute;
   margin: auto;
-  top:3rem;
+  top:2rem;
   left:0;
   right:0;
   bottom:0;
@@ -1026,9 +1026,8 @@ transition: color 3s ease;
 
 .pngs {
   position:absolute;
-  bottom:00%;
-  height:2.9rem;
-  width:4.9rem;
+  height:2rem;
+  width:5rem;
   left:50%;
   transform:translateX(-50%);
 }
@@ -1478,7 +1477,6 @@ display: block;
 
 
 
-
 /* MEDIA QUERIES START*/
 
 @media screen and (min-width: 1900px) {
@@ -1686,7 +1684,7 @@ padding:5%;
 
 .pngs {
   position:absolute;
-  bottom:10%;
+  bottom:35%;
 }
 
 .funarrow {left:3px}
