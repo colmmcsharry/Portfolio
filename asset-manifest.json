@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f34d3870.chunk.css",
-    "main.js": "/Portfolio/static/js/main.4ed57f11.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.4ed57f11.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.935f76d7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.4b47dd30.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.4b47dd30.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
     "static/js/2.38902f07.chunk.js": "/Portfolio/static/js/2.38902f07.chunk.js",
     "static/js/2.38902f07.chunk.js.map": "/Portfolio/static/js/2.38902f07.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.f34d3870.chunk.css.map": "/Portfolio/static/css/main.f34d3870.chunk.css.map",
+    "static/css/main.935f76d7.chunk.css.map": "/Portfolio/static/css/main.935f76d7.chunk.css.map",
     "static/js/2.38902f07.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.38902f07.chunk.js.LICENSE.txt",
     "static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg": "/Portfolio/static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg",
     "static/media/NewCrezoLighthouse.1e21ba6e.jpg": "/Portfolio/static/media/NewCrezoLighthouse.1e21ba6e.jpg",
@@ -19,12 +19,13 @@
     "static/media/cb2.60ab078a.jpg": "/Portfolio/static/media/cb2.60ab078a.jpg",
     "static/media/cb3.51fc8dd3.jpg": "/Portfolio/static/media/cb3.51fc8dd3.jpg",
     "static/media/cb4.6cfabe3a.jpg": "/Portfolio/static/media/cb4.6cfabe3a.jpg",
+    "static/media/App.scss": "/Portfolio/static/media/tea.f7f6f396.png",
     "static/media/college.8f592fda.jpeg": "/Portfolio/static/media/college.8f592fda.jpeg",
+    "static/media/contact2.f6c74c03.png": "/Portfolio/static/media/contact2.f6c74c03.png",
     "static/media/crezopic1new.d7bcfa76.jpg": "/Portfolio/static/media/crezopic1new.d7bcfa76.jpg",
     "static/media/crezopic2.fc384681.jpg": "/Portfolio/static/media/crezopic2.fc384681.jpg",
     "static/media/crezopic3.03474a93.jpg": "/Portfolio/static/media/crezopic3.03474a93.jpg",
     "static/media/crezopic4.4dcc02d1.jpg": "/Portfolio/static/media/crezopic4.4dcc02d1.jpg",
-    "static/media/App.scss": "/Portfolio/static/media/tea.f7f6f396.png",
     "static/media/dougal2.e1be6145.jpg": "/Portfolio/static/media/dougal2.e1be6145.jpg",
     "static/media/footy.bfac973c.JPG": "/Portfolio/static/media/footy.bfac973c.JPG",
     "static/media/jack.f3b713a6.jpg": "/Portfolio/static/media/jack.f3b713a6.jpg",
@@ -51,7 +52,7 @@
   "entrypoints": [
     "static/js/runtime-main.896df889.js",
     "static/js/2.38902f07.chunk.js",
-    "static/css/main.f34d3870.chunk.css",
-    "static/js/main.4ed57f11.chunk.js"
+    "static/css/main.935f76d7.chunk.css",
+    "static/js/main.4b47dd30.chunk.js"
   ]
 }
