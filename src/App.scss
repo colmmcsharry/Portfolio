@@ -376,69 +376,59 @@ background-color:#333;
 /*css for polaroids begins*/
 
 
-.polaroid {
-  background: #fff;
-  padding: 1rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.5);
-  
-}
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
-}
-.caption {
-  color: #5C5959;
-  font-family: Dancing Script, Snell Roundhand, Bradley Hand, Brush Script MT;
-  font-size: 1.9rem;
-  text-align: center;
-  line-height: 2em;
-
-}
 .item {
   width: 75%;
   margin:auto;
-  height:fit-content;
   display: flex;
   display: -webkit-box;
   position:relative;
   filter: grayscale(100%);
 z-index:10;
-}
-.item .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transition: all 0.35s;
+transform:rotate(3deg) scale(0.8);
+transition: all 0.35s;
+box-shadow:1.5rem 1.5rem 2.5rem .5rem rgba(0, 0, 0, 0.5);
 }
 
-.item {
-  transform: scale(0.8, 0.8) rotate(3deg);
-  transition: all 0.35s;
+.item img {
+  outline:10px solid white
 }
-.item .polaroid:before {
-  height: 20%;
-  width: 57%;
-  bottom: 0px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.5);
+.caption {
+  color: #5C5959;
+  font-family: Dancing Script, Snell Roundhand, Bradley Hand, Brush Script MT;
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+    background-color:white;
+    border:2px solid white;
+    height:8%;
+    width:102%;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+    left:-2px;
 }
 
-.item:hover {
+.caption p {color:rgba(0,0,0,0.5);
+margin:auto auto;
+font-size:1.2rem}
+
+
+@media (hover: hover){
+  
+  .item:hover {filter: none;
+  transform: scale(1, 1) rotate(0deg);
+box-shadow:0px 3px 8px 8px rgba(0,0,0, 0.5);}   
+}
+
+.hoveredclass {
   filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
+  transform: scale(1, 1) rotate(0deg);
+box-shadow:0px 3px 8px 8px rgba(0,0,0, 0.5);
+
 }
 
-.item:hover .polaroid:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  transform: rotate(0deg);
-  height: 90%;
-  width: 75%;
-  bottom: 0%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
-  transition: all 0.35s;
-}
+
 
 
 /*css for polaroids ends*/
@@ -810,7 +800,7 @@ font-size:1.5rem;}
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
-  text-align:left;
+  text-align: left;
   align-items:center;
   padding:2rem;
   padding-left:6vw;
@@ -1073,7 +1063,7 @@ left:1rem;
 }
 
 .funarrow > img {
-  bottom:-35%;
+  bottom:-15%;
   height:4rem;
   width:6rem;
 }
@@ -1438,7 +1428,9 @@ font-weight:bold;}
 
 .sendbut {display:block;
 position:relative;
-top:6.5rem;}
+top:6.5rem;
+color:$darkbg;
+background-color:#FFFFFF;}
 
 .contactwrap {
   padding: 2% 10% 15% 8%;
@@ -1458,7 +1450,8 @@ form textarea{display:block;width:100%;padding:8px 15px;box-sizing:border-box;ou
 
 form textarea{height:6rem} /*the big message area*/
 
-form button{text-indent:-10px;color:#333;box-shadow:0 10px 50px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
+form button{text-indent:-10px;
+  color:#333;box-shadow:0 2px 5px rgba(58,58,58,.26);line-height:1px;padding:23px;text-transform:capitalize;-webkit-transition:all .3s linear;transition:all .3s linear;min-width:186px;overflow:hidden;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:15px;border:none;display:inline-block}
 form>div{margin-bottom:15px}
 
 .contactlabel {
@@ -1530,7 +1523,7 @@ html {font-size:20px;}
   display: grid;
   grid-template-columns: 3fr 5fr;
 grid-gap:0px;
-  text-align:left;
+  text-align: left;
   align-items:center;
   padding:3rem;
   padding-left:6vw;
@@ -1589,7 +1582,7 @@ display:inline-block;
 
 #iconlistcontainer ul {
   position:relative;
-  top:-2.5rem;
+  top:-4rem;
 }
 
 #iconlistcontainer {
@@ -1599,6 +1592,8 @@ display:inline-block;
 #iconlistcontainer span img {
   margin-top:0;
   margin:.6vw;
+  width:2.3rem;
+  height:2.3rem;
   ;
 }
   .rightstuff {border:none;}
@@ -1673,19 +1668,6 @@ width: 34%;}
 
 @media screen and (max-width: 520px) {
 
-#iconlistcontainer {
-   padding-left:3vw;
-}
-
-#iconlistcontainer li {
-display:block;
-}
-
-#iconlistcontainer ul {
-  position:relative;
-  top:auto;
-
-}
 
 
 
@@ -1731,10 +1713,16 @@ padding:5%;
   bottom:35%;
 }
 
-.funarrow {left:3px}
+.funarrow {left:3px;
+top:8rem !important}
+
+
+
 
 .funarrow > img {
-  bottom:-15%;
+  bottom:-4%;
+  height:4rem;
+  width:6rem;
 }
 
 

@@ -260,7 +260,7 @@ const alldescriptions = {
                   you swipe through workers in your area. <br/>
                   <br/>
 
-                  So, if you need a hair cut, a pipe fixed or a website designed, <br/> you can swipe through the 
+                  So, if you need a hair cut, a pipe fixed or a website designed, you can swipe through the 
                   local barbers, plumbers or designers, and hire one you like!
 
                     <br/><br/> 

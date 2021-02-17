@@ -16,6 +16,7 @@ import iconhtml from '../pics/icon-html.svg'
 import icongraphql from '../pics/icon-graphql.svg'
 
 
+
 export default function Bio(){
 
 
@@ -40,6 +41,13 @@ observer.observe(document.querySelector("#scroll-magic-point"));
 }
 }  )
 
+
+
+
+ function photoclick() {
+  var myitem = document.getElementById("main");
+  myitem.classList.toggle('hoveredclass')
+}
 
 
 window.onload = setTimeout(function() {
@@ -86,16 +94,12 @@ return (
 
               <div className="tight">
                
-                   <div className="item">
-                      <div className="polaroid">
-                     
-                      <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
-
-                        <div className="caption">Me at work</div>
-
-                      </div>
-                     
-                    </div>
+                   <div class="item" id="main" onClick={photoclick}>
+    <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
+    <div class="caption">
+      <p>Me at work</p>
+     </div>
+  </div>
                    
                   <div id="blurb"> 
                   Welcome and thanks for checking out my portfolio.<br/><br/>
