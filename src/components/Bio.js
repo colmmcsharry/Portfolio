@@ -3,6 +3,17 @@ import { Link as ScrollLink, Element} from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
 import {alldescriptions} from './text.js'
+import iconjs from '../pics/icon-js.svg'
+import icongatsby from '../pics/icon-gatsby.svg'
+import iconreact from '../pics/icon-react.svg'
+import iconsass from '../pics/icon-sass.svg'
+import all3 from '../pics/all3.png'
+import iconps from '../pics/icon-ps.svg'
+import iconsketch from '../pics/icon-sketch.svg'
+import icongit from '../pics/icon-git.svg'
+import iconcss from '../pics/icon-css.svg'
+import iconhtml from '../pics/icon-html.svg'
+import icongraphql from '../pics/icon-graphql.svg'
 
 
 export default function Bio(){
@@ -121,15 +132,21 @@ return (
                         <hr/>
                         <li>HTML/CSS/JS</li>
                         <li>Git/Github</li>
-                        <li>React/Gatsby</li>
+                        <li>React/Gatsby </li>
                         <li>Node.js</li>
                        <li>Photoshop/Sketch</li>
                         <li>SASS/Grid/Flexbox</li>
                        <li>SQL/GraphQL</li>
                        <li>API requests</li>
+                      </ul>
+                       </div>
 
-
-
+                       <div id="iconlistcontainer">
+                      <ul> <span className="top"><br/></span>
+                        <br/>
+                        <li><span className="list-icon"><img src={iconhtml}/><img src={iconcss}/><img src={iconjs}/>  </span></li>
+                        <li><span className="list-icon"><img src={icongit}/><img src={iconreact}/><img src={icongatsby}/> </span></li>
+                        <li><span className="list-icon"><img src={iconsass}/><img src={iconps}/><img src={iconsketch}/> </span> </li>
                       </ul>
                        </div>
 

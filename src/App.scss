@@ -297,7 +297,7 @@ ul {list-style-type:none;
 }
 
 #blurb ul {
-  font-size:1rem;
+  font-size: clamp(11px, 1vw, 1.1rem);
 }
 
 /*top of list*/
@@ -317,6 +317,24 @@ font-weight:bold;}
   display:inline-block;
   vertical-align:top;
 }
+
+#iconlistcontainer {
+  display:inline-block;
+  vertical-align:top;
+  padding-left:3vw;
+}
+
+
+#iconlistcontainer span img {
+
+  margin:.4vw;
+  margin-top: 0rem;
+}
+
+.list-icon > img {height:2.3rem;
+  width:2.3rem
+}
+
 
 #wrapper {
   padding:0;
@@ -914,7 +932,6 @@ object-position: center center;
   height: 12px;
   bottom: 70%;
   left: 30px;
-  border:1px solid blue;
   z-index:9999;
 
 }
@@ -1062,6 +1079,8 @@ width:50px;
 }
 
 .lastarrow {top:6vh;}
+
+
 
 #scroller5{position:relative;
     width:100%;
@@ -1501,6 +1520,11 @@ grid-gap:0px;
   padding-right:2vw;
 }
 
+.list-icon > img {
+  height:2rem;
+  width:2rem
+}
+
 .lol {
  filter:grayscale(00%);
 }
@@ -1542,36 +1566,24 @@ grid-gap:0px;
 
 .randomchat {font-size:.85rem;}
 
+#iconlistcontainer li {
+display:inline-block;
+}
 
-// .inner {position:absolute;
-//   left:12%;
-//   top:8%;
-// height:60%;
-// width:72%;
-// }
+#iconlistcontainer ul {
+  position:relative;
+  top:-2.5rem;
+}
 
+#iconlistcontainer {
+   padding-left:0vw;
+}
 
-
-// .ipad {
-//   position:absolute;
-//   right:3%;
-//   bottom:10%;
-// height:53%;
-// width:27%;
-// object-fit:cover; 
-// object-position:center center;
-// }
-
-// .phone {
-//   position:absolute;
-//     left:4%;
-//   bottom:11%;
-//   object-fit:cover; 
-// object-position: center center;  
-//   width: 14%;
-//   height:36%;
-// }
-
+#iconlistcontainer span img {
+  margin-top:0;
+  margin:.6vw;
+  ;
+}
   .rightstuff {border:none;}
 
   #wrapper {padding-bottom:10rem;}
@@ -1643,6 +1655,21 @@ width: 34%;}
 
 
 @media screen and (max-width: 520px) {
+
+#iconlistcontainer {
+   padding-left:3vw;
+}
+
+#iconlistcontainer li {
+display:block;
+}
+
+#iconlistcontainer ul {
+  position:relative;
+  top:auto;
+
+}
+
 
 
 .gallerywrap {
@@ -1896,11 +1923,32 @@ h3.mystoryh3{
   bottom:0;
   border-right: 1px solid $cyan;
   border-bottom: 1px solid $cyan;}
-
 }
 
+@media screen and (max-width:376px){
 
+#iconlistcontainer {
+   padding-left:0vw;
+}
 
+#iconlistcontainer li {
+display:inline-block;
+}
+
+#iconlistcontainer ul {
+  position:relative;
+  top:-2.5rem;
+}
+
+#iconlistcontainer span img {
+  margin-top:0;
+  margin:.6vw;
+  height:2rem;
+  width:2rem;
+  ;
+}
+
+}
 /*this is so the bigger bg image only gets shown on bigger screens*/
 @media screen and (min-width: 768px) {
 
