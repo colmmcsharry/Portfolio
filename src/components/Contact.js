@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import funstuff from '../pics/funstuff.png'
+import iconlinkedin from '../pics/icon-linkedin.svg'
+import icongithub from '../pics/icon-github.svg'
 
 
 export default function Contact()  {
@@ -20,8 +22,8 @@ export default function Contact()  {
                 <p>083 838 1780</p>
               </li>
               <li>
-                <strong>Socials:</strong>
-                <p className="onmob">insert icons here</p>
+                <strong>Accounts:</strong>
+                <p className="onmob"><img src={iconlinkedin}/>  <img src={icongithub}/> </p>
               </li>
               <li>
                 <strong>Email:</strong>

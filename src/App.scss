@@ -132,8 +132,25 @@ a {color:white;}
 /*CSS FOR BG IMAGE ENDS*/
 
 
+.onmob img:hover{
+  filter:brightness(150%);
+  background-color:white;
+  cursor:pointer;
+}
 
+.onmob img {
+  height:1.6rem;
+  width:1.6rem;
+}
 
+.onmob img:nth-child(2) {
+  margin-left:1rem;
+  filter:invert(50%)
+}
+
+.onmob img:nth-child(2):hover {
+  filter:brightness(80%);
+}
 
 
 /*CSS FOR H1 BEGINS*/
