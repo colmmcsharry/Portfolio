@@ -9,42 +9,19 @@ import jack from '../pics/jack.jpg'
 
 function Father(){
 
-
-window.onload = setTimeout(function() {
-
-	const cup = document.getElementById('cuppa');
-	const myspn = document.getElementById('myspan'); 
-	// cup.classList.add('updown');
-	cup.onclick = function(){
-
-	cup.classList.toggle('tip');
-
-  // setTimeout((){
-  //   cup.classList.add('test2')
-  // }, 200 ) ;
-
-  setTimeout(() => {
-    cup.classList.remove('tip')
-  }, 200);
-
-	}
-    } , 1000  )
-
-
-
-const Tedarray = [
+  const Tedarray = [
 
 {quote: "Well, Ted, like I said the last time: 'it won't happen again'.",
-author: "- Father Dougal"	,
+author: "- Father Dougal" ,
  img: dougal2 },
 
  {quote: "So there he is. Risen from the dead. Like that fella... E.T.",
- author: "- Father Ted",	
+ author: "- Father Ted",  
  img: Ted
  }, 
 
 {quote: " These are small, but those are far away... Small... Far away.",
-author: "- Father Ted"	,
+author: "- Father Ted"  ,
  img: Ted
  },
 
@@ -53,7 +30,7 @@ author: "- Father Ted"	,
  img:dougal2},
 
  {quote:"I hear you're a racist now, father.",
-  author:"",	
+  author:"",  
  img:racist},
 
 {quote:<React.Fragment> <p><span className="authorspan">Ted:</span> Dougal, do we have any incense?</p>
@@ -81,25 +58,57 @@ author: '',
 {quote:"Where am I? What's that thing there? Are those my feet?",  
 author:"- Father Jack",
  img:jack }
-
 ]
 
+
+
+/*cup animation starts*/
+window.onload = setTimeout(function() {
+
+	const cup = document.getElementById('cuppa');
+
+	// cup.classList.add('updown');
+	cup.onclick = function(){
+
+	cup.classList.toggle('tip');
+
+  // setTimeout((){
+  //   cup.classList.add('test2')
+  // }, 200 ) ;
+
+  setTimeout(() => {
+    cup.classList.remove('tip')
+  }, 200);
+
+	}
+    } , 1000  )
+/*cup animation ends*/
+
+
+
+
 /*this one just chooses the one to show on startup*/
-var randomstart = Math.floor(Math.random() * 10);
 
-
-  // 0 - 3 are the options here for useState
-  const [activeObj, setActiveObj] = useState(randomstart);
 
   // button calls randomcities function,len is length of array
   // setActiveCity at random number from array
-  function randomObj(){
-    const len = Tedarray.length;
-    var random = Math.floor(Math.random() * len);
-    setActiveObj(random);
-    
-  };
+  // function randomObj(){
+  //   const len = Tedarray.length;
+  //   var random = Math.floor(Math.random() * len);
+  //   setActiveObj(random);
+  // };
 
+var randomstart = Math.floor(Math.random() * 10);
+  // 0 - 10 are the options here for useState
+const [activeObj, setActiveObj] = useState(randomstart);
+
+function next(){
+  let newactiveObj = activeObj + 1;
+  if(newactiveObj === Tedarray.length){
+    newactiveObj = 0
+  }
+  setActiveObj(newactiveObj)
+}
 
    
       return ( 
@@ -114,7 +123,7 @@ var randomstart = Math.floor(Math.random() * 10);
     	
     	
     }} > 
-<button className="teabut" onClick={randomObj} id="cuppa">
+<button className="teabut" onClick={next} id="cuppa">
 Go on!
  </button>
         <div className="quotewrap">

@@ -57,9 +57,7 @@ var crezoleft = <React.Fragment>
 <p>After much work, all Lighthouse scores were near-perfect on both desktop and mobile. There is a clear improvement when compared to their previous website’s performance. This should lead to a much-improved user experience on the site.</p>
 
 <figure className="right">
-<LazyLoad>
-<img loading="lazy" className="textimg" src={newclighthouse} alt="Lightousescore" /> 
-</LazyLoad>
+<img className="textimg" src={newclighthouse} alt="Lightousescore" loading="lazy" /> 
 <figcaption>Their new, improved Lighthouse scores</figcaption>
 </figure>
 <p> Other features I added include;</p>
@@ -228,7 +226,7 @@ const alldescriptions = {
                     <br/><br/>
                     I linked the site to Contentful CMS so they can manage the content themselves, without knowing any code.
                     <br/><br/> 
-                    For detailed info about how I made this site and what I learned along the way, just  
+                    Click the link or image to visit the site. For detailed info about how I made this site and what I learned along the way, just  
                     <Modal title="Crezo Construction" column1={crezoleft} column2={crezoright} xnumber="secondx" />
                       <br/> <br/>
                     </p>
@@ -248,7 +246,7 @@ const alldescriptions = {
                     quirky animations.
                     <br/><br/> 
                      When the company launches, I will add a booking / payment system to the site. <br/> <br/>
-                     For more details, just
+                     For more details on how I made this site, just
                      <Modal title="Cosy Cabins" column1={cabinsleft} column2={cabinsright} xnumber="secondx" />
                       
 </p>,
@@ -264,7 +262,8 @@ const alldescriptions = {
                   local barbers, plumbers or designers, and hire one you like!
 
                     <br/><br/> 
-                    This was my first project built using React, to read more about it, just
+                    This was my first project built using React and I learned a tonne in the process. 
+                    To read more about it, just
                     <Modal title="NetWorkers" column1={networkersleft} column2={networkersright} />
                      <br/> <br/>
                     

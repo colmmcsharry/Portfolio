@@ -36,7 +36,7 @@ return (
      
 {/*inner is the screen inside the laptop. */}
 
-<LazyLoad height={400} width={400} offset={200}>    
+<LazyLoad height={400} width={400} offset={300}>    
 
       <div className="innerwrapper">   
   <img className="inner" src={props.image1}  alt="laptoppic" />

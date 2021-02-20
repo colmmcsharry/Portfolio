@@ -3,6 +3,7 @@ import { Link as ScrollLink, Element} from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
 import {alldescriptions} from './text.js'
+import LazyLoad from 'react-lazyload';
 import iconjs from '../pics/icon-js.svg'
 import icongatsby from '../pics/icon-gatsby.svg'
 import iconreact from '../pics/icon-react.svg'
@@ -14,6 +15,7 @@ import icongit from '../pics/icon-git.svg'
 import iconcss from '../pics/icon-css.svg'
 import iconhtml from '../pics/icon-html.svg'
 import icongraphql from '../pics/icon-graphql.svg'
+
 
 
 
@@ -63,24 +65,22 @@ window.onload = setTimeout(function() {
    /*moon doesn't load until 3 secs, cos the animation plays as soon as it loads*/   
    document.getElementsByTagName('label')[0].style.display = 'block';
 
-
-} , 3000   )
+} , 4300   )
 
 
 
   window.onload = setTimeout(function() {
       document.getElementsByTagName('label')[0].style.visibility = 'visible';
 
-},  3800   )
+      },  5000   )
 
 
 
 window.onload = setTimeout(function() {  
-  document.getElementById("scroller1").style.visibility = "visible";
-  
-  document.getElementById("scroller1").style.animation = "scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+  document.getElementById("scroller1").style.visibility = "visible";  
+  document.getElementById("scroller1").style.animation = "modalfadein 2s ease";
 
-},  6000   )
+},  7000   )
 
 
 
@@ -90,17 +90,18 @@ return (
 	<React.Fragment>
 
             <h3 id="about"><Element name="About" ></Element>About</h3>
+              
               <div id="bio">
 
               <div className="tight">
-               
+               <LazyLoad height={300} width={200} offset={150}>
                    <div class="item" id="main" onClick={photoclick}>
     <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
     <div class="caption">
       <p>Me at work</p>
      </div>
   </div>
-                   
+          </LazyLoad>     
                   <div id="blurb"> 
                   Welcome and thanks for checking out my portfolio.<br/><br/>
 
@@ -112,9 +113,9 @@ return (
 
                   <br/> <br/>
                   If you'd like to read more about my background and journey into coding, just 
-                
+           
                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />
-                 
+ <LazyLoad>    
                   <br/><br/>
 
                     <div id="leftlistcontainer">
@@ -153,7 +154,7 @@ return (
                         <li><span className="list-icon"><img src={iconsass}/><img src={iconps}/><img src={iconsketch}/> </span> </li>
                       </ul>
                        </div>
-
+</LazyLoad>
                   </div> 
 
                                 

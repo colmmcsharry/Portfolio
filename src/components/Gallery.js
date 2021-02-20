@@ -106,18 +106,17 @@ return (
 
 		<div className="rightstuff">
 		<h3 id="misch3">Misc</h3>
-		<p>If you want to see how far I've come on coding journey, here's links to two of my first "projects", complete with awful sound effects!</p>
+		<p>If you want to see how far I've come on my coding journey, here's links to two of my oldest "projects", complete with awful sound effects!</p>
 		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Rock, Paper, Scissors</a> {'\u00A0 \u00A0 \u00A0 \u00A0 '} 
-		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Lyrics Game</a> <br/>
+		<a href="https://mcshazz.github.io/LyricsGame/" target="_blank">Lyrics Game</a> <br/>
 
 		<ul className="cool-list">
 			<li>What I'm watching? </li>
 			<li> Right now, nothing! I'v barred myself from Netflix until I find a job. But eventually, I plan to watch The Mandalorian, then The Sopranos.</li>
 			
 
-			<li> What I'm listening to... </li>
-			<li> Listening to one of two Audiobooks, depending on mood. Usually whilst I'm driving, I'll listen to Ryan Holiday's <em>Stillness is The Key</em>,
-			then at night, I listen to David Gemmell's novel <em>"The First Chronicles of Druss the Legend"</em>. </li>
+			<li> Music that helps me study... </li>
+			<li> <iframe src="https://open.spotify.com/embed/playlist/3IasJfydbCLFsh6WM6xnWY" width="90%" height="170" frameborder="0" loading="lazy" allowtransparency="true" allow="encrypted-media"></iframe></li>
 			<li> Just for fun... </li>
 
 		</ul>
