@@ -7,7 +7,6 @@ import Landingview from './components/Landingview.js'
 import Contact from './components/Contact.js'
 import Gallery from './components/Gallery.js'
 import LazyLoad from 'react-lazyload';
-import Father from './components/Father.js'
 
 
 

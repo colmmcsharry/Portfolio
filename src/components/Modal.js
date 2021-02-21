@@ -1,6 +1,4 @@
 import React, { useState }  from 'react';
-import ReactDOM from 'react'
-import {alldescriptions} from './text.js'
 
 
 
@@ -16,8 +14,6 @@ window.onload = setTimeout(function() {
 // const btn = document.getElementById("myBtn");
 const modal = document.getElementsByClassName("modal");
 
-const closespan = document.getElementsByClassName("close");
-const closespan2 = document.getElementsByClassName("close");
 
 // var vari = document.querySelectorAll('.vari');
 
@@ -155,7 +151,7 @@ document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout'
 
 /*if you click anywhere on the dimmed part, it closes*/
  window.onclick = function(event) {
-  if (event.target == modal[mynum]) {
+  if (event.target === modal[mynum]) {
     modal[mynum].style.display = "none";}
 }
 

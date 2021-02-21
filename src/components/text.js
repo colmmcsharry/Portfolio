@@ -10,7 +10,6 @@ import snippet from '../pics/snippet.jpg'
 import weather from '../pics/weather.jpg'
 import youtube from '../pics/Youtube.jpg'
 import college from '../pics/college.jpeg'
-import LazyLoad from 'react-lazyload';
 
 
 

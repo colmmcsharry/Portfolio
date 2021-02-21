@@ -1,7 +1,7 @@
 import React from 'react'
 import medog from '../pics/medog.JPG'
 import newday from '../pics/newday.JPG'
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link as ScrollLink, Element} from "react-scroll";
 import mefire from '../pics/mefire.jpg'
 import merocky from '../pics/merocky.JPG'
 import lklouise  from '../pics/lklouise.JPG'
@@ -9,8 +9,6 @@ import footy  from '../pics/footy.JPG'
 import myvan from '../pics/myvan.jpg'
 import memount  from '../pics/memount.JPG'
 import snow from '../pics/snow.jpg'
-import mefam from '../pics/mefam.JPG'
-import LazyLoad from 'react-lazyload';
 import Father from './Father.js'
 import totop from '../pics/totop.png'
 
@@ -94,11 +92,11 @@ return (
 
 	<React.Fragment>
 <Element name="funwrapper"> </Element>
-<div className ="funwrap" id="funwrapper">
+<div className ="funwrap fadeload" id="funwrapper">
 		<h3 id="galleryh3">My Gallery</h3>
 		<div className="gallerywrap">
 
-		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} />  </div> 
+		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} alt="galleryimgs" />  </div> 
 
 		 )}
 
@@ -107,16 +105,16 @@ return (
 		<div className="rightstuff">
 		<h3 id="misch3">Misc</h3>
 		<p>If you want to see how far I've come on my coding journey, here's links to two of my oldest "projects", complete with awful sound effects!</p>
-		<a href="https://mcshazz.github.io/gridRPS/" target="_blank">Rock, Paper, Scissors</a> {'\u00A0 \u00A0 \u00A0 \u00A0 '} 
-		<a href="https://mcshazz.github.io/LyricsGame/" target="_blank">Lyrics Game</a> <br/>
+		<a href="https://mcshazz.github.io/gridRPS/" target="_blank" rel="noreferrer">Rock, Paper, Scissors</a> {'\u00A0 \u00A0 \u00A0 \u00A0 '} 
+		<a href="https://mcshazz.github.io/LyricsGame/" target="_blank" rel="noreferrer">Lyrics Game</a> <br/>
 
 		<ul className="cool-list">
 			<li>What I'm watching? </li>
 			<li> Right now, nothing! I'v barred myself from Netflix until I find a job. But eventually, I plan to watch The Mandalorian, then The Sopranos.</li>
 			
 
-			<li> Music that helps me study... </li>
-			<li> <iframe src="https://open.spotify.com/embed/playlist/3IasJfydbCLFsh6WM6xnWY" width="90%" height="170" frameborder="0" loading="lazy" allowtransparency="true" allow="encrypted-media"></iframe></li>
+			<li> My productivity playlist... </li>
+			<li> <iframe src="https://open.spotify.com/embed/playlist/3IasJfydbCLFsh6WM6xnWY" title="myplaylist" width="100%" height="170" frameBorder="1" loading="lazy" allow="encrypted-media"></iframe></li>
 			<li> Just for fun... </li>
 
 		</ul>
@@ -126,7 +124,7 @@ return (
 		</div> 
 
 </div>
-<ScrollLink activeClass="active" to="top" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow" id="totop"><img id="totopimg" src={totop}/></div></ScrollLink>
+<ScrollLink activeClass="active" to="top" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow" id="totop"><img alt="totoparrow" id="totopimg" src={totop}/></div></ScrollLink>
 </React.Fragment>
 
 

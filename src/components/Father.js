@@ -1,7 +1,6 @@
-import React,{useState,useEffect} from "react"
+import React,{useState} from "react"
 import dougal2 from '../pics/dougal2.jpg'
 import Ted from '../pics/Ted.jpg'
-import tea from '../pics/tea.png'
 import racist from '../pics/racist.jpg'
 import tedbanner from '../pics/tedhead.png'
 import jack from '../pics/jack.jpg'
@@ -117,7 +116,7 @@ function next(){
     <React.Fragment>     
 
 <div id="tedwrap">
-<img className="tedbanner" src={tedbanner}/>
+<img className="tedbanner" src={tedbanner} alt="FatherTedimgs"/>
     <div className="mydiv" style={{
     	backgroundImage: "url(" + Tedarray[activeObj].img + ")"
     	
@@ -129,7 +128,7 @@ Go on!
         <div className="quotewrap">
         <p className="quote">{Tedarray[activeObj].quote}</p>
         <span className="author"> {Tedarray[activeObj].author}</span>
-        <p id="ext"></p>
+        
         </div>
     	</div>
 </div>

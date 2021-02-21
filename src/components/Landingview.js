@@ -1,26 +1,24 @@
 import React from 'react';
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
+import { Link as ScrollLink, Element } from "react-scroll";
 import flaresun from '../pics/flaresun.png'
 
 
 
 export default function Landingview() {
 
-
-
+console.log( '%c👋 Hello from the other side', 'font-size: 2em; color: blue; font-style:italic' );
 
 return (
 
 <React.Fragment>  
 <Element name="top" style={{backgroundImage: `url(${flaresun})`, visibility:'hidden'}} />  
 
-<input id="toggle1" type="checkbox" className="mything" link rel="preload"/>
-<label htmlFor="toggle1" link rel="preload"></label>
+<input id="toggle1" type="checkbox" className="mything"/>
+<label htmlFor="toggle1"></label>
 
 <div id="iconlistcontainer2">
-<h3>Developer  |  Designer | Dubliner</h3>
-                     
-                       </div>
+<h3><span style={{fontFamily:'Times New Roman'}}>&lt;</span> I make websites <span style={{fontFamily:'Times New Roman'}}> &gt;</span></h3>
+</div>
 
 {/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 

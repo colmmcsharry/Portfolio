@@ -340,6 +340,7 @@ font-weight:bold;}
   display:inline-block;
   vertical-align:top;
   padding-left:3vw;
+  animation:modalfadein 2.5s ease-in;
 }
 
 
@@ -434,6 +435,9 @@ box-shadow:0px 3px 8px 8px rgba(0,0,0, 0.5);
 
 /*css for polaroids ends*/
 
+.fadeload{
+  animation: modalfadein 2s ease;
+}
 
 @keyframes modalfadein {
 0% {opacity:0;
@@ -1036,6 +1040,7 @@ transition: color 3s ease;
   border-bottom: none;
 }
 
+#totop {top:-4rem;}
 
 #totopimg {
   position:absolute;
@@ -1142,7 +1147,7 @@ cursor:pointer;
   width:80%;
   left:10%;
   top:4rem;
-
+ z-index:-10;
 }
 
 
@@ -1196,6 +1201,7 @@ object-fit:fill;
 width:100%;
 overflow:hidden;
 border-radius:5%;
+ z-index: 9999 !important;
 }
 
 .igaldiv:hover > img {
@@ -1209,11 +1215,11 @@ border-radius:5%;
 
 .gowide 
 {transform:scale(3.7);
-z-index: 9999;}
+z-index: 9999 !important;}
 
 .gotall
 {transform:scale(3.8);
-  z-index: 9999;;
+  z-index: 9999 !important;
 }
 
 .igaldiv:hover {cursor:zoom-in;
@@ -1237,7 +1243,7 @@ z-index: 9999;}
   font-family:Dancing Script;
   color:$cyan;
   width:50%;
-  z-index:999999;
+  z-index:70;
   top:-2vh;
   left:4rem;
  height:3rem;
@@ -1413,11 +1419,12 @@ font-weight:bold;}
 
 /*Father TED ENDS*/
 
+/*remember iconlistcontainer2 is just the h3 on the hero image, was originally icons*/
 #iconlistcontainer2 {
    position:absolute;
    z-index:999999;
-   left:33%;
-   top:18%;
+   left:41%;
+   top:10rem;
    text-align:center;
 }
 
@@ -1428,10 +1435,10 @@ font-weight:bold;}
   font-size:2rem;
   margin:0;
   transition:all 2s ease;
-  word-spacing:2vw;
+  word-spacing:auto;
 overflow:hidden;
 white-space: nowrap;
-  animation: typewriter2 2s steps(60) 3s 1 normal both;
+  animation: typewriter2 1s steps(60) 2.8s 1 normal both;
 }
 
 
@@ -1509,7 +1516,7 @@ display: block;
 }
 
 
-.arrow.lastarrow {top:-6rem;}
+.lastarrow{top:2rem;}
 
 
 
@@ -1538,12 +1545,17 @@ display: block;
 #bio {padding-left:10rem; padding-right:10rem ;}
 
 html {font-size:20px;}
+
+
+
+
 }
 
 @media screen and (max-width: 850px) {
 
   #iconlistcontainer2 {
-   left:26%;
+   left:37%;
+
 }
 
 #gridwrapper {
@@ -1569,6 +1581,8 @@ grid-gap:0px;
 .projarrow  {
   top:5px;
 }
+
+#totop {top:2rem;}
 
 #galleryh3 {
   position:relative;
@@ -1605,6 +1619,7 @@ grid-gap:0px;
 
 #iconlistcontainer li {
 display:inline-block;
+
 }
 
 #iconlistcontainer ul {
@@ -1648,6 +1663,7 @@ border-spacing: 50px 0;}
   left:2rem;
   font-size:.75rem;
   text-align:center;
+
 }
 
 .gallerywrap {
@@ -1695,10 +1711,13 @@ width: 34%;}
 @media screen and (max-width: 520px) {
 
   #iconlistcontainer2 {
-   left:10%;
+   left:25%;
+    top:11rem;
 }
 
-
+#iconlistcontainer2 > h3 {
+  font-size:2.2rem !important;
+} 
 
 
 .gallerywrap {
@@ -1764,7 +1783,7 @@ top:8rem !important}
 
   /* Modal Content */
 .modal-content {
-  text-align:left;
+  text-align: left;
   align-items:center;
   padding:1rem;
   width: 85%;

@@ -8,13 +8,12 @@ import iconjs from '../pics/icon-js.svg'
 import icongatsby from '../pics/icon-gatsby.svg'
 import iconreact from '../pics/icon-react.svg'
 import iconsass from '../pics/icon-sass.svg'
-import all3 from '../pics/all3.png'
 import iconps from '../pics/icon-ps.svg'
 import iconsketch from '../pics/icon-sketch.svg'
 import icongit from '../pics/icon-git.svg'
 import iconcss from '../pics/icon-css.svg'
 import iconhtml from '../pics/icon-html.svg'
-import icongraphql from '../pics/icon-graphql.svg'
+
 
 
 
@@ -65,14 +64,14 @@ window.onload = setTimeout(function() {
    /*moon doesn't load until 3 secs, cos the animation plays as soon as it loads*/   
    document.getElementsByTagName('label')[0].style.display = 'block';
 
-} , 4300   )
+} , 4000   )
 
 
 
   window.onload = setTimeout(function() {
       document.getElementsByTagName('label')[0].style.visibility = 'visible';
 
-      },  5000   )
+      },  4700   )
 
 
 
@@ -94,14 +93,13 @@ return (
               <div id="bio">
 
               <div className="tight">
-               <LazyLoad height={300} width={200} offset={150}>
-                   <div class="item" id="main" onClick={photoclick}>
+             
+                   <div class="item fadeload" id="main" onClick={photoclick}>
     <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
     <div class="caption">
       <p>Me at work</p>
      </div>
   </div>
-          </LazyLoad>     
                   <div id="blurb"> 
                   Welcome and thanks for checking out my portfolio.<br/><br/>
 
@@ -114,16 +112,15 @@ return (
                   <br/> <br/>
                   If you'd like to read more about my background and journey into coding, just 
            
-                 <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />
- <LazyLoad>    
+                 <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />    
                   <br/><br/>
 
                     <div id="leftlistcontainer">
                       <ul><span className="top"> Courses </span>
                       <hr/>
-                        <li><a href="https://docdro.id/ZNxICaa" target="_blank"> Polyglot Bootcamp</a></li>
-                        <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
-                        <li><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">The Complete Web Dev</a></li>
+                        <li><a href="https://docdro.id/ZNxICaa" target="_blank" rel="noreferrer"> Polyglot Bootcamp</a></li>
+                        <li><a href="https://www.theodinproject.com/" target="_blank" rel="noreferrer">The Odin Project</a></li>
+                        <li><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank" rel="noreferrer">The Complete Web Dev</a></li>
                        {/* <br className="break"/>
                         <br className="break"/>
                         <br className="break"/>
@@ -145,16 +142,18 @@ return (
                        <li>API requests</li>
                       </ul>
                        </div>
+                        <LazyLoad offset={-60} style={{display:'inline-block'}}> 
 
                        <div id="iconlistcontainer">
                       <ul> <span className="top"><br/></span>
                         <br/>
-                        <li><span className="list-icon"><img src={iconhtml}/><img src={iconcss}/><img src={iconjs}/>  </span></li>
-                        <li><span className="list-icon"><img src={icongit}/><img src={iconreact}/><img src={icongatsby}/> </span></li>
-                        <li><span className="list-icon"><img src={iconsass}/><img src={iconps}/><img src={iconsketch}/> </span> </li>
+                        <li><span className="list-icon"><img src={iconhtml} loading="lazy" alt="badge" /><img src={iconcss}loading="lazy"alt="badge" /><img src={iconjs}loading="lazy"alt="badge"/>  </span></li>
+                        <li><span className="list-icon"><img src={icongit} loading="lazy" alt="badge"/><img src={iconreact}loading="lazy"alt="badge" /><img src={icongatsby}loading="lazy"alt="badge"/> </span></li>
+                        <li><span className="list-icon"><img src={iconsass} loading="lazy" alt="badge"/><img src={iconps}loading="lazy" alt="badge"/><img src={iconsketch}loading="lazy"alt="badge"/> </span> </li>
+                       
                       </ul>
                        </div>
-</LazyLoad>
+                        </LazyLoad>
                   </div> 
 
                                 

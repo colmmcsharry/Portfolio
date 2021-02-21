@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
 import icongithub from '../pics/icon-github.svg'
@@ -23,7 +23,7 @@ export default function Contact()  {
               </li>
               <li>
                 <strong>Accounts:</strong>
-                <p className="onmob"><img src={iconlinkedin}/>  <img src={icongithub}/> </p>
+                <p className="onmob"><img src={iconlinkedin} alt="badge" loading="lazy" />  <img src={icongithub} alt="badge" loading="lazy"/> </p>
               </li>
               <li>
                 <strong>Email:</strong>
@@ -59,7 +59,7 @@ export default function Contact()  {
 
         </div>
 <ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
-        <img src={funstuff} className="pngs"/>
+        <img src={funstuff} alt="arrow" className="pngs"/>
         </div></ScrollLink>
         
       </div>

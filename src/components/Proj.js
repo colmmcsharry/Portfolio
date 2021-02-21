@@ -1,9 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react'
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import React from 'react'; 
 import responsive from '../pics/responsive.png'
-import {alldescriptions} from './text.js'
-import Modal from './Modal.js'
 import LazyLoad from 'react-lazyload';
 
 
@@ -19,7 +15,7 @@ return (
 	<div id="projwrap">
 
   
- <a className="projlink" href={props.link} target="_blank"><h3 className="projtitle">{props.title}</h3></a>
+ <a className="projlink" href={props.link} target="_blank" rel="noreferrer"><h3 className="projtitle">{props.title}</h3></a>
 
   <div id="gridwrapper">
 
@@ -28,15 +24,15 @@ return (
 {props.description}
 
     </div>
-    
-    <div id="right">
-    <a href={props.link} target="_blank"> 
+<LazyLoad height={400} width={400} offset={300}>      
+    <div id="right" className="fadeload">
+    <a href={props.link} target="_blank" rel="noreferrer"> 
   
 
      
 {/*inner is the screen inside the laptop. */}
 
-<LazyLoad height={400} width={400} offset={300}>    
+  
 
       <div className="innerwrapper">   
   <img className="inner" src={props.image1}  alt="laptoppic" />
@@ -62,15 +58,15 @@ return (
       
       {/*this is the png of all the devices*/}
   <img className="devices" src={responsive} alt="devicespic" />   
-</LazyLoad> 
+
 </a>
-   
+  
       
     
      
     
     </div>
-
+ </LazyLoad> 
   </div>  
 
 

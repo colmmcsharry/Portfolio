@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react'
-import Modal from './Modal.js'
-import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link as ScrollLink, Element, } from "react-scroll";
 import Contact2 from '../pics/contact2.png'
 import crezopic1new from '../pics/crezopic1new.jpg'
 import crezopic2 from  '../pics/crezopic2.jpg'
@@ -16,7 +14,6 @@ import cb2 from '../pics/cb2.jpg'
 import cb3 from '../pics/cb3.jpg'
 import cb4 from '../pics/cb4.jpg'
 import Proj from './Proj.js'
-import {bigtext} from './text.js'
 
 import {alldescriptions} from './text.js'
 
@@ -53,7 +50,7 @@ return (
 <Element name="Project3" ></Element>
 <Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/NetWorkers/" />
 <ScrollLink activeClass="active" to="Contact" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow">
-<img className="pngs" src={Contact2} />
+<img className="pngs" alt="contactlink" src={Contact2} />
 </div>
 </ScrollLink>
 
