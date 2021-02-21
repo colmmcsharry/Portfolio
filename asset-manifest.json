@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4ca23c9c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.4a0bac7a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.4a0bac7a.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.685f2d0a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.089e8980.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.089e8980.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
     "static/js/2.38902f07.chunk.js": "/Portfolio/static/js/2.38902f07.chunk.js",
     "static/js/2.38902f07.chunk.js.map": "/Portfolio/static/js/2.38902f07.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.4ca23c9c.chunk.css.map": "/Portfolio/static/css/main.4ca23c9c.chunk.css.map",
+    "static/css/main.685f2d0a.chunk.css.map": "/Portfolio/static/css/main.685f2d0a.chunk.css.map",
     "static/js/2.38902f07.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.38902f07.chunk.js.LICENSE.txt",
     "static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg": "/Portfolio/static/media/CurrentCrezoLighthouse.1d1ccdd8.jpg",
     "static/media/NewCrezoLighthouse.1e21ba6e.jpg": "/Portfolio/static/media/NewCrezoLighthouse.1e21ba6e.jpg",
@@ -32,7 +32,6 @@
     "static/media/icon-gatsby.e9d25c58.svg": "/Portfolio/static/media/icon-gatsby.e9d25c58.svg",
     "static/media/icon-git.70f09917.svg": "/Portfolio/static/media/icon-git.70f09917.svg",
     "static/media/icon-github.0f0cfa96.svg": "/Portfolio/static/media/icon-github.0f0cfa96.svg",
-    "static/media/icon-graphql.776bc77e.svg": "/Portfolio/static/media/icon-graphql.776bc77e.svg",
     "static/media/icon-html.37bf6863.svg": "/Portfolio/static/media/icon-html.37bf6863.svg",
     "static/media/icon-js.a7647021.svg": "/Portfolio/static/media/icon-js.a7647021.svg",
     "static/media/icon-linkedin.ddecbcf0.svg": "/Portfolio/static/media/icon-linkedin.ddecbcf0.svg",
@@ -44,7 +43,6 @@
     "static/media/lklouise.5b703a35.JPG": "/Portfolio/static/media/lklouise.5b703a35.JPG",
     "static/media/me-at-work.dd9cbc54.jpg": "/Portfolio/static/media/me-at-work.dd9cbc54.jpg",
     "static/media/medog.1ba63b36.JPG": "/Portfolio/static/media/medog.1ba63b36.JPG",
-    "static/media/mefam.8ac69257.JPG": "/Portfolio/static/media/mefam.8ac69257.JPG",
     "static/media/mefire.05fcbc56.jpg": "/Portfolio/static/media/mefire.05fcbc56.jpg",
     "static/media/memount.b5f3b623.JPG": "/Portfolio/static/media/memount.b5f3b623.JPG",
     "static/media/merocky.485558fb.JPG": "/Portfolio/static/media/merocky.485558fb.JPG",
@@ -64,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.896df889.js",
     "static/js/2.38902f07.chunk.js",
-    "static/css/main.4ca23c9c.chunk.css",
-    "static/js/main.4a0bac7a.chunk.js"
+    "static/css/main.685f2d0a.chunk.css",
+    "static/js/main.089e8980.chunk.js"
   ]
 }
