@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
+
 /*these are basically reusable variables, SCSS*/
 $cyan:#3DC0B0;
 $darkbg:#333;
+
 
 * {
   box-sizing: border-box;
@@ -26,8 +28,18 @@ html {
 }
 
 html, body, .App { margin: 0; padding: 0; 
-overflow-x:hidden;} 
+overflow-x:hidden;
+} 
 
+
+
+ul {
+  line-height:1.6;
+}
+
+#blurb {line-height:1.4;}
+
+p {line-height:1.4;}
 
 body {
   background: #333;
@@ -107,6 +119,7 @@ h3.mystoryh3{
 /*dark  */
 .window::after {
   background-image:url('./pics/nightmob.jpg');
+  filter:grayscale(50%);
 }
 
 /*when you scroll past this invisible point, the other light switch appears*/
@@ -168,11 +181,12 @@ text-align:left;
  position: absolute;
  font-family: Dancing Script, cursive, Comic Sans MS;
  z-index:98;
- top: 4%;
+ top: 1%;
  overflow:hidden;
- left: 41.5vw;
- font-size:3rem;
+ left: 31.5vw;
+ font-size:7rem;
  white-space:nowrap;
+
 }
 
 
@@ -182,6 +196,7 @@ overflow:hidden;
 white-space: nowrap;
 // border-right:2px solid $cyan;
 animation: typewriter 1.5s steps(60) 1s 1 normal both; 
+
 }
   // blinkTextCursor 400ms steps(24) infinite normal,
   // cssAnimation 0s ease-in 2.7s forwards;}
@@ -192,7 +207,7 @@ animation: typewriter 1.5s steps(60) 1s 1 normal both;
   }
 
   to {
-    width: 15rem;
+    width: 60vw;
   }
 }
 
@@ -270,7 +285,7 @@ transform: scale(1.8);
 
 #about {
 position:relative;
-font-size:3rem;
+font-size:4rem;
 margin-top:2.5rem;
 margin-bottom:0rem;
 padding-top:5rem;
@@ -678,38 +693,18 @@ input:checked ~ #wrapper th {
 
 
 
-// input:checked ~ a > #scroller1::before {display:none;}
-
 input:checked ~ a > #scroller1 > a > .arrow::after {
 border-color:white;
 transition: 2s ease all;
 }
 
-// input:checked ~ a > #scroller1 > a > .arrow::before {
-// color:white;
-// }
 
 
 input:checked ~ a > #scroller1 > a > .arrow {
 color: white;
 transition: 2s ease all;
-// filter: grayscale(100%);
+
 }
-
-
-// input[type=checkbox]:not(:checked) ~ a > #scroller1 > a > .arrow {
-//   filter: invert(100%);
-//   transition:1s all;
-// }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -781,7 +776,7 @@ transition: 2s ease all;
 
 
 .My-Projects {margin-top: 15rem;
-font-size:3rem;
+font-size:4rem;
 color:$cyan;
 font-family:  Dancing Script, cursive, Snell Roundhand;
 }
@@ -795,7 +790,7 @@ font-family:  Dancing Script, cursive, Snell Roundhand;
 .projtitle {
 padding: 30px;
 font-family:courier new;
-font-size:1.5rem;
+font-size:2rem;
 }
 
 #gridwrapper {
@@ -1040,7 +1035,7 @@ transition: color 3s ease;
   border-bottom: none;
 }
 
-#totop {top:-4rem;}
+#totop {top:-7rem;}
 
 #totopimg {
   position:absolute;
@@ -1086,7 +1081,7 @@ width:50px;
 }
 
 #firstprojarrow:after{
-  top:-4rem;
+  top:-10rem;
 }
 
 
@@ -1143,11 +1138,16 @@ cursor:pointer;
   font-size:.65rem;
   height:1px;
   font-family: Exo !important;
-  color:#FFFFFF;
+  color: #FFFFFF;
   width:80%;
   left:10%;
   top:4rem;
  z-index:-10;
+}
+
+/*this is the only way i could get the gallery:after text to change*/
+input:checked ~ #wrapper > .lazyload-wrapper > .funwrap > h3::after {
+  color:#333;
 }
 
 
@@ -1309,17 +1309,11 @@ margin-top:-3rem;
   height:100%;
 }
 
+/*this is just for the double Ted quotes*/
+.quotewrap .quote, .authorspan, .doublequote {line-height:1.3;
+font-size:1rem;}
 
-// .mydiv::before {
-//   content:"";
-//   position:absolute;
-//   top:-5.5vh;
-//   width:50%;
-//   transform:translateX(65%);
-//   height:3rem;
-//   background-size:contain;
-//   background-repeat:no-repeat;
-//   background-image:url('./pics/tedhead.png')}
+
 
 .mydiv::after {
   content:"Quote Box";
@@ -1423,22 +1417,24 @@ font-weight:bold;}
 #iconlistcontainer2 {
    position:absolute;
    z-index:999999;
-   left:41%;
-   top:10rem;
+   left:38%;
+   top:14rem;
    text-align:center;
+
 }
 
 
 #iconlistcontainer2 > h3{
   color:$cyan;
   font-family: Dancing Script;
-  font-size:2rem;
+  font-size:3rem;
   margin:0;
   transition:all 2s ease;
   word-spacing:auto;
 overflow:hidden;
 white-space: nowrap;
   animation: typewriter2 1s steps(60) 2.8s 1 normal both;
+
 }
 
 
@@ -1471,7 +1467,7 @@ background-color:#FFFFFF;}
 
 .contacth2 {
   color:$cyan;
-  font-size:3rem;
+  font-size:4rem;
   font-family:Dancing Script, Bradley Hand, Exo, cursive;
 }
 
@@ -1553,9 +1549,9 @@ html {font-size:20px;}
 
 @media screen and (max-width: 850px) {
 
-  #iconlistcontainer2 {
-   left:37%;
 
+#firstprojarrow:after{
+  top:-2rem;
 }
 
 #gridwrapper {
@@ -1599,7 +1595,6 @@ grid-gap:0px;
   color:$cyan;
 }
 
-.arrow.lastarrow {top:0vh;}
 
 
 .rightstuff {
@@ -1642,7 +1637,18 @@ display:inline-block;
 
   #wrapper {padding-bottom:10rem;}
  
- h1 {left:38vw;}
+ h1 {left:20vw;
+  top:5%;
+  }
+
+   #iconlistcontainer2 {
+   left:23%;
+    top:20rem;
+
+}
+
+#iconlistcontainer2 > h3 {
+font-size:4rem;}
 
   table {
 border-spacing: 50px 0;}
@@ -1663,8 +1669,9 @@ border-spacing: 50px 0;}
   left:2rem;
   font-size:.75rem;
   text-align:center;
-
 }
+
+
 
 .gallerywrap {
  display: flex;
@@ -1710,14 +1717,31 @@ width: 34%;}
 
 @media screen and (max-width: 520px) {
 
+  h1{
+  left:16vw;
+  font-size:5rem;
+  top:8%;
+}
+
+
   #iconlistcontainer2 {
-   left:25%;
-    top:11rem;
+   left:20%;
+    top:15rem;
 }
 
 #iconlistcontainer2 > h3 {
-  font-size:2.2rem !important;
+  font-size:2.8rem 
 } 
+
+  @keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80vw;
+  }
+}
 
 
 .gallerywrap {
@@ -1831,7 +1855,7 @@ figure {width:100%;
 
 
 .projarrow {margin-bottom:15vh;
-top:3vh;}
+top:6vh;}
 
 #gridwrapper{padding:0 3vw;
   font-size:1.1rem;
@@ -1839,9 +1863,6 @@ top:3vh;}
 
 
 
-h1{
-  left:31vw;
-}
 
 #scroller1::before, #scroller2::before {left:45%;
 }
@@ -2035,6 +2056,7 @@ display:inline-block;
 .window::after {
   background-image:url('./pics/nightoil.jpg');
   background-size: 100% 100%;
+
 }
 
 

@@ -54,12 +54,14 @@ observer.observe(document.querySelector("#scroll-magic-point"));
 window.onload = setTimeout(function() {
 
     document.querySelector('label').onclick = function myfun(){
-      document.getElementById('firstarrow').classList.toggle('bgclass');
+    document.getElementById('firstarrow').classList.toggle('bgclass');
     }
 /*changes the clickme arrow from cyan to white*/
 
+
 /*this is allowing me to target a psuedo element, it's a workaround*/
    document.querySelector('.window').style.setProperty('--dynamic', 'block') ;
+  ;
       
    /*moon doesn't load until 3 secs, cos the animation plays as soon as it loads*/   
    document.getElementsByTagName('label')[0].style.display = 'block';
@@ -162,7 +164,7 @@ return (
 
                   
                 {/*if I change id to className, then I can just change all the scoller's bottom positions om mob */}
-                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-29} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2"></div></ScrollLink> </div> 
+                 <div id="scroller2"> <ScrollLink activeClass="active" offset={-1} to="Myprojects" spy={true} smooth={true} duration={900} ><div className="arrow" id="arrow2"></div></ScrollLink> </div> 
 
                  </div>
               </div>

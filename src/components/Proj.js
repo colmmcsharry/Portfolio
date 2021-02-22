@@ -24,7 +24,7 @@ return (
 {props.description}
 
     </div>
-<LazyLoad height={400} width={400} offset={300}>      
+<LazyLoad height={400} width={400} offset={400}>      
     <div id="right" className="fadeload">
     <a href={props.link} target="_blank" rel="noreferrer"> 
   

@@ -37,9 +37,9 @@ return (
 </div>  
 
 {/*there are two scroll link*/}
-<ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
+<ScrollLink activeClass="active" to="About" spy={true} offset={-2} smooth={true} duration={900}>
 <div id="scroller1">
- <ScrollLink activeClass="active" to="About" spy={true} offset={-20} smooth={true} duration={900}>
+ <ScrollLink activeClass="active" to="About" spy={true} offset={-2} smooth={true} duration={900}>
  <div className="arrow" id="firstarrow"></div></ScrollLink>
   </div></ScrollLink>
 

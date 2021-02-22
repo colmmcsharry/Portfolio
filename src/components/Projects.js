@@ -49,7 +49,7 @@ return (
 
 <Element name="Project3" ></Element>
 <Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/NetWorkers/" />
-<ScrollLink activeClass="active" to="Contact" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow">
+<ScrollLink activeClass="active" to="Contact" spy={true} offset={50} smooth={true} duration={900} ><div className="arrow projarrow lastarrow">
 <img className="pngs" alt="contactlink" src={Contact2} />
 </div>
 </ScrollLink>

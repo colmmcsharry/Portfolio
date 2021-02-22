@@ -32,8 +32,8 @@ author: "- Father Ted"  ,
   author:"",  
  img:racist},
 
-{quote:<React.Fragment> <p><span className="authorspan">Ted:</span> Dougal, do we have any incense?</p>
-  <p><span className="authorspan">Dougal:</span> There was... a spider in the bath the other night.</p></React.Fragment>,
+{quote:<React.Fragment> <div className="doublequote"><span className="authorspan">Ted:</span> Dougal, do we have any incense? <br/><br/>
+  <span className="authorspan">Dougal:</span> There was... a spider in the bath the other night.</div></React.Fragment>,
 author: '',  
  img:dougal2},
 
@@ -49,8 +49,8 @@ author: '',
   author:"- Father Dougal",  
  img:dougal2 },
 
-{quote:<React.Fragment> <p><span className="authorspan">Ted:</span> Would you like your pizza cut into 6 or 8 slices Dougal?</p>
-  <p><span className="authorspan">Dougal:</span> Oh just 6, I don’t think I could eat 8.</p></React.Fragment>,
+{quote:<React.Fragment> <div className="doublequote"><span className="authorspan">Ted:</span> Would you like your pizza cut into 6 or 8 slices Dougal?<br/><br/>
+  <span className="authorspan">Dougal:</span> Oh just 6, I don’t think I could eat 8.</div></React.Fragment>,
 author: '',  
  img:dougal2},
 
