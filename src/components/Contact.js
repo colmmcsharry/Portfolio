@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
 import icongithub from '../pics/icon-github.svg'
+import NetlifyForm from 'react-ssg-netlify-forms'
 
 
 export default function Contact()  {
+
+
+const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
+  const [formValues, setFormValues] = useState({
+    name: '',
+    message: ''
+  }) ;
+
+
 
     return (
       <React.Fragment>
@@ -33,8 +43,29 @@ export default function Contact()  {
               </li>
             </ul>
 
+
+
+              <NetlifyForm formName="Very Simple Form" formValues={formValues}>
+        <div>
+          Your Name: <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
+        </div>
+        <div>
+          Message: <textarea name="message" value={formValues.message} onChange={handleChange} required />
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </NetlifyForm>
+
+
+
+
+
+
+
+
           
-            <form method="post" name="contactform" action={`https://formspree.io/f/xleowbpw`}>
+            {/*<form method="post" name="contactform" action={`https://formspree.io/f/xleowbpw`}>
              
             <div>
               <label className="contactlabel">
@@ -54,7 +85,7 @@ export default function Contact()  {
             <div>
               <button type="submit" className="sendbut">Send</button>
             </div>
-          </form>
+          </form>*/}
 
 
         </div>

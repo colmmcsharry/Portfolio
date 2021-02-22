@@ -1541,10 +1541,11 @@ display: block;
 
 html {font-size:20px;}
 
-
-
-
 }
+
+@media screen and (min-width: 1200px) {
+  #bio {padding-top:1.5rem;}
+  }
 
 @media screen and (max-width: 850px) {
 
@@ -2074,7 +2075,7 @@ display:inline-block;
 .window::after {
   background-image:url('./pics/nightoil.jpg');
   background-size: 100% 100%;
-     filter:grayscale(50%);
+ 
 
 }
 
