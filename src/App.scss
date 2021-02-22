@@ -119,7 +119,6 @@ h3.mystoryh3{
 /*dark  */
 .window::after {
   background-image:url('./pics/nightmob.jpg');
-  filter:grayscale(50%);
 }
 
 /*when you scroll past this invisible point, the other light switch appears*/
@@ -2075,6 +2074,7 @@ display:inline-block;
 .window::after {
   background-image:url('./pics/nightoil.jpg');
   background-size: 100% 100%;
+     filter:grayscale(50%);
 
 }
 
@@ -2100,6 +2100,7 @@ and (orientation : portrait) {
 /*dark  */
 .window::after {
   background-image:url('./pics/nightmob.jpg');
+
 }
 
 .item {width:100%;}
