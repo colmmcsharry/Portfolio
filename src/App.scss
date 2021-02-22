@@ -1570,6 +1570,16 @@ grid-gap:0px;
   width:2rem
 }
 
+  @keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90vw;
+  }
+}
+
 .lol {
  filter:grayscale(00%);
 }
@@ -1720,13 +1730,13 @@ width: 34%;}
   h1{
   left:16vw;
   font-size:5rem;
-  top:8%;
+  top:7%;
 }
 
 
   #iconlistcontainer2 {
    left:20%;
-    top:15rem;
+    top:14rem;
 }
 
 #iconlistcontainer2 > h3 {
@@ -2001,13 +2011,22 @@ h3.mystoryh3{
 }
 
 @media screen and (max-width:376px){
+  h1{
+  left:16vw;
+  font-size:4.2rem;
+  top:6%;
+}
+
 
   #iconlistcontainer2 {
+   left:16%;
+    top:13rem;
+}
 
-}
-  #iconlistcontainer2 > h3 {
-   font-size:1.8rem;
-}
+#iconlistcontainer2 > h3 {
+  font-size:2.5rem 
+} 
+
 #iconlistcontainer {
    padding-left:0vw;
 }
