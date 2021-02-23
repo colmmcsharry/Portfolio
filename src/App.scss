@@ -1470,7 +1470,8 @@ background-color:#FFFFFF;}
   font-family:Dancing Script, Bradley Hand, Exo, cursive;
 }
 
-form label{width:100%}
+form label{width:100%;
+}
 
 form input,
 form textarea{display:block;width:100%;padding:8px 15px;box-sizing:border-box;outline:none;resize:none;background:#fafafe;z-index:2;position:relative;line-height:16px;font-size:1rem;-webkit-transition:none 0s ease 0s;transition:none 0s ease 0s;border:1px solid hsla(0,0%,80%,.37);margin:10px 0 0}
@@ -1711,8 +1712,16 @@ width: 34%;}
  .gowide {transform: scale(1)}
 
 .gotall {transform:scale(1);}
+
+
+.item{bottom:6rem;}
+
+
+
  }
 
+
+/*i think these two were supposed to go in the <850 media query, but everything is working fine anyway so just leave them*/
 .rightstuff {
   padding:5%;
 }
@@ -1722,6 +1731,7 @@ width: 34%;}
   right:-2vw;
  bottom: -15%;
 }
+
 
 
 

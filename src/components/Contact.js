@@ -1,21 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
 import icongithub from '../pics/icon-github.svg'
-import NetlifyForm from 'react-ssg-netlify-forms'
 
 
 export default function Contact()  {
-
-
-const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
-  const [formValues, setFormValues] = useState({
-    name: '',
-    message: ''
-  }) ;
-
-
 
     return (
       <React.Fragment>
@@ -43,35 +33,15 @@ const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.targ
               </li>
             </ul>
 
-
-
-              <NetlifyForm formName="Very Simple Form" formValues={formValues}>
-        <div>
-          Your Name: <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
-        </div>
-        <div>
-          Message: <textarea name="message" value={formValues.message} onChange={handleChange} required />
-        </div>
-        <div>
-          <button type="submit">Send</button>
-        </div>
-      </NetlifyForm>
-
-
-
-
-
-
-
-
           
-            {/*<form method="post" name="contactform" action={`https://formspree.io/f/xleowbpw`}>
+            <form method="post" name="contactform" data-netlify="true" >
              
             <div>
               <label className="contactlabel">
                 Your Name: <input type="text" name="name" required />
               </label>
             </div>
+            <input type="hidden" name="form-name" value="contact-form" />
             <div>
               <label className="contactlabel">
                 Your Email: <input type="email" name="email" required />
@@ -85,7 +55,7 @@ const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.targ
             <div>
               <button type="submit" className="sendbut">Send</button>
             </div>
-          </form>*/}
+          </form>
 
 
         </div>
