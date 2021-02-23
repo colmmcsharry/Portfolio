@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
@@ -7,6 +7,15 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
+
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+  if ( window.location.search.includes('success=true') ) {
+    setSuccess(true);
+  }
+}, []);
+
     return (
       <React.Fragment>
       <div className="contactwrap" id="Contact">
@@ -14,6 +23,7 @@ export default function Contact()  {
 
           
             <h2 className="contacth2">Contact Me</h2> 
+            
           
 
   <ul className="details">
@@ -56,7 +66,11 @@ export default function Contact()  {
               <button type="submit" className="sendbut">Send</button>
             </div>
           </form>
-
+{success && (
+  <p style={{ color: 'green'}}>
+    Thanks for the mail!
+  </p>
+)}
 
         </div>
 <ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
