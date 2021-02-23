@@ -1,7 +1,7 @@
 {
   "short_name": "My Portfolio",
   "name": "My Portfolio",
-  "start_url": ".",
+  "start_url": "https://reverent-johnson-cbf5ea.netlify.app/#/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
