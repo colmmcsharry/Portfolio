@@ -35,21 +35,26 @@ export default function Contact()  {
 
           
             <form method="post" name="contactform" data-netlify="true" >
-            
-                Your Name: <input type="text" name="name"  />
-          
+             
+            <div>
+              <label className="contactlabel">
+                Your Name: <input type="text" name="name" required />
+              </label>
+            </div>
             <input type="hidden" name="form-name" value="contactform" />
-          
-            
-                Your Email: <input type="email" name="email"  />
-          
-         
-         
-                Message: <textarea name="message" ></textarea>
-          
-           
+            <div>
+              <label className="contactlabel">
+                Your Email: <input type="email" name="email" required />
+              </label>
+            </div>
+            <div>
+              <label className="contactlabel">
+                Message: <textarea name="message" required></textarea>
+              </label>
+            </div>
+            <div>
               <button type="submit" className="sendbut">Send</button>
-        
+            </div>
           </form>
 
 
