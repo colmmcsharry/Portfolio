@@ -44,7 +44,7 @@ export default function Contact()  {
             </ul>
 
           
-            <form method="post" name="contactform" data-netlify="true" >
+            <form method="post" name="contactform" data-netlify="true" action="/?success=true" >
              
             <div>
               <label className="contactlabel">
