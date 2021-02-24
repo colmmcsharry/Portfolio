@@ -57,7 +57,7 @@ const handleSubmit = (event) => {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true" onSubmit={handleSubmit}>
+            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true">
              
             <div>
               <label className="contactlabel">
@@ -76,7 +76,7 @@ const handleSubmit = (event) => {
               </label>
             </div>
             <div>
-              <button type="submit" className="sendbut">Send</button>
+              <button type="submit" className="sendbut" onClick={handleSubmit}>Send</button>
             </div>
           </form>
 
