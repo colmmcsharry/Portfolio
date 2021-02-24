@@ -7,12 +7,10 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-const handleSubmit = (event) => {
- 
-      console.log('lool');
-    alert("Thanks for the mail!");
-     event.preventDefault();}
-
+const handleSubmit(){
+  console.log('thanksfor the mail!');
+  alert('thanks for the mail!')
+}
 
     return (
       <React.Fragment>
