@@ -7,7 +7,7 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-const handleSubmit(){
+const handleSubmit = function(){
   console.log('thanksfor the mail!');
   alert('thanks for the mail!')
 }
