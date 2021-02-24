@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
@@ -13,7 +13,6 @@ const handleSubmit = (event) => {
     alert("Thanks for the mail!");
      event.preventDefault();}
 
-  
 
     return (
       <React.Fragment>
@@ -22,7 +21,6 @@ const handleSubmit = (event) => {
 
           
             <h2 className="contacth2">Contact Me</h2> 
-
             
           
 
@@ -44,7 +42,7 @@ const handleSubmit = (event) => {
             </ul>
 
           
-            <form method="post" name="contactform" onSubmit={handleSubmit}>
+            <form method="post" name="contactform" data-netlify="true" onSubmit={handleSubmit}>
              
             <div>
               <label className="contactlabel">
@@ -66,7 +64,6 @@ const handleSubmit = (event) => {
               <button type="submit" className="sendbut">Send</button>
             </div>
           </form>
-
 
         </div>
 <ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
