@@ -7,10 +7,6 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  
-}
 
   const [success, setSuccess] = useState(false);
 
@@ -48,7 +44,7 @@ const handleSubmit = (e) => {
             </ul>
 
           
-            <form method="post" name="contactform" data-netlify="true" action="/?success=true" onSubmit={handleSubmit} >
+            <form method="post" name="contactform" data-netlify="true" action="/?success=true" >
              
             <div>
               <label className="contactlabel">
