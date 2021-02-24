@@ -71,7 +71,7 @@ useEffect(() => {
               </label>
             </div>
             <div>
-              <button type="submit" className="sendbut" onClick={handleSubmit}>Send</button>
+              <button type="submit" className="sendbut">Send</button>
             </div>
           </form>
 
