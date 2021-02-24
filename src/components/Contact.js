@@ -17,6 +17,12 @@ useEffect(() => {
   }
 }, []);
 
+const handleSubmit = (event) => {
+  event.preventDefault();
+  console.log(name);
+};
+
+
     return (
       <React.Fragment>
       <div className="contactwrap" id="Contact">
@@ -51,7 +57,7 @@ useEffect(() => {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true">
+            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true" onSubmit={handleSubmit}>
              
             <div>
               <label className="contactlabel">
