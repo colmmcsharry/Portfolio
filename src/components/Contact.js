@@ -18,7 +18,7 @@ useEffect(() => {
 }, []);
 
 const handleSubmit = (event) => {
-  event.preventDefault();
+  return false
   console.log("lovly");
 };
 
