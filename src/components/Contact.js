@@ -8,8 +8,10 @@ import icongithub from '../pics/icon-github.svg'
 export default function Contact()  {
 
 const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Thanks for the mail!");}
+ 
+      console.log('lool');
+    alert("Thanks for the mail!");
+     event.preventDefault();}
 
   
 
