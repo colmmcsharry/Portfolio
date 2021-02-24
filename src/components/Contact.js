@@ -20,10 +20,7 @@ useEffect(() => {
   if ( window.location.search.includes('success=true') ) {
     setSuccess(true);
     console.log('cheers!')
-    document.getElementById('contactform').scrollIntoView({
-      behavior: "auto";
-  block: "start"
-    })
+    document.getElementById('Contact').scrollIntoView()
 
 
   }
