@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
@@ -7,11 +7,6 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-
-const handleSubmit = function() {
-  preventDefault();
-  console.log("submitted"); // this prevents page refresh
-}
 
     return (
       <React.Fragment>
@@ -41,7 +36,7 @@ const handleSubmit = function() {
             </ul>
 
           
-            <form id="form" method="post" name="contactform" data-netlify="true">
+            <form method="post" name="contactform" data-netlify="true" action="/">
              
             <div>
               <label className="contactlabel">
@@ -60,7 +55,7 @@ const handleSubmit = function() {
               </label>
             </div>
             <div>
-              <button type="submit" className="sendbut" onClick={handleSubmit}>Send</button>
+              <button type="submit" className="sendbut">Send</button>
             </div>
           </form>
 

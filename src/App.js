@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { HashRouter } from "react-router-dom";
+
 import Bio from './components/Bio.js'
 import Projects from './components/Projects.js'
 import Landingview from './components/Landingview.js'
@@ -15,7 +15,7 @@ import LazyLoad from 'react-lazyload';
 
 function App() {
   return (
-    <HashRouter basename='/'>
+   
 
     <div className="App">
             
@@ -54,7 +54,7 @@ function App() {
 
   </div>
 
-  </HashRouter>
+ 
   );
 
 
