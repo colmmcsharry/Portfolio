@@ -42,9 +42,9 @@ function App() {
 
                                
        
-<LazyLoad offset={200}>
+
           <Contact />
-</LazyLoad>          
+         
 <LazyLoad offset={800}>
         <Gallery /> 
 

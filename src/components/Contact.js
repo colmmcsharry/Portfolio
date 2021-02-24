@@ -5,8 +5,17 @@ import iconlinkedin from '../pics/icon-linkedin.svg'
 import icongithub from '../pics/icon-github.svg'
 
 
+
 export default function Contact()  {
 
+
+const [success, setSuccess] = useState(false);
+
+useEffect(() => {
+  if ( window.location.search.includes('success=true') ) {
+    setSuccess(true);
+  }
+}, []);
 
     return (
       <React.Fragment>
@@ -15,6 +24,12 @@ export default function Contact()  {
 
           
             <h2 className="contacth2">Contact Me</h2> 
+
+            {success && (
+  <p style={{ color: 'green'}}>
+    Successfully submitted form!
+  </p>
+)}
             
           
 
@@ -36,7 +51,7 @@ export default function Contact()  {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/#contactform">
+            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true">
              
             <div>
               <label className="contactlabel">
