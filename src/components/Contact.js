@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
@@ -7,7 +7,7 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-handleSubmit = (event) => {
+const handleSubmit = (event) => {
     event.preventDefault();
     alert("Thanks for the mail!");}
 
@@ -20,7 +20,7 @@ handleSubmit = (event) => {
 
           
             <h2 className="contacth2">Contact Me</h2> 
-}
+
             
           
 
