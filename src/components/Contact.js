@@ -14,6 +14,8 @@ const [success, setSuccess] = useState(false);
 useEffect(() => {
   if ( window.location.search.includes('success=true') ) {
     setSuccess(true);
+    console.log('cheers!')
+    alert('Thanks for submitting the form!')
   }
 }, []);
 
@@ -52,7 +54,7 @@ useEffect(() => {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" action="https://colmsportfolio.netlify.app/?success=true">
+            <form method="post" id="contactform" name="contactform" data-netlify="true" onSubmit={handleSubmit} action="https://colmsportfolio.netlify.app/?success=true">
              
             <div>
               <label className="contactlabel">
