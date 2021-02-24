@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
@@ -7,10 +7,10 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-const handleSubmit = function(){
-  console.log('thanksfor the mail!');
-  alert('thanks for the mail!')
-}
+  const handleSubmit = async(event) => {
+    // prevent redirect
+    event.preventDefault();
+    console.log('lel')}
 
     return (
       <React.Fragment>
