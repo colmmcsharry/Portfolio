@@ -17,11 +17,6 @@ useEffect(() => {
   }
 }, []);
 
-const handleSubmit = (event) => {
-  return false
-  console.log("lovly");
-};
-
 
     return (
       <React.Fragment>
@@ -57,7 +52,7 @@ const handleSubmit = (event) => {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" action="/?success=true">
+            <form method="post" id="contactform" name="contactform" data-netlify="true" action="https://colmsportfolio.netlify.app/?success=true">
              
             <div>
               <label className="contactlabel">
