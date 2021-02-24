@@ -19,7 +19,7 @@ useEffect(() => {
 
 const handleSubmit = (event) => {
   event.preventDefault();
-  console.log(lovly);
+  console.log("lovly");
 };
 
 
