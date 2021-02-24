@@ -9,13 +9,18 @@ import icongithub from '../pics/icon-github.svg'
 export default function Contact()  {
 
 
+
+
+
+
+
 const [success, setSuccess] = useState(false);
 
 useEffect(() => {
   if ( window.location.search.includes('success=true') ) {
     setSuccess(true);
     console.log('cheers!')
-    alert('Thanks for submitting the form!')
+    document.getElementById('contactform').scrollIntoView()
   }
 }, []);
 
@@ -49,7 +54,7 @@ useEffect(() => {
                 <strong>Email:</strong>
                 
                   <p>Colmmcpt@gmail.com</p>
-                
+               
               </li>
             </ul>
 
