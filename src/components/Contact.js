@@ -9,8 +9,8 @@ export default function Contact()  {
 
 
 const handleSubmit = function() {
-  console.log("submitted");
-  return false; // this prevents page refresh
+  preventDefault();
+  console.log("submitted"); // this prevents page refresh
 }
 
     return (
@@ -41,7 +41,7 @@ const handleSubmit = function() {
             </ul>
 
           
-            <form id="form" method="post" name="contactform" data-netlify="true" onSubmit={handleSubmit}>
+            <form id="form" method="post" name="contactform" data-netlify="true">
              
             <div>
               <label className="contactlabel">
@@ -60,7 +60,7 @@ const handleSubmit = function() {
               </label>
             </div>
             <div>
-              <button type="submit" className="sendbut">Send</button>
+              <button type="submit" className="sendbut" onClick={handleSubmit}>Send</button>
             </div>
           </form>
 
