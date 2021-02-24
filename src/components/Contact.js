@@ -50,7 +50,8 @@ useEffect(() => {
               </li>
               <li>
                 <strong>Accounts:</strong>
-                <p className="onmob"><img src={iconlinkedin} alt="badge" loading="lazy" />  <img src={icongithub} alt="badge" loading="lazy"/> </p>
+                <p className="onmob"><a href="https://www.linkedin.com/in/colm-mcsharry/"><img src={iconlinkedin} alt="badge" loading="lazy" /></a> 
+                <a href="https://github.com/mcshazz"><img src={icongithub} alt="badge" loading="lazy"/></a> </p>
               </li>
               <li>
                 <strong>Email:</strong>
