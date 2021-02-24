@@ -37,7 +37,7 @@ useEffect(() => {
 
             {success && (
   <p style={{ color: 'green'}}>
-    Successfully submitted form!
+    Thanks for the mail, excited to read it!
   </p>
 )}
             
