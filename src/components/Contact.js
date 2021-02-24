@@ -54,7 +54,7 @@ useEffect(() => {
             </ul>
 
           
-            <form method="post" id="contactform" name="contactform" data-netlify="true" onSubmit={handleSubmit} action="https://colmsportfolio.netlify.app/?success=true">
+            <form method="post" id="contactform" name="contactform" data-netlify="true" action="https://colmsportfolio.netlify.app/?success=true">
              
             <div>
               <label className="contactlabel">
