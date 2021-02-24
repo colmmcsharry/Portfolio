@@ -7,10 +7,11 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
-  const handleSubmit = async(event) => {
-    // prevent redirect
-    event.preventDefault();
-    console.log('lel')}
+
+const handleSubmit = function() {
+  console.log("submitted");
+  return false; // this prevents page refresh
+}
 
     return (
       <React.Fragment>
@@ -40,7 +41,7 @@ export default function Contact()  {
             </ul>
 
           
-            <form method="post" name="contactform" data-netlify="true" onSubmit={handleSubmit}>
+            <form id="form" method="post" name="contactform" data-netlify="true" onSubmit={handleSubmit}>
              
             <div>
               <label className="contactlabel">
