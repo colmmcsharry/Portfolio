@@ -7,14 +7,11 @@ import icongithub from '../pics/icon-github.svg'
 
 export default function Contact()  {
 
+handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Thanks for the mail!");}
 
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-  if ( window.location.search.includes('success=true') ) {
-    setSuccess(true);
-  }
-}, []);
+  
 
     return (
       <React.Fragment>
@@ -23,6 +20,7 @@ export default function Contact()  {
 
           
             <h2 className="contacth2">Contact Me</h2> 
+}
             
           
 
@@ -44,7 +42,7 @@ export default function Contact()  {
             </ul>
 
           
-            <form method="post" name="contactform" >
+            <form method="post" name="contactform" onSubmit={handleSubmit}>
              
             <div>
               <label className="contactlabel">
@@ -66,11 +64,7 @@ export default function Contact()  {
               <button type="submit" className="sendbut">Send</button>
             </div>
           </form>
-{success && (
-  <p style={{ color: 'green'}}>
-    Thanks for the mail!
-  </p>
-)}
+
 
         </div>
 <ScrollLink activeClass="active" to="galleryh3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
