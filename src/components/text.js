@@ -252,7 +252,7 @@ const alldescriptions = {
 
 	networktext:<p>
 
-	Networkers is a site for finding skilled workers, fast<br/>
+	Networkers is a site for finding skilled workers, fast.<br/>
                   <br/>It's almost like Tinder, except instead of swiping through dates
                   you swipe through workers in your area. <br/>
                   <br/>
@@ -364,8 +364,8 @@ I have learned how to get past the initial feeling of hopelessness when first le
 Here are some examples of random tidbits I've learned over the last few weeks.
 <ul className="learning-list" ><li> Use CSS variables to allow Javascript to target psuedo elements</li>
 <li>The Chrome extension Snapfont is great for finding suitable fonts </li>
-<li>AnimXYZ makes creating animations much easier and more performant</li>
-<li>Gatsby takes the hassle out of resizing/compressing images</li></ul>
+<li>AnimXYZ can make creating animations much easier and more performant</li>
+<li>use @media(hover: hover) to make hover effects only apply on appropriate devices </li></ul>
 
 <h3 className="mystoryh3"> Current Priorities </h3>
 
