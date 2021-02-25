@@ -6,6 +6,16 @@
 $cyan:#3DC0B0;
 $darkbg:#333;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family:  'Ampersand', Montserrat, sans-serif;
+}
+
+@font-face {
+  font-family: 'Ampersand';
+  src: local('Times New Roman');
+  unicode-range: U+003C;
+}
+
 
 * {
   box-sizing: border-box;
@@ -89,7 +99,7 @@ h3.mystoryh3{
   left:0;
   width:100vw;
   height:100vh;
-  opacity:0.9;
+  opacity:0.8;
   --dynamic: none;
 
 }
@@ -178,16 +188,33 @@ animation: typewriter 2s steps(60) 1s 1 normal both;}
 h1{
 text-align:left;
  position: absolute;
- font-family: Dancing Script, cursive, Comic Sans MS;
+ font-family: 'myfamily', Dancing Script, cursive, Comic Sans MS;
  z-index:98;
- top: -1.2rem;
+ top: -1vh;
+ height:30vh;
  overflow:hidden;
  left: 31.5vw;
- font-size:6.2rem;
+ font-size:7vw;
  white-space:nowrap;
-
 }
 
+h1::after {
+  content:"< I make websites >";
+  position:absolute;
+  top:15vh;
+left:2%;
+font-size:4vw;
+overflow:hidden;
+ white-space:nowrap;
+animation: typewriter 2s steps(60) 3s 1 normal both; 
+}
+
+
+@font-face {
+  font-family: 'myfamily';
+  src: local('Times New Roman');
+  unicode-range: U+003C, U+003E ;
+}
 
 .hi{ opacity: 1;
 color: $cyan;
@@ -430,6 +457,8 @@ margin:auto auto;
 font-size:1.2rem}
 
 
+
+/*this means this effect will only happen on devices that can hover (laptops/computers) */
 @media (hover: hover){
   
   .item:hover {filter: none;
@@ -1414,7 +1443,7 @@ font-weight:bold;}
    position:absolute;
    z-index:99;
    left:36%;
-   top:10rem;
+   top:12rem;
    text-align:center;
 
 }
@@ -1649,18 +1678,6 @@ display:inline-block;
 
   #wrapper {padding-bottom:10rem;}
  
- h1 {left:20vw;
-     top: 3rem;
-  }
-
-   #iconlistcontainer2 {
-   left:20%;
-    top:15rem;
-
-}
-
-#iconlistcontainer2 > h3 {
-font-size:4rem;}
 
   table {
 border-spacing: 50px 0;}
@@ -1738,8 +1755,15 @@ width: 34%;}
 @media screen and (max-width: 520px) {
 
   h1{
-  left:16vw;
-  font-size:4.5rem;
+  left:13vw;
+  font-size:5rem;
+  top:8vh;
+}
+
+h1:after {
+  font-size:3rem;
+  top:9vh;
+  left:0px;
 }
 
 
@@ -2023,9 +2047,14 @@ h3.mystoryh3{
   h1{
   left:16vw;
   font-size:4rem;
+  top:7vh;
+
 }
 
-
+h1:after{
+  font-size:2.5rem;
+  top:9vh;
+}
 
   #iconlistcontainer2 {
    left:16%;
@@ -2132,7 +2161,13 @@ and (orientation : portrait) {
 
 .lastarrow {top:0vh;}
 
-
+ h1 {left:20vw;
+     top: 3rem;
+     font-size:8rem;
+  }
+h1:after {
+  font-size:5rem
+}
 
  }
 

@@ -45,7 +45,7 @@ author: '',
  author: "- Father Ted" ,
  img: Ted },
 
-{quote:"I'm no good at judging the size of crowds, Ted, but I's say there's about 17 million of them out there.",
+{quote:"I'm no good at judging the size of crowds, Ted, but I'd say there's about 17 million of them out there.",
   author:"- Father Dougal",  
  img:dougal2 },
 

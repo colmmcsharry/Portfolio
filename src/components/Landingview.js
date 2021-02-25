@@ -16,14 +16,9 @@ return (
 <input id="toggle1" type="checkbox" className="mything"/>
 <label htmlFor="toggle1"></label>
 
-<div id="iconlistcontainer2">
-<h3><span style={{fontFamily:'Times New Roman'}}>&lt;</span> I make websites <span style={{fontFamily:'Times New Roman'}}> &gt;</span></h3>
-</div>
-
-{/*hi and peekaboo are the same headings, just dif colors. one fades away after clicking moon*/}
 
 <h1 className="hi">
-    Hi, I'm Colm 
+  Hi, I'm Colm <br/>
 </h1> 
 
 <h1 className="peekaboo">
