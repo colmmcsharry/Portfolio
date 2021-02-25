@@ -46,7 +46,8 @@ useEffect(() => {
   <ul className="details">
               <li>
                 <strong>Phone:</strong>
-                <p>083 838 1780</p>
+                <a style={{textDecoration:'none'}} href="tel:0838381780">083 838-1780</a>
+
               </li>
               <li>
                 <strong>Accounts:</strong>
