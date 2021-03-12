@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState,useEffect }  from 'react';
 
 
 
@@ -170,7 +170,12 @@ document.getElementsByClassName('hoverclick')[mynum].addEventListener('mouseout'
 
 		<React.Fragment >
 
-<span className="hoverclick" id={props.title}> {mystring}</span>
+<span data-aos="fade-down"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true" className="hoverclick" id={props.title}> {mystring}</span>
 
 <div id="myModal" className="modal">
 

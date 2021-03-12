@@ -15,6 +15,7 @@ import cb3 from '../pics/cb3.jpg'
 import cb4 from '../pics/cb4.jpg'
 import Proj from './Proj.js'
 
+
 import {alldescriptions} from './text.js'
 
 
@@ -39,19 +40,25 @@ return (
  <h3 className="My-Projects"><Element name="Myprojects" ></Element>My Projects
 </h3>
 
+
 <Proj title="Crezo Construction" description={alldescriptions.crezotext} image1={crezopic1new} image2={crezopic2} image3={crezopic3} image4={crezopic4} link="https://crezo.netlify.app/" />
 <ScrollLink activeClass="active" to="Project2" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow" id="firstprojarrow"></div></ScrollLink> 
 
 
+
 <Element name="Project2" ></Element>
+
 <Proj title="Cosy Cabins" description={alldescriptions.cabintext} image1={cb1} image2={cb2} image3={cb3} image4={cb4} link="https://mcshazz.github.io/CosyCabins/" />
 <ScrollLink activeClass="active" to="Project3" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow"></div></ScrollLink>
 
+
 <Element name="Project3" ></Element>
+
 <Proj title="Networkers" description={alldescriptions.networktext} image1={networkerspic} image2={networkerspic2} image3={networkerspic3} image4={networkershot} link="https://mcshazz.github.io/NetWorkers/" />
 <ScrollLink activeClass="active" to="Contact" spy={true} offset={50} smooth={true} duration={900} ><div className="arrow projarrow lastarrow">
 <img className="pngs" alt="contactlink" src={Contact2} />
 </div>
+
 </ScrollLink>
 
 

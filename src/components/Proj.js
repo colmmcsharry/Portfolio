@@ -1,6 +1,7 @@
 import React from 'react'; 
 import responsive from '../pics/responsive.png'
 import LazyLoad from 'react-lazyload';
+import Fade from 'react-reveal/Fade'
 
 
 
@@ -10,7 +11,7 @@ export default function Proj(props){
 
 
 return (
-
+<React.Fragment>
 
 	<div id="projwrap">
 
@@ -24,7 +25,10 @@ return (
 {props.description}
 
     </div>
-<LazyLoad height={400} width={400} offset={400}>      
+
+    <Fade Top duration={2000}>  
+<LazyLoad height={400} width={400} offset={400}>  
+  
     <div id="right" className="fadeload">
     <a href={props.link} target="_blank" rel="noreferrer"> 
   
@@ -66,7 +70,9 @@ return (
      
     
     </div>
+
  </LazyLoad> 
+     </Fade>
   </div>  
 
 
@@ -75,7 +81,7 @@ return (
 
 
 
-
+</React.Fragment>
 )
 
 

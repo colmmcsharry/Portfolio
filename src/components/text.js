@@ -215,7 +215,14 @@ var networkersright =
 
 
 const alldescriptions = {
-	crezotext:<React.Fragment> <p>I made this site for a small construction company in Vancouver. 
+	crezotext:<React.Fragment>
+<div className="inlin"  data-aos="fade"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+>
+   <p>I made this site for a small construction company in Vancouver. 
                    I replaced their old Wordpress site with a more modern
                    version using Gatsby.js.</p>
 
@@ -229,14 +236,19 @@ const alldescriptions = {
                     <Modal title="Crezo Construction" column1={crezoleft} column2={crezoright} xnumber="secondx" />
                       <br/> <br/>
                     </p>
+
+</div>
                     </React.Fragment>
                     ,
                     
 
 
-
-
-	cabintext:<p>This is a mock-up website for my brother's company. The company is a bit like Air BnB, but specialises in off-the-grid cabins.
+	cabintext:<div className="inlin"  data-aos="fade"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+>This is a mock-up website for my brother's company. The company is a bit like Air BnB, but specialises in off-the-grid cabins.
                      <br/><br/> Built using React, I tried to convey 
                     the overall ethos of the company with the minimalist website design.
 
@@ -248,9 +260,14 @@ const alldescriptions = {
                      For more details on how I made this site, just
                      <Modal title="Cosy Cabins" column1={cabinsleft} column2={cabinsright} xnumber="secondx" />
                       
-</p>,
+</div>,
 
-	networktext:<p>
+	networktext:<div className="inlin"  data-aos="fade"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+>
 
 	Networkers is a site for finding skilled workers, fast.<br/>
                   <br/>It's almost like Tinder, except instead of swiping through dates
@@ -266,7 +283,7 @@ const alldescriptions = {
                     <Modal title="NetWorkers" column1={networkersleft} column2={networkersright} />
                      <br/> <br/>
                     
-	</p>,
+	</div>,
 
   mystory1: <React.Fragment> 
   <h3 className="mystoryh3">The Beginning</h3>

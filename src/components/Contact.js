@@ -3,7 +3,7 @@ import { Link as ScrollLink} from "react-scroll";
 import funstuff from '../pics/funstuff.png'
 import iconlinkedin from '../pics/icon-linkedin.svg'
 import icongithub from '../pics/icon-github.svg'
-
+import Fade from 'react-reveal/Fade'
 
 
 export default function Contact()  {
@@ -28,7 +28,9 @@ useEffect(() => {
 
 
     return (
+    
       <React.Fragment>
+  <Fade Top duration={2000}>
       <div className="contactwrap" id="Contact">
         <div className="container">
 
@@ -93,7 +95,7 @@ useEffect(() => {
         
       </div>
       
-      
+      </Fade>
       </React.Fragment>
     );
   

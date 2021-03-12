@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link as ScrollLink, Element} from "react-scroll";
 import mework from '../pics/me-at-work.jpg'
 import Modal from './Modal.js'
@@ -13,13 +13,24 @@ import iconsketch from '../pics/icon-sketch.svg'
 import icongit from '../pics/icon-git.svg'
 import iconcss from '../pics/icon-css.svg'
 import iconhtml from '../pics/icon-html.svg'
+import Fade from 'react-reveal/Fade'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 
 
 
 export default function Bio(){
+useEffect(() => {
+Aos.init({
+duration:2000,
+disable: 'mobile',
+disable: "phone"
 
+});
+
+}, [])
 
 /*intersection obeserver is the little point whcich, when scrolled past, makes something happen*/
 window.onload = setTimeout(function() {
@@ -89,35 +100,52 @@ window.onload = setTimeout(function() {
 return (
 
 	<React.Fragment>
-
+    
             <h3 id="about"><Element name="About" ></Element>About</h3>
+           
               
               <div id="bio">
 
               <div className="tight">
-             
-                   <div class="item fadeload" id="main" onClick={photoclick}>
+
+  <div className="photodiv" data-aos="fade"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true">
+                   <div className="item" id="main" onClick={photoclick}>
+                          
     <img src={mework} height="100%" width="100%" loading="lazy" alt="me"/>
     <div class="caption">
       <p>Me at work</p>
      </div>
+     
   </div>
+</div> 
                   <div id="blurb"> 
+                  <div className="inlin"  data-aos="fade"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="2000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+> 
                   Welcome and thanks for checking out my portfolio.<br/><br/>
 
-                  I am a developer from Dublin and I've been learning my craft since 2018. I strive to create beautiful web apps with an emphasis on a quality user experience.<br/> <br/> 
+                  I am a developer from Dublin and I've been learning my craft since 2018. I strive to create beautiful web apps with an emphasis on a quality user experience.<br/> <br/>
                   I am currently looking for developer roles with a company where I can continue to grow and learn. I am equally comfortable working alone or with a team. 
                    <br/> <br/>
                   When I'm not coding or in the midst of a pandemic, I enjoy playing sports,
                   going to music festivals and nights in or out with friends. 
 
-                  <br/> <br/>
-                  If you'd like to read more about me and my journey into coding, just 
-           
+                  <br/> <br/> 
+             If you'd like to read more about me and my journey into coding, just </div>
                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />    
                   <br/><br/>
 
                     <div id="leftlistcontainer">
+                      <Fade top cascade delay={500}>
                       <ul><span className="top"> Courses </span>
                       <hr/>
                         <li><a href="https://docdro.id/ZNxICaa" target="_blank" rel="noreferrer"> Polyglot Bootcamp</a></li>
@@ -129,9 +157,11 @@ return (
                         <br className="break"/>
                         <br className="break"/>*/}
                       </ul>
+                      </Fade>
                        </div>
 
                        <div id="rightlistcontainer">
+                        <Fade top cascade delay={500}>
                       <ul> <span className="top">Skills</span>
                         <hr/>
                         <li>HTML/CSS/JS</li>
@@ -143,11 +173,16 @@ return (
                        <li>SQL/GraphQL</li>
                        <li>API requests</li>
                        <li>Wordpress/Webflow</li>
+                      
                       </ul>
+                        </Fade>
+
                        </div>
+                      
                         <LazyLoad offset={-60} style={{display:'inline-block'}}> 
 
                        <div id="iconlistcontainer">
+                       <Fade top cascade delay={500}>
                       <ul> <span className="top"><br/></span>
                         <br/>
                         <li><span className="list-icon"><img src={iconhtml} loading="lazy" alt="badge" /><img src={iconcss}loading="lazy"alt="badge" /><img src={iconjs}loading="lazy"alt="badge"/>  </span></li>
@@ -155,6 +190,7 @@ return (
                         <li><span className="list-icon"><img src={iconsass} loading="lazy" alt="badge"/><img src={iconps}loading="lazy" alt="badge"/><img src={iconsketch}loading="lazy"alt="badge"/> </span> </li>
                        
                       </ul>
+                      </Fade>
                        </div>
                         </LazyLoad>
                   </div> 
