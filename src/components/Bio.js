@@ -112,7 +112,7 @@ return (
                   going to music festivals and nights in or out with friends. 
 
                   <br/> <br/>
-                  If you'd like to read more about my background and journey into coding, just 
+                  If you'd like to read more about me and my journey into coding, just 
            
                  <Modal title="My Story" intro={alldescriptions.intro} column1={alldescriptions.mystory1} column2={alldescriptions.mystory2} xnumber="firstx" />    
                   <br/><br/>
@@ -139,9 +139,10 @@ return (
                         <li>React/Gatsby </li>
                         <li>Node.js</li>
                        <li>Photoshop/Sketch</li>
-                        <li>SASS/Grid/Flexbox</li>
+                        <li>CSS-In-JS/Tailwind</li>
                        <li>SQL/GraphQL</li>
                        <li>API requests</li>
+                       <li>Wordpress/Webflow</li>
                       </ul>
                        </div>
                         <LazyLoad offset={-60} style={{display:'inline-block'}}> 

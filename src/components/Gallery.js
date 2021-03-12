@@ -109,8 +109,8 @@ return (
 		<a href="https://mcshazz.github.io/LyricsGame/" target="_blank" rel="noreferrer">Lyrics Game</a> <br/>
 
 		<ul className="cool-list">
-			<li>What I'm watching? </li>
-			<li> Right now, nothing! I'v barred myself from Netflix until I find a job. But eventually, I plan to watch The Mandalorian, then The Sopranos.</li>
+			<li>Some Podcasts I learn from... </li>
+			<li> The CSS Podcast, Syntax, Self-Made Web Designer, Deep Questions</li>
 			
 
 			<li> My productivity playlist... </li>
