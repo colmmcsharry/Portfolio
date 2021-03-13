@@ -215,18 +215,17 @@ var networkersright =
 
 
 const alldescriptions = {
-	crezotext:<React.Fragment>
+	crezotext:
 <div className="inlin"  data-aos="fade"
-    data-aos-delay="50"
-    data-aos-duration="2000"
+    
+    data-aos-duration="1500"
     data-aos-easing="ease-in-out"
-    data-aos-once="true"
->
-   <p>I made this site for a small construction company in Vancouver. 
+    data-aos-once="true">
+   I made this site for a small construction company in Vancouver. 
                    I replaced their old Wordpress site with a more modern
-                   version using Gatsby.js.</p>
+                   version using Gatsby.js.<br/><br/>
 
-                   <p>Loading times were vastly decreased and Lighthouse audit scores improved dramatically
+                   Loading times were vastly decreased and Lighthouse audit scores improved dramatically
                    in all areas.
 
                     <br/><br/>
@@ -235,17 +234,17 @@ const alldescriptions = {
                     Click the link or image to visit the site. For detailed info about how I made this site and what I learned along the way, just  
                     <Modal title="Crezo Construction" column1={crezoleft} column2={crezoright} xnumber="secondx" />
                       <br/> <br/>
-                    </p>
+                    
 
 </div>
-                    </React.Fragment>
+                   
                     ,
                     
 
 
 	cabintext:<div className="inlin"  data-aos="fade"
-    data-aos-delay="50"
-    data-aos-duration="2000"
+    
+    data-aos-duration="1500"
     data-aos-easing="ease-in-out"
     data-aos-once="true"
 >This is a mock-up website for my brother's company. The company is a bit like Air BnB, but specialises in off-the-grid cabins.
@@ -263,8 +262,8 @@ const alldescriptions = {
 </div>,
 
 	networktext:<div className="inlin"  data-aos="fade"
-    data-aos-delay="50"
-    data-aos-duration="2000"
+   
+    data-aos-duration="1500"
     data-aos-easing="ease-in-out"
     data-aos-once="true"
 >

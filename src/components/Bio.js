@@ -27,7 +27,6 @@ Aos.init({
 duration:2000,
 disable: 'mobile',
 disable: "phone"
-
 });
 
 }, [])
@@ -46,6 +45,8 @@ let observer = new IntersectionObserver(entries => {
      }
      else {
   document.querySelector('.mything').style.display = "block"; 
+
+  
   }
 });
   
@@ -63,6 +64,8 @@ observer.observe(document.querySelector("#scroll-magic-point"));
 
 
 window.onload = setTimeout(function() {
+
+  document.querySelector('.myburger').style.display = 'block'
 
     document.querySelector('label').onclick = function myfun(){
     document.getElementById('firstarrow').classList.toggle('bgclass');

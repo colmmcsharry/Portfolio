@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
+:root {
+  --varcol: #333;
+}
 
 /*these are basically reusable variables, SCSS*/
 $cyan:#3DC0B0;
@@ -41,6 +44,83 @@ html, body, .App { margin: 0; padding: 0;
 overflow-x:hidden;
 } 
 
+
+/*CSS FOR BURGER DROPDOWN BEGINS*/
+
+.myburger {
+  position:fixed;
+  top:2.5vh;
+  right:3.5vw;
+  z-index:955;
+  color:$cyan;
+  display:none;
+  animation:modalfadein 2s ease;
+}
+
+
+.navlist {
+  display:none;
+  animation:modalfadein 2s ease forwards;
+  font-size:1.9rem;
+  backdrop-filter: blur(4px);
+ }
+
+.showhide {
+  display:block;
+  animation: scale-in-ver-top 0.5s 0.01s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.navlist > li > a {
+  all:unset;
+  cursor:pointer;
+}
+
+.hamburger-react:hover {
+  filter: brightness(130%) contrast(130%);
+}
+
+.navlist a:hover {
+  filter: brightness(130%) contrast(130%);
+
+}
+
+
+
+input:checked ~ .myburger {
+  color: var(--varcol);
+  transition: color 3s ease;
+  text-shadow: 0 0 3px $cyan;
+}
+
+input:checked ~ .myburger a:hover {
+   text-shadow: 1px 1px 4px $cyan;
+   filter:brightness(130%)
+}
+
+input:checked ~ .myburger > .hamburger-react:hover {
+filter:drop-shadow(2px 2px 4px $cyan) brightness(150%);
+}
+
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+
+/*CSS FOR BURGER DROPDOWN ENDS*/
 
 ul {
   line-height:1.6;
@@ -702,7 +782,6 @@ input:checked + label::before {
  100% {transform: translate(0, 0);} 
 
 }
-
 
 
 input:checked ~ #wrapper {
@@ -1554,6 +1633,11 @@ html {font-size:20px;}
 @media screen and (min-width: 1200px) {
   #bio {padding-top:1.5rem;}
 
+.myburger {
+  top:4.5vh;
+  right:2.5vw;
+
+}
 
   }
 
@@ -1880,6 +1964,14 @@ top:6vh;}
 }
 
 
+.navlist {
+  backdrop-filter: blur(10px);
+  background-color:rgba(0,0,0,.1);
+  width:150px;
+  text-align: left
+ }
+
+ .navlist li {padding-left:10%;}
 
 
 #scroller1::before, #scroller2::before {left:45%;

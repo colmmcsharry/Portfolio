@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link as ScrollLink, Element } from "react-scroll";
 import flaresun from '../pics/flaresun.png'
-
+import Dropdown from './Dropdown'
 
 
 export default function Landingview() {
 
+
 console.log( '%c👋 Hello from the other side', 'font-size: 2em; color: blue; font-style:italic' );
 
 return (
+
+
 
 <React.Fragment>  
 <Element name="top" style={{backgroundImage: `url(${flaresun})`, visibility:'hidden'}} />  
@@ -26,10 +29,13 @@ return (
 </h1> 
 
 
+
 {/*this is the main image, both in day and night*/}
-<div className="window dark bright"> 
-     
+<div className="window dark bright">      
 </div>  
+
+{/*burger goes here*/}
+<Dropdown />
 
 {/*there are two scroll link*/}
 <ScrollLink activeClass="active" to="About" spy={true} offset={-2} smooth={true} duration={900}>
