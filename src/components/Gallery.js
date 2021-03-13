@@ -12,6 +12,7 @@ import snow from '../pics/snow.jpg'
 import Father from './Father.js'
 import totop from '../pics/totop.png'
 import Fade from 'react-reveal/Fade'
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -92,11 +93,14 @@ return (
 
 	<React.Fragment>
 
+<Element id="funwrapper"> </Element>
 
-<Element name="funwrapper"> </Element>
 
-<div className ="funwrap" id="funwrapper">
+<LazyLoad>
+
+<div className ="funwrap">
 <Fade Top duration={2000}>
+
 		<h3 id="galleryh3">My Gallery</h3>
 
 		<div className="gallerywrap">
@@ -127,10 +131,13 @@ return (
 		<Father />
 
 		</div> 
+		
 </Fade>
+
 </div>
 
 <ScrollLink activeClass="active" to="top" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow" id="totop"><img alt="totoparrow" id="totopimg" src={totop}/></div></ScrollLink>
+</LazyLoad>
 
 
 </React.Fragment>
