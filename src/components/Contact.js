@@ -89,7 +89,7 @@ useEffect(() => {
           </form>
 
         </div>
-<ScrollLink activeClass="active" to="Contact" spy={true} offset={950} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
+<ScrollLink activeClass="active" to="funwrapper" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow funarrow">
         <img src={funstuff} alt="arrow" className="pngs"/>
         </div></ScrollLink>
         

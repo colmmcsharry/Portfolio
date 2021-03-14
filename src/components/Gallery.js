@@ -96,7 +96,7 @@ return (
 <Element id="funwrapper"> </Element>
 
 
-<LazyLoad>
+<LazyLoad offset={600}>
 
 <div className ="funwrap">
 <Fade Top duration={2000}>
