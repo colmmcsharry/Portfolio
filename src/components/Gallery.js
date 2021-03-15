@@ -96,16 +96,15 @@ return (
 <Element id="funwrapper"> </Element>
 
 
-<LazyLoad offset={600}>
+
 
 <div className ="funwrap">
-<Fade Top duration={2000}>
 
 		<h3 id="galleryh3">My Gallery</h3>
 
 		<div className="gallerywrap">
 
-		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} alt="galleryimgs" />  </div> 
+		{allpics.map(pic =>  <div className="igaldiv"> <img className="lol" src={pic} alt="galleryimgs" loading="lazy" />  </div> 
 
 		 )}
 
@@ -131,13 +130,11 @@ return (
 		<Father />
 
 		</div> 
-		
-</Fade>
 
 </div>
 
 <ScrollLink activeClass="active" to="top" spy={true} offset={-20} smooth={true} duration={900} ><div className="arrow projarrow lastarrow" id="totop"><img alt="totoparrow" id="totopimg" src={totop}/></div></ScrollLink>
-</LazyLoad>
+
 
 
 </React.Fragment>
